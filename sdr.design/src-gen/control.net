@@ -116,7 +116,51 @@
       </pins>
     </net>
     <net>
-      <name>data</name>
+      <name>data[10]</name>
+      <pins/>
+    </net>
+    <net>
+      <name>data[11]</name>
+      <pins/>
+    </net>
+    <net>
+      <name>data[12]</name>
+      <pins/>
+    </net>
+    <net>
+      <name>data[1]</name>
+      <pins/>
+    </net>
+    <net>
+      <name>data[2]</name>
+      <pins/>
+    </net>
+    <net>
+      <name>data[3]</name>
+      <pins/>
+    </net>
+    <net>
+      <name>data[4]</name>
+      <pins/>
+    </net>
+    <net>
+      <name>data[5]</name>
+      <pins/>
+    </net>
+    <net>
+      <name>data[6]</name>
+      <pins/>
+    </net>
+    <net>
+      <name>data[7]</name>
+      <pins/>
+    </net>
+    <net>
+      <name>data[8]</name>
+      <pins/>
+    </net>
+    <net>
+      <name>data[9]</name>
       <pins/>
     </net>
     <net>

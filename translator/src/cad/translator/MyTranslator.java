@@ -11,7 +11,7 @@ public class MyTranslator extends DefaultTranslator {
 	private int netCode = 1;
 
 	public MyTranslator() {
-		this.fileExtension = ".myext";
+		this.fileExtension = ".kicad.net";
 	}
 
 	@Override
