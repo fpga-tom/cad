@@ -1,0 +1,73 @@
+device scalar {
+	attr REFPREFIX = "S";
+	attr FOOTPRINT = "footprint";
+	attr LIBRARY = "library";
+	pin a = {1};
+}
+
+device vector {
+	attr REFPREFIX = "S";
+	attr FOOTPRINT = "footprint";
+	attr LIBRARY = "library";
+	pin[4:1] b = {4,3,2,1};
+}
+
+design top {
+
+	net a;
+	net[4:1] b;
+	
+	// test invalid msb
+	inst test1 of vector {
+		b = b[5:2];
+	}
+	
+	// test invalid lsb
+	inst test2 of vector {
+		b = b[4:0];
+	}
+	
+	// test invalid index
+	inst test3 of vector {
+		b = b[4,0,2];
+	}
+	
+	// test array not declared
+	inst test4 of scalar {
+		a = a[0];
+	}
+	
+	// test replicated array not declared
+	inst test5 of vector {
+		b = <a[2]>;
+	}
+	
+	// test replicated vector
+	inst test6 of vector {
+		b = <b[2:1]>;
+	}
+	
+	// test invalid msb / lsb
+	inst test7 of vector {
+		b = <b[5:5]>;
+	}
+	
+	// test cannot replicate slices
+	inst test9 of vector {
+		b = <b[1,2,3]>;
+	}
+	
+	// test invalid slice index
+	inst test10 of vector {
+		b = <b[5]>;
+	}
+	
+	// test cannot replicate implicit vector
+	inst test11 of vector {
+		b = <b>;
+	}
+	
+	inst test12 of vector {
+		b = open;
+	}
+}

@@ -1,0 +1,2 @@
+QUANTITY, NAME, REFDES, LIBRARY, FOOTPRINT, COST
+1, Resistor, R1, device, Resistors_SMD:R_0201, 0.05

@@ -1,0 +1,7 @@
+design control {
+	
+	net gnd,vcc;
+	
+	inst R1 of Resistor {
+	}
+}

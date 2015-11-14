@@ -1,0 +1,33 @@
+!PADS-POWERPCB-V9.0-MILS! NETLIST FILE FROM PADS LOGIC V9.3
+
+*PART*
+A1 device@Pin_Headers:Pin_Header_Angled_1x01
+C1 device@Capacitors_SMD:C_0201
+R1 device@Resistors_SMD:R_0201
+R2 device@Resistors_SMD:R_0201
+R3 device@Resistors_SMD:R_0201
+R4 device@Resistors_SMD:R_0201
+R5 device@Resistors_SMD:R_0201
+R6 device@Resistors_SMD:R_0201
+R7 device@Resistors_SMD:R_0201
+
+*CONNECTION*
+*SIGNAL* gnd
+ R1.1 C1.1
+*SIGNAL* vcc
+*SIGNAL* opp
+ R1.2 R2.2
+ R2.2 C1.2
+*SIGNAL* opn
+ R3.2 R4.1
+*SIGNAL* opo
+ R4.2 R5.1
+*SIGNAL* ant
+ A1.1 R3.1
+*SIGNAL* adc_in
+*SIGNAL* adc_inn
+ R6.2 R7.2
+*SIGNAL* reft
+*SIGNAL* refb
+
+*END*

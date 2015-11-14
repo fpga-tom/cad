@@ -1,0 +1,5 @@
+QUANTITY, NAME, REFDES, LIBRARY, FOOTPRINT, COST
+7, Resistor, R1; R2; R3; R4; R5; R6; R7, device, Resistors_SMD:R_0201, 0.05
+3, Capacitor, C1; C2; C3, device, Capacitors_SMD:C_0201, 0.05
+1, Ant, A1, device, Pin_Headers:Pin_Header_Angled_1x01, 
+1, ADC_BUF, BUF1, Housings_SOIC, Housings_SOIC:SOIC-8-1EP_3.9x4.9mm_Pitch1.27mm, 

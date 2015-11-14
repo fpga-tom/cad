@@ -1,0 +1,3 @@
+QUANTITY, NAME, REFDES, LIBRARY, FOOTPRINT, COST
+2, Resistor, R1; R2, device, Resistors_SMD:R_0201, 0.05
+1, Capacitor, C1, device, Capacitors_SMD:C_0201, 0.05

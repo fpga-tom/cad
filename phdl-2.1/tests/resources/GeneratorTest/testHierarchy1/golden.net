@@ -1,0 +1,25 @@
+<netlist>
+  <name>top</name>
+  <parts>
+    <part>
+      <name>D1</name>
+      <footprint>dFoot</footprint>
+      <library>dLib</library>
+    </part>
+  </parts>
+  <nets>
+    <net>
+      <name>n</name>
+      <pins>
+        <pin>
+          <partName>D1</partName>
+          <pinName>1</pinName>
+        </pin>
+        <pin>
+          <partName>D1</partName>
+          <pinName>2</pinName>
+        </pin>
+      </pins>
+    </net>
+  </nets>
+</netlist>

@@ -1,0 +1,13 @@
+# Auto-generated EAGLE PCB script from: 
+SET UNDO_LOG OFF;
+GRID INCH;
+CHANGE DISPLAY OFF;
+CHANGE SIZE 0.25;
+
+# PARTS #
+ADD Resistors_SMD:R_0201@device 'R1' (0.25 0.0);
+
+# SIGNALS #
+SIGNAL 'gnd' R1 1;
+SIGNAL 'vcc';
+SIGNAL 'opp' R1 2;

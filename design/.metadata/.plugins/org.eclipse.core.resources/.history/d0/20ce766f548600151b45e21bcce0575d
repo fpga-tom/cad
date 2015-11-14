@@ -1,0 +1,38 @@
+design control {
+	
+	net gnd,vcc;
+	net opp, opn, opo, ant, adc_in, adc_inn;
+	net reft, refb;
+	
+	inst R2 of Resistor {
+		a = gnd;
+		b = opp;
+	}
+	inst R1 of Resistor {
+		a = vcc;
+		b = opp;
+	}
+	inst C1 of Capacitor {
+		a = gnd;
+		b = opp;
+	}
+	inst ant of Ant {
+		a = ant;
+	}
+	inst Rin of Resistor {
+		a = ant;
+		b = opn;
+	}
+	inst Rf of Resistor {
+		a = opn;
+		b = opo;
+	}
+	inst Rs of Resistor {
+		a = opo;
+		b = adc_in;
+	}
+	inst Ref1 of Resistor {
+		a = reft;
+		b = adc_inn;
+	}
+}

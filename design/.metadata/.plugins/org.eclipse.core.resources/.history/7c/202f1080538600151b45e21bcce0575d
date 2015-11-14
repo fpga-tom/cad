@@ -1,0 +1,10 @@
+design control {
+	
+	net gnd,vcc;
+	net opp;
+	
+	inst R1 of Resistor {
+		a = gnd;
+		b = opp;
+	}
+}

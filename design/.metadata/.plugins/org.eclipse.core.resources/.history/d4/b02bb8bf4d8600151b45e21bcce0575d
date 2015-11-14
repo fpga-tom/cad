@@ -1,0 +1,7 @@
+device ADC { 
+   attr REFPREFIX = "ADC"; 
+   attr LIBRARY = "device"; 
+   attr FOOTPRINT = "Resistors_SMD:R_0201"; 
+   pin a = {1};
+   pin b = {2};
+} 

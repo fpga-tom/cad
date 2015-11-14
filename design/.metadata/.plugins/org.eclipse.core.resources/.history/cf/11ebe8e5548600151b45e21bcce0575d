@@ -1,0 +1,12 @@
+A1,control/ant
+BUF1,control/buf
+C1,control/C1
+C2,control/Cref1
+C3,control/Cref2
+R1,control/R2
+R2,control/R1
+R3,control/Rin
+R4,control/Rf
+R5,control/Rs
+R6,control/Ref1
+R7,control/Ref2

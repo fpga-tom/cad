@@ -1,0 +1,16 @@
+!PADS-POWERPCB-V9.0-MILS! NETLIST FILE FROM PADS LOGIC V9.3
+
+*PART*
+C1 device@Capacitors_SMD:C_0201
+R1 device@Resistors_SMD:R_0201
+R2 device@Resistors_SMD:R_0201
+
+*CONNECTION*
+*SIGNAL* gnd
+ R1.1 C1.1
+*SIGNAL* vcc
+*SIGNAL* opp
+ R1.2 R2.2
+ R2.2 C1.2
+
+*END*

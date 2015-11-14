@@ -1,0 +1,7 @@
+package p_001;
+
+import edu.byu.ee.phdl.translate.DefaultTranslator;
+
+public class MyTranslator extends DefaultTranslator{
+
+}

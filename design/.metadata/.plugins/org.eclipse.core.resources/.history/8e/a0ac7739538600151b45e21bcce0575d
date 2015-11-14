@@ -1,0 +1,9 @@
+# Auto-generated EAGLE PCB script from: 
+SET UNDO_LOG OFF;
+GRID INCH;
+CHANGE DISPLAY OFF;
+CHANGE SIZE 0.25;
+
+# PARTS #
+
+# SIGNALS #
