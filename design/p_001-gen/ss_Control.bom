@@ -1,5 +1,0 @@
-QUANTITY, NAME, REFDES, LIBRARY, FOOTPRINT, COST
-1, Battery, G1, device, Connect:PINHEAD1-2, 1.50
-1, LD, LD1, device, Displays_7-Segment:7SEGMENT-LED__HDSM531_HDSM533_SMD, 2.00
-7, Switch, SW1; SW2; SW3; SW4; SW5; SW6; SW7, device, Discret:SW_PUSH, 1.18
-7, Resistor, R1; R2; R3; R4; R5; R6; R7, device, Resistors_SMD:R_0201, 0.05

@@ -1,5 +1,0 @@
-design control {
-	
-	inst R1 of Resistor {
-	}
-}

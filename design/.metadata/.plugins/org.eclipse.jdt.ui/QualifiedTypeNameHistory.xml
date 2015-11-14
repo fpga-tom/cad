@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="edu.byu.ee.phdl.translate.DefaultTranslator"/>
-<fullyQualifiedTypeName name="p_001.MyTranslator"/>
-<fullyQualifiedTypeName name="edu.byu.ee.phdl.netlist.PhdlPart"/>
-<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
-<fullyQualifiedTypeName name="edu.byu.ee.phdl.netlist.PhdlPin"/>
-</qualifiedTypeNameHistroy>
