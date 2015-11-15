@@ -1,0 +1,73 @@
+subdesign phy {
+	port gnd, vcc33,vcc12;
+	port txc,txen,rxc,rxdv,rxer,crs,col;
+	port [0:3] txd, rxd;
+	port mdc,mdio;
+	port rst_n;
+	
+	net gp,gm,yp,ym;
+	net xi,xo;
+	net txp,txm,rxp,rxm;
+	net rj45gnd,rext,intrp;
+	net rst;
+	
+	inst R3 of Resistor {a=vcc33; b=gp;} // green led anode 
+	inst R4 of Resistor {a=gnd; b=gm;} // green led catode
+	inst R5 of Resistor {a=vcc33; b=yp;} // yellow led anode 
+	inst R6 of Resistor {a=gnd; b=ym;} // yellow led catode
+	inst R7 of Resistor {a=vcc33;b=mdio;}
+	inst R8 of Resistor {a=gnd;b=rext;}
+	inst R9 of Resistor {a=gnd;b=intrp;}
+	inst R10 of Resistor {a=rst;b=vcc33;}
+	inst C2 of Capacitor {a = gnd;b = rj45gnd;} // RJ45 ground
+	inst C3 of Capacitor {a = gnd;b = xo;} // X1 ground
+	inst C4 of Capacitor {a = gnd;b = xi;} // X1 ground
+	inst C5 of Capacitor {a = gnd;b = rst;} // X1 ground
+	inst X1 of XTAL {a=xi;b=xo;}
+	inst D1 of Diode {anode=vcc33;cathode=rst;}
+	inst D2 of Diode {anode=rst_n;cathode=rst;}
+	
+	
+	inst CON2 of RJ45 {
+		RCT=rj45gnd;
+		TCT=rj45gnd;
+		TXP=txp;
+		TXM=txm;
+		RXP=rxp;
+		RXM=rxm;
+		GP=gp;
+		GM=gm;
+		YP=yp;
+		YM=ym;
+	}
+	
+	inst U2 of KSZ8081MLX {
+		GND = <gnd>;
+		VDD_12 = <vcc12>;
+		VDDA_33 = <vcc33>;
+		VDDIO = <vcc33>;
+		TXP=txp;
+		TXM=txm;
+		RXP=rxp;
+		RXM=rxm;
+		LED0=gm;
+		LED1=ym;
+		XI=xi;
+		XO=xo;
+		TXC=txc;
+		TXEN=txen;
+		TXD=txd;
+		RXC=rxc;
+		RXDV=rxdv;
+		RXD=rxd;
+		RXER=rxer;
+		CRS=crs;
+		COL=col;
+		MDC=mdc;
+		MDIO=mdio;
+		REXT=rext;
+		INTRP=intrp;
+		RST_n=rst;
+		NC=open;
+	}
+}

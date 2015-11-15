@@ -1,0 +1,120 @@
+subdesign fpga {
+	port gnd, vcc33;
+	
+	// --- PHY ---
+	port txc,txen,rxc,rxdv,rxer,crs,col;
+	port [0:3] txd, rxd;
+	port mdc,mdio;
+	port rst_n;
+	
+	net tck,tdo,tdi,tms;
+	inst CON1 of JTAG {
+		GND = <gnd>;
+		TCK = tck;
+		TDO = tdo;
+		TDI = tdi;
+		TMS = tms;
+	}
+	
+	inst U1 of EP4CE22 {
+		GNDA1=<gnd>;
+		GND = <gnd>;
+		VCCA = <vcc33>;
+		VCCD_PLL = <vcc33>;
+		VCCINT = <vcc33>;
+		VCCIO = <vcc33>;
+		TCK = tck;
+		TDO = tdo;
+		TDI = tdi;
+		TMS = tms;
+		B3_IO0_DIFFIO_B2p=txc;
+		B3_IO3_PLL1_CLKOUTn=txen;
+		B3_IO2_PLL1_CLKOUTp=txd[0];
+		B3_IO1_=txd[1];
+		B2_IO4_RDN1=txd[2];
+		B2_IO3_RUP1=txd[3];
+		B2_IO1_DIFFIO_L11p=crs;
+		B2_IO2_VREFB2N0=col;
+		B4_IO0_DIFFIO_B16p=rxer;
+		B4_IO1_DIFFIO_B17p=rxc;
+		B4_IO2_DIFFIO_B17n=rxdv;
+		B4_IO4_VREFB4N0=rxd[0];
+		B4_IO5_RUP2=rxd[1];
+		B4_IO6_RDN2=rxd[2];
+		B4_IO7_DIFFIO_B23n=rxd[3];
+		B4_IO8_DIFFIO_B24p=mdc;
+		B4_IO9_PLL4_CLKOUTp=mdio;
+		B4_IO10_PLL4_CLKOUTn=rst_n;
+		
+		 B1_IO0_DIFFIO_L3n=open;
+	 B1_IO1_VREFB1N0=open;
+	 B1_IO2_DIFFIO_L4p=open;
+	 nSTATUS=open;
+	 B1_IO3_DIFFIO_L6p=open;
+	 B1_IO4_DIFFIO_L6n=open;
+	 DCLK=open;
+	 B1_IO5_=open;
+	 nCONFIG=open;
+	 nCE=open;
+	 CLK1_DIFFCLK_0n=open;
+	 CLK2_DIFFCLK_1p=open;
+	 CLK3_DIFFCLK_1n=open;
+	 B2_IO0_DIFFIO_L8p=open;
+	 B3_IO4_VREFB3N0=open;
+	 B3_IO5_DIFFIO_B9n=open;
+	 B3_IO6_DIFFIO_B10n=open;
+	 B3_IO7_DIFFIO_B11p=open;
+	 CLK15_DIFFCLK_6p=open;
+	 CLK14_DIFFCLK_6n=open;
+	 CLK13_DIFFCLK_7p=open;
+	 CLK12_DIFFCLK_7n=open;
+	 B4_IO3_=open;
+	 B5_IO0_RUP3=open;
+	 B5_IO1_RDN3=open;
+	 B5_IO2_VREFB5N0=open;
+	 B5_IO3_DIFFIO_R11p=open;
+	 B5_IO4_DIFFIO_R10p=open;
+	 B5_IO5_DIFFIO_R9n=open;
+	 B5_IO6_DIFFIO_R9p=open;
+	 CLK7_DIFFCLK_3n=open;
+	 CLK6_DIFFCLK_3p=open;
+	 CLK5_DIFFCLK_2n=open;
+	 CLK4_DIFFCLK_2p=open;
+	 CONF_DONE=open;
+	 MSEL0=open;
+	 MSEL1=open;
+	 MSEL2=open;
+	 B6_IO0_DIFFIO_R5n=open;
+	 B6_IO1_DIFFIO_R5p=open;
+	 B6_IO2_=open;
+	 B6_IO3_DIFFIO_R4n=open;
+	 B6_IO4_DIFFIO_R4p=open;
+	 B6_IO5_=open;
+	 B6_IO6_VREFB6N0=open;
+	 B6_IO7_DIFFIO_R1n=open;
+	 B7_IO0_DIFFIO_T23p=open;
+	 B7_IO1_DIFFIO_T22p=open;
+	 B7_IO2_PLL2_CLKOUTn=open;
+	 B7_IO3_PLL2_CLKOUTp=open;
+	 B7_IO4_RUP4=open;
+	 B7_IO5_RDN4=open;
+	 B7_IO6_VREFB7N0=open;
+	 B7_IO7_DIFFIO_T19n=open;
+	 B7_IO8_DIFFIO_T17p=open;
+	 B7_IO9_DIFFIO_T13p=open;
+	 CLK8_DIFFCLK_5n=open;
+	 CLK9_DIFFCLK_5p=open;
+	 CLK10_DIFFCLK_4n=open;
+	 CLK11_DIFFCLK_4p=open;
+	 B8_IO0_DIFFIO_T10n=open;
+	 B8_IO1_DIFFIO_T10p=open;
+	 B8_IO2_DIFFIO_T9p=open;
+	 B8_IO3_VREFB8N0=open;
+	 B8_IO4_=open;
+	 B8_IO5_DIFFIO_T2p=open;
+	 B8_IO6_=open;
+	 B8_IO7_PLL3_CLKOUTn=open;
+	 B8_IO8_PLL3_CLKOUTp=open; 
+		   
+	}
+}

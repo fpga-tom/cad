@@ -1,39 +1,45 @@
 design control {
 	
-	net gnd,vcc;
-	net opp, opn, opo, ant, adc_in, adc_inn;
-	net reft, refb;
-	net vref;
-	net [1:12] data;
+	net gnd,vcc33,vcc12;
 	
-	inst R2 of Resistor {a = gnd;b = opp;}
-	inst R1 of Resistor {a = vcc;b = opp;}
-	inst C1 of Capacitor {a = gnd;b = opp;}
-	inst ant of Ant {a = ant;}
-	inst Rin of Resistor {a = ant;b = opn;}
-	inst Rf of Resistor {a = opn;b = opo;}
-	inst Rs of Resistor {a = opo;b = adc_in;}
-	inst Ref1 of Resistor {a = reft;b = adc_inn;}
-	inst Ref2 of Resistor {a = refb;b = adc_inn;}
-	inst Cref1 of Capacitor {a = gnd;b = adc_inn;}
-	inst Cref2 of Capacitor {a = gnd;b = adc_inn;}
-	inst Cref3 of Capacitor {a = adc_in;b = gnd;}
 	
-	inst buf of ADC_BUF {
-		in = opn;
-		inn = opp;
-		out = opo;
-		vsp = vcc;
-		vsn = gnd;
+	net ep4_phy_txc,ep4_phy_txen,ep4_phy_rxc,ep4_phy_rxdv,ep4_phy_rxer,ep4_phy_crs,ep4_phy_col,ep4_phy_mdio,ep4_phy_mdc,ep4_phy_rst_n;
+	net [0:3] ep4_phy_txd, ep4_phy_rxd;
+	
+
+	subinst p of phy {
+		gnd=gnd;
+		vcc12=vcc12;
+		vcc33=vcc33;
+		col=ep4_phy_col;
+		crs=ep4_phy_crs;
+		rxc=ep4_phy_rxc;
+		rxd=ep4_phy_rxd;
+		rxdv=ep4_phy_rxdv;
+		rxer=ep4_phy_rxer;
+		txc=ep4_phy_txc;
+		txd=ep4_phy_txd;
+		txen=ep4_phy_txen;
+		mdc=ep4_phy_mdc;
+		mdio=ep4_phy_mdio;
+		rst_n=ep4_phy_rst_n;
 	}
 	
-//	inst adc of ADC {
-//		in = adc_in;
-//		inn = adc_inn;
-//		reft = reft;
-//		refb = refb;
-//		vref = vref;
-//		sel = vref;
-//		b = data;
-//	}
+	subinst f of fpga {
+		gnd=gnd;
+		vcc33=vcc33;
+		col=ep4_phy_col;
+		crs=ep4_phy_crs;
+		rxc=ep4_phy_rxc;
+		rxd=ep4_phy_rxd;
+		rxdv=ep4_phy_rxdv;
+		rxer=ep4_phy_rxer;
+		txc=ep4_phy_txc;
+		txd=ep4_phy_txd;
+		txen=ep4_phy_txen;
+		mdc=ep4_phy_mdc;
+		mdio=ep4_phy_mdio;
+		rst_n=ep4_phy_rst_n;
+	}
+	
 }

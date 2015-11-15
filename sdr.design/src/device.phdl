@@ -1,3 +1,10 @@
+device Ant {
+	attr REFPREFIX = "A";
+	attr LIBRARY = "device";
+	attr FOOTPRINT = "Pin_Headers:Pin_Header_Angled_1x01";
+	pin a = {1};
+}
+
 device Resistor { 
    attr REFPREFIX = "R"; 
    attr LIBRARY = "device"; 
@@ -8,19 +15,55 @@ device Resistor {
 }
 
 device Capacitor { 
-   attr REFPREFIX = "C"; 
-   attr LIBRARY = "device"; 
-   attr FOOTPRINT = "Capacitors_SMD:C_0201"; 
-   attr COST = "0.05";
-   pin a = {1};
-   pin b = {2};
+	attr REFPREFIX = "C"; 
+	attr LIBRARY = "device"; 
+	attr FOOTPRINT = "Capacitors_SMD:C_0201"; 
+	attr COST = "0.05";
+	pin a = {1};
+	pin b = {2};
 }
 
-device Ant {
-	attr REFPREFIX = "A";
-	attr LIBRARY = "device";
-	attr FOOTPRINT = "Pin_Headers:Pin_Header_Angled_1x01";
+device XTAL {
+	attr REFPREFIX = "XTAL"; 
+	attr LIBRARY = "device"; 
+	attr FOOTPRINT = "Crystals:Crystal_HC48-U_Vertical"; 
 	pin a = {1};
+	pin b = {2};
+}
+
+device Diode {
+	attr REFPREFIX = "Diode"; 
+	attr LIBRARY = "device"; 
+	attr FOOTPRINT = "Diodes_SMD:Diode_SOT23"; 
+	pin anode = {1};
+	pin cathode = {2};
+}
+
+device JTAG {
+	attr REFPREFIX = "JTAG"; 
+	attr LIBRARY = "pin_headers"; 
+	attr FOOTPRINT = "Pin_Headers:Pin_Header_Straight_2x04";
+	pin TDO = {1};
+	pin TDI = {2};
+	pin TMS = {3};
+	pin TCK = {4};
+	pin GND = {5};
+}
+
+device RJ45 {
+	attr REFPREFIX = "RJ45";
+	attr LIBRARY = "connect";
+	attr FOOTPRINT = "Connect:RJ45_TRANSFO";
+	pin TXP={1};
+	pin TXM={3};
+	pin TCT={2};
+	pin RXP={4};
+	pin RXM={6};
+	pin RCT={5};
+	pin GP={GA};
+	pin GM={GK};
+	pin YP={YA};
+	pin YM={YK};
 }
 
 device ADC { 
@@ -53,4 +96,189 @@ device ADC_BUF {
 	pin vsn = {4};
 	pin out = {6};
 	pin vsp = {7};
+}
+
+device EP4CE22 {
+	attr REFPREFIX = "FPGA";
+	attr LIBRARY = "fpga";
+	attr FOOTPRINT = "Housings_QFP:TQFP-144_20x20mm_Pitch0.5mm";
+	pin B1_IO0_DIFFIO_L3n={6};
+	pin B1_IO1_VREFB1N0={7};
+	pin B1_IO2_DIFFIO_L4p={8};
+	pin nSTATUS={9};
+	pin B1_IO3_DIFFIO_L6p={10};
+	pin B1_IO4_DIFFIO_L6n={11};
+	pin DCLK={12};
+	pin B1_IO5_={13};
+	pin nCONFIG={14};
+	pin TDI={15};
+	pin TCK={16};
+	pin TMS={18};
+	pin TDO={20};
+	pin nCE={21};
+	pin CLK1_DIFFCLK_0n={23};
+	pin CLK2_DIFFCLK_1p={24};
+	pin CLK3_DIFFCLK_1n={25};
+	pin B2_IO0_DIFFIO_L8p={28};
+	pin B2_IO1_DIFFIO_L11p={30};
+	pin B2_IO2_VREFB2N0={31};
+	pin B2_IO3_RUP1={32};
+	pin B2_IO4_RDN1={33};
+	pin B3_IO0_DIFFIO_B2p={39};
+	pin B3_IO1_={42};
+	pin B3_IO2_PLL1_CLKOUTp={43};
+	pin B3_IO3_PLL1_CLKOUTn={44};
+	pin B3_IO4_VREFB3N0={46};
+	pin B3_IO5_DIFFIO_B9n={49};
+	pin B3_IO6_DIFFIO_B10n={50};
+	pin B3_IO7_DIFFIO_B11p={51};
+	pin CLK15_DIFFCLK_6p={52};
+	pin CLK14_DIFFCLK_6n={53};
+	pin CLK13_DIFFCLK_7p={54};
+	pin CLK12_DIFFCLK_7n={55};
+	pin B4_IO0_DIFFIO_B16p={58};
+	pin B4_IO1_DIFFIO_B17p={59};
+	pin B4_IO2_DIFFIO_B17n={60};
+	pin B4_IO3_={64};
+	pin B4_IO4_VREFB4N0={65};
+	pin B4_IO5_RUP2={66};
+	pin B4_IO6_RDN2={67};
+	pin B4_IO7_DIFFIO_B23n={68};
+	pin B4_IO8_DIFFIO_B24p={69};
+	pin B4_IO9_PLL4_CLKOUTp={71};
+	pin B4_IO10_PLL4_CLKOUTn={72};
+	pin B5_IO0_RUP3={76};
+	pin B5_IO1_RDN3={77};
+	pin B5_IO2_VREFB5N0={80};
+	pin B5_IO3_DIFFIO_R11p={83};
+	pin B5_IO4_DIFFIO_R10p={85};
+	pin B5_IO5_DIFFIO_R9n={86};
+	pin B5_IO6_DIFFIO_R9p={87};
+	pin CLK7_DIFFCLK_3n={88};
+	pin CLK6_DIFFCLK_3p={89};
+	pin CLK5_DIFFCLK_2n={90};
+	pin CLK4_DIFFCLK_2p={91};
+	pin CONF_DONE={92};
+	pin MSEL0={94};
+	pin MSEL1={96};
+	pin MSEL2={97};
+	pin B6_IO0_DIFFIO_R5n={98};
+	pin B6_IO1_DIFFIO_R5p={99};
+	pin B6_IO2_={100};
+	pin B6_IO3_DIFFIO_R4n={101};
+	pin B6_IO4_DIFFIO_R4p={103};
+	pin B6_IO5_={104};
+	pin B6_IO6_VREFB6N0={105};
+	pin B6_IO7_DIFFIO_R1n={106};
+	pin B7_IO0_DIFFIO_T23p={110};
+	pin B7_IO1_DIFFIO_T22p={111};
+	pin B7_IO2_PLL2_CLKOUTn={112};
+	pin B7_IO3_PLL2_CLKOUTp={113};
+	pin B7_IO4_RUP4={114};
+	pin B7_IO5_RDN4={115};
+	pin B7_IO6_VREFB7N0={119};
+	pin B7_IO7_DIFFIO_T19n={120};
+	pin B7_IO8_DIFFIO_T17p={121};
+	pin B7_IO9_DIFFIO_T13p={125};
+	pin CLK8_DIFFCLK_5n={126};
+	pin CLK9_DIFFCLK_5p={127};
+	pin CLK10_DIFFCLK_4n={128};
+	pin CLK11_DIFFCLK_4p={129};
+	pin B8_IO0_DIFFIO_T10n={132};
+	pin B8_IO1_DIFFIO_T10p={133};
+	pin B8_IO2_DIFFIO_T9p={135};
+	pin B8_IO3_VREFB8N0={136};
+	pin B8_IO4_={137};
+	pin B8_IO5_DIFFIO_T2p={141};
+	pin B8_IO6_={142};
+	pin B8_IO7_PLL3_CLKOUTn={143};
+	pin B8_IO8_PLL3_CLKOUTp={144};
+	pin [1:15] GND={19,27,41,48,57,63,82,95,118,123,131,140,4,22,79};
+	pin [1:4] GNDA1={36,108,2,74};
+	pin [1:13] VCCINT={5,29,34,38,45,61,70,78,84,102,116,124,138};
+	pin [1:12] VCCIO={17,26,40,47,56,62,81,93,117,122,130,139};
+	pin [1:4] VCCA={35,107,3,75};
+	pin [1:4] VCCD_PLL={37,109,1,73};
+}
+
+device KSZ8081MLX {
+	attr REFPREFIX = "ETH";
+	attr LIBRARY = "ethernet";
+	attr FOOTPRINT = "Housings_QFP:LQFP-48_7x7mm_Pitch0.5mm";
+	pin [1:8] GND={1,2,3,13,17,24,30,37};
+	pin [1:2] VDD_12={4,31};
+	pin VDDA_33={7};
+	pin VDDIO={25};
+	pin RXM={9};
+	pin RXP={10};
+	pin TXM={11};
+	pin TXP={12};
+	pin XO={14};
+	pin XI={15};
+	pin REXT={16};
+	pin MDIO={18};
+	pin MDC={19};
+	pin [0:3] RXD={23,22,21,20};
+	pin RXDV={27};
+	pin RXC={28};
+	pin RXER={29};
+	pin INTRP={32};
+	pin TXC={33};
+	pin TXEN={34};
+	pin [0:3] TXD={35,36,38,39};
+	pin COL={40};
+	pin CRS={41};
+	pin LED0={42};
+	pin LED1={43};
+	pin RST_n={47};
+	pin [1:8] NC={8,48,5,6,44,45,46,26};
+}
+
+// UNUSED DEVICES
+
+device CY7C68013A {
+	attr REFPREFIX = "USB";
+	attr LIBRARY = "usb";
+	attr FOOTPRINT = "Housings_QFP:TQFP-128_14x14mm_Pitch0.4mm";
+	pin CLKOUT={1};
+	pin [0:5] RDY={4,5,6,7,8,9};
+	pin XTALVCC={10};
+	pin XTALOUT={11};
+	pin XTALIN={12};
+	pin XTALGND={13};
+	pin [1:3] NC={14,15,16};
+	pin DRIVERVCC={17};
+	pin DPLUS={18};
+	pin DMINUS={19};
+	pin DRIVERGND={20};
+	pin [0:2] TIMER={29,30,31};
+	pin XCLK={32};
+	pin TESTMODE={33};
+	pin BRKPNT={34};
+	pin EXTMEM={35};
+	pin SCL={36};
+	pin SDA={37};
+	pin CPUOE_N={38};
+	pin CPUPSEN_N={39};
+	pin CPURD_N={40};
+	pin CPUWR_N={41};
+	pin CPUCS_N={42};
+	pin [0:7] PORTA={82,83,84,85,89,90,91,92};
+	pin [0:7] PORTB={44,45,46,47,54,55,56,57};
+	pin [0:7] PORTC={72,73,74,75,76,77,78,79};
+	pin [0:7] PORTD={102,103,104,105,121,122,123,124};
+	pin [0:7] PORTE={108,109,110,111,112,113,114,115};
+	pin [0:7] CPUDATA={59,60,61,62,63,86,87,88};
+	pin [0:15] CPUADR={94,95,96,97,117,118,119,120,126,127,128,21,22,23,24,25};
+	pin [0:5] CTL={69,70,71,66,67,98};
+	pin [1:7] VCC={43,64,100,2,48,68,107};
+	pin [1:7] GND={58,65,125,3,49,80,116};
+	pin [1:2] COREVCC={26,81};
+	pin [1:2] COREGND={27,93};
+	pin [0:1] CPUTXD={50,52};
+	pin [0:1] CPURXD={51,53};
+	pin CPUINT4={28};
+	pin CPUINT5_N={106};
+	pin RESET_N={99};
+	pin WAKEUP_N={101};
 }
