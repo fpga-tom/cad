@@ -1,0 +1,5 @@
+entity tx is
+end tx;
+
+architecture structure of tx is
+end;
