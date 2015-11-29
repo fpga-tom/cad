@@ -1,0 +1,57 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity FSHIFT is
+	port(
+		clock	: in std_logic;
+		reset : in std_logic;
+		serial_data : in std_logic;
+		parallel_data : out std_logic_vector(19 downto 0)
+	);
+end FSHIFT;
+
+architecture structure of FSHIFT is
+	signal reg0, reg1 : std_logic;
+	signal reg0n, reg1n : std_logic;
+begin
+
+reg0n <= not reg0;
+reg1n <= not reg1;
+
+parallel_data(10) <= reg0n;
+parallel_data(11) <= reg0;
+parallel_data(12) <= reg0n;
+parallel_data(13) <= reg0;
+parallel_data(14) <= reg0n;
+parallel_data(15) <= reg0;
+parallel_data(16) <= reg0n;
+parallel_data(17) <= reg0;
+parallel_data(18) <= reg0n;
+parallel_data(19) <= reg0;
+
+parallel_data(0) <= reg1n;
+parallel_data(1) <= reg1;
+parallel_data(2) <= reg1n;
+parallel_data(3) <= reg1;
+parallel_data(4) <= reg1n;
+parallel_data(5) <= reg1;
+parallel_data(6) <= reg1n;
+parallel_data(7) <= reg1;
+parallel_data(8) <= reg1n;
+parallel_data(9) <= reg1;
+
+process(clock) 
+begin
+	if rising_edge(clock) then
+		if reset = '1' then
+			reg0 <= '0';
+			reg1 <= '0';
+		else
+			reg1 <= reg0;
+			reg0 <= serial_data;
+		end if;
+	end if;
+end process;
+
+
+end structure;

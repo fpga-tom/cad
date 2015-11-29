@@ -1,6 +1,0 @@
-entity tb is
-end tb;
-
-architecture DUT of tb is
-begin
-end;

@@ -1,0 +1,2 @@
+v1
+GXB_MERGING,HSSI AVMM Interface,203954,MODULATOR:m_0|tx:tx_0|tx_native:tx_native_inst0|altera_xcvr_native_av:tx_native_inst|av_xcvr_native:gen_native_inst.av_xcvr_native_insts[0].gen_bonded_group_native.av_xcvr_native_inst|av_xcvr_avmm:inst_av_xcvr_avmm|avmm_interface_insts[0].av_hssi_avmm_interface_inst,MODULATOR:m_0|tx:tx_0|tx_native:tx_native_inst0|altera_xcvr_native_av:tx_native_inst|av_xcvr_plls:gen_native_inst.av_xcvr_native_insts[0].gen_bonded_group_plls.gen_tx_plls.tx_plls|pll[0].avmm.av_hssi_avmm_interface_inst,

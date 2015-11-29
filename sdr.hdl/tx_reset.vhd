@@ -74,8 +74,8 @@ begin
 			CHANNELS              => 1,
 			PLLS                  => 1,
 			SYS_CLK_IN_MHZ        => 125,
-			SYNCHRONIZE_RESET     => 0,
-			REDUCED_SIM_TIME      => 0,
+			SYNCHRONIZE_RESET     => 1,
+			REDUCED_SIM_TIME      => 1,
 			TX_PLL_ENABLE         => 1,
 			T_PLL_POWERDOWN       => 1000,
 			SYNCHRONIZE_PLL_RESET => 0,
@@ -144,8 +144,8 @@ end architecture rtl; -- of tx_reset
 -- Retrieval info: 	<generic name="CHANNELS" value="1" />
 -- Retrieval info: 	<generic name="PLLS" value="1" />
 -- Retrieval info: 	<generic name="SYS_CLK_IN_MHZ" value="125" />
--- Retrieval info: 	<generic name="SYNCHRONIZE_RESET" value="0" />
--- Retrieval info: 	<generic name="REDUCED_SIM_TIME" value="0" />
+-- Retrieval info: 	<generic name="SYNCHRONIZE_RESET" value="1" />
+-- Retrieval info: 	<generic name="REDUCED_SIM_TIME" value="1" />
 -- Retrieval info: 	<generic name="gui_split_interfaces" value="0" />
 -- Retrieval info: 	<generic name="TX_PLL_ENABLE" value="1" />
 -- Retrieval info: 	<generic name="T_PLL_POWERDOWN" value="1000" />

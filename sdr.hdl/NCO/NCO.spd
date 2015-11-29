@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="simulation/submodules/NCO_nco_ii_0_sin.hex"
+   type="HEX"
+   library="nco_ii_0" />
+ <file
+   path="simulation/submodules/NCO_nco_ii_0_cos.hex"
+   type="HEX"
+   library="nco_ii_0" />
+ <file
+   path="simulation/submodules/NCO_nco_ii_0_tb.vhd"
+   type="OTHER"
+   library="nco_ii_0" />
+ <file
+   path="simulation/submodules/NCO_nco_ii_0.vo"
+   type="VERILOG"
+   library="nco_ii_0" />
+ <file path="simulation/NCO.vhd" type="VHDL" />
+ <topLevel name="NCO" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

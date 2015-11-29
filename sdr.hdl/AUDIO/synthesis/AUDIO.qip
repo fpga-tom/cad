@@ -1,0 +1,45 @@
+set_global_assignment -entity "AUDIO" -library "AUDIO" -name IP_TOOL_NAME "Qsys"
+set_global_assignment -entity "AUDIO" -library "AUDIO" -name IP_TOOL_VERSION "15.1"
+set_global_assignment -entity "AUDIO" -library "AUDIO" -name IP_TOOL_ENV "Qsys"
+set_global_assignment -library "AUDIO" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../AUDIO.sopcinfo"]
+set_global_assignment -entity "AUDIO" -library "AUDIO" -name SLD_INFO "QSYS_NAME AUDIO HAS_SOPCINFO 1 GENERATION_ID 1448792299"
+set_global_assignment -library "AUDIO" -name MISC_FILE [file join $::quartus(qip_path) "../AUDIO.cmp"]
+set_global_assignment -library "AUDIO" -name SLD_FILE [file join $::quartus(qip_path) "AUDIO.debuginfo"]
+set_global_assignment -entity "AUDIO" -library "AUDIO" -name IP_TARGETED_DEVICE_FAMILY "Cyclone V"
+set_global_assignment -entity "AUDIO" -library "AUDIO" -name IP_GENERATED_DEVICE_FAMILY "{Cyclone V}"
+set_global_assignment -entity "AUDIO" -library "AUDIO" -name IP_QSYS_MODE "STANDALONE"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -library "AUDIO" -name MISC_FILE [file join $::quartus(qip_path) "../../AUDIO.qsys"]
+set_global_assignment -entity "AUDIO" -library "AUDIO" -name IP_COMPONENT_NAME "QVVESU8="
+set_global_assignment -entity "AUDIO" -library "AUDIO" -name IP_COMPONENT_DISPLAY_NAME "QVVESU8="
+set_global_assignment -entity "AUDIO" -library "AUDIO" -name IP_COMPONENT_REPORT_HIERARCHY "On"
+set_global_assignment -entity "AUDIO" -library "AUDIO" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "AUDIO" -library "AUDIO" -name IP_COMPONENT_VERSION "MS4w"
+set_global_assignment -entity "AUDIO" -library "AUDIO" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTQ0ODc5MjI5OQ==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "AUDIO" -library "AUDIO" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBW::QXV0byBERVZJQ0VfRkFNSUxZ"
+set_global_assignment -entity "AUDIO" -library "AUDIO" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::NUNHWEZDNUM2RjI3Qzc=::QXV0byBERVZJQ0U="
+set_global_assignment -entity "AUDIO" -library "AUDIO" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::N19INg==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
+set_global_assignment -entity "AUDIO" -library "AUDIO" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfQ0xPQ0tfUkFURQ==::LTE=::QXV0byBDTE9DS19SQVRF"
+set_global_assignment -entity "AUDIO" -library "AUDIO" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfQ0xPQ0tfRE9NQUlO::LTE=::QXV0byBDTE9DS19ET01BSU4="
+set_global_assignment -entity "AUDIO" -library "AUDIO" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfUkVTRVRfRE9NQUlO::LTE=::QXV0byBSRVNFVF9ET01BSU4="
+set_global_assignment -entity "AUDIO_audio_0" -library "AUDIO" -name IP_COMPONENT_NAME "QVVESU9fYXVkaW9fMA=="
+set_global_assignment -entity "AUDIO_audio_0" -library "AUDIO" -name IP_COMPONENT_DISPLAY_NAME "QXVkaW8="
+set_global_assignment -entity "AUDIO_audio_0" -library "AUDIO" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "AUDIO_audio_0" -library "AUDIO" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "AUDIO_audio_0" -library "AUDIO" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIFVuaXZlcnNpdHkgUHJvZ3JhbQ=="
+set_global_assignment -entity "AUDIO_audio_0" -library "AUDIO" -name IP_COMPONENT_VERSION "MTUuMQ=="
+set_global_assignment -entity "AUDIO_audio_0" -library "AUDIO" -name IP_COMPONENT_DESCRIPTION "QXVkaW8gQ29udHJvbGxlciBmb3IgREUtc2VyaWVzIEJvYXJkcw=="
+set_global_assignment -entity "AUDIO_audio_0" -library "AUDIO" -name IP_COMPONENT_PARAMETER "YXZhbG9uX2J1c190eXBl::U3RyZWFtaW5n::QXZhbG9uIFR5cGU="
+set_global_assignment -entity "AUDIO_audio_0" -library "AUDIO" -name IP_COMPONENT_PARAMETER "YXVkaW9faW4=::dHJ1ZQ==::QXVkaW8gSW4="
+set_global_assignment -entity "AUDIO_audio_0" -library "AUDIO" -name IP_COMPONENT_PARAMETER "YXVkaW9fb3V0::ZmFsc2U=::QXVkaW8gT3V0"
+set_global_assignment -entity "AUDIO_audio_0" -library "AUDIO" -name IP_COMPONENT_PARAMETER "ZHc=::MTY=::RGF0YSBXaWR0aDo="
+set_global_assignment -entity "AUDIO_audio_0" -library "AUDIO" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBW::QXV0byBERVZJQ0VfRkFNSUxZ"
+set_global_assignment -entity "AUDIO_audio_0" -library "AUDIO" -name IP_COMPONENT_PARAMETER "QVVUT19DTEtfQ0xPQ0tfUkFURQ==::MA==::QXV0byBDTE9DS19SQVRF"
+
+set_global_assignment -library "AUDIO" -name VHDL_FILE [file join $::quartus(qip_path) "AUDIO.vhd"]
+set_global_assignment -library "AUDIO" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_up_audio_bit_counter.v"]
+set_global_assignment -library "AUDIO" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_up_audio_in_deserializer.v"]
+set_global_assignment -library "AUDIO" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_up_audio_out_serializer.v"]
+set_global_assignment -library "AUDIO" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_up_clock_edge.v"]
+set_global_assignment -library "AUDIO" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/altera_up_sync_fifo.v"]
+set_global_assignment -library "AUDIO" -name VERILOG_FILE [file join $::quartus(qip_path) "submodules/AUDIO_audio_0.v"]

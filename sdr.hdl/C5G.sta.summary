@@ -1,0 +1,149 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_125_p'
+Slack : 1.331
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Setup 'altera_reserved_tck'
+Slack : 10.101
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_125_p'
+Slack : 0.244
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'altera_reserved_tck'
+Slack : 0.416
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Recovery 'altera_reserved_tck'
+Slack : 15.055
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Removal 'altera_reserved_tck'
+Slack : 0.997
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_125_p'
+Slack : 2.583
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'alt_cal_av_edge_detect_clk'
+Slack : 4.338
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 15.776
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_125_p'
+Slack : 0.956
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'altera_reserved_tck'
+Slack : 10.290
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_125_p'
+Slack : 0.236
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.426
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 15.179
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.913
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_125_p'
+Slack : 2.530
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'alt_cal_av_edge_detect_clk'
+Slack : 4.303
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 15.782
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_125_p'
+Slack : 4.564
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'altera_reserved_tck'
+Slack : 13.375
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_125_p'
+Slack : 0.126
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'altera_reserved_tck'
+Slack : 0.148
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Recovery 'altera_reserved_tck'
+Slack : 16.181
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Removal 'altera_reserved_tck'
+Slack : 0.378
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_125_p'
+Slack : 2.906
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'alt_cal_av_edge_detect_clk'
+Slack : 4.644
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 15.804
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_125_p'
+Slack : 4.716
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'altera_reserved_tck'
+Slack : 13.752
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_125_p'
+Slack : 0.116
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.130
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 16.255
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.333
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_125_p'
+Slack : 2.899
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'alt_cal_av_edge_detect_clk'
+Slack : 4.642
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 15.817
+TNS   : 0.000
+
+------------------------------------------------------------

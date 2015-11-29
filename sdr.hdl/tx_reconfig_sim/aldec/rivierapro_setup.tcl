@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 15.1 185 win32 2015.11.22.01:47:08
+# ACDS 15.1 185 win32 2015.11.28.20:56:02
 # ----------------------------------------
 # Auto-generated simulation script rivierapro_setup.tcl
 # ----------------------------------------

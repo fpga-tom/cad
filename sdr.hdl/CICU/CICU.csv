@@ -1,0 +1,18 @@
+# system info CICU on 2015.11.29.05:46:11
+system_info:
+name,value
+DEVICE,5CGXFC5C6F27C7
+DEVICE_FAMILY,Cyclone V
+GENERATION_ID,1448804743
+#
+#
+# Files generated for CICU on 2015.11.29.05:46:11
+files:
+filepath,kind,attributes,module,is_top
+simulation/CICU.vhd,VHDL,,CICU,true
+simulation/submodules/CICU_cic_ii_0.vo,VERILOG,,CICU_cic_ii_0,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+CICU.cic_ii_0,CICU_cic_ii_0

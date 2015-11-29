@@ -1,0 +1,17 @@
+# system info AUDIO on 2015.11.29.02:18:11
+system_info:
+name,value
+DEVICE,5CGXFC5C6F27C7
+DEVICE_FAMILY,Cyclone V
+GENERATION_ID,1448792291
+#
+#
+# Files generated for AUDIO on 2015.11.29.02:18:11
+files:
+filepath,kind,attributes,module,is_top
+simulation/AUDIO.vhd,VHDL,,AUDIO,true
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+AUDIO.audio_0,AUDIO_audio_0

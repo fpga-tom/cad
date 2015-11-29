@@ -1,0 +1,370 @@
+Flow report for C5G
+Sun Nov 29 13:09:04 2015
+Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Flow Summary
+  3. Flow Settings
+  4. Flow Non-Default Global Settings
+  5. Flow Elapsed Time
+  6. Flow OS Summary
+  7. Flow Log
+  8. Flow Messages
+  9. Flow Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++-------------------------------------------------------------------------------+
+; Flow Summary                                                                  ;
++---------------------------------+---------------------------------------------+
+; Flow Status                     ; Successful - Sun Nov 29 13:08:35 2015       ;
+; Quartus Prime Version           ; 15.1.0 Build 185 10/21/2015 SJ Lite Edition ;
+; Revision Name                   ; C5G                                         ;
+; Top-level Entity Name           ; C5G                                         ;
+; Family                          ; Cyclone V                                   ;
+; Device                          ; 5CGXFC5C6F27C7                              ;
+; Timing Models                   ; Final                                       ;
+; Logic utilization (in ALMs)     ; 2,478 / 29,080 ( 9 % )                      ;
+; Total registers                 ; 5110                                        ;
+; Total pins                      ; 35 / 364 ( 10 % )                           ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 285,024 / 4,567,040 ( 6 % )                 ;
+; Total DSP Blocks                ; 0 / 150 ( 0 % )                             ;
+; Total HSSI RX PCSs              ; 0 / 6 ( 0 % )                               ;
+; Total HSSI PMA RX Deserializers ; 0 / 6 ( 0 % )                               ;
+; Total HSSI TX PCSs              ; 1 / 6 ( 17 % )                              ;
+; Total HSSI PMA TX Serializers   ; 1 / 6 ( 17 % )                              ;
+; Total PLLs                      ; 1 / 12 ( 8 % )                              ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
++---------------------------------+---------------------------------------------+
+
+
++-----------------------------------------+
+; Flow Settings                           ;
++-------------------+---------------------+
+; Option            ; Setting             ;
++-------------------+---------------------+
+; Start date & time ; 11/29/2015 13:04:49 ;
+; Main task         ; Compilation         ;
+; Revision Name     ; C5G                 ;
++-------------------+---------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                                      ;
++-------------------------------------+--------------------------------------------------------------------------------------+---------------+-------------+------------+
+; Assignment Name                     ; Value                                                                                ; Default Value ; Entity Name ; Section Id ;
++-------------------------------------+--------------------------------------------------------------------------------------+---------------+-------------+------------+
+; COMPILER_SIGNATURE_ID               ; 90520735112477.144883108903176                                                       ; --            ; --          ; --         ;
+; MAX_CORE_JUNCTION_TEMP              ; 85                                                                                   ; --            ; --          ; --         ;
+; MIN_CORE_JUNCTION_TEMP              ; 0                                                                                    ; --            ; --          ; --         ;
+; MISC_FILE                           ; FIFO_inst.vhd                                                                        ; --            ; --          ; --         ;
+; MISC_FILE                           ; FIFO.cmp                                                                             ; --            ; --          ; --         ;
+; MISC_FILE                           ; CICU/simulation/../../CICU.qsys                                                      ; --            ; --          ; --         ;
+; MISC_FILE                           ; CICU/simulation/CICU.vhd                                                             ; --            ; --          ; --         ;
+; MISC_FILE                           ; CICU/simulation/submodules/CICU_cic_ii_0.vo                                          ; --            ; --          ; --         ;
+; MISC_FILE                           ; CICU/synthesis/../CICU.cmp                                                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; CICU/synthesis/../../CICU.qsys                                                       ; --            ; --          ; --         ;
+; MISC_FILE                           ; NCO/simulation/../../NCO.qsys                                                        ; --            ; --          ; --         ;
+; MISC_FILE                           ; NCO/simulation/NCO.vhd                                                               ; --            ; --          ; --         ;
+; MISC_FILE                           ; NCO/simulation/submodules/NCO_nco_ii_0_sin.hex                                       ; --            ; --          ; --         ;
+; MISC_FILE                           ; NCO/simulation/submodules/NCO_nco_ii_0_cos.hex                                       ; --            ; --          ; --         ;
+; MISC_FILE                           ; NCO/simulation/submodules/NCO_nco_ii_0_tb.vhd                                        ; --            ; --          ; --         ;
+; MISC_FILE                           ; NCO/simulation/submodules/NCO_nco_ii_0.vo                                            ; --            ; --          ; --         ;
+; MISC_FILE                           ; NCO/synthesis/../NCO.cmp                                                             ; --            ; --          ; --         ;
+; MISC_FILE                           ; NCO/synthesis/../../NCO.qsys                                                         ; --            ; --          ; --         ;
+; MISC_FILE                           ; RS232/simulation/../../RS232.qsys                                                    ; --            ; --          ; --         ;
+; MISC_FILE                           ; RS232/simulation/RS232.vhd                                                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; RS232/synthesis/../RS232.cmp                                                         ; --            ; --          ; --         ;
+; MISC_FILE                           ; RS232/synthesis/../../RS232.qsys                                                     ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native.cmp                                                                        ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/tx_native.vhd                                                          ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/altera_xcvr_functions.sv                         ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/altera_xcvr_functions.sv                  ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/sv_reconfig_bundle_to_xcvr.sv                    ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/sv_reconfig_bundle_to_ip.sv                      ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/sv_reconfig_bundle_merger.sv                     ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/sv_reconfig_bundle_to_xcvr.sv             ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/sv_reconfig_bundle_to_ip.sv               ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/sv_reconfig_bundle_merger.sv              ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/av_xcvr_h.sv                                     ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/av_xcvr_avmm_csr.sv                              ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/av_tx_pma_ch.sv                                  ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/av_tx_pma.sv                                     ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/av_rx_pma.sv                                     ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/av_pma.sv                                        ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/av_pcs_ch.sv                                     ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/av_pcs.sv                                        ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/av_xcvr_avmm.sv                                  ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/av_xcvr_native.sv                                ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/av_xcvr_plls.sv                                  ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/av_xcvr_data_adapter.sv                          ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/av_reconfig_bundle_to_basic.sv                   ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/av_reconfig_bundle_to_xcvr.sv                    ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/av_xcvr_h.sv                              ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/av_xcvr_avmm_csr.sv                       ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/av_tx_pma_ch.sv                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/av_tx_pma.sv                              ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/av_rx_pma.sv                              ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/av_pma.sv                                 ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/av_pcs_ch.sv                              ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/av_pcs.sv                                 ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/av_xcvr_avmm.sv                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/av_xcvr_native.sv                         ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/av_xcvr_plls.sv                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/av_xcvr_data_adapter.sv                   ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/av_reconfig_bundle_to_basic.sv            ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/av_reconfig_bundle_to_xcvr.sv             ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/av_hssi_8g_rx_pcs_rbc.sv                         ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/av_hssi_8g_tx_pcs_rbc.sv                         ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/av_hssi_common_pcs_pma_interface_rbc.sv          ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/av_hssi_common_pld_pcs_interface_rbc.sv          ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/av_hssi_pipe_gen1_2_rbc.sv                       ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/av_hssi_rx_pcs_pma_interface_rbc.sv              ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/av_hssi_rx_pld_pcs_interface_rbc.sv              ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/av_hssi_tx_pcs_pma_interface_rbc.sv              ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/av_hssi_tx_pld_pcs_interface_rbc.sv              ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/av_hssi_8g_rx_pcs_rbc.sv                  ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/av_hssi_8g_tx_pcs_rbc.sv                  ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/av_hssi_common_pcs_pma_interface_rbc.sv   ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/av_hssi_common_pld_pcs_interface_rbc.sv   ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/av_hssi_pipe_gen1_2_rbc.sv                ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/av_hssi_rx_pcs_pma_interface_rbc.sv       ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/av_hssi_rx_pld_pcs_interface_rbc.sv       ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/av_hssi_tx_pcs_pma_interface_rbc.sv       ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/av_hssi_tx_pld_pcs_interface_rbc.sv       ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/alt_reset_ctrl_lego.sv                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/alt_reset_ctrl_tgx_cdrauto.sv                    ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/alt_xcvr_resync.sv                               ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/alt_reset_ctrl_lego.sv                    ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/alt_reset_ctrl_tgx_cdrauto.sv             ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/alt_xcvr_resync.sv                        ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/alt_xcvr_csr_common_h.sv                         ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/alt_xcvr_csr_common.sv                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/alt_xcvr_csr_pcs8g_h.sv                          ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/alt_xcvr_csr_pcs8g.sv                            ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/alt_xcvr_csr_selector.sv                         ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/alt_xcvr_mgmt2dec.sv                             ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/altera_wait_generate.v                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_common_h.sv                  ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_common.sv                    ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_pcs8g_h.sv                   ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_pcs8g.sv                     ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_selector.sv                  ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/alt_xcvr_mgmt2dec.sv                      ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/altera_wait_generate.v                    ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/altera_xcvr_native_av_functions_h.sv             ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/altera_xcvr_native_av.sv                         ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/altera_xcvr_data_adapter_av.sv                   ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/altera_xcvr_native_av_functions_h.sv      ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/altera_xcvr_native_av.sv                  ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor/altera_xcvr_data_adapter_av.sv            ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/plain_files.txt                                  ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/mentor_files.txt                                 ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/cadence_files.txt                                ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/synopsys_files.txt                               ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_native_sim/altera_xcvr_native_cv/aldec_files.txt                                  ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reset.cmp                                                                         ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reset_sim/tx_reset.vhd                                                            ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reset_sim/altera_xcvr_reset_control/altera_xcvr_functions.sv                      ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reset_sim/altera_xcvr_reset_control/mentor/altera_xcvr_functions.sv               ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reset_sim/altera_xcvr_reset_control/alt_xcvr_resync.sv                            ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reset_sim/altera_xcvr_reset_control/mentor/alt_xcvr_resync.sv                     ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reset_sim/altera_xcvr_reset_control/altera_xcvr_reset_control.sv                  ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reset_sim/altera_xcvr_reset_control/alt_xcvr_reset_counter.sv                     ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reset_sim/altera_xcvr_reset_control/mentor/altera_xcvr_reset_control.sv           ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reset_sim/altera_xcvr_reset_control/mentor/alt_xcvr_reset_counter.sv              ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reset_sim/altera_xcvr_reset_control/plain_files.txt                               ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reset_sim/altera_xcvr_reset_control/mentor_files.txt                              ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reset_sim/altera_xcvr_reset_control/cadence_files.txt                             ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reset_sim/altera_xcvr_reset_control/synopsys_files.txt                            ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reset_sim/altera_xcvr_reset_control/aldec_files.txt                               ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig.cmp                                                                      ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/tx_reconfig.vhd                                                      ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/altera_xcvr_functions.sv                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/altera_xcvr_functions.sv                    ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/av_xcvr_h.sv                                       ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_h.sv                                ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_resync.sv                                 ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_resync.sv                          ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_h.sv                             ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_h.sv                      ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig.sv                               ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig.sv                        ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_cal_seq.sv                       ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_cal_seq.sv                ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xreconf_cif.sv                                 ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_cif.sv                          ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xreconf_uif.sv                                 ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_uif.sv                          ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xreconf_basic_acq.sv                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_basic_acq.sv                    ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_analog.sv                        ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_analog.sv                 ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_analog_av.sv                     ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_analog_av.sv              ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xreconf_analog_datactrl_av.sv                  ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_analog_datactrl_av.sv           ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xreconf_analog_rmw_av.sv                       ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_analog_rmw_av.sv                ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xreconf_analog_ctrlsm.sv                       ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_analog_ctrlsm.sv                ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_offset_cancellation.sv           ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_offset_cancellation.sv    ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_offset_cancellation_av.sv        ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_offset_cancellation_av.sv ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_eyemon.sv                        ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_eyemon.sv                 ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_dfe.sv                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dfe.sv                    ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_adce.sv                          ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_adce.sv                   ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_dcd.sv                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dcd.sv                    ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_dcd_av.sv                        ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_dcd_cal_av.sv                    ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_dcd_control_av.sv                ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dcd_av.sv                 ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dcd_cal_av.sv             ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dcd_control_av.sv         ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_mif.sv                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_mif.sv                    ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/av_xcvr_reconfig_mif.sv                            ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/av_xcvr_reconfig_mif_ctrl.sv                       ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/av_xcvr_reconfig_mif_avmm.sv                       ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_mif.sv                     ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_mif_ctrl.sv                ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_mif_avmm.sv                ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_pll.sv                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_pll.sv                    ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/av_xcvr_reconfig_pll.sv                            ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/av_xcvr_reconfig_pll_ctrl.sv                       ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_pll.sv                     ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_pll_ctrl.sv                ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_soc.sv                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_cpu_ram.sv                       ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_cpu_ram.hex                      ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_direct.sv                        ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_arbiter_acq.sv                                 ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_basic.sv                         ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_arbiter_acq.sv                          ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_basic.sv                  ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/av_xrbasic_l2p_addr.sv                             ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/av_xrbasic_l2p_ch.sv                               ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/av_xrbasic_l2p_rom.sv                              ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/av_xrbasic_lif_csr.sv                              ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/av_xrbasic_lif.sv                                  ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/av_xcvr_reconfig_basic.sv                          ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_l2p_addr.sv                      ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_l2p_ch.sv                        ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_l2p_rom.sv                       ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_lif_csr.sv                       ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_lif.sv                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_basic.sv                   ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_arbiter.sv                                ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_m2s.sv                                    ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/altera_wait_generate.v                             ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_csr_selector.sv                           ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_arbiter.sv                         ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_m2s.sv                             ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/altera_wait_generate.v                      ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_csr_selector.sv                    ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/sv_reconfig_bundle_to_basic.sv                     ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/sv_reconfig_bundle_to_basic.sv              ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/av_reconfig_bundle_to_basic.sv                     ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/av_reconfig_bundle_to_xcvr.sv                      ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_reconfig_bundle_to_basic.sv              ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_reconfig_bundle_to_xcvr.sv               ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/plain_files.txt                                    ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/mentor_files.txt                                   ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/cadence_files.txt                                  ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/synopsys_files.txt                                 ; --            ; --          ; --         ;
+; MISC_FILE                           ; tx_reconfig_sim/alt_xcvr_reconfig/aldec_files.txt                                    ; --            ; --          ; --         ;
+; PARTITION_COLOR                     ; 16764057                                                                             ; --            ; --          ; Top        ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                                                ; --            ; --          ; Top        ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                                                               ; --            ; --          ; Top        ;
+; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                                                                  ; --            ; --          ; --         ;
+; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW                                                ; --            ; --          ; --         ;
+; SLD_FILE                            ; CICU/synthesis/CICU.debuginfo                                                        ; --            ; --          ; --         ;
+; SLD_FILE                            ; NCO/synthesis/NCO.debuginfo                                                          ; --            ; --          ; --         ;
+; SLD_FILE                            ; RS232/synthesis/RS232.debuginfo                                                      ; --            ; --          ; --         ;
+; SLD_INFO                            ; QSYS_NAME CICU HAS_SOPCINFO 1 GENERATION_ID 1448804781                               ; --            ; CICU        ; --         ;
+; SLD_INFO                            ; QSYS_NAME NCO HAS_SOPCINFO 1 GENERATION_ID 1448773086                                ; --            ; NCO         ; --         ;
+; SLD_INFO                            ; QSYS_NAME RS232 HAS_SOPCINFO 1 GENERATION_ID 1448794223                              ; --            ; RS232       ; --         ;
+; SOPCINFO_FILE                       ; CICU/synthesis/../../CICU.sopcinfo                                                   ; --            ; --          ; --         ;
+; SOPCINFO_FILE                       ; NCO/synthesis/../../NCO.sopcinfo                                                     ; --            ; --          ; --         ;
+; SOPCINFO_FILE                       ; RS232/synthesis/../../RS232.sopcinfo                                                 ; --            ; --          ; --         ;
+; SPD_FILE                            ; CICU/simulation/../CICU.spd                                                          ; --            ; --          ; --         ;
+; SPD_FILE                            ; NCO/simulation/../NCO.spd                                                            ; --            ; --          ; --         ;
+; SPD_FILE                            ; RS232/simulation/../RS232.spd                                                        ; --            ; --          ; --         ;
+; SPD_FILE                            ; tx_native.spd                                                                        ; --            ; --          ; --         ;
+; SPD_FILE                            ; tx_reset.spd                                                                         ; --            ; --          ; --         ;
+; SPD_FILE                            ; tx_reconfig.spd                                                                      ; --            ; --          ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                                   ; --            ; --          ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                                   ; --            ; --          ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                                   ; --            ; --          ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                                   ; --            ; --          ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                                   ; --            ; --          ; --         ;
+; SYNTHESIS_ONLY_QIP                  ; On                                                                                   ; --            ; --          ; --         ;
++-------------------------------------+--------------------------------------------------------------------------------------+---------------+-------------+------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:53     ; 1.0                     ; 1198 MB             ; 00:01:06                           ;
+; Fitter                    ; 00:02:28     ; 1.1                     ; 2291 MB             ; 00:03:48                           ;
+; Assembler                 ; 00:00:12     ; 1.0                     ; 912 MB              ; 00:00:12                           ;
+; TimeQuest Timing Analyzer ; 00:00:24     ; 1.4                     ; 1390 MB             ; 00:00:32                           ;
+; Total                     ; 00:03:57     ; --                      ; --                  ; 00:05:38                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; tomas-PC         ; Windows 7 ; 6.1        ; x86_64         ;
+; Fitter                    ; tomas-PC         ; Windows 7 ; 6.1        ; x86_64         ;
+; Assembler                 ; tomas-PC         ; Windows 7 ; 6.1        ; x86_64         ;
+; TimeQuest Timing Analyzer ; tomas-PC         ; Windows 7 ; 6.1        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+
+
+------------
+; Flow Log ;
+------------
+quartus_map --read_settings_files=on --write_settings_files=off C5G -c C5G
+quartus_fit --read_settings_files=off --write_settings_files=off C5G -c C5G
+quartus_asm --read_settings_files=off --write_settings_files=off C5G -c C5G
+quartus_sta C5G -c C5G
+
+
+
