@@ -1,0 +1,111 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/simulation/modelsim
+valtera_up_rs232_counters
+Z1 !s110 1449944556
+!i10b 1
+!s100 g9Lz=2g>^?fJWGo?k6FIM1
+I9GaJj[M0ColJ<lEa6n7UP2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1449362955
+8C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/submodules/altera_up_rs232_counters.v
+FC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/submodules/altera_up_rs232_counters.v
+Z4 L0 29
+Z5 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z6 !s108 1449944556.000000
+!s107 C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/submodules/altera_up_rs232_counters.v|
+!s90 -reportprogress|300|C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/submodules/altera_up_rs232_counters.v|-work|rs232_0|
+!i113 1
+Z7 o-work rs232_0
+valtera_up_rs232_in_deserializer
+R1
+!i10b 1
+!s100 hSQGWK2XE=ja:`El]N;1a3
+IlUT45>S24i5SOj@looJNH0
+R2
+R0
+R3
+8C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/submodules/altera_up_rs232_in_deserializer.v
+FC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/submodules/altera_up_rs232_in_deserializer.v
+Z8 L0 28
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/submodules/altera_up_rs232_in_deserializer.v|
+!s90 -reportprogress|300|C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/submodules/altera_up_rs232_in_deserializer.v|-work|rs232_0|
+!i113 1
+R7
+valtera_up_rs232_out_serializer
+R1
+!i10b 1
+!s100 :akFWh]G]CDl];i9FfkBA0
+IH@AaJR9Rf`XC`[J<><DoC0
+R2
+R0
+R3
+8C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/submodules/altera_up_rs232_out_serializer.v
+FC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/submodules/altera_up_rs232_out_serializer.v
+R8
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/submodules/altera_up_rs232_out_serializer.v|
+!s90 -reportprogress|300|C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/submodules/altera_up_rs232_out_serializer.v|-work|rs232_0|
+!i113 1
+R7
+valtera_up_sync_fifo
+R1
+!i10b 1
+!s100 d7WZV`gzKOF0bG`8>8mG32
+IRAPX^;k3Yoc0TlY9NGi]M2
+R2
+R0
+R3
+8C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/submodules/altera_up_sync_fifo.v
+FC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/submodules/altera_up_sync_fifo.v
+R8
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/submodules/altera_up_sync_fifo.v|
+!s90 -reportprogress|300|C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/submodules/altera_up_sync_fifo.v|-work|rs232_0|
+!i113 1
+R7
+vRS232_rs232_0
+!s110 1449944557
+!i10b 1
+!s100 kT2X;Z[^`163LP7d1nCI]1
+I;0knY^DB>P:<zWGd@jRZH0
+R2
+R0
+R3
+8C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/submodules/RS232_rs232_0.v
+FC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/submodules/RS232_rs232_0.v
+R4
+R5
+r1
+!s85 0
+31
+!s108 1449944557.000000
+!s107 C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/submodules/RS232_rs232_0.v|
+!s90 -reportprogress|300|C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/submodules/RS232_rs232_0.v|-work|rs232_0|
+!i113 1
+R7
+n@r@s232_rs232_0

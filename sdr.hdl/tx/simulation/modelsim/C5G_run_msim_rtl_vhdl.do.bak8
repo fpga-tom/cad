@@ -1,0 +1,324 @@
+transcript on
+if ![file isdirectory C5G_iputf_libs] {
+	file mkdir C5G_iputf_libs
+}
+
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+###### Libraries for IPUTF cores 
+vlib C5G_iputf_libs/cic_ii_0
+vmap cic_ii_0 ./C5G_iputf_libs/cic_ii_0
+vlib C5G_iputf_libs/nco_ii_0
+vmap nco_ii_0 ./C5G_iputf_libs/nco_ii_0
+vlib C5G_iputf_libs/rs232_0
+vmap rs232_0 ./C5G_iputf_libs/rs232_0
+vlib C5G_iputf_libs/tx_native
+vmap tx_native ./C5G_iputf_libs/tx_native
+vlib C5G_iputf_libs/tx_reset
+vmap tx_reset ./C5G_iputf_libs/tx_reset
+vlib C5G_iputf_libs/tx_reconfig
+vmap tx_reconfig ./C5G_iputf_libs/tx_reconfig
+###### End libraries for IPUTF cores 
+###### MIF file copy and HDL compilation commands for IPUTF cores 
+
+file copy -force C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/NCO/simulation/submodules/NCO_nco_ii_0_sin.hex ./
+file copy -force C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/NCO/simulation/submodules/NCO_nco_ii_0_cos.hex ./
+
+vlog     "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/CICU/simulation/submodules/CICU_cic_ii_0.vo"                                          -work cic_ii_0   
+vlog     "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/CICU/simulation/CICU.v"                                                                                
+vlog     "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/NCO/simulation/submodules/NCO_nco_ii_0.vo"                                            -work nco_ii_0   
+vlog     "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/NCO/simulation/NCO.v"                                                                                  
+vlog     "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/submodules/altera_up_rs232_counters.v"                               -work rs232_0    
+vlog     "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/submodules/altera_up_rs232_in_deserializer.v"                        -work rs232_0    
+vlog     "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/submodules/altera_up_rs232_out_serializer.v"                         -work rs232_0    
+vlog     "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/submodules/altera_up_sync_fifo.v"                                    -work rs232_0    
+vlog     "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/submodules/RS232_rs232_0.v"                                          -work rs232_0    
+vlog     "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/RS232.v"                                                                              
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/altera_xcvr_functions.sv"                         -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/altera_xcvr_functions.sv"                  -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/sv_reconfig_bundle_to_xcvr.sv"                    -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/sv_reconfig_bundle_to_ip.sv"                      -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/sv_reconfig_bundle_merger.sv"                     -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/sv_reconfig_bundle_to_xcvr.sv"             -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/sv_reconfig_bundle_to_ip.sv"               -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/sv_reconfig_bundle_merger.sv"              -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/av_xcvr_h.sv"                                     -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/av_xcvr_avmm_csr.sv"                              -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/av_tx_pma_ch.sv"                                  -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/av_tx_pma.sv"                                     -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/av_rx_pma.sv"                                     -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/av_pma.sv"                                        -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/av_pcs_ch.sv"                                     -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/av_pcs.sv"                                        -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/av_xcvr_avmm.sv"                                  -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/av_xcvr_native.sv"                                -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/av_xcvr_plls.sv"                                  -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/av_xcvr_data_adapter.sv"                          -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/av_reconfig_bundle_to_basic.sv"                   -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/av_reconfig_bundle_to_xcvr.sv"                    -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/av_xcvr_h.sv"                              -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/av_xcvr_avmm_csr.sv"                       -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/av_tx_pma_ch.sv"                           -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/av_tx_pma.sv"                              -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/av_rx_pma.sv"                              -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/av_pma.sv"                                 -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/av_pcs_ch.sv"                              -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/av_pcs.sv"                                 -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/av_xcvr_avmm.sv"                           -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/av_xcvr_native.sv"                         -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/av_xcvr_plls.sv"                           -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/av_xcvr_data_adapter.sv"                   -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/av_reconfig_bundle_to_basic.sv"            -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/av_reconfig_bundle_to_xcvr.sv"             -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/av_hssi_8g_rx_pcs_rbc.sv"                         -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/av_hssi_8g_tx_pcs_rbc.sv"                         -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/av_hssi_common_pcs_pma_interface_rbc.sv"          -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/av_hssi_common_pld_pcs_interface_rbc.sv"          -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/av_hssi_pipe_gen1_2_rbc.sv"                       -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/av_hssi_rx_pcs_pma_interface_rbc.sv"              -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/av_hssi_rx_pld_pcs_interface_rbc.sv"              -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/av_hssi_tx_pcs_pma_interface_rbc.sv"              -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/av_hssi_tx_pld_pcs_interface_rbc.sv"              -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/av_hssi_8g_rx_pcs_rbc.sv"                  -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/av_hssi_8g_tx_pcs_rbc.sv"                  -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/av_hssi_common_pcs_pma_interface_rbc.sv"   -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/av_hssi_common_pld_pcs_interface_rbc.sv"   -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/av_hssi_pipe_gen1_2_rbc.sv"                -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/av_hssi_rx_pcs_pma_interface_rbc.sv"       -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/av_hssi_rx_pld_pcs_interface_rbc.sv"       -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/av_hssi_tx_pcs_pma_interface_rbc.sv"       -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/av_hssi_tx_pld_pcs_interface_rbc.sv"       -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/alt_reset_ctrl_lego.sv"                           -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/alt_reset_ctrl_tgx_cdrauto.sv"                    -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/alt_xcvr_resync.sv"                               -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/alt_reset_ctrl_lego.sv"                    -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/alt_reset_ctrl_tgx_cdrauto.sv"             -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/alt_xcvr_resync.sv"                        -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/alt_xcvr_csr_common_h.sv"                         -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/alt_xcvr_csr_common.sv"                           -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/alt_xcvr_csr_pcs8g_h.sv"                          -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/alt_xcvr_csr_pcs8g.sv"                            -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/alt_xcvr_csr_selector.sv"                         -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/alt_xcvr_mgmt2dec.sv"                             -work tx_native  
+vlog     "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/altera_wait_generate.v"                           -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_common_h.sv"                  -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_common.sv"                    -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_pcs8g_h.sv"                   -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_pcs8g.sv"                     -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_selector.sv"                  -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/alt_xcvr_mgmt2dec.sv"                      -work tx_native  
+vlog     "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/altera_wait_generate.v"                    -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/altera_xcvr_native_av_functions_h.sv"             -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/altera_xcvr_native_av.sv"                         -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/altera_xcvr_data_adapter_av.sv"                   -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/altera_xcvr_native_av_functions_h.sv"      -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/altera_xcvr_native_av.sv"                  -work tx_native  
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/altera_xcvr_native_cv/mentor/altera_xcvr_data_adapter_av.sv"            -work tx_native  
+vcom     "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/tx_native.vhd"                                                                           
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/altera_xcvr_reset_control/altera_xcvr_functions.sv"                      -work tx_reset   
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/altera_xcvr_reset_control/mentor/altera_xcvr_functions.sv"               -work tx_reset   
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/altera_xcvr_reset_control/alt_xcvr_resync.sv"                            -work tx_reset   
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/altera_xcvr_reset_control/mentor/alt_xcvr_resync.sv"                     -work tx_reset   
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/altera_xcvr_reset_control/altera_xcvr_reset_control.sv"                  -work tx_reset   
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/altera_xcvr_reset_control/alt_xcvr_reset_counter.sv"                     -work tx_reset   
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/altera_xcvr_reset_control/mentor/altera_xcvr_reset_control.sv"           -work tx_reset   
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/altera_xcvr_reset_control/mentor/alt_xcvr_reset_counter.sv"              -work tx_reset   
+vcom     "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/tx_reset.vhd"                                                                             
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/altera_xcvr_functions.sv"                           -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/altera_xcvr_functions.sv"                    -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/av_xcvr_h.sv"                                       -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_h.sv"                                -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_resync.sv"                                 -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_resync.sv"                          -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_h.sv"                             -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_h.sv"                      -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig.sv"                               -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig.sv"                        -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_cal_seq.sv"                       -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_cal_seq.sv"                -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xreconf_cif.sv"                                 -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_cif.sv"                          -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xreconf_uif.sv"                                 -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_uif.sv"                          -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xreconf_basic_acq.sv"                           -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_basic_acq.sv"                    -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_analog.sv"                        -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_analog.sv"                 -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_analog_av.sv"                     -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_analog_av.sv"              -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xreconf_analog_datactrl_av.sv"                  -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_analog_datactrl_av.sv"           -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xreconf_analog_rmw_av.sv"                       -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_analog_rmw_av.sv"                -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xreconf_analog_ctrlsm.sv"                       -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_analog_ctrlsm.sv"                -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_offset_cancellation.sv"           -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_offset_cancellation.sv"    -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_offset_cancellation_av.sv"        -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_offset_cancellation_av.sv" -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_eyemon.sv"                        -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_eyemon.sv"                 -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_dfe.sv"                           -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dfe.sv"                    -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_adce.sv"                          -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_adce.sv"                   -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_dcd.sv"                           -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dcd.sv"                    -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_dcd_av.sv"                        -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_dcd_cal_av.sv"                    -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_dcd_control_av.sv"                -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dcd_av.sv"                 -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dcd_cal_av.sv"             -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dcd_control_av.sv"         -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_mif.sv"                           -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_mif.sv"                    -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/av_xcvr_reconfig_mif.sv"                            -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/av_xcvr_reconfig_mif_ctrl.sv"                       -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/av_xcvr_reconfig_mif_avmm.sv"                       -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_mif.sv"                     -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_mif_ctrl.sv"                -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_mif_avmm.sv"                -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_pll.sv"                           -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_pll.sv"                    -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/av_xcvr_reconfig_pll.sv"                            -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/av_xcvr_reconfig_pll_ctrl.sv"                       -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_pll.sv"                     -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_pll_ctrl.sv"                -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_soc.sv"                           -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_cpu_ram.sv"                       -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_direct.sv"                        -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_arbiter_acq.sv"                                 -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_basic.sv"                         -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_arbiter_acq.sv"                          -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_basic.sv"                  -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/av_xrbasic_l2p_addr.sv"                             -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/av_xrbasic_l2p_ch.sv"                               -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/av_xrbasic_l2p_rom.sv"                              -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/av_xrbasic_lif_csr.sv"                              -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/av_xrbasic_lif.sv"                                  -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/av_xcvr_reconfig_basic.sv"                          -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_l2p_addr.sv"                      -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_l2p_ch.sv"                        -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_l2p_rom.sv"                       -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_lif_csr.sv"                       -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_lif.sv"                           -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_basic.sv"                   -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_arbiter.sv"                                -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_m2s.sv"                                    -work tx_reconfig
+vlog     "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/altera_wait_generate.v"                             -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_csr_selector.sv"                           -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_arbiter.sv"                         -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_m2s.sv"                             -work tx_reconfig
+vlog     "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/altera_wait_generate.v"                      -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_csr_selector.sv"                    -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/sv_reconfig_bundle_to_basic.sv"                     -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/sv_reconfig_bundle_to_basic.sv"              -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/av_reconfig_bundle_to_basic.sv"                     -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/av_reconfig_bundle_to_xcvr.sv"                      -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_reconfig_bundle_to_basic.sv"              -work tx_reconfig
+vlog -sv "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/alt_xcvr_reconfig/mentor/av_reconfig_bundle_to_xcvr.sv"               -work tx_reconfig
+vcom     "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/tx_reconfig.vhd"                                                                       
+vcom     "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/PLL_sim/PLL.vho"                                                                                       
+vcom     "C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/PLL1_sim/PLL1.vho"                                                                                     
+
+vcom -93 -work work {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset.vho}
+vcom -93 -work work {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig.vho}
+vcom -93 -work work {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native.vho}
+vcom -93 -work work {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/PLL.vho}
+vlib NCO
+vmap NCO NCO
+vlog -vlog01compat -work NCO +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/NCO/synthesis {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/NCO/synthesis/NCO.v}
+vlog -vlog01compat -work NCO +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/NCO/synthesis/submodules {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/NCO/synthesis/submodules/NCO_nco_ii_0.v}
+vlib RS232
+vmap RS232 RS232
+vlog -vlog01compat -work RS232 +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/synthesis {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/synthesis/RS232.v}
+vlog -vlog01compat -work RS232 +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/synthesis/submodules {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/synthesis/submodules/altera_up_rs232_counters.v}
+vlog -vlog01compat -work RS232 +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/synthesis/submodules {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/synthesis/submodules/altera_up_rs232_in_deserializer.v}
+vlog -vlog01compat -work RS232 +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/synthesis/submodules {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/synthesis/submodules/altera_up_rs232_out_serializer.v}
+vlog -vlog01compat -work RS232 +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/synthesis/submodules {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/synthesis/submodules/altera_up_sync_fifo.v}
+vlog -vlog01compat -work RS232 +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/synthesis/submodules {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/synthesis/submodules/RS232_rs232_0.v}
+vlib tx_reconfig
+vmap tx_reconfig tx_reconfig
+vlog -vlog01compat -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/altera_wait_generate.v}
+vlib PLL
+vmap PLL PLL
+vlog -vlog01compat -work PLL +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/PLL {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/PLL/PLL_0002.v}
+vlib tx_native
+vmap tx_native tx_native
+vlog -sv -work tx_native +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native/altera_xcvr_functions.sv}
+vlog -sv -work tx_native +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native/av_xcvr_h.sv}
+vlog -sv -work tx_native +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native/av_pcs_ch.sv}
+vlog -sv -work tx_native +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native/av_pcs.sv}
+vlog -sv -work tx_native +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native/alt_xcvr_resync.sv}
+vlog -sv -work tx_native +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native/altera_xcvr_data_adapter_av.sv}
+vlog -sv -work tx_native +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native/sv_reconfig_bundle_merger.sv}
+vlog -sv -work tx_native +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native/av_xcvr_avmm_csr.sv}
+vlog -sv -work tx_native +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native/av_tx_pma_ch.sv}
+vlog -sv -work tx_native +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native/av_tx_pma.sv}
+vlog -sv -work tx_native +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native/av_pma.sv}
+vlog -sv -work tx_native +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native/av_xcvr_avmm.sv}
+vlog -sv -work tx_native +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native/av_xcvr_native.sv}
+vlog -sv -work tx_native +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native/av_reconfig_bundle_to_xcvr.sv}
+vlog -sv -work tx_native +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native/av_hssi_8g_tx_pcs_rbc.sv}
+vlog -sv -work tx_native +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native/av_hssi_tx_pcs_pma_interface_rbc.sv}
+vlog -sv -work tx_native +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native/av_hssi_tx_pld_pcs_interface_rbc.sv}
+vlog -sv -work tx_native +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native/altera_xcvr_native_av_functions_h.sv}
+vlib tx_reset
+vmap tx_reset tx_reset
+vlog -sv -work tx_reset +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset/altera_xcvr_functions.sv}
+vlog -sv -work tx_reset +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset/alt_xcvr_resync.sv}
+vlog -sv -work tx_native +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native/av_xcvr_plls.sv}
+vlog -sv -work tx_native +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native/altera_xcvr_native_av.sv}
+vlog -sv -work tx_reset +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset/altera_xcvr_reset_control.sv}
+vlog -sv -work tx_reset +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset/alt_xcvr_reset_counter.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/altera_xcvr_functions.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/av_xcvr_h.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/alt_xcvr_resync.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/alt_xcvr_reconfig_h.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/alt_xreconf_cif.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/alt_xreconf_uif.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/alt_xcvr_reconfig_analog.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/alt_xreconf_analog_rmw_av.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/alt_xreconf_analog_ctrlsm.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/alt_xcvr_reconfig_dcd_cal_av.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/alt_arbiter_acq.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/av_xrbasic_l2p_rom.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/alt_xcvr_arbiter.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/alt_xcvr_csr_selector.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/alt_xcvr_reconfig_cpu_mm_interconnect_0_avalon_st_adapter_error_adapter_0.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/alt_xcvr_reconfig.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/alt_xcvr_reconfig_cal_seq.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/alt_xreconf_basic_acq.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/alt_xcvr_reconfig_analog_av.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/alt_xreconf_analog_datactrl_av.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/alt_xcvr_reconfig_offset_cancellation.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/alt_xcvr_reconfig_offset_cancellation_av.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/alt_xcvr_reconfig_dcd.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/alt_xcvr_reconfig_dcd_av.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/alt_xcvr_reconfig_dcd_control_av.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/alt_xcvr_reconfig_direct.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/alt_xcvr_reconfig_basic.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/av_xrbasic_l2p_addr.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/av_xrbasic_lif_csr.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/av_xrbasic_lif.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/av_xcvr_reconfig_basic.sv}
+vlog -sv -work tx_reconfig +incdir+C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig/av_reconfig_bundle_to_basic.sv}
+vcom -93 -work work {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/FIFO.vhd}
+vcom -93 -work work {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx.vhd}
+vcom -93 -work work {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/MODULATOR.vhd}
+vcom -93 -work work {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/FSHIFT.vhd}
+vcom -93 -work work {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/DSM.vhd}
+vcom -93 -work work {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/C5G.vhd}
+
+vcom -93 -work work {C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tb.vhd}
+
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L NCO -L RS232 -L tx_reconfig -L PLL -L tx_native -L tx_reset -L cic_ii_0 -L nco_ii_0 -L rs232_0 -L tx_native -L tx_reset -L tx_reconfig -voptargs="+acc"  tb
+
+add wave *
+view structure
+view signals
+run 100000 ns

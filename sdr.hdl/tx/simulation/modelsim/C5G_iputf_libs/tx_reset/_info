@@ -1,0 +1,107 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/simulation/modelsim
+vqwgxq9ZYNDy+z8HC54Srj0XRwLBXhd+ZPTE99D7mAaQ=
+Z1 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z2 DXx4 work 21 altera_xcvr_functions 0 22 B77oCBHLmJlZzTS^f<T7c3
+!s110 1449944586
+!i10b 0
+!s100 M32D;`hTVIXf3?bj[VNZG0
+IhLe>R1zzmAY<:0Ui^k4IA2
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!i8a 1843058160
+!s105 alt_xcvr_reset_counter_sv_unit
+S1
+R0
+w1449944586
+8C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/altera_xcvr_reset_control/mentor/alt_xcvr_reset_counter.sv
+FC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/altera_xcvr_reset_control/mentor/alt_xcvr_reset_counter.sv
+Z4 L0 39
+Z5 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z6 !s108 1449944585.000000
+!s107 C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/altera_xcvr_reset_control/mentor/alt_xcvr_reset_counter.sv|
+!s90 -reportprogress|300|-sv|C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/altera_xcvr_reset_control/mentor/alt_xcvr_reset_counter.sv|-work|tx_reset|
+!i113 1
+Z7 o-sv -work tx_reset
+vjGq9iAcKt76nvcscXvqx2Q==
+R1
+Z8 !s110 1449944585
+!i10b 0
+!s100 D<hTXnoe]hcQGI1:Umk5e3
+I@:GM5Uo97^jM?fBUgUl[;2
+R3
+!i8a 1924746480
+!s105 alt_xcvr_resync_sv_unit
+S1
+R0
+Z9 w1449944585
+8C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/altera_xcvr_reset_control/mentor/alt_xcvr_resync.sv
+FC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/altera_xcvr_reset_control/mentor/alt_xcvr_resync.sv
+R4
+R5
+r1
+!s85 0
+31
+Z10 !s108 1449944584.000000
+!s107 C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/altera_xcvr_reset_control/mentor/alt_xcvr_resync.sv|
+!s90 -reportprogress|300|-sv|C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/altera_xcvr_reset_control/mentor/alt_xcvr_resync.sv|-work|tx_reset|
+!i113 1
+R7
+X4vNGMXdpRMzH3awnl/LWMIapKgy0sa/bUtBsUMnRjPo=
+R1
+!s110 1449944584
+!i10b 0
+!s100 gZW6CO3YFUGTBEV]<Gj313
+IB77oCBHLmJlZzTS^f<T7c3
+VB77oCBHLmJlZzTS^f<T7c3
+!i8a 1595762912
+S1
+R0
+w1449944584
+8C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/altera_xcvr_reset_control/mentor/altera_xcvr_functions.sv
+FC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/altera_xcvr_reset_control/mentor/altera_xcvr_functions.sv
+R4
+R5
+r1
+!s85 0
+31
+R10
+!s107 C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/altera_xcvr_reset_control/mentor/altera_xcvr_functions.sv|
+!s90 -reportprogress|300|-sv|C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/altera_xcvr_reset_control/mentor/altera_xcvr_functions.sv|-work|tx_reset|
+!i113 1
+R7
+vRHtkm+mi48bbdcvMFYrcDgSp4z/7hFB/usoTytGplLY=
+R1
+R2
+R8
+!i10b 0
+!s100 ZNCOcSWFMZ7L55JY^lnbf2
+IJI17UlGV?EY^;heH4O]ac3
+R3
+!i8a 1863637472
+!s105 altera_xcvr_reset_control_sv_unit
+S1
+R0
+R9
+8C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/altera_xcvr_reset_control/mentor/altera_xcvr_reset_control.sv
+FC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/altera_xcvr_reset_control/mentor/altera_xcvr_reset_control.sv
+R4
+R5
+r1
+!s85 0
+31
+R6
+!s107 C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/altera_xcvr_reset_control/mentor/altera_xcvr_reset_control.sv|
+!s90 -reportprogress|300|-sv|C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/altera_xcvr_reset_control/mentor/altera_xcvr_reset_control.sv|-work|tx_reset|
+!i113 1
+R7

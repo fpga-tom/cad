@@ -1,0 +1,517 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/simulation/modelsim
+Ec5g
+Z1 w1449944465
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z4 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z7 8C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/C5G.vhd
+Z8 FC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/C5G.vhd
+l0
+L6
+V4UE8<i6aSJ_?zU1c>[B;f0
+!s100 gAA>_CG1KbA4V8^JE>Wnd0
+Z9 OV;C;10.4b;61
+31
+Z10 !s110 1449944616
+!i10b 1
+Z11 !s108 1449944615.000000
+Z12 !s90 -reportprogress|300|-93|-work|work|C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/C5G.vhd|
+Z13 !s107 C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/C5G.vhd|
+!i113 1
+Z14 o-93 -work work
+Z15 tExplicit 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+DEx4 work 3 c5g 0 22 4UE8<i6aSJ_?zU1c>[B;f0
+l173
+L46
+VX2Q5[0RIQH2YafRS=I=TY1
+!s100 ^M;a?T63ezBz;S[UFE<Lm3
+R9
+31
+R10
+!i10b 1
+R11
+R12
+R13
+!i113 1
+R14
+R15
+vCICU
+Z16 !s110 1449944556
+!i10b 1
+!s100 <<2n6A:fWU=Tj;:1cjUf62
+IQaIH@m0bfi5RH5=7Xg5B32
+Z17 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1449889807
+8C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/CICU/simulation/CICU.v
+FC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/CICU/simulation/CICU.v
+L0 6
+Z18 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z19 !s108 1449944556.000000
+!s107 C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/CICU/simulation/CICU.v|
+!s90 -reportprogress|300|C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/CICU/simulation/CICU.v|
+!i113 1
+n@c@i@c@u
+Edsm
+Z20 w1449453051
+R2
+R5
+R6
+R0
+Z21 8C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/DSM.vhd
+Z22 FC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/DSM.vhd
+l0
+L39
+V4G8J_2l:jZKFg194POma:3
+!s100 [`cT514SJDOPO?eXMhUc>2
+R9
+31
+Z23 !s110 1449944615
+!i10b 1
+R11
+Z24 !s90 -reportprogress|300|-93|-work|work|C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/DSM.vhd|
+Z25 !s107 C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/DSM.vhd|
+!i113 1
+R14
+R15
+Abeh1
+R2
+R5
+R6
+DEx4 work 3 dsm 0 22 4G8J_2l:jZKFg194POma:3
+l57
+L52
+VnG567@Z_R;D80<71<C99n3
+!s100 >OzD25:;]bGK@RngnT`IV1
+R9
+31
+R23
+!i10b 1
+R11
+R24
+R25
+!i113 1
+R14
+R15
+Efshift
+Z26 w1449890701
+R5
+R6
+R0
+Z27 8C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/FSHIFT.vhd
+Z28 FC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/FSHIFT.vhd
+l0
+L4
+Vdl=2hMLKB?EHUbjbjIk;U1
+!s100 TIaGiXRzTm@=ajef]FoK52
+R9
+31
+R23
+!i10b 1
+R11
+Z29 !s90 -reportprogress|300|-93|-work|work|C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/FSHIFT.vhd|
+Z30 !s107 C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/FSHIFT.vhd|
+!i113 1
+R14
+R15
+Astructure
+R5
+R6
+DEx4 work 6 fshift 0 22 dl=2hMLKB?EHUbjbjIk;U1
+l15
+L13
+VB1DDC[fT;Dm8=2hUW=Cd13
+!s100 KZebKWl99[32HUc;`e_@E3
+R9
+31
+R23
+!i10b 1
+R11
+R29
+R30
+!i113 1
+R14
+R15
+Emodulator
+Z31 w1449898766
+R2
+R5
+R6
+R0
+Z32 8C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/MODULATOR.vhd
+Z33 FC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/MODULATOR.vhd
+l0
+L5
+VeL4dAKh_[_5MV9NzBiD8J2
+!s100 <nXX=R^QR;fAVeiZFcUB02
+R9
+31
+R23
+!i10b 1
+R11
+Z34 !s90 -reportprogress|300|-93|-work|work|C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/MODULATOR.vhd|
+Z35 !s107 C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/MODULATOR.vhd|
+!i113 1
+R14
+R15
+Astructure
+R2
+R5
+R6
+DEx4 work 9 modulator 0 22 eL4dAKh_[_5MV9NzBiD8J2
+l64
+L16
+V6TmX1330?5f;EY1l6D@@Z2
+!s100 jGNClcB9n^Ya7Cdk:1;j]2
+R9
+31
+R23
+!i10b 1
+R11
+R34
+R35
+!i113 1
+R14
+R15
+vNCO
+R16
+!i10b 1
+!s100 hEQJFk:CAQO_3dh]m3H@C0
+I1deF?;Cn<47zD5;VlFXY[0
+R17
+R0
+w1449891279
+8C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/NCO/simulation/NCO.v
+FC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/NCO/simulation/NCO.v
+L0 6
+R18
+r1
+!s85 0
+31
+R19
+!s107 C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/NCO/simulation/NCO.v|
+!s90 -reportprogress|300|C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/NCO/simulation/NCO.v|
+!i113 1
+n@n@c@o
+Epll
+Z36 w1449362898
+R5
+R6
+Z37 DPx12 altera_lnsim 23 altera_lnsim_components 0 22 6JY960D0bDocA`LkFTb[j1
+R0
+Z38 8C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/PLL_sim/PLL.vho
+Z39 FC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/PLL_sim/PLL.vho
+l0
+L34
+Vb0SLZf>WYcMC<Vi25U`D10
+!s100 Ve6iUMX>eXM07Y5e7KSEZ2
+R9
+32
+R23
+!i10b 1
+R11
+Z40 !s90 -reportprogress|300|C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/PLL_sim/PLL.vho|
+Z41 !s107 C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/PLL_sim/PLL.vho|
+!i113 1
+R15
+Artl
+R5
+R6
+R37
+DEx4 work 3 pll 0 22 b0SLZf>WYcMC<Vi25U`D10
+l51
+L44
+VKCKZKYQha;[8QLT3NI8Hh1
+!s100 fOdiU8adTMLQzI5TMD1CU3
+R9
+32
+R23
+!i10b 1
+R11
+R40
+R41
+!i113 1
+R15
+Epll1
+Z42 w1449397674
+R5
+R6
+R37
+R0
+Z43 8C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/PLL1_sim/PLL1.vho
+Z44 FC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/PLL1_sim/PLL1.vho
+l0
+L34
+VU5zeI`fmLflVl`dgdULNF2
+!s100 Kz6I:7CM0]4m83n70a3PY3
+R9
+32
+R23
+!i10b 1
+R11
+Z45 !s90 -reportprogress|300|C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/PLL1_sim/PLL1.vho|
+Z46 !s107 C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/PLL1_sim/PLL1.vho|
+!i113 1
+R15
+Artl
+R5
+R6
+R37
+DEx4 work 4 pll1 0 22 U5zeI`fmLflVl`dgdULNF2
+l51
+L44
+VV?Aog_6h9Tj4jH5c=Ub:^0
+!s100 M9CdBNa5^ggTYWU89cXki3
+R9
+32
+R23
+!i10b 1
+R11
+R45
+R46
+!i113 1
+R15
+vRS232
+!s110 1449944557
+!i10b 1
+!s100 Bc>zCRB^QU1AG5Xzg4UnR3
+IfgVfC=[d753CG1onk2NF=0
+R17
+R0
+w1449362955
+8C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/RS232.v
+FC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/RS232.v
+L0 6
+R18
+r1
+!s85 0
+31
+!s108 1449944557.000000
+!s107 C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/RS232.v|
+!s90 -reportprogress|300|C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/RS232/simulation/RS232.v|
+!i113 1
+n@r@s232
+Etb
+Z47 w1449897119
+Z48 DPx4 ieee 16 std_logic_textio 0 22 V5TSK`;aJKC<l]CEg1>mz1
+R2
+R3
+R4
+R5
+R6
+R0
+Z49 8C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tb.vhd
+Z50 FC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tb.vhd
+l0
+L10
+V`AzaIlgYgAKR8:64`eJVf1
+!s100 aob5VY0VLQN8K;LQih;3M1
+R9
+31
+R10
+!i10b 1
+Z51 !s108 1449944616.000000
+Z52 !s90 -reportprogress|300|-93|-work|work|C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tb.vhd|
+Z53 !s107 C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tb.vhd|
+!i113 1
+R14
+R15
+Adut
+R48
+R2
+R3
+R4
+R5
+R6
+DEx4 work 2 tb 0 22 `AzaIlgYgAKR8:64`eJVf1
+l75
+L13
+Vng]R;]Ak?gQaQUncGf;Ob0
+!s100 HWP9D3jN:1oMR:JUzgcAf3
+R9
+31
+R10
+!i10b 1
+R51
+R52
+R53
+!i113 1
+R14
+R15
+Etx
+Z54 w1449375365
+R5
+R6
+R0
+Z55 8C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx.vhd
+Z56 FC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx.vhd
+l0
+L4
+VD9kfS]0iDNE;UZI:YzXeF3
+!s100 E2VQ7gQT;o^Cf@z1i6`Td0
+R9
+31
+R23
+!i10b 1
+R11
+Z57 !s90 -reportprogress|300|-93|-work|work|C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx.vhd|
+Z58 !s107 C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx.vhd|
+!i113 1
+R14
+R15
+Astructure
+R5
+R6
+DEx4 work 2 tx 0 22 D9kfS]0iDNE;UZI:YzXeF3
+l80
+L23
+V7;91MiG2Ed]Cb__Lc7<ZE3
+!s100 @A]4]<YLg0BIjTDWdL;MJ2
+R9
+31
+R23
+!i10b 1
+R11
+R57
+R58
+!i113 1
+R14
+R15
+Etx_native
+Z59 w1449890610
+R2
+R5
+R6
+R0
+Z60 8C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/tx_native.vhd
+Z61 FC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/tx_native.vhd
+l0
+L9
+V2Wmon58iRfk6Ch75GbKg33
+!s100 5f>lE4k6hGBzV>7=9gAeQ3
+R9
+32
+Z62 !s110 1449944583
+!i10b 1
+Z63 !s108 1449944583.000000
+Z64 !s90 -reportprogress|300|C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/tx_native.vhd|
+Z65 !s107 C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_native_sim/tx_native.vhd|
+!i113 1
+R15
+Artl
+R2
+R5
+R6
+DEx4 work 9 tx_native 0 22 2Wmon58iRfk6Ch75GbKg33
+l149
+L26
+VL36[i0_;nC<c2A=@9X5`J0
+!s100 UW_5fU:_@nQflhf5j9`c30
+R9
+32
+R62
+!i10b 1
+R63
+R64
+R65
+!i113 1
+R15
+Etx_reconfig
+Z66 w1449465668
+R2
+R5
+R6
+R0
+Z67 8C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/tx_reconfig.vhd
+Z68 FC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/tx_reconfig.vhd
+l0
+L9
+V?:?6FXLmkS9I_D0hT]YT_0
+!s100 <MdXT75:?NnO[6T21ZX780
+R9
+32
+R23
+!i10b 1
+R11
+Z69 !s90 -reportprogress|300|C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/tx_reconfig.vhd|
+Z70 !s107 C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reconfig_sim/tx_reconfig.vhd|
+!i113 1
+R15
+Artl
+R2
+R5
+R6
+DEx4 work 11 tx_reconfig 0 22 ?:?6FXLmkS9I_D0hT]YT_0
+l65
+L26
+Vk=Zzi0IhIC=K`[@UfJ[>W0
+!s100 6]oCZF?_R[C^[oZ]UMRgc1
+R9
+32
+R23
+!i10b 1
+R11
+R69
+R70
+!i113 1
+R15
+Etx_reset
+Z71 w1448772856
+R2
+R5
+R6
+R0
+Z72 8C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/tx_reset.vhd
+Z73 FC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/tx_reset.vhd
+l0
+L9
+V2MD[bXIB_m^_`l:h1JFTF2
+!s100 IdWaSKW`R`b5>GE7UFjia2
+R9
+32
+Z74 !s110 1449944586
+!i10b 1
+Z75 !s108 1449944586.000000
+Z76 !s90 -reportprogress|300|C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/tx_reset.vhd|
+Z77 !s107 C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/tx_reset_sim/tx_reset.vhd|
+!i113 1
+R15
+Artl
+R2
+R5
+R6
+DEx4 work 8 tx_reset 0 22 2MD[bXIB_m^_`l:h1JFTF2
+l68
+L23
+VcGZak^E^NN<U0FYa=T7HI1
+!s100 PgibBObeORVKUJLekVLgM2
+R9
+32
+R74
+!i10b 1
+R75
+R76
+R77
+!i113 1
+R15

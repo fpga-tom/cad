@@ -1,0 +1,22 @@
+# system info RS232 on 2015.12.05.16:49:15
+system_info:
+name,value
+DEVICE,5CGXFC5C6F27C7
+DEVICE_FAMILY,Cyclone V
+GENERATION_ID,1449362954
+#
+#
+# Files generated for RS232 on 2015.12.05.16:49:15
+files:
+filepath,kind,attributes,module,is_top
+simulation/RS232.v,VERILOG,,RS232,true
+simulation/submodules/altera_up_rs232_counters.v,VERILOG,,RS232_rs232_0,false
+simulation/submodules/altera_up_rs232_in_deserializer.v,VERILOG,,RS232_rs232_0,false
+simulation/submodules/altera_up_rs232_out_serializer.v,VERILOG,,RS232_rs232_0,false
+simulation/submodules/altera_up_sync_fifo.v,VERILOG,,RS232_rs232_0,false
+simulation/submodules/RS232_rs232_0.v,VERILOG,,RS232_rs232_0,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+RS232.rs232_0,RS232_rs232_0

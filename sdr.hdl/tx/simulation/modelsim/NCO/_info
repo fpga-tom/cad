@@ -1,0 +1,51 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/simulation/modelsim
+Enco
+Z1 w1448773086
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z5 8C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/NCO/synthesis/NCO.vhd
+Z6 FC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/NCO/synthesis/NCO.vhd
+l0
+L9
+VakR]YLQ3B[nZdS8]nlKKZ3
+!s100 hSZ1467F?PDaW`h22Q5?W0
+Z7 OV;C;10.4b;61
+31
+Z8 !s110 1449294003
+!i10b 1
+Z9 !s108 1449294003.000000
+Z10 !s90 -reportprogress|300|-93|-work|NCO|C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/NCO/synthesis/NCO.vhd|
+Z11 !s107 C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/NCO/synthesis/NCO.vhd|
+!i113 1
+Z12 o-93 -work NCO
+Z13 tExplicit 1
+Artl
+R2
+R3
+R4
+DEx4 work 3 nco 0 22 akR]YLQ3B[nZdS8]nlKKZ3
+l32
+L20
+VF7H<li3IUAC[?WHVGjCD<1
+!s100 LN8g14n8[DDj_m;k=7X4a2
+R7
+31
+R8
+!i10b 1
+R9
+R10
+R11
+!i113 1
+R12
+R13

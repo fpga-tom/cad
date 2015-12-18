@@ -1,0 +1,6 @@
+cic_ii_0
+nco_ii_0
+rs232_0
+tx_native
+tx_reset
+tx_reconfig

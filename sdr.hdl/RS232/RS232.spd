@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<simPackage>
- <file path="simulation/RS232.vhd" type="VHDL" />
- <topLevel name="RS232" />
- <deviceFamily name="cyclonev" />
-</simPackage>

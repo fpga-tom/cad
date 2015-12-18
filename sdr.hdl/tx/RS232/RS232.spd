@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="simulation/submodules/altera_up_rs232_counters.v"
+   type="VERILOG"
+   library="rs232_0" />
+ <file
+   path="simulation/submodules/altera_up_rs232_in_deserializer.v"
+   type="VERILOG"
+   library="rs232_0" />
+ <file
+   path="simulation/submodules/altera_up_rs232_out_serializer.v"
+   type="VERILOG"
+   library="rs232_0" />
+ <file
+   path="simulation/submodules/altera_up_sync_fifo.v"
+   type="VERILOG"
+   library="rs232_0" />
+ <file
+   path="simulation/submodules/RS232_rs232_0.v"
+   type="VERILOG"
+   library="rs232_0" />
+ <file path="simulation/RS232.v" type="VERILOG" />
+ <topLevel name="RS232" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

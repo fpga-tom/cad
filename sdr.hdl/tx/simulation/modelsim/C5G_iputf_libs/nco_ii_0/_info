@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/simulation/modelsim
+vNCO_nco_ii_0
+!s110 1449944556
+!i10b 1
+!s100 VC8iiU;m1TZ;24X`HQoZA0
+Il6z?AV4Z3hM7d2ag0F7ld3
+VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1449891299
+8C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/NCO/simulation/submodules/NCO_nco_ii_0.vo
+FC:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/NCO/simulation/submodules/NCO_nco_ii_0.vo
+L0 32
+OV;L;10.4b;61
+r1
+!s85 0
+31
+!s108 1449944556.000000
+!s107 C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/NCO/simulation/submodules/NCO_nco_ii_0.vo|
+!s90 -reportprogress|300|C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/NCO/simulation/submodules/NCO_nco_ii_0.vo|-work|nco_ii_0|
+!i113 1
+o-work nco_ii_0
+n@n@c@o_nco_ii_0
