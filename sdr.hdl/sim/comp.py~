@@ -1,0 +1,6 @@
+import nupmpy as np
+import matplotlib.plt as plt
+
+triangle=np.loadtxt('integrator.dat')
+signal=np.loadtxt('signal625.dat')
+pwm=np.loadtxt('pwm.dat')

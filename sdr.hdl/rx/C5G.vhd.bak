@@ -1,0 +1,7 @@
+library ieee;
+use ieee.std_logic.all;
+
+entity C5G is
+port(
+);
+end;

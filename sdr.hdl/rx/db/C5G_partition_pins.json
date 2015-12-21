@@ -1,0 +1,17 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "CLKIN_P[1]",
+					"strict" : false
+				},
+				{
+					"name" : "CPU_RESET_n",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

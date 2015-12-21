@@ -1,0 +1,1209 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/tomas/ws_cad/sdr.hdl/rx/simulation/modelsim
+vn6GXPuwRjJ+ZGs3QS9AyJ0G19feOFyQDKlfGkPHsYec=
+Z1 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z2 !s110 1450704337
+!i10b 0
+!s100 3DJ<DhDNfGl4XYK];IJB[1
+ILoL>J7EaJ8V3GWA528k1A1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!i8a 629843744
+!s105 alt_reset_ctrl_lego_sv_unit
+S1
+R0
+Z4 w1450704337
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_reset_ctrl_lego.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_reset_ctrl_lego.sv
+Z5 L0 38
+Z6 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z7 !s108 1450704337.000000
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_reset_ctrl_lego.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_reset_ctrl_lego.sv|-work|rx|
+!i113 1
+Z8 o-sv -work rx
+v0oaWfxOfmg6LQhBRIc/LhLxVgd8pVZ74wcn8KprnGTo=
+R1
+R2
+!i10b 0
+!s100 eYg2:8Rz9lczmYE4neTjF3
+I^QJ6Rlc5OzjYiD@h7Ofmb3
+R3
+!i8a 2063069472
+!s105 alt_reset_ctrl_tgx_cdrauto_sv_unit
+S1
+R0
+R4
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_reset_ctrl_tgx_cdrauto.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_reset_ctrl_tgx_cdrauto.sv
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_reset_ctrl_tgx_cdrauto.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_reset_ctrl_tgx_cdrauto.sv|-work|rx|
+!i113 1
+R8
+v6mIOdAsuLHtueD+0wF+klrPeJKupE2ESq6MYx5plhNc=
+R1
+Z9 DXx4 work 21 alt_xcvr_csr_common_h 0 22 ;_;9Vm[fWo6VfYcgWN5Uf1
+Z10 !s110 1450704338
+!i10b 0
+!s100 J0BFVT;9?[A7PeHDm<FZV0
+Ic_2J^lSo9LXOEOLZ8:LlT2
+R3
+!i8a 890352704
+!s105 alt_xcvr_csr_common_sv_unit
+S1
+R0
+Z11 w1450704338
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_common.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_common.sv
+R5
+R6
+r1
+!s85 0
+31
+Z12 !s108 1450704338.000000
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_common.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_common.sv|-work|rx|
+!i113 1
+R8
+XCf42LEZvhqGrC9DfFe3silfA4IniONAa3lt/Qs9anpU=
+R1
+R10
+!i10b 0
+!s100 IHZ;DG1<[<>M0_RmJXYa73
+I;_;9Vm[fWo6VfYcgWN5Uf1
+V;_;9Vm[fWo6VfYcgWN5Uf1
+!i8a 143489792
+S1
+R0
+R11
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_common_h.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_common_h.sv
+R5
+R6
+r1
+!s85 0
+31
+R12
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_common_h.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_common_h.sv|-work|rx|
+!i113 1
+R8
+vHet1GmirJmDRQcAP39m30ZCTN7bGgrYuhK+nKNR3Cqk=
+R1
+R9
+DXx4 work 20 alt_xcvr_csr_pcs8g_h 0 22 F_TF:>U]nS6T>4of@8_oM0
+R10
+!i10b 0
+!s100 oKfCfYIUc4WlF7;G^hNKZ0
+Ia0h7hkJzE4BJH[SgdQT_c1
+R3
+!i8a 212113392
+!s105 alt_xcvr_csr_pcs8g_sv_unit
+S1
+R0
+R11
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_pcs8g.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_pcs8g.sv
+R5
+R6
+r1
+!s85 0
+31
+R12
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_pcs8g.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_pcs8g.sv|-work|rx|
+!i113 1
+R8
+Xqz0vx30Fbx9t/Z4pizm3ceCnRhcRhFQtIvCaeu3SPw4=
+R1
+R9
+R10
+!i10b 0
+!s100 ZHTX^IR_TRKk]2Y5OQFY:0
+IF_TF:>U]nS6T>4of@8_oM0
+VF_TF:>U]nS6T>4of@8_oM0
+!i8a 219168816
+S1
+R0
+R11
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_pcs8g_h.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_pcs8g_h.sv
+R5
+R6
+r1
+!s85 0
+31
+R12
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_pcs8g_h.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_pcs8g_h.sv|-work|rx|
+!i113 1
+R8
+vSLGqd0IRUUYK+ynwIAaGlNuvwcS/e0HD9x0u3ZnUsd8=
+R1
+R10
+!i10b 0
+!s100 gPm9>Uj95nBCQUe;C4PM20
+IFhSiK<_7z1G7^z;67J[AG2
+R3
+!i8a 306131104
+!s105 alt_xcvr_mgmt2dec_sv_unit
+S1
+R0
+R11
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_mgmt2dec.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_mgmt2dec.sv
+R5
+R6
+r1
+!s85 0
+31
+R12
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_mgmt2dec.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_mgmt2dec.sv|-work|rx|
+!i113 1
+R8
+vjpEf2WFllXHDqKP6BaJzfg==
+R1
+R2
+!i10b 0
+!s100 b;hhoie;nOaG[10CMjYZQ2
+InjIm<PLaLoBCWdK;Wn0m02
+R3
+!i8a 117040784
+!s105 alt_xcvr_resync_sv_unit
+S1
+R0
+R4
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_resync.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_resync.sv
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_resync.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_resync.sv|-work|rx|
+!i113 1
+R8
+vdITRtZKaPsBwKDbiwAUy06mn1pu6Q3N+eJLOdB6O8dw=
+R10
+!i10b 0
+!s100 ^ISOF:4I@VaF4?O=2[1mU0
+ID@VXPB55>;HVM>Xo6T>>S1
+R3
+!i8a 1264883440
+R0
+R11
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/altera_wait_generate.v
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/altera_wait_generate.v
+R5
+R6
+r1
+!s85 0
+31
+R12
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/altera_wait_generate.v|
+!s90 -reportprogress|300|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/altera_wait_generate.v|-work|rx|
+!i113 1
+o-work rx
+vcvomQewPHReGY68RBMCiQ/nKjlMOYaJyZvvQIk5ONns=
+R1
+!s110 1450704339
+!i10b 0
+!s100 aC1TDX6AoLmMK?idBd3jm2
+ImIgnZTfVV?o``[Cn4S<TG1
+R3
+!i8a 722538112
+!s105 altera_xcvr_data_adapter_av_sv_unit
+S1
+R0
+Z13 w1450704339
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/altera_xcvr_data_adapter_av.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/altera_xcvr_data_adapter_av.sv
+R5
+R6
+r1
+!s85 0
+31
+!s108 1450704339.000000
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/altera_xcvr_data_adapter_av.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/altera_xcvr_data_adapter_av.sv|-work|rx|
+!i113 1
+R8
+Xn5lrEaXGyRcjfMMrqA5MAvZ5VP4FtmBxnyCBVTfNIIA=
+R1
+!s110 1450704334
+!i10b 0
+!s100 NU_C2GZLJJa`_9GbbmzhF0
+IYGW7Ug0h<_S>>mVEPjMLf1
+VYGW7Ug0h<_S>>mVEPjMLf1
+!i8a 310026960
+S1
+R0
+w1450704334
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/altera_xcvr_functions.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/altera_xcvr_functions.sv
+R5
+R6
+r1
+!s85 0
+31
+!s108 1450704334.000000
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/altera_xcvr_functions.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/altera_xcvr_functions.sv|-work|rx|
+!i113 1
+R8
+v0lCD8P9d55YPomgY3g/08ANSFpJd9wDu0uvMV+6NYXw=
+R1
+Z14 DXx4 work 21 altera_xcvr_functions 0 22 YGW7Ug0h<_S>>mVEPjMLf1
+Z15 DXx4 work 33 altera_xcvr_native_av_functions_h 0 22 0gQR`d;=`XZ5i[QLDke?32
+DXx4 work 29 altera_xcvr_native_av_sv_unit 0 22 S96<P]Dg6icbC7<6L9c?Z0
+R3
+r1
+!s85 0
+31
+!i10b 0
+!s100 K[0F1E=VPn78fAnh=fkzc1
+Inio]ZPa[H?k0o]iW538]K1
+!i8a 1922219904
+!s105 altera_xcvr_native_av_sv_unit
+S1
+R0
+R13
+Z16 8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/altera_xcvr_native_av.sv
+Z17 F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/altera_xcvr_native_av.sv
+R5
+R6
+R12
+Z18 !s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/altera_xcvr_native_av.sv|
+Z19 !s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/altera_xcvr_native_av.sv|-work|rx|
+!i113 1
+R8
+Xk4z/vPLgqE2MERHnWXJtSlZTHFy1rJRtotX4WlJzZ26PqItUscTBymyOQsiQ7/L6
+R1
+R14
+V0gQR`d;=`XZ5i[QLDke?32
+r1
+!s85 0
+31
+!i10b 0
+!s100 j@7>0<QPnXfPLUmj:6F2;3
+I0gQR`d;=`XZ5i[QLDke?32
+!i8a 1524692112
+S1
+R0
+R11
+Z20 8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/altera_xcvr_native_av_functions_h.sv
+Z21 F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/altera_xcvr_native_av_functions_h.sv
+R5
+R6
+R12
+Z22 !s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/altera_xcvr_native_av_functions_h.sv|
+Z23 !s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/altera_xcvr_native_av_functions_h.sv|-work|rx|
+!i113 1
+R8
+X0pdB0VSkr5GyeLNQXm3AXCcQ/ctzsuXi2+k5mvjjpvuO32GocgkLvTKpbflDJ3A3
+R1
+R14
+Vgo9gXmegz23R[APD_M`U02
+r1
+!s85 0
+31
+!i10b 0
+!s100 9_Q=[z2H_G>lEJ:5Ko9YL1
+Igo9gXmegz23R[APD_M`U02
+!i103 1
+!i8a 1672764064
+S1
+R0
+Z24 w1450640064
+R20
+R21
+R5
+R6
+R12
+R22
+R23
+!i113 1
+R8
+XOcFvOcfukp15b62ebWYzGcuymXa8fTD/RbWa84fKmSQ=
+R1
+R14
+R15
+VS96<P]Dg6icbC7<6L9c?Z0
+r1
+!s85 0
+31
+!i10b 0
+!s100 ?iR2cle2UNIEn9g_fNd:j2
+IS96<P]Dg6icbC7<6L9c?Z0
+!i103 1
+!i8a 1844079952
+S1
+R0
+R24
+R16
+R17
+R5
+R6
+R12
+R18
+R19
+!i113 1
+R8
+vrMW0XIw79UxbSZo4njQTazOd1g/BMduComKaHcOvijY=
+R1
+R14
+R2
+!i10b 0
+!s100 ikaS82CJ51eAUcl?1d>lN0
+IlJCzRl6AjHB]CFkL7KR671
+R3
+!i8a 936168144
+!s105 av_hssi_8g_rx_pcs_rbc_sv_unit
+S1
+R0
+R4
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_8g_rx_pcs_rbc.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_8g_rx_pcs_rbc.sv
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_8g_rx_pcs_rbc.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_8g_rx_pcs_rbc.sv|-work|rx|
+!i113 1
+R8
+vIpcyyOtNwsJzqA9vNQCdwUU+bsTMmGqLGpH74zsAkZQ=
+R1
+R14
+R2
+!i10b 0
+!s100 `OAK`^FzD?hd2;01GT<d70
+Iia9zjonP;bnl`L@1d6nDB0
+R3
+!i8a 1441746048
+!s105 av_hssi_8g_tx_pcs_rbc_sv_unit
+S1
+R0
+R4
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_8g_tx_pcs_rbc.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_8g_tx_pcs_rbc.sv
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_8g_tx_pcs_rbc.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_8g_tx_pcs_rbc.sv|-work|rx|
+!i113 1
+R8
+vMoqZDH36DKM0TGxKIzFvs9T/KtbIUb8jF0wceB4lI4FLqzs4OL1qYQDEuAad6+r3
+R1
+R14
+R2
+!i10b 0
+!s100 `FP0l2KFZH?M5S0XSlI5P3
+I7W<TRPOB25`4eG=DFGn@22
+R3
+!i8a 533621584
+!s105 av_hssi_common_pcs_pma_interface_rbc_sv_unit
+S1
+R0
+R4
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_common_pcs_pma_interface_rbc.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_common_pcs_pma_interface_rbc.sv
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_common_pcs_pma_interface_rbc.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_common_pcs_pma_interface_rbc.sv|-work|rx|
+!i113 1
+R8
+vq1xzu816TTLSoXkiOCCdAPx6ZqX+94ycdhkcPQxCRek1EhAhgnhwppKR0vRbmSr+
+R1
+R14
+R2
+!i10b 0
+!s100 DB[mX@KKT<B5Xh<L^7<mQ2
+I1ML]A;;5cQ2DKPjF7Dj3_3
+R3
+!i8a 1786547296
+!s105 av_hssi_common_pld_pcs_interface_rbc_sv_unit
+S1
+R0
+R4
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_common_pld_pcs_interface_rbc.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_common_pld_pcs_interface_rbc.sv
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_common_pld_pcs_interface_rbc.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_common_pld_pcs_interface_rbc.sv|-work|rx|
+!i113 1
+R8
+vOu3EM0NkMhFVq6KQzb2K8NTRTvX80zj14Ug28n96Eq0=
+R1
+R14
+R2
+!i10b 0
+!s100 bTUM[M[9_X2ODNQck>Z_g3
+Ia>@d?1Xh2QeBX<NmA@C[X2
+R3
+!i8a 2071380944
+!s105 av_hssi_pipe_gen1_2_rbc_sv_unit
+S1
+R0
+R4
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_pipe_gen1_2_rbc.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_pipe_gen1_2_rbc.sv
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_pipe_gen1_2_rbc.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_pipe_gen1_2_rbc.sv|-work|rx|
+!i113 1
+R8
+vnq5pP+UIwqw69bkR+ryOWtY59ZelXIgffa0S4Yw/TDqloD/oxh/1Pb9lsNUlaICQ
+R1
+R14
+R2
+!i10b 0
+!s100 Efhj]=]8mnOb<gg[DzeP60
+IiKYTciEL9?h;DaOH>M0L02
+R3
+!i8a 663663632
+!s105 av_hssi_rx_pcs_pma_interface_rbc_sv_unit
+S1
+R0
+R4
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_rx_pcs_pma_interface_rbc.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_rx_pcs_pma_interface_rbc.sv
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_rx_pcs_pma_interface_rbc.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_rx_pcs_pma_interface_rbc.sv|-work|rx|
+!i113 1
+R8
+vOcqlh3GRycQn6qtNpnoqCIGR/iZ16HZtSLopOsDbmSclORxAVIKjinhqzIZCBWGH
+R1
+R14
+R2
+!i10b 0
+!s100 OHX0ANJ;eRMYe7LffA^;L0
+I]UD3:L0OOTL>PnSM5Eef[2
+R3
+!i8a 236846448
+!s105 av_hssi_rx_pld_pcs_interface_rbc_sv_unit
+S1
+R0
+R4
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_rx_pld_pcs_interface_rbc.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_rx_pld_pcs_interface_rbc.sv
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_rx_pld_pcs_interface_rbc.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_rx_pld_pcs_interface_rbc.sv|-work|rx|
+!i113 1
+R8
+vbW/iIgCcQTJ+wlliQiT6/xC9rje+DmhiaMBFKrvljnsqKnZwRnqJA4ycWt1SJXiJ
+R1
+R14
+R2
+!i10b 0
+!s100 [gL4zLF8K=^OoJ68X<]7S1
+IA1f^m0>Xm6]zDR?mFdZ?M0
+R3
+!i8a 1611240896
+!s105 av_hssi_tx_pcs_pma_interface_rbc_sv_unit
+S1
+R0
+R4
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_tx_pcs_pma_interface_rbc.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_tx_pcs_pma_interface_rbc.sv
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_tx_pcs_pma_interface_rbc.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_tx_pcs_pma_interface_rbc.sv|-work|rx|
+!i113 1
+R8
+vg6Tvb7akUkh3UIp+GrEHl95ccGEq+RWLNwikRXddVAYmYoOtjKxH+r6cZz0xWOx1
+R1
+R14
+R2
+!i10b 0
+!s100 Eei`g]O0II<MKSP[DICk;1
+I[idKXD:h;ndS;D^1Iz@2H3
+R3
+!i8a 461850960
+!s105 av_hssi_tx_pld_pcs_interface_rbc_sv_unit
+S1
+R0
+R4
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_tx_pld_pcs_interface_rbc.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_tx_pld_pcs_interface_rbc.sv
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_tx_pld_pcs_interface_rbc.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_hssi_tx_pld_pcs_interface_rbc.sv|-work|rx|
+!i113 1
+R8
+vH8IO+mt8WaQ6XVnwjkD8iQ==
+R1
+Z25 !s110 1450704336
+!i10b 0
+!s100 i8IXAVRRkhS5d>>3EQ[0f1
+IFV@BJOja2^aAXHUi_b29Q2
+R3
+!i8a 886052368
+!s105 av_pcs_sv_unit
+S1
+R0
+Z26 w1450704336
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_pcs.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_pcs.sv
+R5
+R6
+r1
+!s85 0
+31
+Z27 !s108 1450704336.000000
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_pcs.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_pcs.sv|-work|rx|
+!i113 1
+R8
+vkJ6zzeJl+XTx+sxyKhktOA==
+R1
+R25
+!i10b 0
+!s100 3I3bCXA^H;6iO7XcT8P4M3
+IzMoMUYni9=nkT09OK5afJ1
+R3
+!i8a 185896080
+!s105 av_pcs_ch_sv_unit
+S1
+R0
+R26
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_pcs_ch.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_pcs_ch.sv
+R5
+R6
+r1
+!s85 0
+31
+R27
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_pcs_ch.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_pcs_ch.sv|-work|rx|
+!i113 1
+R8
+vOipJrYgZaW4cwpbaoyYl0w==
+R1
+R14
+R25
+!i10b 0
+!s100 IfG^oWeo6PHOn1eDTNze@0
+IURT>lj2NPIFELMEJH31F60
+R3
+!i8a 216427168
+!s105 av_pma_sv_unit
+S1
+R0
+R26
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_pma.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_pma.sv
+R5
+R6
+r1
+!s85 0
+31
+R27
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_pma.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_pma.sv|-work|rx|
+!i113 1
+R8
+vnpHtK6EFCXrPVCLk6E2E7ehukrZgUVSbk3zj1/aLMdM=
+R1
+R14
+R25
+!i10b 0
+!s100 a^=A3GaOafMLI`_]@0?2D2
+InKd0a=XEzTENTPSbJP0iT3
+R3
+!i8a 989082176
+!s105 av_reconfig_bundle_to_basic_sv_unit
+S1
+R0
+R26
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_reconfig_bundle_to_basic.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_reconfig_bundle_to_basic.sv
+R5
+R6
+r1
+!s85 0
+31
+R27
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_reconfig_bundle_to_basic.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_reconfig_bundle_to_basic.sv|-work|rx|
+!i113 1
+R8
+v7F3w/1xGrJEv/CCEMX221BqVuyunzSfIwiB18G5Vs+w=
+R1
+R14
+R25
+!i10b 0
+!s100 7Hhji5jZI8NK_2EBY9h>b2
+INmM=Y5QbnbaUP;aGBiNh<1
+R3
+!i8a 1772865888
+!s105 av_reconfig_bundle_to_xcvr_sv_unit
+S1
+R0
+R26
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_reconfig_bundle_to_xcvr.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_reconfig_bundle_to_xcvr.sv
+R5
+R6
+r1
+!s85 0
+31
+R27
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_reconfig_bundle_to_xcvr.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_reconfig_bundle_to_xcvr.sv|-work|rx|
+!i113 1
+R8
+vbvVlbfInOgHDy6GzBQ3zhQ==
+R1
+R14
+R25
+!i10b 0
+!s100 _QFJGM^SRZgB4Q_n9AJ:A2
+IPBDVP<[aYAANinjikY:7:2
+R3
+!i8a 1701494048
+!s105 av_rx_pma_sv_unit
+S1
+R0
+R26
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_rx_pma.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_rx_pma.sv
+R5
+R6
+r1
+!s85 0
+31
+R27
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_rx_pma.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_rx_pma.sv|-work|rx|
+!i113 1
+R8
+vIuk58OJ62vx0R8U6j5G8dg==
+R1
+R14
+R25
+!i10b 0
+!s100 Xj2mM9THmzF]Pi>7;dNdj2
+Izfl74=K`F>EN^[5oEce>^1
+R3
+!i8a 1148451008
+!s105 av_tx_pma_sv_unit
+S1
+R0
+R26
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_tx_pma.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_tx_pma.sv
+R5
+R6
+r1
+!s85 0
+31
+R27
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_tx_pma.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_tx_pma.sv|-work|rx|
+!i113 1
+R8
+v3whl0GTr+K0EkXJlWKeZKg==
+R1
+R14
+DXx4 work 20 av_tx_pma_ch_sv_unit 0 22 gKI4C@d5gY`;eUSfJnJ_d1
+Z28 DXx4 work 9 av_xcvr_h 0 22 mKJd0F6e;@XN6G8TDG0gm2
+R3
+r1
+!s85 0
+31
+!i10b 0
+!s100 0`5dJU;Xg3nSX]AkF@<hJ1
+IPzBLjVjlV0Q@M@<P?IBJX1
+!i8a 1036362256
+!s105 av_tx_pma_ch_sv_unit
+S1
+R0
+R26
+Z29 8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_tx_pma_ch.sv
+Z30 F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_tx_pma_ch.sv
+R5
+R6
+R27
+Z31 !s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_tx_pma_ch.sv|
+Z32 !s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_tx_pma_ch.sv|-work|rx|
+!i113 1
+R8
+XnuzUE1iSRTaoPc8pW4sNI1f4iMLJhR7ZuUg/FzbI0io=
+R1
+R14
+VgKI4C@d5gY`;eUSfJnJ_d1
+r1
+!s85 0
+31
+!i10b 0
+!s100 MD4OAB3GHRJ?m781Do@O@0
+IgKI4C@d5gY`;eUSfJnJ_d1
+!i103 1
+!i8a 1902502384
+S1
+R0
+R24
+R29
+R30
+R5
+R6
+R27
+R31
+R32
+!i113 1
+R8
+vbosrcUiFst8eT3n01Uh9AQ==
+R1
+R14
+DXx4 work 20 av_xcvr_avmm_sv_unit 0 22 @NCNXJnh81Am33J8C^`HS2
+R3
+r1
+!s85 0
+31
+!i10b 0
+!s100 Sc>alVFIHWeF;AbhPeBB;1
+IHYoHS9lLD>OB5Ki3P08eQ3
+!i8a 1396848752
+!s105 av_xcvr_avmm_sv_unit
+S1
+R0
+R26
+Z33 8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_xcvr_avmm.sv
+Z34 F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_xcvr_avmm.sv
+R5
+R6
+R27
+Z35 !s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_xcvr_avmm.sv|
+Z36 !s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_xcvr_avmm.sv|-work|rx|
+!i113 1
+R8
+vIN3EfHldZqWG4lXT8Ct/7AWt28gfqrFFCwtlP7jRfYM=
+R1
+R28
+R25
+!i10b 0
+!s100 k^dIaC^z8C>mJe1_jT?ah3
+Ie1BjFKa][0>BaU2JNTD>@3
+R3
+!i8a 1380281856
+!s105 av_xcvr_avmm_csr_sv_unit
+S1
+R0
+R26
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_xcvr_avmm_csr.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_xcvr_avmm_csr.sv
+R5
+R6
+r1
+!s85 0
+31
+R27
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_xcvr_avmm_csr.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_xcvr_avmm_csr.sv|-work|rx|
+!i113 1
+R8
+XwwBzNgUit2Niy3kYzsdpB/rl2YN+lglBrZ0MN1I1p0U=
+R1
+R14
+V@NCNXJnh81Am33J8C^`HS2
+r1
+!s85 0
+31
+!i10b 0
+!s100 ?6k49Z`oK<n=7Pj2z3CC^0
+I@NCNXJnh81Am33J8C^`HS2
+!i103 1
+!i8a 1233643904
+S1
+R0
+R24
+R33
+R34
+R5
+R6
+R27
+R35
+R36
+!i113 1
+R8
+v+tzH3CWSXKnXg6uWXmH8qYAYlmKRNQT+u9IGV0T13T0=
+R1
+R25
+!i10b 0
+!s100 JY1OAk2Wdb2;g0BAKX=m33
+IGP]cB[eDnlDe>33HdT1@B3
+R3
+!i8a 582131504
+!s105 av_xcvr_data_adapter_sv_unit
+S1
+R0
+R26
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_xcvr_data_adapter.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_xcvr_data_adapter.sv
+R5
+R6
+r1
+!s85 0
+31
+R27
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_xcvr_data_adapter.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_xcvr_data_adapter.sv|-work|rx|
+!i113 1
+R8
+X7QDuGeBtFCoRQnKl9MPVkA==
+R1
+R25
+!i10b 0
+!s100 >DAa30^_o<bfHV1kYWN0j1
+ImKJd0F6e;@XN6G8TDG0gm2
+VmKJd0F6e;@XN6G8TDG0gm2
+!i8a 224873728
+S1
+R0
+R26
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_xcvr_h.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_xcvr_h.sv
+R5
+R6
+r1
+!s85 0
+31
+R27
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_xcvr_h.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_xcvr_h.sv|-work|rx|
+!i113 1
+R8
+vXgfmfDjRVyGaLbaoqGiGRA==
+R1
+R14
+DXx4 work 22 av_xcvr_native_sv_unit 0 22 _SWhTZSbmhJBJYXP<n8Y^2
+R3
+r1
+!s85 0
+31
+!i10b 0
+!s100 4EkbIaTR>He5UL>62[d^<3
+Iz2A1eUbIFDTOda;oYMFZ?2
+!i8a 105112464
+!s105 av_xcvr_native_sv_unit
+S1
+R0
+R26
+Z37 8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_xcvr_native.sv
+Z38 F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_xcvr_native.sv
+R5
+R6
+R27
+Z39 !s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_xcvr_native.sv|
+Z40 !s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_xcvr_native.sv|-work|rx|
+!i113 1
+R8
+XjMz/vW54ldWzANjPS7wrJeNKyjeR0kpXSDXyEIcS00U=
+R1
+R14
+V_SWhTZSbmhJBJYXP<n8Y^2
+r1
+!s85 0
+31
+!i10b 0
+!s100 RIzWn2>S:iiCaTdk7iCjj0
+I_SWhTZSbmhJBJYXP<n8Y^2
+!i103 1
+!i8a 741540064
+S1
+R0
+R24
+R37
+R38
+R5
+R6
+R27
+R39
+R40
+!i113 1
+R8
+vavxtoYBwtS9sUnRxKoi0bg==
+R1
+R14
+DXx4 work 20 av_xcvr_plls_sv_unit 0 22 YLNE;^[4P:9=o1Cn3Q;L71
+R28
+R3
+r1
+!s85 0
+31
+!i10b 0
+!s100 aNVE<e2L<m@NL@?Z@7?gi2
+IeJR=?l>EKE4:]nl;K6CO43
+!i8a 583571296
+!s105 av_xcvr_plls_sv_unit
+S1
+R0
+R26
+Z41 8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_xcvr_plls.sv
+Z42 F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_xcvr_plls.sv
+R5
+R6
+R27
+Z43 !s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_xcvr_plls.sv|
+Z44 !s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/av_xcvr_plls.sv|-work|rx|
+!i113 1
+R8
+XtZC11ZIc6/AP1noXxDbG0TLpXSjJlrg/2Zwa4fQwwYA=
+R1
+R14
+VYLNE;^[4P:9=o1Cn3Q;L71
+r1
+!s85 0
+31
+!i10b 0
+!s100 dXMGb3Z4VcYFYjMc>46Q90
+IYLNE;^[4P:9=o1Cn3Q;L71
+!i103 1
+!i8a 1480813920
+S1
+R0
+R24
+R41
+R42
+R5
+R6
+R27
+R43
+R44
+!i113 1
+R8
+vWhrtN03OZ2n/S8EdMCf4T0Hk/w9cnByobmur3LALI70=
+R1
+R10
+!i10b 0
+!s100 2ObG9=HX>G_zE[I?cY_G>0
+IB9X8=9QZ4T>58OkncOdfQ0
+R3
+!i8a 985240288
+Z45 !s105 alt_xcvr_csr_selector_sv_unit
+S1
+R0
+R11
+Z46 8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_selector.sv
+Z47 F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_selector.sv
+R5
+R6
+r1
+!s85 0
+31
+R12
+Z48 !s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_selector.sv|
+Z49 !s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/alt_xcvr_csr_selector.sv|-work|rx|
+!i113 1
+R8
+vcjIM/GrG8XZXcBeRZKdNCBVjvctDztx+SnBAPUV6rps=
+R1
+R10
+!i10b 0
+!s100 lcmdXZYzEDLHh[YfLkK_m1
+IP>^^oD:ezahSP4TEQG]YQ0
+R3
+!i8a 1274403056
+R45
+S1
+R0
+R11
+R46
+R47
+R5
+R6
+r1
+!s85 0
+31
+R12
+R48
+R49
+!i113 1
+R8
+vd4Nhnt3aXnGNnLX3dfnEOw==
+R1
+R10
+!i10b 0
+!s100 dg=LRShCJzil>8;?2LWmY1
+IA:HOdbRL=HlFh]J;16jgn3
+R3
+!i8a 1461284096
+R45
+S1
+R0
+R11
+R46
+R47
+R5
+R6
+r1
+!s85 0
+31
+R12
+R48
+R49
+!i113 1
+R8
+vx3Yc8CodESl55qw9iEzOHuYzw7H9tqqbbJF6uBtEv5o=
+R1
+R14
+DXx4 work 33 sv_reconfig_bundle_merger_sv_unit 0 22 CUJJ_aTAeP03A26M8n=CL3
+R3
+r1
+!s85 0
+31
+!i10b 0
+!s100 _klbInodJVSS2I7Gg03=J0
+Ido0EdgE:XC3Yg=kX`kE>o0
+!i8a 691545632
+!s105 sv_reconfig_bundle_merger_sv_unit
+S1
+R0
+Z50 w1450704335
+Z51 8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/sv_reconfig_bundle_merger.sv
+Z52 F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/sv_reconfig_bundle_merger.sv
+R5
+R6
+Z53 !s108 1450704335.000000
+Z54 !s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/sv_reconfig_bundle_merger.sv|
+Z55 !s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/sv_reconfig_bundle_merger.sv|-work|rx|
+!i113 1
+R8
+X/oy7jlu74dh4wgBcYZeQ+2Nu+/4IIt5QRq6aROxtK433eLtiJe/p2tRhknu94z6y
+R1
+R14
+VCUJJ_aTAeP03A26M8n=CL3
+r1
+!s85 0
+31
+!i10b 0
+!s100 ]4KFE?m21ZT<;Kf8VCFKM2
+ICUJJ_aTAeP03A26M8n=CL3
+!i103 1
+!i8a 1451569056
+S1
+R0
+R24
+R51
+R52
+R5
+R6
+R53
+R54
+R55
+!i113 1
+R8
+vkHSPasKGHqGG6Y/uUuZb/U2a9zyIazYPznRb+aQ4w+g=
+R1
+R14
+Z56 !s110 1450704335
+!i10b 0
+!s100 ]zePZM<<LSfMCINoO5Z@Q1
+IYC2<;1:fK^DFgDT[YQ;RB3
+R3
+!i8a 1109409760
+!s105 sv_reconfig_bundle_to_ip_sv_unit
+S1
+R0
+R50
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/sv_reconfig_bundle_to_ip.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/sv_reconfig_bundle_to_ip.sv
+R5
+R6
+r1
+!s85 0
+31
+R53
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/sv_reconfig_bundle_to_ip.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/sv_reconfig_bundle_to_ip.sv|-work|rx|
+!i113 1
+R8
+vk2l+dHxqLTX3FBxOPG59JXZcdyuzaMLglHd9V8Gq8Co=
+R1
+R14
+R56
+!i10b 0
+!s100 :2NWS00HAPThU=z[hZOPF0
+IW@13eI68f08k3hJEVo?Pl0
+R3
+!i8a 1562560976
+!s105 sv_reconfig_bundle_to_xcvr_sv_unit
+S1
+R0
+R50
+8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/sv_reconfig_bundle_to_xcvr.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/sv_reconfig_bundle_to_xcvr.sv
+R5
+R6
+r1
+!s85 0
+31
+R53
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/sv_reconfig_bundle_to_xcvr.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/altera_xcvr_native_cv/mentor/sv_reconfig_bundle_to_xcvr.sv|-work|rx|
+!i113 1
+R8

@@ -1,0 +1,43 @@
+;; -*- Emacs-Lisp -*-
+
+;;; .emacs-vhdl-cache-dir-tomas - design hierarchy cache file for Emacs VHDL Mode 3.34.2
+
+;; Directory : "~/ws_cad/sdr.hdl/rx/"
+;; Saved     : 2015-12-19 20:47:04 tomas
+
+
+;; version number
+(setq vhdl-cache-version "3.34.2")
+
+;; directory name
+(setq directory "~/ws_cad/sdr.hdl/rx/")
+
+;; entity and architecture cache
+(aput 'vhdl-entity-alist directory '
+(("c5g" "C5G" "~/ws_cad/sdr.hdl/rx/C5G.vhd" 26 (("structural" "structural" "~/ws_cad/sdr.hdl/rx/C5G.vhd" 64 (("xcvr_1" "xcvr_1" "~/ws_cad/sdr.hdl/rx/C5G.vhd" 136 "xcvr" "xcvr" nil nil nil nil)) nil)) "structural" (("ieee" . "std_logic_1164"))) ("reconfig" "reconfig" "~/ws_cad/sdr.hdl/rx/reconfig.vhd" 11 (("rtl" "rtl" "~/ws_cad/sdr.hdl/rx/reconfig.vhd" 27 (("reconfig_inst" "reconfig_inst" "~/ws_cad/sdr.hdl/rx/reconfig.vhd" 68 "alt_xcvr_reconfig" "alt_xcvr_reconfig" nil nil nil nil)) nil)) "rtl" (("IEEE" . "std_logic_1164") ("IEEE" . "numeric_std"))) ("reset" "reset" "~/ws_cad/sdr.hdl/rx/reset.vhd" 11 (("rtl" "rtl" "~/ws_cad/sdr.hdl/rx/reset.vhd" 30 (("reset_inst" "reset_inst" "~/ws_cad/sdr.hdl/rx/reset.vhd" 77 "altera_xcvr_reset_control" "altera_xcvr_reset_control" nil nil nil nil)) nil)) "rtl" (("IEEE" . "std_logic_1164") ("IEEE" . "numeric_std"))) ("rx" "rx" "~/ws_cad/sdr.hdl/rx/rx.vhd" 11 (("rtl" "rtl" "~/ws_cad/sdr.hdl/rx/rx.vhd" 41 (("rx_inst" "rx_inst" "~/ws_cad/sdr.hdl/rx/rx.vhd" 166 "altera_xcvr_native_av" "altera_xcvr_native_av" nil nil nil nil)) nil)) "rtl" (("IEEE" . "std_logic_1164") ("IEEE" . "numeric_std"))) ("testbench" "testbench" "~/ws_cad/sdr.hdl/rx/tb.vhd" 27 (("dut" "dut" "~/ws_cad/sdr.hdl/rx/tb.vhd" 30 nil nil)) "dut" (("ieee" . "std_logic_1164") ("ieee" . "numeric_std"))))
+)
+
+;; configuration cache
+(aput 'vhdl-config-alist directory '
+nil
+)
+
+;; package cache
+(aput 'vhdl-package-alist directory '
+nil
+)
+
+;; instantiated entities cache
+(aput 'vhdl-ent-inst-alist directory '
+(("xcvr" "altera_xcvr_native_av" "altera_xcvr_reset_control" "alt_xcvr_reconfig"))
+)
+
+;; design units per file cache
+(aput 'vhdl-file-alist directory '
+(("~/ws_cad/sdr.hdl/rx/tb.vhd" ("testbench") ("dut") ("testbench") nil nil nil nil nil) ("~/ws_cad/sdr.hdl/rx/C5G.vhd" ("c5g") ("structural") ("c5g") nil nil nil ("xcvr_1") ("xcvr")) ("~/ws_cad/sdr.hdl/rx/rx.vhd" ("rx") ("rtl") ("rx") nil nil nil ("rx_inst") ("altera_xcvr_native_av")) ("~/ws_cad/sdr.hdl/rx/reset.vhd" ("reset") ("rtl") ("reset") nil nil nil ("reset_inst") ("altera_xcvr_reset_control")) ("~/ws_cad/sdr.hdl/rx/reconfig.vhd" ("reconfig") ("rtl") ("reconfig") nil nil nil ("reconfig_inst") ("alt_xcvr_reconfig")))
+)
+
+;; shown design units cache
+(aput 'vhdl-speedbar-shown-unit-alist directory '
+nil
+)

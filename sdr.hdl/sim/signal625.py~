@@ -1,0 +1,18 @@
+import numpy as np
+import matplotlib
+matplotlib.use('GTK')
+import matplotlib.pyplot as plt
+
+freq=625e6/32
+freq_low=1e3
+sr=500e9
+time=0.5e-3
+amp=1
+
+x=np.arange(0,time,1/sr)
+y=amp*np.sin(2*np.pi*freq*x)*np.sin(2*np.pi*freq_low*x)
+
+np.savetxt('signal625.dat', y,fmt='%.6e');
+
+#plt.plot(x,y)
+#plt.show()

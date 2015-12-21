@@ -1,0 +1,3 @@
+rx
+reconfig
+rx_reset

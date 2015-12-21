@@ -1,0 +1,14 @@
+reset_sim/reset.vhd
+reset_sim/altera_xcvr_reset_control/altera_xcvr_functions.sv
+reset_sim/altera_xcvr_reset_control/mentor/altera_xcvr_functions.sv
+reset_sim/altera_xcvr_reset_control/alt_xcvr_resync.sv
+reset_sim/altera_xcvr_reset_control/mentor/alt_xcvr_resync.sv
+reset_sim/altera_xcvr_reset_control/altera_xcvr_reset_control.sv
+reset_sim/altera_xcvr_reset_control/alt_xcvr_reset_counter.sv
+reset_sim/altera_xcvr_reset_control/mentor/altera_xcvr_reset_control.sv
+reset_sim/altera_xcvr_reset_control/mentor/alt_xcvr_reset_counter.sv
+reset_sim/altera_xcvr_reset_control/plain_files.txt
+reset_sim/altera_xcvr_reset_control/mentor_files.txt
+reset_sim/altera_xcvr_reset_control/cadence_files.txt
+reset_sim/altera_xcvr_reset_control/synopsys_files.txt
+reset_sim/altera_xcvr_reset_control/aldec_files.txt

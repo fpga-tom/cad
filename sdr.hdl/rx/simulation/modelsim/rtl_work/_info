@@ -1,0 +1,248 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/tomas/ws_cad/sdr.hdl/rx/simulation/modelsim
+Ec5g
+Z1 w1450608174
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8/home/tomas/ws_cad/sdr.hdl/rx/C5G.vhd
+Z5 F/home/tomas/ws_cad/sdr.hdl/rx/C5G.vhd
+l0
+L26
+VAUh14c7haf1n4DGFZcD431
+!s100 acZB8`_;dS7amVcb[DfRP3
+Z6 OV;C;10.4b;61
+31
+Z7 !s110 1450704343
+!i10b 1
+Z8 !s108 1450704343.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/tomas/ws_cad/sdr.hdl/rx/C5G.vhd|
+Z10 !s107 /home/tomas/ws_cad/sdr.hdl/rx/C5G.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1
+Astructural
+R2
+R3
+DEx4 work 3 c5g 0 22 AUh14c7haf1n4DGFZcD431
+l125
+L64
+VOdBLBg1_4AOjZoYb=T]Ii0
+!s100 m=FE6WEY6>P:g<@GRQflF2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ereconfig
+Z13 w1450502376
+Z14 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R2
+R3
+R0
+Z15 8/home/tomas/ws_cad/sdr.hdl/rx/reconfig_sim/reconfig.vhd
+Z16 F/home/tomas/ws_cad/sdr.hdl/rx/reconfig_sim/reconfig.vhd
+l0
+L9
+Vi`[8RnfYOmERQ5U<FbN3I1
+!s100 0H7IPL<I7H]M?iIi7SPV_2
+R6
+32
+R7
+!i10b 1
+R8
+Z17 !s90 -reportprogress|300|/home/tomas/ws_cad/sdr.hdl/rx/reconfig_sim/reconfig.vhd|
+Z18 !s107 /home/tomas/ws_cad/sdr.hdl/rx/reconfig_sim/reconfig.vhd|
+!i113 1
+R12
+Artl
+R14
+R2
+R3
+DEx4 work 8 reconfig 0 22 i`[8RnfYOmERQ5U<FbN3I1
+l64
+L25
+VI4c2^NCdB?TT^PfL4DaKh1
+!s100 oW6b5]JmJzAN1eoGlbZDm3
+R6
+32
+R7
+!i10b 1
+R8
+R17
+R18
+!i113 1
+R12
+Erx
+Z19 w1450640064
+R14
+R2
+R3
+R0
+Z20 8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/rx.vhd
+Z21 F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/rx.vhd
+l0
+L9
+VD6D:lUC0ldj;L][S^9f0n0
+!s100 Slb4S;@^S@PjTo1^g?V]61
+R6
+32
+Z22 !s110 1450704339
+!i10b 1
+Z23 !s108 1450704339.000000
+Z24 !s90 -reportprogress|300|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/rx.vhd|
+Z25 !s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/rx.vhd|
+!i113 1
+R12
+Artl
+R14
+R2
+R3
+DEx4 work 2 rx 0 22 D6D:lUC0ldj;L][S^9f0n0
+l162
+L39
+V;94EV0KJ3jE]0WjFBK?H<0
+!s100 >iW:4X:GIK8111N5[]@l=0
+R6
+32
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R12
+Erx_reset
+Z26 w1450538556
+R14
+R2
+R3
+R0
+Z27 8/home/tomas/ws_cad/sdr.hdl/rx/rx_reset_sim/rx_reset.vhd
+Z28 F/home/tomas/ws_cad/sdr.hdl/rx/rx_reset_sim/rx_reset.vhd
+l0
+L9
+V_cPf9Znl=QObDkUZZib4_3
+!s100 dlbzkOe4VVBzTSH2b@l][3
+R6
+32
+R7
+!i10b 1
+R8
+Z29 !s90 -reportprogress|300|/home/tomas/ws_cad/sdr.hdl/rx/rx_reset_sim/rx_reset.vhd|
+Z30 !s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_reset_sim/rx_reset.vhd|
+!i113 1
+R12
+Artl
+R14
+R2
+R3
+DEx4 work 8 rx_reset 0 22 _cPf9Znl=QObDkUZZib4_3
+l73
+L28
+V`<YMj`OPh2h=?_dG4c?_N2
+!s100 BZN518:1G5Q56hd@fUgkB0
+R6
+32
+R7
+!i10b 1
+R8
+R29
+R30
+!i113 1
+R12
+Etestbench
+Z31 w1450721884
+Z32 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+R14
+R2
+R3
+R0
+Z33 8/home/tomas/ws_cad/sdr.hdl/rx/tb.vhd
+Z34 F/home/tomas/ws_cad/sdr.hdl/rx/tb.vhd
+l0
+L30
+VDX2XSeEgjV[UDXJVHZ?ZP1
+!s100 f`dBDLIZAe0?5WUJzPXOT0
+R6
+32
+Z35 !s110 1450722094
+!i10b 1
+Z36 !s108 1450722094.000000
+Z37 !s90 -reportprogress|300|-work|work|/home/tomas/ws_cad/sdr.hdl/rx/tb.vhd|
+Z38 !s107 /home/tomas/ws_cad/sdr.hdl/rx/tb.vhd|
+!i113 1
+Z39 o-work work
+R12
+Adut
+R32
+R14
+R2
+R3
+Z40 DEx4 work 9 testbench 0 22 DX2XSeEgjV[UDXJVHZ?ZP1
+l81
+L33
+V28`5@8cMoP=;TlPMZBhiW0
+!s100 F2oP9i@l@ID2C^G4W>>VE1
+R6
+32
+R35
+!i10b 1
+R36
+R37
+R38
+!i113 1
+R39
+R12
+Excvr
+Z41 w1450538585
+R2
+R3
+R0
+Z42 8/home/tomas/ws_cad/sdr.hdl/rx/xcvr.vhd
+Z43 F/home/tomas/ws_cad/sdr.hdl/rx/xcvr.vhd
+l0
+L25
+VOY^HLdSTJe=@7313ljnYg0
+!s100 zQAm@j:kI8f1X^Fj=]MB>2
+R6
+31
+R7
+!i10b 1
+R8
+Z44 !s90 -reportprogress|300|-93|-work|work|/home/tomas/ws_cad/sdr.hdl/rx/xcvr.vhd|
+Z45 !s107 /home/tomas/ws_cad/sdr.hdl/rx/xcvr.vhd|
+!i113 1
+R11
+R12
+Astructural
+R2
+R3
+DEx4 work 4 xcvr 0 22 OY^HLdSTJe=@7313ljnYg0
+l145
+L66
+VN_7JWEYk^QzVfH`PQeYVc2
+!s100 jM_9@e_Y_Y46LWz0QeC;61
+R6
+31
+R7
+!i10b 1
+R8
+R44
+R45
+!i113 1
+R11
+R12
