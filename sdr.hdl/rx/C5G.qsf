@@ -139,16 +139,10 @@ set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
 set_global_assignment -name VHDL_FILE xcvr.vhd
 set_global_assignment -name SDC_FILE C5G.SDC
 set_global_assignment -name VHDL_FILE C5G.vhd
-set_global_assignment -name QIP_FILE rx.qip
-set_global_assignment -name SIP_FILE rx.sip
-set_global_assignment -name QIP_FILE reconfig.qip
-set_global_assignment -name SIP_FILE reconfig.sip
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
 set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
-set_global_assignment -name QIP_FILE rx_reset.qip
-set_global_assignment -name SIP_FILE rx_reset.sip
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
@@ -157,4 +151,16 @@ set_global_assignment -name EDA_TEST_BENCH_NAME tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testbench -section_id tb
 set_global_assignment -name EDA_TEST_BENCH_FILE tb.vhd -section_id tb
+set_global_assignment -name QIP_FILE refgen_tx.qip
+set_global_assignment -name SIP_FILE refgen_tx.sip
+set_global_assignment -name QIP_FILE refgen_reset.qip
+set_global_assignment -name SIP_FILE refgen_reset.sip
+set_global_assignment -name QIP_FILE refgen_reconfig.qip
+set_global_assignment -name SIP_FILE refgen_reconfig.sip
+set_global_assignment -name QIP_FILE recv_rx.qip
+set_global_assignment -name SIP_FILE recv_rx.sip
+set_global_assignment -name QIP_FILE recv_reset.qip
+set_global_assignment -name SIP_FILE recv_reset.sip
+set_global_assignment -name QIP_FILE recv_reconfig.qip
+set_global_assignment -name SIP_FILE recv_reconfig.sip
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

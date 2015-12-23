@@ -1,0 +1,1307 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/tomas/ws_cad/sdr.hdl/rx/simulation/modelsim
+vukVQUAOf7eqvAOV8hDzAew==
+Z1 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z2 !s110 1450863778
+!i10b 0
+!s100 mbaKcEDMlVU^NS4dYe6YE2
+INb175lTZA^6>TfR2NCPmL3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+!i8a 1100256400
+!s105 alt_arbiter_acq_sv_unit
+S1
+R0
+Z4 w1450863778
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_arbiter_acq.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_arbiter_acq.sv
+Z5 L0 38
+Z6 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z7 !s108 1450863778.000000
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_arbiter_acq.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_arbiter_acq.sv|-work|refgen_reconfig|
+!i113 1
+Z8 o-sv -work refgen_reconfig
+velAIgG+pNlQgXfjMtHsZCESepVYptbSYoUnZ2YIOtrA=
+R1
+R2
+!i10b 0
+!s100 lziNZmB1oXYaHAooeT_aI3
+I:HI5mWD`E2R^MLDz6=9>n3
+R3
+!i8a 481357152
+!s105 alt_xcvr_arbiter_sv_unit
+S1
+R0
+R4
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_arbiter.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_arbiter.sv
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_arbiter.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_arbiter.sv|-work|refgen_reconfig|
+!i113 1
+R8
+vKKjJWqHjgLbgv50y73VQlg==
+R1
+R2
+!i10b 0
+!s100 jSn2Ff2:ziAKGDY@V8nPd3
+I1FgQ@GmBgcGC`>z:mn9g`3
+R3
+!i8a 1262349296
+!s105 alt_xcvr_m2s_sv_unit
+S1
+R0
+R4
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_m2s.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_m2s.sv
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_m2s.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_m2s.sv|-work|refgen_reconfig|
+!i113 1
+R8
+vHEWgqKTQycqDAJS9zJvAXdJlnng/mmDPk93CCwcsWis=
+R1
+Z9 DXx4 work 21 altera_xcvr_functions 0 22 <UL2gj4P^i>mn[B=>4Jo03
+Z10 DXx4 work 19 alt_xcvr_reconfig_h 0 22 9cJlQAX_V<YD6MF??2:ed0
+Z11 !s110 1450863776
+!i10b 0
+!s100 Wm<3e70ihj[@EhJb5Od4l0
+IQaf]D`Cb`BN?MD[o>CDe00
+R3
+!i8a 378955744
+!s105 alt_xcvr_reconfig_sv_unit
+S1
+R0
+Z12 w1450863776
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig.sv
+R5
+R6
+r1
+!s85 0
+31
+Z13 !s108 1450863776.000000
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig.sv|-work|refgen_reconfig|
+!i113 1
+R8
+vSVOQp9UlPUeqpSGjX73F3ktR3KML3jL/tBj5BQ9AzIg=
+R1
+R9
+Z14 !s110 1450863777
+!i10b 0
+!s100 ZoC54cA9`OdZ_RoZYYEG31
+IXm6DENa7e23EP`nVZoc1X3
+R3
+!i8a 244542064
+!s105 alt_xcvr_reconfig_adce_sv_unit
+S1
+R0
+Z15 w1450863777
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_adce.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_adce.sv
+R5
+R6
+r1
+!s85 0
+31
+Z16 !s108 1450863777.000000
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_adce.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_adce.sv|-work|refgen_reconfig|
+!i113 1
+R8
+vvEetsQQFUhJ+AqzyTEV7zy2PTyx5spz9QdybAStEZ1k=
+R1
+R11
+!i10b 0
+!s100 ]lB5YT=IU1@R`YHo<AiRh0
+I@W;l@GO[W:P2coM43T8cB0
+R3
+!i8a 1347890208
+!s105 alt_xcvr_reconfig_analog_sv_unit
+S1
+R0
+R12
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_analog.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_analog.sv
+R5
+R6
+r1
+!s85 0
+31
+R13
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_analog.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_analog.sv|-work|refgen_reconfig|
+!i113 1
+R8
+v+FmwI8zmnbXwNirSRIoSH5RPqHELcUGcYkXfjZtaJhw=
+R1
+R10
+R11
+!i10b 0
+!s100 k]^W2gUYCooDT5Zb<GcHL1
+I8HZW[U2V=kgYX<S7TO_f_1
+R3
+!i8a 192893712
+!s105 alt_xcvr_reconfig_analog_av_sv_unit
+S1
+R0
+R12
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_analog_av.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_analog_av.sv
+R5
+R6
+r1
+!s85 0
+31
+R13
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_analog_av.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_analog_av.sv|-work|refgen_reconfig|
+!i113 1
+R8
+vLbYB/SVkNUmnsC2JmqT9eN+E5mfRNZSlZLLgJaCgqy8=
+R1
+R9
+R2
+!i10b 0
+!s100 n7jGGm:k51l^o7ZIe<7=_2
+If=A6JmU]e1Bj=eMjM4Rbz2
+R3
+!i8a 564401728
+!s105 alt_xcvr_reconfig_basic_sv_unit
+S1
+R0
+R4
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_basic.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_basic.sv
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_basic.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_basic.sv|-work|refgen_reconfig|
+!i113 1
+R8
+v4ewA+23z08PbTTZ6lzNnnrdUhyXMhxymCL+fJ2K6pK0=
+R1
+R10
+R11
+!i10b 0
+!s100 CLjK46bcVolC76FRQB:kb2
+I64=QH1o@39:nd]NPE:4]R1
+R3
+!i8a 1441735520
+!s105 alt_xcvr_reconfig_cal_seq_sv_unit
+S1
+R0
+R12
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_cal_seq.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_cal_seq.sv
+R5
+R6
+r1
+!s85 0
+31
+R13
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_cal_seq.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_cal_seq.sv|-work|refgen_reconfig|
+!i113 1
+R8
+valt_xcvr_reconfig_cpu_ram
+R1
+R9
+DXx4 work 33 alt_xcvr_reconfig_cpu_ram_sv_unit 0 22 O26XYD=zBcez:>;?@hZlQ0
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 ^?>MWIj<9f6bhLBZG`2L^1
+I`24H0;N:8D<0[E2Jn84dC0
+!s105 alt_xcvr_reconfig_cpu_ram_sv_unit
+S1
+R0
+Z17 w1450788350
+Z18 8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_cpu_ram.sv
+Z19 F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_cpu_ram.sv
+L0 25
+R6
+R7
+Z20 !s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_cpu_ram.sv|
+Z21 !s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_cpu_ram.sv|-work|refgen_reconfig|
+!i113 1
+R8
+Xalt_xcvr_reconfig_cpu_ram_sv_unit
+R1
+R9
+VO26XYD=zBcez:>;?@hZlQ0
+r1
+!s85 0
+31
+!i10b 1
+!s100 @b3H0O?:k8RKl>e[>IGd;2
+IO26XYD=zBcez:>;?@hZlQ0
+!i103 1
+S1
+R0
+R17
+R18
+R19
+Z22 L0 14
+R6
+R7
+R20
+R21
+!i113 1
+R8
+vy8WIiTtZFlBgI8SbjMffVQW/kA3uAIiXOXWQfsuHYHA=
+R1
+R9
+R14
+!i10b 0
+!s100 z_N<A94X9oCdaV2fFf?>12
+I5l1jCR@:>4GQ;F9L4Dd=?1
+R3
+!i8a 1909827072
+!s105 alt_xcvr_reconfig_dcd_sv_unit
+S1
+R0
+R15
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dcd.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dcd.sv
+R5
+R6
+r1
+!s85 0
+31
+R16
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dcd.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dcd.sv|-work|refgen_reconfig|
+!i113 1
+R8
+vVUYwaQEHhCgfJvaqM036XDrYLrMUS7zsRc2sDZsy8V4=
+R1
+R10
+R14
+!i10b 0
+!s100 =OQ46VT^8RN53P_85CYVe0
+IbQRB81TWZho]?JFIPicnP1
+R3
+!i8a 1936392752
+!s105 alt_xcvr_reconfig_dcd_av_sv_unit
+S1
+R0
+R15
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dcd_av.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dcd_av.sv
+R5
+R6
+r1
+!s85 0
+31
+R16
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dcd_av.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dcd_av.sv|-work|refgen_reconfig|
+!i113 1
+R8
+vkegH7QJ2LUfQXDxC8JqHSHdhvGJLRDxw1iItKgwAVxg=
+R1
+R14
+!i10b 0
+!s100 HgPB`b1oO[mm91oiCg<z53
+IG`YY9UOZ@EeU5i:MLRZfn3
+R3
+!i8a 1684959136
+!s105 alt_xcvr_reconfig_dcd_cal_av_sv_unit
+S1
+R0
+R15
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dcd_cal_av.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dcd_cal_av.sv
+R5
+R6
+r1
+!s85 0
+31
+R16
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dcd_cal_av.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dcd_cal_av.sv|-work|refgen_reconfig|
+!i113 1
+R8
+vbZ8KNxKNUI1ThnrBf57SnwFmpHGwuRVID9g4cmY02J18vd98DcQaLcj5CKij7yf6
+R1
+Z23 DXx4 work 9 av_xcvr_h 0 22 PE_93U@2Oz0P:YBmN=l6<1
+R14
+!i10b 0
+!s100 NVeT7Mj;<LA4kS6daZ_TI1
+IT:a?R744W2HNnacLLM8An2
+R3
+!i8a 2033536320
+!s105 alt_xcvr_reconfig_dcd_control_av_sv_unit
+S1
+R0
+R15
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dcd_control_av.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dcd_control_av.sv
+R5
+R6
+r1
+!s85 0
+31
+R16
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dcd_control_av.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dcd_control_av.sv|-work|refgen_reconfig|
+!i113 1
+R8
+vFNTzLl1HdsVEUjFA9qa2hCQ77zcJRLanEIchtOspxEk=
+R1
+R9
+R14
+!i10b 0
+!s100 2ff>iU2hEVJaVQIiMLJ871
+IQh=h8azd^Yb=UTCNdZL6U3
+R3
+!i8a 1719831408
+!s105 alt_xcvr_reconfig_dfe_sv_unit
+S1
+R0
+R15
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dfe.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dfe.sv
+R5
+R6
+r1
+!s85 0
+31
+R16
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dfe.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_dfe.sv|-work|refgen_reconfig|
+!i113 1
+R8
+valt_xcvr_reconfig_direct
+R1
+R9
+R10
+R2
+!i10b 1
+!s100 b8D:fY:Po1R@m6HbIn7b<2
+I5b@1z9LzCo=?mM2BX6Ba^2
+R3
+!s105 alt_xcvr_reconfig_direct_sv_unit
+S1
+R0
+R17
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_direct.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_direct.sv
+L0 17
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_direct.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_direct.sv|-work|refgen_reconfig|
+!i113 1
+R8
+vlcIMN5uRvq264VD261lIkeB6PRRgyRQWu5+504fc7vY=
+R1
+R9
+R14
+!i10b 0
+!s100 lQa35S20JhWkLQPS`@h:70
+IcgB]8ikV6M38`C=_cL9MQ1
+R3
+!i8a 1413679840
+!s105 alt_xcvr_reconfig_eyemon_sv_unit
+S1
+R0
+R15
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_eyemon.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_eyemon.sv
+R5
+R6
+r1
+!s85 0
+31
+R16
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_eyemon.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_eyemon.sv|-work|refgen_reconfig|
+!i113 1
+R8
+XZWP0vhleQ3MOUG+UaAHpxFXSdyBJDmM/lgQFciNbckk=
+R1
+R11
+!i10b 0
+!s100 3[0X73BVdi1XB7klJM0VB0
+I9cJlQAX_V<YD6MF??2:ed0
+V9cJlQAX_V<YD6MF??2:ed0
+!i8a 1616287248
+S1
+R0
+R12
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_h.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_h.sv
+R5
+R6
+r1
+!s85 0
+31
+R13
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_h.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_h.sv|-work|refgen_reconfig|
+!i113 1
+R8
+vw+cKk3022DxxeBcAo5/aG5FEnH+mgdNAr5Tqquxe8wI=
+R1
+R9
+R14
+!i10b 0
+!s100 Z@H<Qh`HbOE1V^nlL1g`;3
+IW^>=`J1`g;]OB14Jd7VIV2
+R3
+!i8a 1520494192
+!s105 alt_xcvr_reconfig_mif_sv_unit
+S1
+R0
+R15
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_mif.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_mif.sv
+R5
+R6
+r1
+!s85 0
+31
+R16
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_mif.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_mif.sv|-work|refgen_reconfig|
+!i113 1
+R8
+vMk4zamInwg7kHvFdvKhSa6ytZ/4VU4smPdrrKXnCYJdFVg6vQaaQKx6DU7e484nd
+R1
+R9
+R11
+!i10b 0
+!s100 JCoWzSd1YMTO@l_oo6SSL3
+IaNUbGn;_OO=NPOST>I:9>0
+R3
+!i8a 1285867552
+!s105 alt_xcvr_reconfig_offset_cancellation_sv_unit
+S1
+R0
+R12
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_offset_cancellation.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_offset_cancellation.sv
+R5
+R6
+r1
+!s85 0
+31
+R13
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_offset_cancellation.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_offset_cancellation.sv|-work|refgen_reconfig|
+!i113 1
+R8
+vOOLrTMvln29H7OI5mguB8BrdfEYNLBdtn4EQ/fB653tqEC/pl7LAyRi0+jMyJ96T
+R1
+R10
+R23
+R14
+!i10b 0
+!s100 O]fK:P=6ZD?fSRB;la7cY3
+Ik2Z8SleSA1[F<HOa_SnJ92
+R3
+!i8a 399536320
+!s105 alt_xcvr_reconfig_offset_cancellation_av_sv_unit
+S1
+R0
+R15
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_offset_cancellation_av.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_offset_cancellation_av.sv
+R5
+R6
+r1
+!s85 0
+31
+R16
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_offset_cancellation_av.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_offset_cancellation_av.sv|-work|refgen_reconfig|
+!i113 1
+R8
+vVrGBI8y21yOfkvB9x2b+tXW5oTbK4qOUuwt1vvtSaqI=
+R1
+R9
+R14
+!i10b 0
+!s100 2;EWzMD9zj9QioeD:NPBC2
+IcNaU0GCMa]nNDKiJ@5<lF0
+R3
+!i8a 1108852608
+!s105 alt_xcvr_reconfig_pll_sv_unit
+S1
+R0
+R15
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_pll.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_pll.sv
+R5
+R6
+r1
+!s85 0
+31
+R16
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_pll.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_reconfig_pll.sv|-work|refgen_reconfig|
+!i113 1
+R8
+valt_xcvr_reconfig_soc
+R1
+R9
+DXx4 work 29 alt_xcvr_reconfig_soc_sv_unit 0 22 ;M6WQRaZQ<P>Tl`X^c[Ha0
+R3
+r1
+!s85 0
+31
+!i10b 1
+!s100 IO@4<7UE`Cn@0gjL@Tj@Q1
+IgA6RhhjX2>_OQBXcZ@DN;1
+!s105 alt_xcvr_reconfig_soc_sv_unit
+S1
+R0
+R17
+Z24 8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_soc.sv
+Z25 F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_soc.sv
+L0 18
+R6
+R7
+Z26 !s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_soc.sv|
+Z27 !s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/alt_xcvr_reconfig_soc.sv|-work|refgen_reconfig|
+!i113 1
+R8
+Xalt_xcvr_reconfig_soc_sv_unit
+R1
+R9
+V;M6WQRaZQ<P>Tl`X^c[Ha0
+r1
+!s85 0
+31
+!i10b 1
+!s100 h5fH@42mMBGB7j;c70e0a2
+I;M6WQRaZQ<P>Tl`X^c[Ha0
+!i103 1
+S1
+R0
+R17
+R24
+R25
+R22
+R6
+R7
+R26
+R27
+!i113 1
+R8
+v711fquTfae7EE39L1/lHCA==
+R1
+R11
+!i10b 0
+!s100 b;hhoie;nOaG[10CMjYZQ2
+IL?@39Bdk?LjO]@eTnlnXA2
+R3
+!i8a 119783328
+!s105 alt_xcvr_resync_sv_unit
+S1
+R0
+R12
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_resync.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_resync.sv
+R5
+R6
+r1
+!s85 0
+31
+R13
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_resync.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_resync.sv|-work|refgen_reconfig|
+!i113 1
+R8
+v/C1MvP6ItwG+S6H1PotzvSSTsWrWvSspzlcLWJXV1kA=
+R1
+R11
+!i10b 0
+!s100 9l3f=[[V=0?N`hJShS5zR2
+Ih<ol<MFhBJ75;EhXVQ@dl1
+R3
+!i8a 938197936
+!s105 alt_xreconf_analog_ctrlsm_sv_unit
+S1
+R0
+R12
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_analog_ctrlsm.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_analog_ctrlsm.sv
+R5
+R6
+r1
+!s85 0
+31
+R13
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_analog_ctrlsm.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_analog_ctrlsm.sv|-work|refgen_reconfig|
+!i113 1
+R8
+v9uqdu1dQXMaSQDYTpQmXuHAnpqkh1SaoeMtbySKVKc0=
+R1
+R10
+R23
+R11
+!i10b 0
+!s100 oZKF:0lI?V7N0]?bhJc@h3
+I[He^P<TaFX0zX2T`VPz2C2
+R3
+!i8a 1043453648
+!s105 alt_xreconf_analog_datactrl_av_sv_unit
+S1
+R0
+R12
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_analog_datactrl_av.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_analog_datactrl_av.sv
+R5
+R6
+r1
+!s85 0
+31
+R13
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_analog_datactrl_av.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_analog_datactrl_av.sv|-work|refgen_reconfig|
+!i113 1
+R8
+vMiuR3+meH82bpFCoRS3Yl3zO3y6QE+lVC31kVilHtGo=
+R1
+R11
+!i10b 0
+!s100 mQ^6l0k?5jHg`8IIOk_oF0
+IJ56eoiBC7W?CX;[in<m7_2
+R3
+!i8a 2141492016
+!s105 alt_xreconf_analog_rmw_av_sv_unit
+S1
+R0
+R12
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_analog_rmw_av.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_analog_rmw_av.sv
+R5
+R6
+r1
+!s85 0
+31
+R13
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_analog_rmw_av.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_analog_rmw_av.sv|-work|refgen_reconfig|
+!i113 1
+R8
+vrdvDTDvYmnGPzUNDxQuMvHZjpV8KMzzfSK/0MjGHD+A=
+R1
+R10
+R11
+!i10b 0
+!s100 80FQAO1iYIR3RHkOV;69^0
+IZXOKaE_bTEjYd^nlzXoDG0
+R3
+!i8a 965598320
+!s105 alt_xreconf_basic_acq_sv_unit
+S1
+R0
+R12
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_basic_acq.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_basic_acq.sv
+R5
+R6
+r1
+!s85 0
+31
+R13
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_basic_acq.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_basic_acq.sv|-work|refgen_reconfig|
+!i113 1
+R8
+vZfWSjJxLeQfZubEuwy+D/g==
+R1
+R11
+!i10b 0
+!s100 5[KGCg8Oc=C4`BiA:9^R90
+IN66mVJ[0Ph58^Oa8J`1Sl1
+R3
+!i8a 1605083552
+!s105 alt_xreconf_cif_sv_unit
+S1
+R0
+R12
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_cif.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_cif.sv
+R5
+R6
+r1
+!s85 0
+31
+R13
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_cif.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_cif.sv|-work|refgen_reconfig|
+!i113 1
+R8
+vLbU0nKd80bndX5xak5y8jA==
+R1
+R11
+!i10b 0
+!s100 gKeO7bfaCcgjjX4CZQONG1
+IIfOBOMI]1]b9dQdz9iFDS0
+R3
+!i8a 1541643824
+!s105 alt_xreconf_uif_sv_unit
+S1
+R0
+R12
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_uif.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_uif.sv
+R5
+R6
+r1
+!s85 0
+31
+R13
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_uif.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xreconf_uif.sv|-work|refgen_reconfig|
+!i113 1
+R8
+vDZXCVG+oNGyLO4Poh8I53WEl+4BjjjHXNXiUozb5YuI=
+R2
+!i10b 0
+!s100 ^ISOF:4I@VaF4?O=2[1mU0
+IcB4d`d43ZRS=ZWg>GG_O93
+R3
+!i8a 309480288
+R0
+R4
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/altera_wait_generate.v
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/altera_wait_generate.v
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/altera_wait_generate.v|
+!s90 -reportprogress|300|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/altera_wait_generate.v|-work|refgen_reconfig|
+!i113 1
+o-work refgen_reconfig
+XHjMhJtZKgc7Y0QLhFZLn3ZeC7WzoO/3mbsXtPAyPRjg=
+R1
+R11
+!i10b 0
+!s100 NU_C2GZLJJa`_9GbbmzhF0
+I<UL2gj4P^i>mn[B=>4Jo03
+V<UL2gj4P^i>mn[B=>4Jo03
+!i8a 1982763008
+S1
+R0
+R12
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/altera_xcvr_functions.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/altera_xcvr_functions.sv
+R5
+R6
+r1
+!s85 0
+31
+!s108 1450863775.000000
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/altera_xcvr_functions.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/altera_xcvr_functions.sv|-work|refgen_reconfig|
+!i113 1
+R8
+vkb2GK1+pDQQBV2/eWD0JN9HHv2OCBFH/BSb5QUVTZE8=
+R1
+R9
+Z28 !s110 1450863779
+!i10b 0
+!s100 a^=A3GaOafMLI`_]@0?2D2
+I`HkFXCD7`CkabPh3cooa90
+R3
+!i8a 896789664
+!s105 av_reconfig_bundle_to_basic_sv_unit
+S1
+R0
+Z29 w1450863779
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_reconfig_bundle_to_basic.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_reconfig_bundle_to_basic.sv
+R5
+R6
+r1
+!s85 0
+31
+Z30 !s108 1450863779.000000
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_reconfig_bundle_to_basic.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_reconfig_bundle_to_basic.sv|-work|refgen_reconfig|
+!i113 1
+R8
+v3RGWG4rdf9QdXwfJoXe8RmUh6ofo0/beH3vnxPnxvCY=
+R1
+R9
+R28
+!i10b 0
+!s100 7Hhji5jZI8NK_2EBY9h>b2
+I]jFU`KnzKT718lfZUd`2W0
+R3
+!i8a 1094766272
+!s105 av_reconfig_bundle_to_xcvr_sv_unit
+S1
+R0
+R29
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_reconfig_bundle_to_xcvr.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_reconfig_bundle_to_xcvr.sv
+R5
+R6
+r1
+!s85 0
+31
+R30
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_reconfig_bundle_to_xcvr.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_reconfig_bundle_to_xcvr.sv|-work|refgen_reconfig|
+!i113 1
+R8
+XYr9anT6O2NcgZP9I6RKzcA==
+R1
+R11
+!i10b 0
+!s100 >DAa30^_o<bfHV1kYWN0j1
+IPE_93U@2Oz0P:YBmN=l6<1
+VPE_93U@2Oz0P:YBmN=l6<1
+!i8a 637122592
+S1
+R0
+R12
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_h.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_h.sv
+R5
+R6
+r1
+!s85 0
+31
+R13
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_h.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_h.sv|-work|refgen_reconfig|
+!i113 1
+R8
+vLlC3lB68QsWmX1LDtHT80G7ND5dbgoMYHnv32Xyj73Y=
+R1
+R9
+DXx4 work 30 av_xcvr_reconfig_basic_sv_unit 0 22 34=cYSaIYHN2BDi5Jkfb60
+R3
+r1
+!s85 0
+31
+!i10b 0
+!s100 7g46]hBP^mE<]FGb:X2h_0
+IPki=l0TATRO5eR9hglUWH2
+!i8a 409615072
+!s105 av_xcvr_reconfig_basic_sv_unit
+S1
+R0
+R4
+Z31 8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_basic.sv
+Z32 F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_basic.sv
+R5
+R6
+R7
+Z33 !s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_basic.sv|
+Z34 !s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_basic.sv|-work|refgen_reconfig|
+!i113 1
+R8
+Xbrzolk/C2dVjIt8vnHIJyB5qT66zmmMFcwirFPHww+c=
+R1
+R9
+V34=cYSaIYHN2BDi5Jkfb60
+r1
+!s85 0
+31
+!i10b 0
+!s100 o:;Q1]LmFLgTlXQR1SRNC2
+I34=cYSaIYHN2BDi5Jkfb60
+!i103 1
+!i8a 1397112896
+S1
+R0
+R17
+R31
+R32
+R5
+R6
+R7
+R33
+R34
+!i113 1
+R8
+v9lwIb7LHTzp9x6fxfKJiV1kujAfRE6Bw0nJ9Gq03Hmk=
+R1
+R14
+!i10b 0
+!s100 Ch4A9JdX?^;O=W;TlEhaY0
+Ie97;V0F2Toc`_fnKn7UWk0
+R3
+!i8a 1175361280
+!s105 av_xcvr_reconfig_mif_sv_unit
+S1
+R0
+R15
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_mif.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_mif.sv
+R5
+R6
+r1
+!s85 0
+31
+R16
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_mif.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_mif.sv|-work|refgen_reconfig|
+!i113 1
+R8
+vjcNPOOLEeItnY6Q+OzJYJ9Cr2PekBGtONgcEpNP4JqE=
+R1
+R10
+R23
+R14
+!i10b 0
+!s100 [8]4n;FkEm@?inzOJYPkV3
+I^Ao0EF1S]H^L@3Sg5Ug7P1
+R3
+!i8a 1089272064
+!s105 av_xcvr_reconfig_mif_avmm_sv_unit
+S1
+R0
+R15
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_mif_avmm.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_mif_avmm.sv
+R5
+R6
+r1
+!s85 0
+31
+R16
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_mif_avmm.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_mif_avmm.sv|-work|refgen_reconfig|
+!i113 1
+R8
+v35omAPdC5N4QUfpee+yt8Kfvd0EPICY1xEzP0uRKbis=
+R1
+R10
+R23
+R14
+!i10b 0
+!s100 iHA?HliYKCPePMCf[IJzI1
+IJz@m0<oMHCdVVP0m]Wm>@3
+R3
+!i8a 750605232
+!s105 av_xcvr_reconfig_mif_ctrl_sv_unit
+S1
+R0
+R15
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_mif_ctrl.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_mif_ctrl.sv
+R5
+R6
+r1
+!s85 0
+31
+R16
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_mif_ctrl.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_mif_ctrl.sv|-work|refgen_reconfig|
+!i113 1
+R8
+viiXU6eb3hLHdMQdYC7dyKrC8RfaTtRTuMFkYOmk0eXo=
+R1
+R2
+!i10b 0
+!s100 F=Y_@iGP8T_LBGi5KWK3g3
+IHO55`Gocz0=2j9>l4zfXE3
+R3
+!i8a 285172992
+!s105 av_xcvr_reconfig_pll_sv_unit
+S1
+R0
+R4
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_pll.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_pll.sv
+R5
+R6
+r1
+!s85 0
+31
+R16
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_pll.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_pll.sv|-work|refgen_reconfig|
+!i113 1
+R8
+veU/CDu6GETAIM18pINKZEAvDWbukoUbEs9fzYnqqd7U=
+R1
+R10
+R23
+R2
+!i10b 0
+!s100 `1bMBBEUdJm2_Li5]N:G<0
+IoDl>P:JQh;oT?`gfV8;5a1
+R3
+!i8a 344459616
+!s105 av_xcvr_reconfig_pll_ctrl_sv_unit
+S1
+R0
+R4
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_pll_ctrl.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_pll_ctrl.sv
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_pll_ctrl.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xcvr_reconfig_pll_ctrl.sv|-work|refgen_reconfig|
+!i113 1
+R8
+vSzYVq6hCgGFWPysCCvCJwie0tKzQD9sDaZY8t6nDWy8=
+R1
+R23
+R2
+!i10b 0
+!s100 =aCBf::`D4ZnAQ?M^7^TV2
+I5^RF>0Ci:Wl678DzM_Beo3
+R3
+!i8a 667572288
+!s105 av_xrbasic_l2p_addr_sv_unit
+S1
+R0
+R4
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_l2p_addr.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_l2p_addr.sv
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_l2p_addr.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_l2p_addr.sv|-work|refgen_reconfig|
+!i113 1
+R8
+v+j+xI171dNb9aJjx6PJic8lwpVg+K2l+23+6nSQPvV0=
+R1
+R2
+!i10b 0
+!s100 1P:eJTehR>UAa2H6TgZl11
+I3oH20ScPO_fano`^VB:Y90
+R3
+!i8a 932902800
+!s105 av_xrbasic_l2p_ch_sv_unit
+S1
+R0
+R4
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_l2p_ch.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_l2p_ch.sv
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_l2p_ch.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_l2p_ch.sv|-work|refgen_reconfig|
+!i113 1
+R8
+vPLfL+Pxv5CXu5hPz4N0oZTmQMBmAZO3DSrreZY7Dzbc=
+R1
+R2
+!i10b 0
+!s100 Q@H2]N1AIW[g@?<fdziO83
+I>an29n0C8T7<MQ>8W58U@3
+R3
+!i8a 1567436208
+!s105 av_xrbasic_l2p_rom_sv_unit
+S1
+R0
+R4
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_l2p_rom.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_l2p_rom.sv
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_l2p_rom.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_l2p_rom.sv|-work|refgen_reconfig|
+!i113 1
+R8
+v0iz72hWddYLDZEkML+yyvg==
+R1
+R9
+R2
+!i10b 0
+!s100 CO:Bbkl50^H9Y7=Ue1UOU1
+IjiKcE6@;SoQ^@l?HaTj@13
+R3
+!i8a 1666075808
+!s105 av_xrbasic_lif_sv_unit
+S1
+R0
+R4
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_lif.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_lif.sv
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_lif.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_lif.sv|-work|refgen_reconfig|
+!i113 1
+R8
+vf93pA0T+TEMNSuHUlTj5QNOrCzRTMBvYhkZVUG8T5Us=
+R1
+R10
+R2
+!i10b 0
+!s100 ?QfJYM0Gn83GGa[X1mVl_3
+I<MXE7X_]O[OM`4OTz@HVd0
+R3
+!i8a 1721250848
+!s105 av_xrbasic_lif_csr_sv_unit
+S1
+R0
+R4
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_lif_csr.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_lif_csr.sv
+R5
+R6
+r1
+!s85 0
+31
+R7
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_lif_csr.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/av_xrbasic_lif_csr.sv|-work|refgen_reconfig|
+!i113 1
+R8
+viGw9dXCdCGtDm8za6knUnGuFC0oN0FsdlXrrXNzI+lc=
+R1
+R28
+!i10b 0
+!s100 2ObG9=HX>G_zE[I?cY_G>0
+I6dKOnXQmW8jCVgjR@3UKS1
+R3
+!i8a 1727890112
+Z35 !s105 alt_xcvr_csr_selector_sv_unit
+S1
+R0
+R29
+Z36 8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_csr_selector.sv
+Z37 F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_csr_selector.sv
+R5
+R6
+r1
+!s85 0
+31
+R7
+Z38 !s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_csr_selector.sv|
+Z39 !s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/alt_xcvr_csr_selector.sv|-work|refgen_reconfig|
+!i113 1
+R8
+vjsc6T4JqwLplYfC/rT+beIlWeGTkp2HdUG0LZoXdhE4=
+R1
+R28
+!i10b 0
+!s100 lcmdXZYzEDLHh[YfLkK_m1
+IDGL>;ln=Xjm5>F_DclO@W0
+R3
+!i8a 2094693952
+R35
+S1
+R0
+R4
+R36
+R37
+R5
+R6
+r1
+!s85 0
+31
+R7
+R38
+R39
+!i113 1
+R8
+vYbomLOyL2thLcNhV4QpaLw==
+R1
+R2
+!i10b 0
+!s100 dg=LRShCJzil>8;?2LWmY1
+I18YDDYG^[Fi0D>QAF8>0A3
+R3
+!i8a 1952804032
+R35
+S1
+R0
+R4
+R36
+R37
+R5
+R6
+r1
+!s85 0
+31
+R7
+R38
+R39
+!i113 1
+R8
+vqGNG0//RW0iQ3jpQM4+XLGibqitCnV5Xur3052k906g=
+R1
+R9
+R28
+!i10b 0
+!s100 KQNc8kCk6cW968E]4>^mJ0
+IkT05fN`J2l?^;O=>gX9MU2
+R3
+!i8a 713369824
+!s105 sv_reconfig_bundle_to_basic_sv_unit
+S1
+R0
+R29
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/sv_reconfig_bundle_to_basic.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/sv_reconfig_bundle_to_basic.sv
+R5
+R6
+r1
+!s85 0
+31
+R30
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/sv_reconfig_bundle_to_basic.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/alt_xcvr_reconfig/mentor/sv_reconfig_bundle_to_basic.sv|-work|refgen_reconfig|
+!i113 1
+R8

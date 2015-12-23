@@ -9,240 +9,437 @@ z2
 cModel Technology
 Z0 d/home/tomas/ws_cad/sdr.hdl/rx/simulation/modelsim
 Ec5g
-Z1 w1450608174
-Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z1 w1450863770
+Z2 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z3 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z4 8/home/tomas/ws_cad/sdr.hdl/rx/C5G.vhd
-Z5 F/home/tomas/ws_cad/sdr.hdl/rx/C5G.vhd
+Z5 8/home/tomas/ws_cad/sdr.hdl/rx/C5G.vhd
+Z6 F/home/tomas/ws_cad/sdr.hdl/rx/C5G.vhd
 l0
-L26
-VAUh14c7haf1n4DGFZcD431
-!s100 acZB8`_;dS7amVcb[DfRP3
-Z6 OV;C;10.4b;61
+L29
+VT:?o;]Y?]oN34Y^S;[C@N2
+!s100 DMl43V]R2ddP@R=Hg[hGM3
+Z7 OV;C;10.4b;61
 31
-Z7 !s110 1450704343
+Z8 !s110 1450863786
 !i10b 1
-Z8 !s108 1450704343.000000
-Z9 !s90 -reportprogress|300|-93|-work|work|/home/tomas/ws_cad/sdr.hdl/rx/C5G.vhd|
-Z10 !s107 /home/tomas/ws_cad/sdr.hdl/rx/C5G.vhd|
+Z9 !s108 1450863786.000000
+Z10 !s90 -reportprogress|300|-93|-work|work|/home/tomas/ws_cad/sdr.hdl/rx/C5G.vhd|
+Z11 !s107 /home/tomas/ws_cad/sdr.hdl/rx/C5G.vhd|
 !i113 1
-Z11 o-93 -work work
-Z12 tExplicit 1
+Z12 o-93 -work work
+Z13 tExplicit 1
 Astructural
 R2
 R3
-DEx4 work 3 c5g 0 22 AUh14c7haf1n4DGFZcD431
-l125
-L64
-VOdBLBg1_4AOjZoYb=T]Ii0
-!s100 m=FE6WEY6>P:g<@GRQflF2
-R6
-31
+R4
+DEx4 work 3 c5g 0 22 T:?o;]Y?]oN34Y^S;[C@N2
+l128
+L67
+VLcX=@;;O>=YiWf^VmB7E02
+!s100 cW^;@_a56B^zF;0ZQVo=f1
 R7
-!i10b 1
+31
 R8
+!i10b 1
 R9
 R10
-!i113 1
 R11
-R12
-Ereconfig
-Z13 w1450502376
-Z14 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
-R2
-R3
-R0
-Z15 8/home/tomas/ws_cad/sdr.hdl/rx/reconfig_sim/reconfig.vhd
-Z16 F/home/tomas/ws_cad/sdr.hdl/rx/reconfig_sim/reconfig.vhd
-l0
-L9
-Vi`[8RnfYOmERQ5U<FbN3I1
-!s100 0H7IPL<I7H]M?iIi7SPV_2
-R6
-32
-R7
-!i10b 1
-R8
-Z17 !s90 -reportprogress|300|/home/tomas/ws_cad/sdr.hdl/rx/reconfig_sim/reconfig.vhd|
-Z18 !s107 /home/tomas/ws_cad/sdr.hdl/rx/reconfig_sim/reconfig.vhd|
 !i113 1
 R12
-Artl
-R14
-R2
+R13
+Erecv
+Z14 w1450790137
 R3
-DEx4 work 8 reconfig 0 22 i`[8RnfYOmERQ5U<FbN3I1
-l64
+R4
+R0
+Z15 8/home/tomas/ws_cad/sdr.hdl/rx/recv.vhd
+Z16 F/home/tomas/ws_cad/sdr.hdl/rx/recv.vhd
+l0
 L25
-VI4c2^NCdB?TT^PfL4DaKh1
-!s100 oW6b5]JmJzAN1eoGlbZDm3
-R6
-32
+VFdHPBURFF[XgUS4FV4k3T1
+!s100 X4lkTGo^ZV33DBa^5Y_lQ3
 R7
-!i10b 1
+31
 R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-93|-work|work|/home/tomas/ws_cad/sdr.hdl/rx/recv.vhd|
+Z18 !s107 /home/tomas/ws_cad/sdr.hdl/rx/recv.vhd|
+!i113 1
+R12
+R13
+Astructural
+R3
+R4
+DEx4 work 4 recv 0 22 FdHPBURFF[XgUS4FV4k3T1
+l115
+L57
+V7QoQ@0OidDj=R9D3fS5UH1
+!s100 4jlF5T84hk7c2mFh@@8dR1
+R7
+31
+R8
+!i10b 1
+R9
 R17
 R18
 !i113 1
 R12
-Erx
-Z19 w1450640064
-R14
+R13
+Erecv_reconfig
+Z19 w1450789975
 R2
 R3
+R4
 R0
-Z20 8/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/rx.vhd
-Z21 F/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/rx.vhd
+Z20 8/home/tomas/ws_cad/sdr.hdl/rx/recv_reconfig_sim/recv_reconfig.vhd
+Z21 F/home/tomas/ws_cad/sdr.hdl/rx/recv_reconfig_sim/recv_reconfig.vhd
 l0
 L9
-VD6D:lUC0ldj;L][S^9f0n0
-!s100 Slb4S;@^S@PjTo1^g?V]61
-R6
+VoBnU7OD8;d=XADQI@46oW2
+!s100 H`8<_SYXNPfao1F31O<TC3
+R7
 32
-Z22 !s110 1450704339
+R8
 !i10b 1
-Z23 !s108 1450704339.000000
-Z24 !s90 -reportprogress|300|/home/tomas/ws_cad/sdr.hdl/rx/rx_sim/rx.vhd|
-Z25 !s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_sim/rx.vhd|
+R9
+Z22 !s90 -reportprogress|300|/home/tomas/ws_cad/sdr.hdl/rx/recv_reconfig_sim/recv_reconfig.vhd|
+Z23 !s107 /home/tomas/ws_cad/sdr.hdl/rx/recv_reconfig_sim/recv_reconfig.vhd|
 !i113 1
-R12
+R13
 Artl
-R14
 R2
 R3
-DEx4 work 2 rx 0 22 D6D:lUC0ldj;L][S^9f0n0
-l162
-L39
-V;94EV0KJ3jE]0WjFBK?H<0
-!s100 >iW:4X:GIK8111N5[]@l=0
-R6
+R4
+DEx4 work 13 recv_reconfig 0 22 oBnU7OD8;d=XADQI@46oW2
+l64
+L25
+VzIOGojQ:jiDR4JF]dNYIO3
+!s100 S^XJ2VMdK6Go1XI:`lLP>0
+R7
 32
+R8
+!i10b 1
+R9
 R22
-!i10b 1
 R23
-R24
-R25
 !i113 1
-R12
-Erx_reset
-Z26 w1450538556
-R14
+R13
+Erecv_reset
+Z24 w1450788542
 R2
 R3
+R4
 R0
-Z27 8/home/tomas/ws_cad/sdr.hdl/rx/rx_reset_sim/rx_reset.vhd
-Z28 F/home/tomas/ws_cad/sdr.hdl/rx/rx_reset_sim/rx_reset.vhd
+Z25 8/home/tomas/ws_cad/sdr.hdl/rx/recv_reset_sim/recv_reset.vhd
+Z26 F/home/tomas/ws_cad/sdr.hdl/rx/recv_reset_sim/recv_reset.vhd
 l0
 L9
-V_cPf9Znl=QObDkUZZib4_3
-!s100 dlbzkOe4VVBzTSH2b@l][3
-R6
-32
+V;095YzEbFcH;9_H3cn8:J3
+!s100 7>6Y6hQ5a1`PIcT=5cC[C3
 R7
+32
+Z27 !s110 1450863782
 !i10b 1
-R8
-Z29 !s90 -reportprogress|300|/home/tomas/ws_cad/sdr.hdl/rx/rx_reset_sim/rx_reset.vhd|
-Z30 !s107 /home/tomas/ws_cad/sdr.hdl/rx/rx_reset_sim/rx_reset.vhd|
+Z28 !s108 1450863782.000000
+Z29 !s90 -reportprogress|300|/home/tomas/ws_cad/sdr.hdl/rx/recv_reset_sim/recv_reset.vhd|
+Z30 !s107 /home/tomas/ws_cad/sdr.hdl/rx/recv_reset_sim/recv_reset.vhd|
 !i113 1
-R12
+R13
 Artl
-R14
 R2
 R3
-DEx4 work 8 rx_reset 0 22 _cPf9Znl=QObDkUZZib4_3
-l73
-L28
-V`<YMj`OPh2h=?_dG4c?_N2
-!s100 BZN518:1G5Q56hd@fUgkB0
-R6
-32
+R4
+DEx4 work 10 recv_reset 0 22 ;095YzEbFcH;9_H3cn8:J3
+l66
+L21
+V?:XVhKW?K^iCC[_OjTMmO0
+!s100 AlJ65^WWnSkmY^`8a@5AX3
 R7
+32
+R27
 !i10b 1
-R8
+R28
 R29
 R30
 !i113 1
-R12
-Etestbench
-Z31 w1450721884
-Z32 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
-R14
+R13
+Erecv_rx
+Z31 w1450805210
 R2
 R3
+R4
 R0
-Z33 8/home/tomas/ws_cad/sdr.hdl/rx/tb.vhd
-Z34 F/home/tomas/ws_cad/sdr.hdl/rx/tb.vhd
+Z32 8/home/tomas/ws_cad/sdr.hdl/rx/recv_rx_sim/recv_rx.vhd
+Z33 F/home/tomas/ws_cad/sdr.hdl/rx/recv_rx_sim/recv_rx.vhd
 l0
-L30
-VDX2XSeEgjV[UDXJVHZ?ZP1
-!s100 f`dBDLIZAe0?5WUJzPXOT0
-R6
+L9
+VF[oeC]ze3bm<O7z?f<emU1
+!s100 1=akneJ53N?IR4I=6IB3;3
+R7
 32
-Z35 !s110 1450722094
+R27
 !i10b 1
-Z36 !s108 1450722094.000000
-Z37 !s90 -reportprogress|300|-work|work|/home/tomas/ws_cad/sdr.hdl/rx/tb.vhd|
-Z38 !s107 /home/tomas/ws_cad/sdr.hdl/rx/tb.vhd|
+R28
+Z34 !s90 -reportprogress|300|/home/tomas/ws_cad/sdr.hdl/rx/recv_rx_sim/recv_rx.vhd|
+Z35 !s107 /home/tomas/ws_cad/sdr.hdl/rx/recv_rx_sim/recv_rx.vhd|
 !i113 1
-Z39 o-work work
-R12
-Adut
-R32
-R14
+R13
+Artl
 R2
 R3
-Z40 DEx4 work 9 testbench 0 22 DX2XSeEgjV[UDXJVHZ?ZP1
-l81
-L33
-V28`5@8cMoP=;TlPMZBhiW0
-!s100 F2oP9i@l@ID2C^G4W>>VE1
-R6
+R4
+DEx4 work 7 recv_rx 0 22 F[oeC]ze3bm<O7z?f<emU1
+l152
+L29
+V3G`SC:Voclmmj2:Km[De91
+!s100 CZeM3`25ISi0BVfH?79V?0
+R7
 32
+R27
+!i10b 1
+R28
+R34
 R35
-!i10b 1
-R36
-R37
-R38
 !i113 1
-R39
-R12
-Excvr
-Z41 w1450538585
-R2
+R13
+Erefgen
+Z36 w1450789114
 R3
+R4
 R0
-Z42 8/home/tomas/ws_cad/sdr.hdl/rx/xcvr.vhd
-Z43 F/home/tomas/ws_cad/sdr.hdl/rx/xcvr.vhd
+Z37 8/home/tomas/ws_cad/sdr.hdl/rx/refgen.vhd
+Z38 F/home/tomas/ws_cad/sdr.hdl/rx/refgen.vhd
 l0
 L25
-VOY^HLdSTJe=@7313ljnYg0
-!s100 zQAm@j:kI8f1X^Fj=]MB>2
-R6
-31
+VCQE^Xaz`XLBB1YoSYY9_f2
+!s100 VXjEZFjm;lmhP3RcTM^MW1
 R7
-!i10b 1
+31
 R8
-Z44 !s90 -reportprogress|300|-93|-work|work|/home/tomas/ws_cad/sdr.hdl/rx/xcvr.vhd|
-Z45 !s107 /home/tomas/ws_cad/sdr.hdl/rx/xcvr.vhd|
+!i10b 1
+R9
+Z39 !s90 -reportprogress|300|-93|-work|work|/home/tomas/ws_cad/sdr.hdl/rx/refgen.vhd|
+Z40 !s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen.vhd|
 !i113 1
-R11
 R12
+R13
 Astructural
+R3
+R4
+DEx4 work 6 refgen 0 22 CQE^Xaz`XLBB1YoSYY9_f2
+l111
+L54
+V^nY;o`II?[?9i7_DD]lW41
+!s100 CFJ2JG[1XNiZ8Ob2_L_eg0
+R7
+31
+R8
+!i10b 1
+R9
+R39
+R40
+!i113 1
+R12
+R13
+Erefgen_reconfig
+Z41 w1450788350
 R2
 R3
-DEx4 work 4 xcvr 0 22 OY^HLdSTJe=@7313ljnYg0
-l145
-L66
-VN_7JWEYk^QzVfH`PQeYVc2
-!s100 jM_9@e_Y_Y46LWz0QeC;61
-R6
-31
+R4
+R0
+Z42 8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/refgen_reconfig.vhd
+Z43 F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/refgen_reconfig.vhd
+l0
+L9
+VDLlOIYX2L?NgRU@N9`XEP0
+!s100 GmB=e<4;4g]@NWi0nj=XW0
 R7
+32
+Z44 !s110 1450863779
 !i10b 1
-R8
-R44
-R45
+Z45 !s108 1450863779.000000
+Z46 !s90 -reportprogress|300|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/refgen_reconfig.vhd|
+Z47 !s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig_sim/refgen_reconfig.vhd|
 !i113 1
-R11
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 15 refgen_reconfig 0 22 DLlOIYX2L?NgRU@N9`XEP0
+l64
+L25
+VCeeBPd@I^Z:bhd@_CUC>W3
+!s100 YTFNmbHjbl[`VBYnbEWP11
+R7
+32
+R44
+!i10b 1
+R45
+R46
+R47
+!i113 1
+R13
+Erefgen_reset
+Z48 w1450788298
+R2
+R3
+R4
+R0
+Z49 8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reset_sim/refgen_reset.vhd
+Z50 F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reset_sim/refgen_reset.vhd
+l0
+L9
+VMYG3CX_]fQiMR5@hL;6>10
+!s100 9b8T>JMFHR2XBM<f<?AkZ3
+R7
+32
+Z51 !s110 1450863775
+!i10b 1
+Z52 !s108 1450863775.000000
+Z53 !s90 -reportprogress|300|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reset_sim/refgen_reset.vhd|
+Z54 !s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reset_sim/refgen_reset.vhd|
+!i113 1
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 12 refgen_reset 0 22 MYG3CX_]fQiMR5@hL;6>10
+l68
+L23
+VgjU8^AK4anTF5IbfO>9z;2
+!s100 4D3EPCzRLbo:QM[Qmh6eh2
+R7
+32
+R51
+!i10b 1
+R52
+R53
+R54
+!i113 1
+R13
+Erefgen_tx
+Z55 w1450810137
+R2
+R3
+R4
+R0
+Z56 8/home/tomas/ws_cad/sdr.hdl/rx/refgen_tx_sim/refgen_tx.vhd
+Z57 F/home/tomas/ws_cad/sdr.hdl/rx/refgen_tx_sim/refgen_tx.vhd
+l0
+L9
+V0<8nPEbGZZV^JYL<@1A`A1
+!s100 HS?NMObLHbok@H=98C?nf1
+R7
+32
+R51
+!i10b 1
+R52
+Z58 !s90 -reportprogress|300|/home/tomas/ws_cad/sdr.hdl/rx/refgen_tx_sim/refgen_tx.vhd|
+Z59 !s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_tx_sim/refgen_tx.vhd|
+!i113 1
+R13
+Artl
+R2
+R3
+R4
+DEx4 work 9 refgen_tx 0 22 0<8nPEbGZZV^JYL<@1A`A1
+l149
+L26
+VW6`z[i9Rd8]mBn0GcEKQ33
+!s100 11=agO3o>_PEYO@RN@G?W2
+R7
+32
+R51
+!i10b 1
+R52
+R58
+R59
+!i113 1
+R13
+Etestbench
+Z60 w1450805306
+Z61 DPx4 ieee 9 math_real 0 22 Sk6CSihbPL<f[^Shm]=KX0
+R2
+R3
+R4
+R0
+Z62 8/home/tomas/ws_cad/sdr.hdl/rx/tb.vhd
+Z63 F/home/tomas/ws_cad/sdr.hdl/rx/tb.vhd
+l0
+L30
+VY>XBG1VDkzP7HNGj?RM9H3
+!s100 f`dBDLIZAe0?5WUJzPXOT0
+R7
+31
+R8
+!i10b 1
+R9
+Z64 !s90 -reportprogress|300|-93|-work|work|/home/tomas/ws_cad/sdr.hdl/rx/tb.vhd|
+Z65 !s107 /home/tomas/ws_cad/sdr.hdl/rx/tb.vhd|
+!i113 1
 R12
+R13
+Adut
+R61
+R2
+R3
+R4
+DEx4 work 9 testbench 0 22 Y>XBG1VDkzP7HNGj?RM9H3
+l81
+L33
+VS88MNCL]lYlL7XSdKjCHC3
+!s100 Xj>:WSl<[Uz]3PGkS4P=S3
+R7
+31
+R8
+!i10b 1
+R9
+R64
+R65
+!i113 1
+R12
+R13
+Excvr
+Z66 w1450789594
+R3
+R4
+R0
+Z67 8/home/tomas/ws_cad/sdr.hdl/rx/xcvr.vhd
+Z68 F/home/tomas/ws_cad/sdr.hdl/rx/xcvr.vhd
+l0
+L25
+V7OQhECJ6dgg1OYUk?CYU91
+!s100 ajU_hcVoAP8iW?@Pe5gL60
+R7
+31
+R8
+!i10b 1
+R9
+Z69 !s90 -reportprogress|300|-93|-work|work|/home/tomas/ws_cad/sdr.hdl/rx/xcvr.vhd|
+Z70 !s107 /home/tomas/ws_cad/sdr.hdl/rx/xcvr.vhd|
+!i113 1
+R12
+R13
+Astructural
+R3
+R4
+DEx4 work 4 xcvr 0 22 7OQhECJ6dgg1OYUk?CYU91
+l113
+L65
+VEQdTSHaQNaDDeY@gFlKhc3
+!s100 K6C5dWJz[APYA3m`ZzioY1
+R7
+31
+R8
+!i10b 1
+R9
+R69
+R70
+!i113 1
+R12
+R13

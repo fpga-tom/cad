@@ -3,15 +3,16 @@ import matplotlib
 matplotlib.use('GTK')
 import matplotlib.pyplot as plt
 
-freq=625e6/16
+freq=950e6
 freq_low=1e3
-sr=100e9
-time=.5e-3
+#sr=100e9
+sr=2.5e9
+time=1e-3
 amp=.5
-print amp
+print amp, sr
 
 x=np.arange(0,time,1/sr)
-y=amp*np.sin(2*np.pi*freq*x)*np.sin(2*np.pi*freq_low*x)
+y=amp*np.sin(2*np.pi*freq*x)*np.sin(2*np.pi*freq_low*x) + amp
 #y=amp*np.sin(2*np.pi*freq_low*x)+amp
 
 

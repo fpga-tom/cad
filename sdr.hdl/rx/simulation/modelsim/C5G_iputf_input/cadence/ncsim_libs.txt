@@ -1,3 +1,6 @@
-rx
-reconfig
-rx_reset
+refgen_tx
+refgen_reset
+refgen_reconfig
+recv_rx
+recv_reset
+recv_reconfig

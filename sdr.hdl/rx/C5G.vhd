@@ -6,7 +6,7 @@
 -- Author     : tomas  <tomas@fedora>
 -- Company    : 
 -- Created    : 2015-12-19
--- Last update: 2015-12-20
+-- Last update: 2015-12-23
 -- Platform   : 
 -- Standard   : VHDL'93/02
 -------------------------------------------------------------------------------
@@ -21,7 +21,10 @@
 
 
 library ieee;
+library std;
 use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use std.textio.all;
 
 entity C5G is
   port(
@@ -62,38 +65,38 @@ entity C5G is
 end;
 
 architecture structural of C5G is
-
   component xcvr is
     port (
-      clock                     : in  std_logic                     := '0';
-      reset                     : in  std_logic                     := '0';
-      tx_ready                  : out std_logic_vector(0 downto 0);
-      pll_select                : in  std_logic_vector(0 downto 0)  := (others => '0');
-      rx_ready                  : out std_logic_vector(0 downto 0);
-      reconfig_busy             : out std_logic;
       mgmt_clk_clk              : in  std_logic                     := '0';
       mgmt_rst_reset            : in  std_logic                     := '0';
       reconfig_mgmt_address     : in  std_logic_vector(6 downto 0)  := (others => '0');
       reconfig_mgmt_read        : in  std_logic                     := '0';
-      reconfig_mgmt_readdata    : out std_logic_vector(31 downto 0);
-      reconfig_mgmt_waitrequest : out std_logic;
       reconfig_mgmt_write       : in  std_logic                     := '0';
       reconfig_mgmt_writedata   : in  std_logic_vector(31 downto 0) := (others => '0');
+      clock                     : in  std_logic                     := '0';
+      reset                     : in  std_logic                     := '0';
+      reconfig_busy             : out std_logic;
+      reconfig_mgmt_readdata    : out std_logic_vector(31 downto 0);
+      reconfig_mgmt_waitrequest : out std_logic;
       tx_pll_refclk             : in  std_logic_vector(0 downto 0)  := (others => '0');
       tx_serial_data            : out std_logic_vector(0 downto 0);
+      tx_parallel_data          : in  std_logic_vector(43 downto 0) := (others => '0');
+      tx_std_coreclkin          : in  std_logic_vector(0 downto 0)  := (others => '0');
+      tx_std_clkout             : out std_logic_vector(0 downto 0);
+      tx_ready                  : out std_logic_vector(0 downto 0);
+      pll_select                : in  std_logic_vector(0 downto 0)  := (others => '0');
       rx_cdr_refclk             : in  std_logic_vector(0 downto 0)  := (others => '0');
       rx_pma_clkout             : out std_logic_vector(0 downto 0);
       rx_serial_data            : in  std_logic_vector(0 downto 0)  := (others => '0');
       rx_set_locktodata         : in  std_logic_vector(0 downto 0)  := (others => '0');
       rx_set_locktoref          : in  std_logic_vector(0 downto 0)  := (others => '0');
       rx_is_lockedtoref         : out std_logic_vector(0 downto 0);
-      tx_parallel_data          : in  std_logic_vector(43 downto 0) := (others => '0');
       rx_parallel_data          : out std_logic_vector(63 downto 0);
-      tx_std_coreclkin          : in  std_logic_vector(0 downto 0)  := (others => '0');
       rx_std_coreclkin          : in  std_logic_vector(0 downto 0)  := (others => '0');
-      tx_std_clkout             : out std_logic_vector(0 downto 0);
-      rx_std_clkout             : out std_logic_vector(0 downto 0));
+      rx_std_clkout             : out std_logic_vector(0 downto 0);
+      rx_ready                  : out std_logic_vector(0 downto 0));
   end component xcvr;
+
   signal clock                     : std_logic                     := '0';
   signal reset                     : std_logic                     := '0';
   signal tx_ready                  : std_logic_vector(0 downto 0);
@@ -131,7 +134,8 @@ begin
   pll_select(0)                 <= '0';
   tx_pll_refclk(0)              <= CLKIN_P(1);
   rx_cdr_refclk(0)              <= CLKIN_P(1);
-  tx_parallel_data(20 downto 0) <= "101010101001010101010";
+  tx_parallel_data(20 downto 0) <= "000000000000000011111";  -- "101010101001010101010";  -- 625Mhz
+                                        -- 10 bit interface width
   rx_serial_data(0)             <= RX_P(0);
   TX_P(0)                       <= tx_serial_data(0);
   tx_std_coreclkin              <= tx_std_clkout;
@@ -139,33 +143,58 @@ begin
 
   xcvr_1 : component xcvr
     port map (
-      clock                     => clock,
-      reset                     => reset,
-      tx_ready                  => tx_ready,
-      pll_select                => pll_select,
-      rx_ready                  => rx_ready,
-      reconfig_busy             => reconfig_busy,
       mgmt_clk_clk              => mgmt_clk_clk,
       mgmt_rst_reset            => mgmt_rst_reset,
       reconfig_mgmt_address     => reconfig_mgmt_address,
       reconfig_mgmt_read        => reconfig_mgmt_read,
-      reconfig_mgmt_readdata    => reconfig_mgmt_readdata,
-      reconfig_mgmt_waitrequest => reconfig_mgmt_waitrequest,
       reconfig_mgmt_write       => reconfig_mgmt_write,
       reconfig_mgmt_writedata   => reconfig_mgmt_writedata,
+      clock                     => clock,
+      reset                     => reset,
+      reconfig_busy             => reconfig_busy,
+      reconfig_mgmt_readdata    => reconfig_mgmt_readdata,
+      reconfig_mgmt_waitrequest => reconfig_mgmt_waitrequest,
       tx_pll_refclk             => tx_pll_refclk,
       tx_serial_data            => tx_serial_data,
+      tx_parallel_data          => tx_parallel_data,
+      tx_std_coreclkin          => tx_std_coreclkin,
+      tx_std_clkout             => tx_std_clkout,
+      tx_ready                  => tx_ready,
+      pll_select                => pll_select,
       rx_cdr_refclk             => rx_cdr_refclk,
       rx_pma_clkout             => rx_pma_clkout,
       rx_serial_data            => rx_serial_data,
       rx_set_locktodata         => rx_set_locktodata,
       rx_set_locktoref          => rx_set_locktoref,
       rx_is_lockedtoref         => rx_is_lockedtoref,
-      tx_parallel_data          => tx_parallel_data,
       rx_parallel_data          => rx_parallel_data,
-      tx_std_coreclkin          => tx_std_coreclkin,
       rx_std_coreclkin          => rx_std_coreclkin,
-      tx_std_clkout             => tx_std_clkout,
-      rx_std_clkout             => rx_std_clkout);
+      rx_std_clkout             => rx_std_clkout,
+      rx_ready                  => rx_ready);
+
+  -- purpose: writing rx parallel data to file
+  -- type   : sequential
+  -- inputs : clock, reset
+  -- outputs: 
+  rx_process : process (clock, reset) is
+    variable outline : line;
+    file outfile     : text is out "rx_pwm.dat";
+    variable rx      : std_logic_vector(0 downto 0);
+  begin  -- process rx_process
+    if reset = '1' then                 -- asynchronous reset (active high)
+
+    elsif clock'event and clock = '1' then  -- rising clock edge
+      for i in 0 to 9 loop
+        rx(0) := rx_parallel_data(i);
+        write(outline, to_integer(unsigned(rx)));
+        writeline(outfile, outline);
+      end loop;
+      for i in 16 to 25 loop
+        rx(0) := rx_parallel_data(i);
+        write(outline, to_integer(unsigned(rx)));
+        writeline(outfile, outline);
+      end loop;
+    end if;
+  end process rx_process;
 
 end structural;

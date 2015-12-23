@@ -6,7 +6,7 @@
 -- Author     : tomas  <tomas@fedora>
 -- Company    : 
 -- Created    : 2015-12-19
--- Last update: 2015-12-21
+-- Last update: 2015-12-22
 -- Platform   : 
 -- Standard   : VHDL'93/02
 -------------------------------------------------------------------------------
@@ -79,7 +79,7 @@ architecture dut of testbench is
   signal clock_50 : std_logic := '0';   -- 50Mhz clock
   signal reset_p  : std_logic := '1';   -- sampling reset
 begin
-  clock_i      <= not clock_i  after 5 ps; -- 100ps ~ 5Ghz
+  clock_i      <= not clock_i  after 200 ps; -- 100ps ~ 5Ghz, 160 ps ~ 3.125Ghz
   clock        <= not clock    after 4 ns; -- 4ns ~ 125Mhz
   clock_50     <= not clock_50 after 20 ns;
   reset        <= '0'          after 32 ns;
@@ -147,6 +147,7 @@ begin
         v := -1.0;
       end if;
       z    := z + v;
+--      report "gain value " & real'image(gain) & " " & real'image(z) & " " & real'image(zout);
       zout := gain*z;
       gain := gain - rate*(-reference + abs(zout));
       write(outline, zout);
@@ -155,8 +156,10 @@ begin
       read(inline, sig);
       if sig - zout > 0.0 then
         PWM := "01";
+        RX_P(0) <= '1';
       else
         PWM := "00";
+        RX_P(0) <= '0';
       end if;
       WRITE(PWMLINE, TO_INTEGER(signed(PWM)));
       WRITELINE(PWMFILE, PWMLINE);

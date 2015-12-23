@@ -1,0 +1,107 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/tomas/ws_cad/sdr.hdl/rx/simulation/modelsim
+vMjEtUtdr8i78rABNJvR4tEHuhcqK3HghrKgJ4kq7vGE=
+Z1 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z2 DXx4 work 21 altera_xcvr_functions 0 22 kH8o[B9CdaL2Jh3H_Fm_F1
+Z3 !s110 1450863775
+!i10b 0
+!s100 B=b0E2eV8PjoI[k;`DL:l3
+I`EN3dLSYcB:h?Rj973zRd1
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+!i8a 2127690112
+!s105 alt_xcvr_reset_counter_sv_unit
+S1
+R0
+Z5 w1450863775
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reset_sim/altera_xcvr_reset_control/mentor/alt_xcvr_reset_counter.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reset_sim/altera_xcvr_reset_control/mentor/alt_xcvr_reset_counter.sv
+Z6 L0 38
+Z7 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z8 !s108 1450863775.000000
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reset_sim/altera_xcvr_reset_control/mentor/alt_xcvr_reset_counter.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reset_sim/altera_xcvr_reset_control/mentor/alt_xcvr_reset_counter.sv|-work|refgen_reset|
+!i113 1
+Z9 o-sv -work refgen_reset
+vg1EzGfmNdx7oi/pVEvYruw==
+R1
+R3
+!i10b 0
+!s100 b;hhoie;nOaG[10CMjYZQ2
+I6kIPn8dBAe62cUS@Ng8NS1
+R4
+!i8a 1059350992
+!s105 alt_xcvr_resync_sv_unit
+S1
+R0
+R5
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reset_sim/altera_xcvr_reset_control/mentor/alt_xcvr_resync.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reset_sim/altera_xcvr_reset_control/mentor/alt_xcvr_resync.sv
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reset_sim/altera_xcvr_reset_control/mentor/alt_xcvr_resync.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reset_sim/altera_xcvr_reset_control/mentor/alt_xcvr_resync.sv|-work|refgen_reset|
+!i113 1
+R9
+XNGYDjJMqEoH4X2M2/V4MtgH5OqG0G5qcVf+XiouadC8=
+R1
+R3
+!i10b 0
+!s100 NU_C2GZLJJa`_9GbbmzhF0
+IkH8o[B9CdaL2Jh3H_Fm_F1
+VkH8o[B9CdaL2Jh3H_Fm_F1
+!i8a 2103205008
+S1
+R0
+R5
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reset_sim/altera_xcvr_reset_control/mentor/altera_xcvr_functions.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reset_sim/altera_xcvr_reset_control/mentor/altera_xcvr_functions.sv
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reset_sim/altera_xcvr_reset_control/mentor/altera_xcvr_functions.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reset_sim/altera_xcvr_reset_control/mentor/altera_xcvr_functions.sv|-work|refgen_reset|
+!i113 1
+R9
+vhgw6UTiIif0lA/aDRaqi6I1kuM8T7MHG5NFARQ7Z594=
+R1
+R2
+R3
+!i10b 0
+!s100 X:bkW4@M_eYVXeTgDFm8`3
+IFCYFz]PkmFa2W0`6ml5oT3
+R4
+!i8a 1141102112
+!s105 altera_xcvr_reset_control_sv_unit
+S1
+R0
+R5
+8/home/tomas/ws_cad/sdr.hdl/rx/refgen_reset_sim/altera_xcvr_reset_control/mentor/altera_xcvr_reset_control.sv
+F/home/tomas/ws_cad/sdr.hdl/rx/refgen_reset_sim/altera_xcvr_reset_control/mentor/altera_xcvr_reset_control.sv
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 /home/tomas/ws_cad/sdr.hdl/rx/refgen_reset_sim/altera_xcvr_reset_control/mentor/altera_xcvr_reset_control.sv|
+!s90 -reportprogress|300|-sv|/home/tomas/ws_cad/sdr.hdl/rx/refgen_reset_sim/altera_xcvr_reset_control/mentor/altera_xcvr_reset_control.sv|-work|refgen_reset|
+!i113 1
+R9

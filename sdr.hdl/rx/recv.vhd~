@@ -1,0 +1,30 @@
+-------------------------------------------------------------------------------
+-- Title      : all digital receiver
+-- Project    : 
+-------------------------------------------------------------------------------
+-- File       : recv.vhd
+-- Author     : tomas  <tomas@fedora>
+-- Company    : 
+-- Created    : 2015-12-22
+-- Last update: 2015-12-22
+-- Platform   : 
+-- Standard   : VHDL'93/02
+-------------------------------------------------------------------------------
+-- Description: pwm sampler
+-------------------------------------------------------------------------------
+-- Copyright (c) 2015 
+-------------------------------------------------------------------------------
+-- Revisions  :
+-- Date        Version  Author  Description
+-- 2015-12-22  1.0      tomas   Created
+-------------------------------------------------------------------------------
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity recv is
+end;
+
+architecture structural of recv is
+begin
+end;
