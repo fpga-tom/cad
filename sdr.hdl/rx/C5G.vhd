@@ -6,7 +6,7 @@
 -- Author     : tomas  <tomas@fedora>
 -- Company    : 
 -- Created    : 2015-12-19
--- Last update: 2015-12-23
+-- Last update: 2015-12-25
 -- Platform   : 
 -- Standard   : VHDL'93/02
 -------------------------------------------------------------------------------
@@ -52,12 +52,14 @@ entity C5G is
     UART_TX : out std_logic;
 
     -- //////////// HSMC; HSMC connect to XTS - Transceiver to SMA //////////
-    CLKIN_P  : in  std_logic_vector(2 downto 1);
-    CLKIN0   : in  std_logic;
-    CLKOUT_P : out std_logic_vector(2 downto 1);
-    CLKOUT0  : out std_logic;
-    RX_P     : in  std_logic_vector(3 downto 0);
-    TX_P     : out std_logic_vector(3 downto 0)
+    CLKIN_P          : in  std_logic_vector(2 downto 1);
+    CLKIN0           : in  std_logic;
+    CLKOUT_P         : out std_logic_vector(2 downto 1);
+    CLKOUT0          : out std_logic;
+    RX_P             : in  std_logic_vector(3 downto 0);
+    TX_P             : out std_logic_vector(3 downto 0);
+    ast_source_data  : out std_logic_vector(25 downto 0);
+    ast_source_valid : out std_logic
     );
 
 
@@ -94,7 +96,9 @@ architecture structural of C5G is
       rx_parallel_data          : out std_logic_vector(63 downto 0);
       rx_std_coreclkin          : in  std_logic_vector(0 downto 0)  := (others => '0');
       rx_std_clkout             : out std_logic_vector(0 downto 0);
-      rx_ready                  : out std_logic_vector(0 downto 0));
+      rx_ready                  : out std_logic_vector(0 downto 0);
+      ast_source_data           : out std_logic_vector(25 downto 0);
+      ast_source_valid          : out std_logic);
   end component xcvr;
 
   signal clock                     : std_logic                     := '0';
@@ -170,7 +174,9 @@ begin
       rx_parallel_data          => rx_parallel_data,
       rx_std_coreclkin          => rx_std_coreclkin,
       rx_std_clkout             => rx_std_clkout,
-      rx_ready                  => rx_ready);
+      rx_ready                  => rx_ready,
+      ast_source_data           => ast_source_data,
+      ast_source_valid          => ast_source_valid);
 
   -- purpose: writing rx parallel data to file
   -- type   : sequential

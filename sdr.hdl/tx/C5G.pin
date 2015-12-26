@@ -285,7 +285,7 @@ NC                           : C3        :        :                   :         
 NC                           : C4        :        :                   :         :           :                
 GND                          : C5        : gnd    :                   :         :           :                
 VCCIO8A                      : C6        : power  :                   : 2.5V    : 8A        :                
-DSM_out                      : C7        : output : 2.5 V             :         : 8A        : N              
+RESERVED_INPUT_WITH_WEAK_PULLUP : C7        :        :                   :         : 8A        :                
 VREFB8AN0                    : C8        : power  :                   :         : 8A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C9        :        :                   :         : 7A        :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : C10       :        :                   :         : 7A        :                
@@ -310,7 +310,7 @@ NC                           : D2        :        :                   :         
 GND                          : D3        : gnd    :                   :         :           :                
 GND                          : D4        : gnd    :                   :         :           :                
 nCE                          : D5        :        :                   :         : 9A        :                
-RESERVED_INPUT_WITH_WEAK_PULLUP : D6        :        :                   :         : 8A        :                
+DSM_out                      : D6        : output : 2.5 V             :         : 8A        : N              
 RESERVED_INPUT_WITH_WEAK_PULLUP : D7        :        :                   :         : 8A        :                
 LEDG[2]                      : D8        : output : 2.5 V             :         : 8A        : Y              
 VCCIO8A                      : D9        : power  :                   : 2.5V    : 8A        :                

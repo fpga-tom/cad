@@ -136,9 +136,6 @@ set_instance_assignment -name IO_STANDARD LVDS -to CLKIN_P[2]
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
-set_global_assignment -name VHDL_FILE xcvr.vhd
-set_global_assignment -name SDC_FILE C5G.SDC
-set_global_assignment -name VHDL_FILE C5G.vhd
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
@@ -151,6 +148,16 @@ set_global_assignment -name EDA_TEST_BENCH_NAME tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME testbench -section_id tb
 set_global_assignment -name EDA_TEST_BENCH_FILE tb.vhd -section_id tb
+set_global_assignment -name QIP_FILE channelizer_cic/synthesis/channelizer_cic.qip
+set_global_assignment -name SIP_FILE channelizer_cic/simulation/channelizer_cic.sip
+set_global_assignment -name SIP_FILE channelizer_fir.sip
+set_global_assignment -name QIP_FILE channelizer_fir.qip
+set_global_assignment -name VHDL_FILE channelizer.vhd
+set_global_assignment -name SIP_FILE channelizer_nco/simulation/channelizer_nco.sip
+set_global_assignment -name QIP_FILE channelizer_nco/synthesis/channelizer_nco.qip
+set_global_assignment -name VHDL_FILE xcvr.vhd
+set_global_assignment -name SDC_FILE C5G.SDC
+set_global_assignment -name VHDL_FILE C5G.vhd
 set_global_assignment -name QIP_FILE refgen_tx.qip
 set_global_assignment -name SIP_FILE refgen_tx.sip
 set_global_assignment -name QIP_FILE refgen_reset.qip

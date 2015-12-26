@@ -1,5 +1,5 @@
 Info: Start Nativelink Simulation process
-executing command line: ip-make-simscript --nativelink-mode --output-directory=C5G_iputf_input --spd=/home/tomas/ws_cad/sdr.hdl/rx/refgen_tx.spd --spd=/home/tomas/ws_cad/sdr.hdl/rx/refgen_reset.spd --spd=/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig.spd --spd=/home/tomas/ws_cad/sdr.hdl/rx/recv_rx.spd --spd=/home/tomas/ws_cad/sdr.hdl/rx/recv_reset.spd --spd=/home/tomas/ws_cad/sdr.hdl/rx/recv_reconfig.spd 
+executing command line: ip-make-simscript --nativelink-mode --output-directory=C5G_iputf_input --spd=/home/tomas/ws_cad/sdr.hdl/rx/channelizer_cic/channelizer_cic.spd --spd=/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fir.spd --spd=/home/tomas/ws_cad/sdr.hdl/rx/channelizer_nco/channelizer_nco.spd --spd=/home/tomas/ws_cad/sdr.hdl/rx/refgen_tx.spd --spd=/home/tomas/ws_cad/sdr.hdl/rx/refgen_reset.spd --spd=/home/tomas/ws_cad/sdr.hdl/rx/refgen_reconfig.spd --spd=/home/tomas/ws_cad/sdr.hdl/rx/recv_rx.spd --spd=/home/tomas/ws_cad/sdr.hdl/rx/recv_reset.spd --spd=/home/tomas/ws_cad/sdr.hdl/rx/recv_reconfig.spd 
 
 ========= EDA Simulation Settings =====================
 

@@ -1,0 +1,22 @@
+# system info channelizer_fft on 2015.12.24.20:05:01
+system_info:
+name,value
+DEVICE,5CGXFC5C6F27C7
+DEVICE_FAMILY,Cyclone V
+GENERATION_ID,1450983877
+#
+#
+# Files generated for channelizer_fft on 2015.12.24.20:05:01
+files:
+filepath,kind,attributes,module,is_top
+simulation/channelizer_fft.vhd,VHDL,,channelizer_fft,true
+simulation/submodules/channelizer_fft_fft_ii_0_opt_twr2.hex,HEX,,channelizer_fft_fft_ii_0,false
+simulation/submodules/channelizer_fft_fft_ii_0_opt_twi1.hex,HEX,,channelizer_fft_fft_ii_0,false
+simulation/submodules/channelizer_fft_fft_ii_0_opt_twr1.hex,HEX,,channelizer_fft_fft_ii_0,false
+simulation/submodules/channelizer_fft_fft_ii_0_opt_twi2.hex,HEX,,channelizer_fft_fft_ii_0,false
+simulation/submodules/channelizer_fft_fft_ii_0.vo,VERILOG,,channelizer_fft_fft_ii_0,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+channelizer_fft.fft_ii_0,channelizer_fft_fft_ii_0

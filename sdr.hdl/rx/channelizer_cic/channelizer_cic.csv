@@ -1,0 +1,18 @@
+# system info channelizer_cic on 2015.12.26.14:20:03
+system_info:
+name,value
+DEVICE,5CGXFC5C6F27C7
+DEVICE_FAMILY,Cyclone V
+GENERATION_ID,1451135981
+#
+#
+# Files generated for channelizer_cic on 2015.12.26.14:20:03
+files:
+filepath,kind,attributes,module,is_top
+simulation/channelizer_cic.vhd,VHDL,,channelizer_cic,true
+simulation/submodules/channelizer_cic_cic_ii_0.vo,VERILOG,,channelizer_cic_cic_ii_0,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+channelizer_cic.cic_ii_0,channelizer_cic_cic_ii_0

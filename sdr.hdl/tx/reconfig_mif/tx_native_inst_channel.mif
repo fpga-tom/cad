@@ -1,5 +1,5 @@
 
--- File Name = C:/Users/tomas/Downloads/CodeGenerated/C5G/C5G/reconfig_mif/tx_native_inst_channel.mif.mif
+-- File Name = /home/tomas/ws_cad/sdr.hdl/tx/reconfig_mif/tx_native_inst_channel.mif.mif
 WIDTH=16;
 DEPTH=21;
 

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="simulation/submodules/channelizer_cic_cic_ii_0.vo"
+   type="VERILOG"
+   library="cic_ii_0" />
+ <file path="simulation/channelizer_cic.vhd" type="VHDL" />
+ <topLevel name="channelizer_cic" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

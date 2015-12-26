@@ -1,0 +1,63 @@
+Info: Starting: Create simulation model
+Info: qsys-generate /home/tomas/ws_cad/sdr.hdl/rx/channelizer_fft.qsys --simulation=VHDL --allow-mixed-language-simulation --output-directory=/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fft/simulation --family="Cyclone V" --part=5CGXFC5C6F27C7
+Progress: Loading rx/channelizer_fft.qsys
+Progress: Reading input file
+Progress: Adding fft_ii_0 [altera_fft_ii 15.1]
+Progress: Parameterizing module fft_ii_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: channelizer_fft: Generating channelizer_fft "channelizer_fft" for SIM_VHDL
+Warning: Parallel compilation is not licensed and has been disabled
+Info: fft_ii_0: Created simgen file at: /tmp/alt6793_8161543804048968584.dir/0001_fft_ii_0_gen/channelizer_fft_fft_ii_0.vo
+Info: fft_ii_0: "channelizer_fft" instantiated altera_fft_ii "fft_ii_0"
+Info: channelizer_fft: Done "channelizer_fft" with 2 modules, 6 files
+Info: qsys-generate succeeded.
+Info: Finished: Create simulation model
+Info: Starting: Create Modelsim Project.
+Info: sim-script-gen --spd=/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fft/channelizer_fft.spd --output-directory=/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fft/simulation/ --use-relative-paths=true
+Info: Doing: ip-make-simscript --spd=/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fft/channelizer_fft.spd --output-directory=/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fft/simulation/ --use-relative-paths=true
+Info: Generating the following file(s) for MODELSIM simulator in /home/tomas/ws_cad/sdr.hdl/rx/channelizer_fft/simulation/ directory:
+Info: 	mentor/msim_setup.tcl
+Info: Skipping VCS script generation since VHDL file $QUARTUS_INSTALL_DIR/eda/sim_lib/altera_syn_attributes.vhd is required for simulation
+Info: Generating the following file(s) for VCSMX simulator in /home/tomas/ws_cad/sdr.hdl/rx/channelizer_fft/simulation/ directory:
+Info: 	synopsys/vcsmx/synopsys_sim.setup
+Info: 	synopsys/vcsmx/vcsmx_setup.sh
+Info: Generating the following file(s) for NCSIM simulator in /home/tomas/ws_cad/sdr.hdl/rx/channelizer_fft/simulation/ directory:
+Info: 	cadence/cds.lib
+Info: 	cadence/hdl.var
+Info: 	cadence/ncsim_setup.sh
+Info: 	1 .cds.lib files in cadence/cds_libs/ directory
+Info: Generating the following file(s) for RIVIERA simulator in /home/tomas/ws_cad/sdr.hdl/rx/channelizer_fft/simulation/ directory:
+Info: 	aldec/rivierapro_setup.tcl
+Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under /home/tomas/ws_cad/sdr.hdl/rx/channelizer_fft/simulation/.
+Info: Finished: Create Modelsim Project.
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/tomas/ws_cad/sdr.hdl/rx/channelizer_fft.qsys --block-symbol-file --output-directory=/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fft --family="Cyclone V" --part=5CGXFC5C6F27C7
+Progress: Loading rx/channelizer_fft.qsys
+Progress: Reading input file
+Progress: Adding fft_ii_0 [altera_fft_ii 15.1]
+Progress: Parameterizing module fft_ii_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/tomas/ws_cad/sdr.hdl/rx/channelizer_fft.qsys --synthesis=VHDL --output-directory=/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fft/synthesis --family="Cyclone V" --part=5CGXFC5C6F27C7
+Progress: Loading rx/channelizer_fft.qsys
+Progress: Reading input file
+Progress: Adding fft_ii_0 [altera_fft_ii 15.1]
+Progress: Parameterizing module fft_ii_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: channelizer_fft: Generating channelizer_fft "channelizer_fft" for QUARTUS_SYNTH
+Info: fft_ii_0: "channelizer_fft" instantiated altera_fft_ii "fft_ii_0"
+Info: channelizer_fft: Done "channelizer_fft" with 2 modules, 49 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

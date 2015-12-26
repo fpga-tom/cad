@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="simulation/submodules/channelizer_fft_fft_ii_0_opt_twr2.hex"
+   type="HEX"
+   library="fft_ii_0" />
+ <file
+   path="simulation/submodules/channelizer_fft_fft_ii_0_opt_twi1.hex"
+   type="HEX"
+   library="fft_ii_0" />
+ <file
+   path="simulation/submodules/channelizer_fft_fft_ii_0_opt_twr1.hex"
+   type="HEX"
+   library="fft_ii_0" />
+ <file
+   path="simulation/submodules/channelizer_fft_fft_ii_0_opt_twi2.hex"
+   type="HEX"
+   library="fft_ii_0" />
+ <file
+   path="simulation/submodules/channelizer_fft_fft_ii_0.vo"
+   type="VERILOG"
+   library="fft_ii_0" />
+ <file path="simulation/channelizer_fft.vhd" type="VHDL" />
+ <topLevel name="channelizer_fft" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

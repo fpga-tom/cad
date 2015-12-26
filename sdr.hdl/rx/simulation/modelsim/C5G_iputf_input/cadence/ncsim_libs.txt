@@ -1,3 +1,5 @@
+cic_ii_0
+nco_ii_0
 refgen_tx
 refgen_reset
 refgen_reconfig

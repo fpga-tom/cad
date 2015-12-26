@@ -1,0 +1,19 @@
+# system info channelizer_nco on 2015.12.26.12:00:17
+system_info:
+name,value
+DEVICE,5CGXFC5C6F27C7
+DEVICE_FAMILY,Cyclone V
+GENERATION_ID,1451127596
+#
+#
+# Files generated for channelizer_nco on 2015.12.26.12:00:17
+files:
+filepath,kind,attributes,module,is_top
+simulation/channelizer_nco.vhd,VHDL,,channelizer_nco,true
+simulation/submodules/channelizer_nco_nco_ii_0_tb.vhd,OTHER,,channelizer_nco_nco_ii_0,false
+simulation/submodules/channelizer_nco_nco_ii_0.vo,VERILOG,,channelizer_nco_nco_ii_0,false
+#
+# Map from instance-path to kind of module
+instances:
+instancePath,module
+channelizer_nco.nco_ii_0,channelizer_nco_nco_ii_0

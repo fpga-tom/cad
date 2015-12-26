@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="simulation/submodules/channelizer_nco_nco_ii_0_tb.vhd"
+   type="OTHER"
+   library="nco_ii_0" />
+ <file
+   path="simulation/submodules/channelizer_nco_nco_ii_0.vo"
+   type="VERILOG"
+   library="nco_ii_0" />
+ <file path="simulation/channelizer_nco.vhd" type="VHDL" />
+ <topLevel name="channelizer_nco" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

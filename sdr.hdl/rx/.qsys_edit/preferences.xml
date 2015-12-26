@@ -8,5 +8,6 @@
   </columns>
  </systemtable>
  <library expandedCategories="Library,Project" />
- <window width="1100" height="800" x="0" y="28" />
+ <window width="1920" height="1018" x="0" y="28" />
+ <generation synthesis="VHDL" simulation="VHDL" mixed_lang_simulation="1" />
 </preferences>

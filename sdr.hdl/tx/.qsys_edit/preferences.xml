@@ -8,6 +8,6 @@
   </columns>
  </systemtable>
  <library expandedCategories="Project,Library" />
- <window width="1266" height="800" x="182" y="16" />
+ <window width="1266" height="800" x="182" y="28" />
  <generation simulation="VERILOG" synthesis="VERILOG" mixed_lang_simulation="1" />
 </preferences>

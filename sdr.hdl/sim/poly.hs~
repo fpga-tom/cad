@@ -1,0 +1,18 @@
+fir cs (State us) inp = (State us', out)
+where
+us' = inp +>> us
+ws = vzipWith fpmult us cs
+out = vfoldl (+) 0 ws
+
+pfs css (State (uss, cntr)) inp = (State (uss', cntr'), out)
+where
+cntr' = (cntr + 1) `mod` (length css)
+us = uss ! cntr
+cs = css ! cntr
+(us', out) = fir cs us inp
+uss' = replace cntr us' uss
+
+parpfs csss (State states) inps = (State states', outs)
+where
+res = vzipWith3 pfs csss states inps
+(states', outs) vunzip res

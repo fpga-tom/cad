@@ -10,6 +10,10 @@ vlib rtl_work
 vmap work rtl_work
 
 ###### Libraries for IPUTF cores 
+vlib C5G_iputf_libs/cic_ii_0
+vmap cic_ii_0 ./C5G_iputf_libs/cic_ii_0
+vlib C5G_iputf_libs/nco_ii_0
+vmap nco_ii_0 ./C5G_iputf_libs/nco_ii_0
 vlib C5G_iputf_libs/refgen_tx
 vmap refgen_tx ./C5G_iputf_libs/refgen_tx
 vlib C5G_iputf_libs/refgen_reset
@@ -26,6 +30,23 @@ vmap recv_reconfig ./C5G_iputf_libs/recv_reconfig
 ###### MIF file copy and HDL compilation commands for IPUTF cores 
 
 
+vlog     "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_cic/simulation/submodules/channelizer_cic_cic_ii_0.vo"                        -work cic_ii_0       
+vcom     "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_cic/simulation/channelizer_cic.vhd"                                                                
+vcom     "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fir_sim/dspba_library_package.vhd"                                                                 
+vcom     "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fir_sim/dspba_library.vhd"                                                                         
+vcom     "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fir_sim/auk_dspip_math_pkg_hpfir.vhd"                                                              
+vcom     "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fir_sim/auk_dspip_lib_pkg_hpfir.vhd"                                                               
+vcom     "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fir_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd"                                           
+vcom     "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fir_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd"                                                 
+vcom     "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fir_sim/auk_dspip_avalon_streaming_source_hpfir.vhd"                                               
+vcom     "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fir_sim/auk_dspip_roundsat_hpfir.vhd"                                                              
+vlog     "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fir_sim/altera_avalon_sc_fifo.v"                                                                   
+vcom     "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fir_sim/channelizer_fir_rtl.vhd"                                                                   
+vcom     "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fir_sim/channelizer_fir_ast.vhd"                                                                   
+vcom     "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fir_sim/channelizer_fir.vhd"                                                                       
+vcom     "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fir_sim/channelizer_fir_tb.vhd"                                                                    
+vlog     "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_nco/simulation/submodules/channelizer_nco_nco_ii_0.vo"                        -work nco_ii_0       
+vcom     "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_nco/simulation/channelizer_nco.vhd"                                                                
 vlog -sv "/home/tomas/ws_cad/sdr.hdl/rx/refgen_tx_sim/altera_xcvr_native_cv/altera_xcvr_functions.sv"                             -work refgen_tx      
 vlog -sv "/home/tomas/ws_cad/sdr.hdl/rx/refgen_tx_sim/altera_xcvr_native_cv/mentor/altera_xcvr_functions.sv"                      -work refgen_tx      
 vlog -sv "/home/tomas/ws_cad/sdr.hdl/rx/refgen_tx_sim/altera_xcvr_native_cv/sv_reconfig_bundle_to_xcvr.sv"                        -work refgen_tx      
@@ -395,6 +416,7 @@ vlog -sv "/home/tomas/ws_cad/sdr.hdl/rx/recv_reconfig_sim/alt_xcvr_reconfig/ment
 vlog -sv "/home/tomas/ws_cad/sdr.hdl/rx/recv_reconfig_sim/alt_xcvr_reconfig/mentor/av_reconfig_bundle_to_xcvr.sv"                 -work recv_reconfig  
 vcom     "/home/tomas/ws_cad/sdr.hdl/rx/recv_reconfig_sim/recv_reconfig.vhd"                                                                           
 
+vcom -93 -work work {/home/tomas/ws_cad/sdr.hdl/rx/channelizer.vhd}
 vcom -93 -work work {/home/tomas/ws_cad/sdr.hdl/rx/xcvr.vhd}
 vcom -93 -work work {/home/tomas/ws_cad/sdr.hdl/rx/C5G.vhd}
 vcom -93 -work work {/home/tomas/ws_cad/sdr.hdl/rx/refgen.vhd}
@@ -402,7 +424,7 @@ vcom -93 -work work {/home/tomas/ws_cad/sdr.hdl/rx/recv.vhd}
 
 vcom -93 -work work {/home/tomas/ws_cad/sdr.hdl/rx/tb.vhd}
 
-vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L refgen_tx -L refgen_reset -L refgen_reconfig -L recv_rx -L recv_reset -L recv_reconfig -voptargs="+acc"  testbench
+vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cyclonev -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -L cic_ii_0 -L nco_ii_0 -L refgen_tx -L refgen_reset -L refgen_reconfig -L recv_rx -L recv_reset -L recv_reconfig -voptargs="+acc"  testbench
 
 add wave *
 view structure

@@ -1,5 +1,22 @@
 
 
+vlogan +v2k           "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_cic/simulation/submodules/channelizer_cic_cic_ii_0.vo"                 -work cic_ii_0       
+vhdlan -xlrm          "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_cic/simulation/channelizer_cic.vhd"                                                         
+vhdlan -xlrm          "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fir_sim/dspba_library_package.vhd"                                                          
+vhdlan -xlrm          "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fir_sim/dspba_library.vhd"                                                                  
+vhdlan -xlrm          "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fir_sim/auk_dspip_math_pkg_hpfir.vhd"                                                       
+vhdlan -xlrm          "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fir_sim/auk_dspip_lib_pkg_hpfir.vhd"                                                        
+vhdlan -xlrm          "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fir_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd"                                    
+vhdlan -xlrm          "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fir_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd"                                          
+vhdlan -xlrm          "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fir_sim/auk_dspip_avalon_streaming_source_hpfir.vhd"                                        
+vhdlan -xlrm          "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fir_sim/auk_dspip_roundsat_hpfir.vhd"                                                       
+vlogan +v2k           "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fir_sim/altera_avalon_sc_fifo.v"                                                            
+vhdlan -xlrm          "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fir_sim/channelizer_fir_rtl.vhd"                                                            
+vhdlan -xlrm          "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fir_sim/channelizer_fir_ast.vhd"                                                            
+vhdlan -xlrm          "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fir_sim/channelizer_fir.vhd"                                                                
+vhdlan -xlrm          "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_fir_sim/channelizer_fir_tb.vhd"                                                             
+vlogan +v2k           "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_nco/simulation/submodules/channelizer_nco_nco_ii_0.vo"                 -work nco_ii_0       
+vhdlan -xlrm          "/home/tomas/ws_cad/sdr.hdl/rx/channelizer_nco/simulation/channelizer_nco.vhd"                                                         
 vlogan +v2k -sverilog "/home/tomas/ws_cad/sdr.hdl/rx/refgen_tx_sim/altera_xcvr_native_cv/altera_xcvr_functions.sv"                      -work refgen_tx      
 vlogan +v2k -sverilog "/home/tomas/ws_cad/sdr.hdl/rx/refgen_tx_sim/altera_xcvr_native_cv/sv_reconfig_bundle_to_xcvr.sv"                 -work refgen_tx      
 vlogan +v2k -sverilog "/home/tomas/ws_cad/sdr.hdl/rx/refgen_tx_sim/altera_xcvr_native_cv/sv_reconfig_bundle_to_ip.sv"                   -work refgen_tx      

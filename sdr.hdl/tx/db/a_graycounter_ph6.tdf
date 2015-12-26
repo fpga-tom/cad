@@ -1,5 +1,5 @@
 --a_graycounter DEVICE_FAMILY="Cyclone V" PVALUE=1 WIDTH=14 clock cnt_en q
---VERSION_BEGIN 15.1 cbx_a_gray2bin 2015:10:21:18:09:22:SJ cbx_a_graycounter 2015:10:21:18:09:22:SJ cbx_cycloneii 2015:10:21:18:09:23:SJ cbx_mgl 2015:10:21:18:12:49:SJ cbx_stratix 2015:10:21:18:09:23:SJ cbx_stratixii 2015:10:21:18:09:23:SJ  VERSION_END
+--VERSION_BEGIN 15.1 cbx_a_gray2bin 2015:10:14:18:59:15:SJ cbx_a_graycounter 2015:10:14:18:59:15:SJ cbx_cycloneii 2015:10:14:18:59:15:SJ cbx_mgl 2015:10:21:19:02:34:SJ cbx_stratix 2015:10:14:18:59:15:SJ cbx_stratixii 2015:10:14:18:59:15:SJ  VERSION_END
 
 
 -- Copyright (C) 1991-2015 Altera Corporation. All rights reserved.

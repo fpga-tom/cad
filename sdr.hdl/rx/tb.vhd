@@ -6,7 +6,7 @@
 -- Author     : tomas  <tomas@fedora>
 -- Company    : 
 -- Created    : 2015-12-19
--- Last update: 2015-12-22
+-- Last update: 2015-12-26
 -- Platform   : 
 -- Standard   : VHDL'93/02
 -------------------------------------------------------------------------------
@@ -82,7 +82,7 @@ begin
   clock_i      <= not clock_i  after 200 ps; -- 100ps ~ 5Ghz, 160 ps ~ 3.125Ghz
   clock        <= not clock    after 4 ns; -- 4ns ~ 125Mhz
   clock_50     <= not clock_50 after 20 ns;
-  reset        <= '0'          after 32 ns;
+  reset        <= '0'          after 512 ns;
   reset_p      <= '0'          after 20000 ns;
   CLOCK_125_p  <= clock;
   CLKIN_P      <= (others => clock);
