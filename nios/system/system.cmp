@@ -1,0 +1,37 @@
+	component system is
+		port (
+			clk_clk                                                    : in    std_logic                     := 'X';             -- clk
+			clk_hsmc_clk                                               : in    std_logic                     := 'X';             -- clk
+			led_pio_external_connection_export                         : out   std_logic_vector(7 downto 0);                     -- export
+			mem_if_lpddr2_emif_0_pll_ref_clk_clk                       : in    std_logic                     := 'X';             -- clk
+			mem_if_lpddr2_emif_0_pll_sharing_pll_mem_clk               : out   std_logic;                                        -- pll_mem_clk
+			mem_if_lpddr2_emif_0_pll_sharing_pll_write_clk             : out   std_logic;                                        -- pll_write_clk
+			mem_if_lpddr2_emif_0_pll_sharing_pll_locked                : out   std_logic;                                        -- pll_locked
+			mem_if_lpddr2_emif_0_pll_sharing_pll_write_clk_pre_phy_clk : out   std_logic;                                        -- pll_write_clk_pre_phy_clk
+			mem_if_lpddr2_emif_0_pll_sharing_pll_addr_cmd_clk          : out   std_logic;                                        -- pll_addr_cmd_clk
+			mem_if_lpddr2_emif_0_pll_sharing_pll_avl_clk               : out   std_logic;                                        -- pll_avl_clk
+			mem_if_lpddr2_emif_0_pll_sharing_pll_config_clk            : out   std_logic;                                        -- pll_config_clk
+			mem_if_lpddr2_emif_0_pll_sharing_pll_mem_phy_clk           : out   std_logic;                                        -- pll_mem_phy_clk
+			mem_if_lpddr2_emif_0_pll_sharing_afi_phy_clk               : out   std_logic;                                        -- afi_phy_clk
+			mem_if_lpddr2_emif_0_pll_sharing_pll_avl_phy_clk           : out   std_logic;                                        -- pll_avl_phy_clk
+			mem_if_lpddr2_emif_0_status_local_init_done                : out   std_logic;                                        -- local_init_done
+			mem_if_lpddr2_emif_0_status_local_cal_success              : out   std_logic;                                        -- local_cal_success
+			mem_if_lpddr2_emif_0_status_local_cal_fail                 : out   std_logic;                                        -- local_cal_fail
+			memory_mem_ca                                              : out   std_logic_vector(9 downto 0);                     -- mem_ca
+			memory_mem_ck                                              : out   std_logic_vector(0 downto 0);                     -- mem_ck
+			memory_mem_ck_n                                            : out   std_logic_vector(0 downto 0);                     -- mem_ck_n
+			memory_mem_cke                                             : out   std_logic_vector(0 downto 0);                     -- mem_cke
+			memory_mem_cs_n                                            : out   std_logic_vector(0 downto 0);                     -- mem_cs_n
+			memory_mem_dm                                              : out   std_logic_vector(3 downto 0);                     -- mem_dm
+			memory_mem_dq                                              : inout std_logic_vector(31 downto 0) := (others => 'X'); -- mem_dq
+			memory_mem_dqs                                             : inout std_logic_vector(3 downto 0)  := (others => 'X'); -- mem_dqs
+			memory_mem_dqs_n                                           : inout std_logic_vector(3 downto 0)  := (others => 'X'); -- mem_dqs_n
+			oct_rzqin                                                  : in    std_logic                     := 'X';             -- rzqin
+			reset_reset_n                                              : in    std_logic                     := 'X';             -- reset_n
+			tx_0_led_readdata                                          : out   std_logic_vector(7 downto 0);                     -- readdata
+			tx_0_tx_serial_data_serial_data                            : out   std_logic;                                        -- serial_data
+			uart_external_connection_rxd                               : in    std_logic                     := 'X';             -- rxd
+			uart_external_connection_txd                               : out   std_logic                                         -- txd
+		);
+	end component system;
+

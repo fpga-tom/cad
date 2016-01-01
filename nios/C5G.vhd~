@@ -1,0 +1,54 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+use ieee.numeric_std.all;
+
+entity C5G is
+port(
+	CLOCK_125_p : in std_logic;
+	CLOCK_50_B5B : in std_logic;
+	CLOCK_50_B6A : in std_logic;
+	CLOCK_50_B7A : in std_logic;
+	CLOCK_50_B8A : in std_logic;
+	
+	CPU_RESET_n : in std_logic;
+	KEY : in std_logic_vector(3 downto 0);
+	
+	LEDG : out std_logic_vector(7 downto 0);
+	LEDR : out std_logic_vector(9 downto 0);
+	
+	
+	UART_RX : in std_logic;
+	UART_TX : out std_logic
+
+);
+end C5G;
+
+architecture structure of C5G is
+
+	component system is
+		port (
+			clk_clk                            : in  std_logic                    := 'X'; -- clk
+			reset_reset_n                      : in  std_logic                    := 'X'; -- reset_n
+			led_pio_external_connection_export : out std_logic_vector(7 downto 0);         -- export
+			uart_external_connection_rxd       : in  std_logic                    := 'X'; -- rxd
+         uart_external_connection_txd       : out std_logic                            -- txd
+		);
+	end component system;
+begin
+
+	u0 : component system
+		port map (
+			clk_clk                            => CLOCK_50_B5B,                            --                         clk.clk
+			reset_reset_n                      => CPU_RESET_n,                      --                       reset.reset_n
+			uart_external_connection_rxd       => UART_RX,       --    uart_external_connection.rxd
+         uart_external_connection_txd       => UART_TX,        --     .txd
+			led_pio_external_connection_export => LEDG  -- led_pio_external_connection.export
+			
+		);
+
+
+
+
+	
+end structure;

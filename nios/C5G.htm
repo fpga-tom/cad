@@ -1,0 +1,762 @@
+<html>
+<body>
+<h1 align="center">Cylone V Starter Kit Configuration</h1>
+<br />
+<br />
+<h2 align="left">Pin Assignments:</h2>
+<ul>
+<a href="#CLOCK"><li>CLOCK</li></a>
+<br />
+<a href="#LED"><li>LED</li></a>
+<br />
+<a href="#KEY"><li>KEY</li></a>
+<br />
+<a href="#I2C for Audio/HDMI-TX/Si5338/HSMC"><li>I2C for Audio/HDMI-TX/Si5338/HSMC</li></a>
+<br />
+<a href="#Uart to USB"><li>Uart to USB</li></a>
+<br />
+<a href="#LPDDR2"><li>LPDDR2</li></a>
+<br />
+<a href="#HSMC"><li>HSMC</li></a>
+<br />
+</ul>
+<br />
+<br />
+<br />
+<h2 align="left">Pin Assignment Table:</h2>
+<h2><a name="CLOCK"></a></h2><table border="3">
+<caption  align="left">CLOCK</caption>
+<br />
+<br />
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">Standard</th>
+</tr>
+<tr>
+   <td align="left">CLOCK_125_p</td>
+   <td align="left">U12</td>
+   <td align="left">input </td>
+   <td align="left">LVDS</td>
+</tr>
+<tr>
+   <td align="left">CLOCK_50_B5B</td>
+   <td align="left">R20</td>
+   <td align="left">input </td>
+   <td align="left">3.3-V LVTTL</td>
+</tr>
+<tr>
+   <td align="left">CLOCK_50_B6A</td>
+   <td align="left">N20</td>
+   <td align="left">input </td>
+   <td align="left">3.3-V LVTTL</td>
+</tr>
+<tr>
+   <td align="left">CLOCK_50_B7A</td>
+   <td align="left">H12</td>
+   <td align="left">input </td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">CLOCK_50_B8A</td>
+   <td align="left">M10</td>
+   <td align="left">input </td>
+   <td align="left">2.5 V</td>
+</tr>
+</table>
+<h2><a name="LED"></a></h2><table border="3">
+<caption  align="left">LED</caption>
+<br />
+<br />
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">Standard</th>
+</tr>
+<tr>
+   <td align="left">LEDG[0]</td>
+   <td align="left">L7</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">LEDG[1]</td>
+   <td align="left">K6</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">LEDG[2]</td>
+   <td align="left">D8</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">LEDG[3]</td>
+   <td align="left">E9</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">LEDG[4]</td>
+   <td align="left">A5</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">LEDG[5]</td>
+   <td align="left">B6</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">LEDG[6]</td>
+   <td align="left">H8</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">LEDG[7]</td>
+   <td align="left">H9</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">LEDR[0]</td>
+   <td align="left">F7</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">LEDR[1]</td>
+   <td align="left">F6</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">LEDR[2]</td>
+   <td align="left">G6</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">LEDR[3]</td>
+   <td align="left">G7</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">LEDR[4]</td>
+   <td align="left">J8</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">LEDR[5]</td>
+   <td align="left">J7</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">LEDR[6]</td>
+   <td align="left">K10</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">LEDR[7]</td>
+   <td align="left">K8</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">LEDR[8]</td>
+   <td align="left">H7</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">LEDR[9]</td>
+   <td align="left">J10</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+</table>
+<h2><a name="KEY"></a></h2><table border="3">
+<caption  align="left">KEY</caption>
+<br />
+<br />
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">Standard</th>
+</tr>
+<tr>
+   <td align="left">KEY[0]</td>
+   <td align="left">P11</td>
+   <td align="left">input </td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">KEY[1]</td>
+   <td align="left">P12</td>
+   <td align="left">input </td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">KEY[2]</td>
+   <td align="left">Y15</td>
+   <td align="left">input </td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">KEY[3]</td>
+   <td align="left">Y16</td>
+   <td align="left">input </td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">CPU_RESET_n</td>
+   <td align="left">AB24</td>
+   <td align="left">input </td>
+   <td align="left">3.3-V LVTTL</td>
+</tr>
+</table>
+<h2><a name="I2C for Audio/HDMI-TX/Si5338/HSMC"></a></h2><table border="3">
+<caption  align="left">I2C for Audio/HDMI-TX/Si5338/HSMC</caption>
+<br />
+<br />
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">Standard</th>
+</tr>
+<tr>
+   <td align="left">I2C_SCL</td>
+   <td align="left">B7</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">I2C_SDA</td>
+   <td align="left">G11</td>
+   <td align="left">inout </td>
+   <td align="left">2.5 V</td>
+</tr>
+</table>
+<h2><a name="Uart to USB"></a></h2><table border="3">
+<caption  align="left">Uart to USB</caption>
+<br />
+<br />
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">Standard</th>
+</tr>
+<tr>
+   <td align="left">UART_TX</td>
+   <td align="left">L9</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+</tr>
+<tr>
+   <td align="left">UART_RX</td>
+   <td align="left">M9</td>
+   <td align="left">input </td>
+   <td align="left">2.5 V</td>
+</tr>
+</table>
+<h2><a name="LPDDR2"></a></h2><table border="3">
+<caption  align="left">LPDDR2</caption>
+<br />
+<br />
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">Standard</th>
+</tr>
+<tr>
+   <td align="left">DDR2LP_CK_p</td>
+   <td align="left">N10</td>
+   <td align="left">output</td>
+   <td align="left">Differential 1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_CK_n</td>
+   <td align="left">P10</td>
+   <td align="left">output</td>
+   <td align="left">Differential 1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQS_p[0]</td>
+   <td align="left">V13</td>
+   <td align="left">inout </td>
+   <td align="left">Differential 1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQS_n[0]</td>
+   <td align="left">W13</td>
+   <td align="left">inout </td>
+   <td align="left">Differential 1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQS_p[1]</td>
+   <td align="left">U14</td>
+   <td align="left">inout </td>
+   <td align="left">Differential 1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQS_n[1]</td>
+   <td align="left">V14</td>
+   <td align="left">inout </td>
+   <td align="left">Differential 1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQS_p[2]</td>
+   <td align="left">V15</td>
+   <td align="left">inout </td>
+   <td align="left">Differential 1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQS_n[2]</td>
+   <td align="left">W15</td>
+   <td align="left">inout </td>
+   <td align="left">Differential 1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQS_p[3]</td>
+   <td align="left">W16</td>
+   <td align="left">inout </td>
+   <td align="left">Differential 1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQS_n[3]</td>
+   <td align="left">W17</td>
+   <td align="left">inout </td>
+   <td align="left">Differential 1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_CKE[0]</td>
+   <td align="left">AF14</td>
+   <td align="left">output</td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_CKE[1]</td>
+   <td align="left">AE13</td>
+   <td align="left">output</td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_CS_n[0]</td>
+   <td align="left">R11</td>
+   <td align="left">output</td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_CS_n[1]</td>
+   <td align="left">T11</td>
+   <td align="left">output</td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DM[0]</td>
+   <td align="left">AF11</td>
+   <td align="left">output</td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DM[1]</td>
+   <td align="left">AE18</td>
+   <td align="left">output</td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DM[2]</td>
+   <td align="left">AE20</td>
+   <td align="left">output</td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DM[3]</td>
+   <td align="left">AE24</td>
+   <td align="left">output</td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_OCT_RZQ</td>
+   <td align="left">AE11</td>
+   <td align="left">input </td>
+   <td align="left">1.2 V</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[0]</td>
+   <td align="left">AA14</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[1]</td>
+   <td align="left">Y14</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[2]</td>
+   <td align="left">AD11</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[3]</td>
+   <td align="left">AD12</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[4]</td>
+   <td align="left">Y13</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[5]</td>
+   <td align="left">W12</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[6]</td>
+   <td align="left">AD10</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[7]</td>
+   <td align="left">AF12</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[8]</td>
+   <td align="left">AC15</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[9]</td>
+   <td align="left">AB15</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[10]</td>
+   <td align="left">AC14</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[11]</td>
+   <td align="left">AF13</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[12]</td>
+   <td align="left">AB16</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[13]</td>
+   <td align="left">AA16</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[14]</td>
+   <td align="left">AE14</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[15]</td>
+   <td align="left">AF18</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[16]</td>
+   <td align="left">AD16</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[17]</td>
+   <td align="left">AD17</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[18]</td>
+   <td align="left">AC18</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[19]</td>
+   <td align="left">AF19</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[20]</td>
+   <td align="left">AC17</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[21]</td>
+   <td align="left">AB17</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[22]</td>
+   <td align="left">AF21</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[23]</td>
+   <td align="left">AE21</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[24]</td>
+   <td align="left">AE15</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[25]</td>
+   <td align="left">AE16</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[26]</td>
+   <td align="left">AC20</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[27]</td>
+   <td align="left">AD21</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[28]</td>
+   <td align="left">AF16</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[29]</td>
+   <td align="left">AF17</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[30]</td>
+   <td align="left">AD23</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_DQ[31]</td>
+   <td align="left">AF23</td>
+   <td align="left">inout </td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_CA[0]</td>
+   <td align="left">AE6</td>
+   <td align="left">output</td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_CA[1]</td>
+   <td align="left">AF6</td>
+   <td align="left">output</td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_CA[2]</td>
+   <td align="left">AF7</td>
+   <td align="left">output</td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_CA[3]</td>
+   <td align="left">AF8</td>
+   <td align="left">output</td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_CA[4]</td>
+   <td align="left">U10</td>
+   <td align="left">output</td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_CA[5]</td>
+   <td align="left">U11</td>
+   <td align="left">output</td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_CA[6]</td>
+   <td align="left">AE9</td>
+   <td align="left">output</td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_CA[7]</td>
+   <td align="left">AF9</td>
+   <td align="left">output</td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_CA[8]</td>
+   <td align="left">AB12</td>
+   <td align="left">output</td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+<tr>
+   <td align="left">DDR2LP_CA[9]</td>
+   <td align="left">AB11</td>
+   <td align="left">output</td>
+   <td align="left">1.2-V HSUL</td>
+</tr>
+</table>
+<h2><a name="HSMC"></a></h2><table border="3">
+<caption  align="left">HSMC connect to XTS - Transceiver to SMA</caption>
+<br />
+<br />
+<tr>
+   <th align="left" bgcolor="Khaki">Name</th>
+   <th align="left" bgcolor="Khaki">Location</th>
+   <th align="left" bgcolor="Khaki">Direction</th>
+   <th align="left" bgcolor="Khaki">Standard</th>
+   <th align="left" bgcolor="Khaki">HSMC Pin Index</th>
+</tr>
+<tr>
+   <td align="left">TX_P[3]</td>
+   <td align="left">W4</td>
+   <td align="left">output</td>
+   <td align="left">1.5-V PCML</td>
+   <td align="left">17</td>
+</tr>
+<tr>
+   <td align="left">RX_P[3]</td>
+   <td align="left">V2</td>
+   <td align="left">input </td>
+   <td align="left">1.5-V PCML</td>
+   <td align="left">18</td>
+</tr>
+<tr>
+   <td align="left">TX_P[2]</td>
+   <td align="left">AA4</td>
+   <td align="left">output</td>
+   <td align="left">1.5-V PCML</td>
+   <td align="left">21</td>
+</tr>
+<tr>
+   <td align="left">RX_P[2]</td>
+   <td align="left">Y2</td>
+   <td align="left">input </td>
+   <td align="left">1.5-V PCML</td>
+   <td align="left">22</td>
+</tr>
+<tr>
+   <td align="left">TX_P[1]</td>
+   <td align="left">AC4</td>
+   <td align="left">output</td>
+   <td align="left">1.5-V PCML</td>
+   <td align="left">25</td>
+</tr>
+<tr>
+   <td align="left">RX_P[1]</td>
+   <td align="left">AB2</td>
+   <td align="left">input </td>
+   <td align="left">1.5-V PCML</td>
+   <td align="left">26</td>
+</tr>
+<tr>
+   <td align="left">TX_P[0]</td>
+   <td align="left">AE4</td>
+   <td align="left">output</td>
+   <td align="left">1.5-V PCML</td>
+   <td align="left">29</td>
+</tr>
+<tr>
+   <td align="left">RX_P[0]</td>
+   <td align="left">AD2</td>
+   <td align="left">input </td>
+   <td align="left">1.5-V PCML</td>
+   <td align="left">30</td>
+</tr>
+<tr>
+   <td align="left">CLKOUT0</td>
+   <td align="left">A7</td>
+   <td align="left">output</td>
+   <td align="left">2.5 V</td>
+   <td align="left">39</td>
+</tr>
+<tr>
+   <td align="left">CLKIN0</td>
+   <td align="left">N9</td>
+   <td align="left">input </td>
+   <td align="left">2.5 V</td>
+   <td align="left">40</td>
+</tr>
+<tr>
+   <td align="left">CLKOUT_P[1]</td>
+   <td align="left">A19</td>
+   <td align="left">output</td>
+   <td align="left">LVDS</td>
+   <td align="left">95</td>
+</tr>
+<tr>
+   <td align="left">CLKIN_P[1]</td>
+   <td align="left">G15</td>
+   <td align="left">input </td>
+   <td align="left">LVDS</td>
+   <td align="left">96</td>
+</tr>
+<tr>
+   <td align="left">CLKOUT_P[2]</td>
+   <td align="left">A17</td>
+   <td align="left">output</td>
+   <td align="left">LVDS</td>
+   <td align="left">155</td>
+</tr>
+<tr>
+   <td align="left">CLKIN_P[2]</td>
+   <td align="left">L8</td>
+   <td align="left">input </td>
+   <td align="left">LVDS</td>
+   <td align="left">156</td>
+</tr>
+</table>
+</html>
+</body>
