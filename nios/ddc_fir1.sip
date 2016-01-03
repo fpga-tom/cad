@@ -1,0 +1,26 @@
+set_global_assignment -entity "ddc_fir1" -library "lib_ddc_fir1" -name IP_TOOL_NAME "altera_fir_compiler_ii"
+set_global_assignment -entity "ddc_fir1" -library "lib_ddc_fir1" -name IP_TOOL_VERSION "15.1"
+set_global_assignment -entity "ddc_fir1" -library "lib_ddc_fir1" -name IP_TOOL_ENV "mwpim"
+set_global_assignment -library "lib_ddc_fir1" -name SPD_FILE [file join $::quartus(sip_path) "ddc_fir1.spd"]
+
+set_global_assignment -library "lib_ddc_fir1" -name MISC_FILE [file join $::quartus(sip_path) "ddc_fir1_sim/dspba_library_package.vhd"]
+set_global_assignment -library "lib_ddc_fir1" -name MISC_FILE [file join $::quartus(sip_path) "ddc_fir1_sim/dspba_library.vhd"]
+set_global_assignment -library "lib_ddc_fir1" -name MISC_FILE [file join $::quartus(sip_path) "ddc_fir1_sim/auk_dspip_math_pkg_hpfir.vhd"]
+set_global_assignment -library "lib_ddc_fir1" -name MISC_FILE [file join $::quartus(sip_path) "ddc_fir1_sim/auk_dspip_lib_pkg_hpfir.vhd"]
+set_global_assignment -library "lib_ddc_fir1" -name MISC_FILE [file join $::quartus(sip_path) "ddc_fir1_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd"]
+set_global_assignment -library "lib_ddc_fir1" -name MISC_FILE [file join $::quartus(sip_path) "ddc_fir1_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd"]
+set_global_assignment -library "lib_ddc_fir1" -name MISC_FILE [file join $::quartus(sip_path) "ddc_fir1_sim/auk_dspip_avalon_streaming_source_hpfir.vhd"]
+set_global_assignment -library "lib_ddc_fir1" -name MISC_FILE [file join $::quartus(sip_path) "ddc_fir1_sim/auk_dspip_roundsat_hpfir.vhd"]
+set_global_assignment -library "lib_ddc_fir1" -name MISC_FILE [file join $::quartus(sip_path) "ddc_fir1_sim/altera_avalon_sc_fifo.v"]
+set_global_assignment -library "lib_ddc_fir1" -name MISC_FILE [file join $::quartus(sip_path) "ddc_fir1_sim/ddc_fir1_rtl.vhd"]
+set_global_assignment -library "lib_ddc_fir1" -name MISC_FILE [file join $::quartus(sip_path) "ddc_fir1_sim/ddc_fir1_ast.vhd"]
+set_global_assignment -library "lib_ddc_fir1" -name MISC_FILE [file join $::quartus(sip_path) "ddc_fir1_sim/ddc_fir1.vhd"]
+set_global_assignment -library "lib_ddc_fir1" -name MISC_FILE [file join $::quartus(sip_path) "ddc_fir1_sim/ddc_fir1.sdc"]
+set_global_assignment -library "lib_ddc_fir1" -name MISC_FILE [file join $::quartus(sip_path) "ddc_fir1_sim/ddc_fir1_nativelink.tcl"]
+set_global_assignment -library "lib_ddc_fir1" -name MISC_FILE [file join $::quartus(sip_path) "ddc_fir1_sim/ddc_fir1_msim.tcl"]
+set_global_assignment -library "lib_ddc_fir1" -name MISC_FILE [file join $::quartus(sip_path) "ddc_fir1_sim/ddc_fir1_tb.vhd"]
+set_global_assignment -library "lib_ddc_fir1" -name MISC_FILE [file join $::quartus(sip_path) "ddc_fir1_sim/ddc_fir1_mlab.m"]
+set_global_assignment -library "lib_ddc_fir1" -name MISC_FILE [file join $::quartus(sip_path) "ddc_fir1_sim/ddc_fir1_model.m"]
+set_global_assignment -library "lib_ddc_fir1" -name MISC_FILE [file join $::quartus(sip_path) "ddc_fir1_sim/ddc_fir1_coef_int.txt"]
+set_global_assignment -library "lib_ddc_fir1" -name MISC_FILE [file join $::quartus(sip_path) "ddc_fir1_sim/ddc_fir1_input.txt"]
+set_global_assignment -library "lib_ddc_fir1" -name MISC_FILE [file join $::quartus(sip_path) "ddc_fir1_sim/ddc_fir1_param.txt"]

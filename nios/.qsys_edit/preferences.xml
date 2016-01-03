@@ -3,12 +3,11 @@
  <debug showDebugMenu="0" />
  <systemtable filter="All Interfaces">
   <columns>
-   <connections preferredWidth="303" />
+   <connections preferredWidth="31" />
    <irq preferredWidth="34" />
   </columns>
  </systemtable>
- <library
-   expandedCategories="Library/Basic Functions,Library/Basic Functions/Bridges and Adaptors,Project,Library/Basic Functions/Bridges and Adaptors/Streaming,Library" />
- <window width="1922" height="1054" x="-1" y="27" />
+ <library expandedCategories="Library,Project" />
+ <window width="1920" height="1053" x="0" y="27" />
  <generation synthesis="VHDL" />
 </preferences>

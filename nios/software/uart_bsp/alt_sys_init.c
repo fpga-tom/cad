@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'system'
  * SOPC Builder design path: ../../system.sopcinfo
  *
- * Generated: Fri Jan 01 15:04:15 CET 2016
+ * Generated: Sat Jan 02 18:09:21 CET 2016
  */
 
 /*
@@ -72,6 +72,7 @@
 ALTERA_NIOS2_GEN2_IRQ_INSTANCE ( CPU, cpu);
 ALTERA_AVALON_JTAG_UART_INSTANCE ( JTAG_UART, jtag_uart);
 ALTERA_AVALON_SGDMA_INSTANCE ( SGDMA_0, sgdma_0);
+ALTERA_AVALON_SGDMA_INSTANCE ( SGDMA_1, sgdma_1);
 ALTERA_AVALON_SYSID_QSYS_INSTANCE ( SYSID, sysid);
 ALTERA_AVALON_TIMER_INSTANCE ( SYS_CLK_TIMER, sys_clk_timer);
 ALTERA_AVALON_UART_INSTANCE ( UART, uart);
@@ -100,6 +101,7 @@ void alt_sys_init( void )
     ALTERA_AVALON_TIMER_INIT ( SYS_CLK_TIMER, sys_clk_timer);
     ALTERA_AVALON_JTAG_UART_INIT ( JTAG_UART, jtag_uart);
     ALTERA_AVALON_SGDMA_INIT ( SGDMA_0, sgdma_0);
+    ALTERA_AVALON_SGDMA_INIT ( SGDMA_1, sgdma_1);
     ALTERA_AVALON_SYSID_QSYS_INIT ( SYSID, sysid);
     ALTERA_AVALON_UART_INIT ( UART, uart);
 }

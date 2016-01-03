@@ -1,8 +1,9 @@
 # # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
 # 
-preplace inst system.sgdma_0 -pg 1 -lvl 4 -y 190
+preplace inst system.sgdma_0 -pg 1 -lvl 4 -y 520
 preplace inst system.mem_if_lpddr2_emif_0.pll_bridge -pg 1
 preplace inst system.mem_if_lpddr2_emif_0.soft_reset -pg 1
+preplace inst system.sgdma_1 -pg 1 -lvl 6 -y 170
 preplace inst system.mem_if_lpddr2_emif_0.afi_half_clk -pg 1
 preplace inst system.mem_if_lpddr2_emif_0.afi_reset -pg 1
 preplace inst system.cpu.reset_bridge -pg 1
@@ -12,24 +13,24 @@ preplace inst system.cpu.cpu -pg 1
 preplace inst system.mem_if_lpddr2_emif_0.mp_cmd_clk_0 -pg 1
 preplace inst system.mem_if_lpddr2_emif_0.dmaster.transacto -pg 1
 preplace inst system.mem_if_lpddr2_emif_0.afi_reset_export -pg 1
-preplace inst system.jtag_uart -pg 1 -lvl 6 -y 190
-preplace inst system.tx_0 -pg 1 -lvl 5 -y 270
+preplace inst system.jtag_uart -pg 1 -lvl 6 -y 520
+preplace inst system.radio_0 -pg 1 -lvl 5 -y 30
 preplace inst system.mem_if_lpddr2_emif_0.dmaster.p2b -pg 1
 preplace inst system.mem_if_lpddr2_emif_0.dmaster.clk_rst -pg 1
-preplace inst system.onchip_mem -pg 1 -lvl 6 -y 30
+preplace inst system.onchip_mem -pg 1 -lvl 6 -y 360
 preplace inst system.mem_if_lpddr2_emif_0.dmaster.b2p -pg 1
-preplace inst system.sys_clk_timer -pg 1 -lvl 6 -y 290
+preplace inst system.sys_clk_timer -pg 1 -lvl 6 -y 620
 preplace inst system.mem_if_lpddr2_emif_0.pll0 -pg 1
-preplace inst system.cpu -pg 1 -lvl 5 -y 70
+preplace inst system.cpu -pg 1 -lvl 5 -y 400
 preplace inst system.mem_if_lpddr2_emif_0.dmaster.timing_adt -pg 1
 preplace inst system.mem_if_lpddr2_emif_0.dmaster.jtag_phy_embedded_in_jtag_master -pg 1
-preplace inst system.sysid -pg 1 -lvl 6 -y 110
+preplace inst system.sysid -pg 1 -lvl 6 -y 440
 preplace inst system.mem_if_lpddr2_emif_0.dmaster.fifo -pg 1
 preplace inst system.mem_if_lpddr2_emif_0.dmaster.clk_src -pg 1
 preplace inst system.mem_if_lpddr2_emif_0.pll_ref_clk -pg 1
-preplace inst system.led_pio -pg 1 -lvl 6 -y 390
-preplace inst system.clk_hsmc -pg 1 -lvl 2 -y 270
-preplace inst system.uart -pg 1 -lvl 6 -y 790
+preplace inst system.led_pio -pg 1 -lvl 6 -y 720
+preplace inst system.clk_hsmc -pg 1 -lvl 2 -y 600
+preplace inst system.uart -pg 1 -lvl 6 -y 1120
 preplace inst system.mem_if_lpddr2_emif_0.oct0 -pg 1
 preplace inst system.mem_if_lpddr2_emif_0.c0 -pg 1
 preplace inst system.mem_if_lpddr2_emif_0.dmaster.p2b_adapter -pg 1
@@ -39,30 +40,32 @@ preplace inst system.mem_if_lpddr2_emif_0.dmaster -pg 1
 preplace inst system.mem_if_lpddr2_emif_0.s0 -pg 1
 preplace inst system.mem_if_lpddr2_emif_0.as0 -pg 1
 preplace inst system.mem_if_lpddr2_emif_0.p0 -pg 1
-preplace inst system.mem_if_lpddr2_emif_0 -pg 1 -lvl 2 -y 480
+preplace inst system.mem_if_lpddr2_emif_0 -pg 1 -lvl 2 -y 810
 preplace inst system -pg 1 -lvl 1 -y 40 -regy -20
 preplace inst system.mem_if_lpddr2_emif_0.dll0 -pg 1
 preplace inst system.cpu.clock_bridge -pg 1
-preplace inst system.clk_0 -pg 1 -lvl 1 -y 460
-preplace netloc FAN_OUT<net_container>system</net_container>(SLAVE)mem_if_lpddr2_emif_0.mp_rfifo_clk_0,(SLAVE)mem_if_lpddr2_emif_0.mp_wfifo_clk_0,(SLAVE)mem_if_lpddr2_emif_0.mp_cmd_clk_0,(MASTER)mem_if_lpddr2_emif_0.afi_half_clk) 1 1 2 470 440 780
-preplace netloc EXPORT<net_container>system</net_container>(SLAVE)mem_if_lpddr2_emif_0.status,(SLAVE)system.mem_if_lpddr2_emif_0_status) 1 0 2 NJ 750 NJ
-preplace netloc EXPORT<net_container>system</net_container>(SLAVE)system.tx_0_led,(SLAVE)tx_0.led) 1 0 5 NJ 340 NJ 340 NJ 340 NJ 370 NJ
-preplace netloc POINT_TO_POINT<net_container>system</net_container>(SLAVE)tx_0.reset,(MASTER)clk_hsmc.clk_reset) 1 2 3 NJ 320 NJ 350 1540
-preplace netloc EXPORT<net_container>system</net_container>(SLAVE)system.uart_external_connection,(SLAVE)uart.external_connection) 1 0 6 NJ 820 NJ 820 NJ 820 NJ 820 NJ 820 NJ
-preplace netloc POINT_TO_POINT<net_container>system</net_container>(SLAVE)tx_0.avalon_streaming_sink_1,(MASTER)sgdma_0.out) 1 4 1 1460
-preplace netloc FAN_OUT<net_container>system</net_container>(MASTER)clk_hsmc.clk,(SLAVE)tx_0.clock,(SLAVE)sgdma_0.clk) 1 2 3 NJ 280 1080 300 NJ
-preplace netloc INTERCONNECT<net_container>system</net_container>(SLAVE)led_pio.s1,(SLAVE)jtag_uart.avalon_jtag_slave,(MASTER)sgdma_0.descriptor_write,(SLAVE)mem_if_lpddr2_emif_0.avl_0,(MASTER)sgdma_0.m_read,(SLAVE)sgdma_0.csr,(SLAVE)sys_clk_timer.s1,(SLAVE)sysid.control_slave,(SLAVE)uart.s1,(MASTER)cpu.data_master,(MASTER)sgdma_0.descriptor_read,(MASTER)cpu.instruction_master,(SLAVE)onchip_mem.s1,(SLAVE)cpu.debug_mem_slave) 1 1 5 450 420 NJ 490 1020 120 1460 230 1940
+preplace inst system.clk_0 -pg 1 -lvl 1 -y 790
+preplace netloc FAN_OUT<net_container>system</net_container>(SLAVE)sgdma_1.clk,(SLAVE)sgdma_0.clk,(SLAVE)radio_0.clock,(MASTER)clk_hsmc.clk) 1 2 4 NJ 610 980 60 1540 180 N
+preplace netloc EXPORT<net_container>system</net_container>(SLAVE)radio_0.tx_serial_data,(SLAVE)system.radio_0_tx_serial_data) 1 0 5 NJ 140 NJ 140 NJ 140 NJ 140 NJ
+preplace netloc EXPORT<net_container>system</net_container>(SLAVE)system.memory,(SLAVE)mem_if_lpddr2_emif_0.memory) 1 0 2 NJ 860 NJ
+preplace netloc EXPORT<net_container>system</net_container>(SLAVE)mem_if_lpddr2_emif_0.status,(SLAVE)system.mem_if_lpddr2_emif_0_status) 1 0 2 NJ 1080 NJ
+preplace netloc EXPORT<net_container>system</net_container>(SLAVE)system.clk_hsmc,(SLAVE)clk_hsmc.clk_in) 1 0 2 NJ 610 NJ
+preplace netloc FAN_OUT<net_container>system</net_container>(SLAVE)mem_if_lpddr2_emif_0.global_reset,(SLAVE)clk_hsmc.clk_in_reset,(SLAVE)mem_if_lpddr2_emif_0.mp_rfifo_reset_n_0,(SLAVE)mem_if_lpddr2_emif_0.mp_wfifo_reset_n_0,(SLAVE)jtag_uart.reset,(SLAVE)cpu.reset,(SLAVE)uart.reset,(SLAVE)onchip_mem.reset1,(SLAVE)sysid.reset,(SLAVE)mem_if_lpddr2_emif_0.soft_reset,(SLAVE)sys_clk_timer.reset,(SLAVE)mem_if_lpddr2_emif_0.mp_cmd_reset_n_0,(SLAVE)led_pio.reset,(MASTER)clk_0.clk_reset) 1 1 5 430 670 NJ 670 NJ 670 1520 360 1940
+preplace netloc POINT_TO_POINT<net_container>system</net_container>(SLAVE)radio_0.avalon_streaming_sink,(MASTER)sgdma_0.out) 1 4 1 1460
+preplace netloc FAN_OUT<net_container>system</net_container>(MASTER)mem_if_lpddr2_emif_0.afi_half_clk,(SLAVE)mem_if_lpddr2_emif_0.mp_rfifo_clk_0,(SLAVE)mem_if_lpddr2_emif_0.mp_cmd_clk_0,(SLAVE)mem_if_lpddr2_emif_0.mp_wfifo_clk_0) 1 1 2 470 1130 780
+preplace netloc EXPORT<net_container>system</net_container>(SLAVE)system.radio_0_rx_serial_data,(SLAVE)radio_0.rx_serial_data) 1 0 5 NJ 120 NJ 120 NJ 120 NJ 120 NJ
 preplace netloc EXPORT<net_container>system</net_container>(SLAVE)system.clk,(SLAVE)clk_0.clk_in) 1 0 1 NJ
-preplace netloc FAN_OUT<net_container>system</net_container>(SLAVE)sgdma_0.csr_irq,(SLAVE)sys_clk_timer.irq,(SLAVE)uart.irq,(MASTER)cpu.irq,(SLAVE)jtag_uart.irq) 1 3 3 1100 180 NJ 210 1900
-preplace netloc EXPORT<net_container>system</net_container>(SLAVE)mem_if_lpddr2_emif_0.pll_ref_clk,(SLAVE)system.mem_if_lpddr2_emif_0_pll_ref_clk) 1 0 2 NJ 690 NJ
-preplace netloc EXPORT<net_container>system</net_container>(SLAVE)clk_hsmc.clk_in,(SLAVE)system.clk_hsmc) 1 0 2 NJ 280 NJ
-preplace netloc EXPORT<net_container>system</net_container>(SLAVE)led_pio.external_connection,(SLAVE)system.led_pio_external_connection) 1 0 6 NJ 380 NJ 380 NJ 420 NJ 420 NJ 420 NJ
-preplace netloc EXPORT<net_container>system</net_container>(SLAVE)tx_0.tx_serial_data,(SLAVE)system.tx_0_tx_serial_data) 1 0 5 NJ 260 NJ 260 NJ 260 NJ 330 NJ
-preplace netloc EXPORT<net_container>system</net_container>(SLAVE)mem_if_lpddr2_emif_0.pll_sharing,(SLAVE)system.mem_if_lpddr2_emif_0_pll_sharing) 1 0 2 NJ 710 NJ
-preplace netloc EXPORT<net_container>system</net_container>(SLAVE)system.oct,(SLAVE)mem_if_lpddr2_emif_0.oct) 1 0 2 NJ 670 NJ
-preplace netloc EXPORT<net_container>system</net_container>(SLAVE)mem_if_lpddr2_emif_0.memory,(SLAVE)system.memory) 1 0 2 NJ 530 NJ
-preplace netloc FAN_OUT<net_container>system</net_container>(SLAVE)sys_clk_timer.clk,(SLAVE)sysid.clk,(SLAVE)uart.clk,(SLAVE)jtag_uart.clk,(SLAVE)led_pio.clk,(SLAVE)cpu.clk,(SLAVE)onchip_mem.clk1,(MASTER)clk_0.clk) 1 1 5 NJ 400 NJ 440 NJ 440 1500 400 1960
+preplace netloc EXPORT<net_container>system</net_container>(SLAVE)mem_if_lpddr2_emif_0.pll_ref_clk,(SLAVE)system.mem_if_lpddr2_emif_0_pll_ref_clk) 1 0 2 NJ 1020 NJ
+preplace netloc FAN_OUT<net_container>system</net_container>(SLAVE)sgdma_1.reset,(MASTER)clk_hsmc.clk_reset,(SLAVE)radio_0.reset,(SLAVE)sgdma_0.reset) 1 2 4 NJ 630 1000 100 1480 260 NJ
+preplace netloc EXPORT<net_container>system</net_container>(SLAVE)mem_if_lpddr2_emif_0.oct,(SLAVE)system.oct) 1 0 2 NJ 1000 NJ
+preplace netloc EXPORT<net_container>system</net_container>(SLAVE)led_pio.external_connection,(SLAVE)system.led_pio_external_connection) 1 0 6 NJ 710 NJ 710 NJ 750 NJ 750 NJ 750 NJ
+preplace netloc INTERCONNECT<net_container>system</net_container>(MASTER)sgdma_0.descriptor_read,(MASTER)sgdma_1.m_write,(MASTER)sgdma_1.descriptor_write,(SLAVE)onchip_mem.s1,(SLAVE)sgdma_1.csr,(MASTER)sgdma_1.descriptor_read,(SLAVE)mem_if_lpddr2_emif_0.avl_0,(MASTER)sgdma_0.descriptor_write,(MASTER)sgdma_0.m_read,(MASTER)cpu.instruction_master,(SLAVE)uart.s1,(SLAVE)sgdma_0.csr,(MASTER)cpu.data_master,(SLAVE)sys_clk_timer.s1,(SLAVE)led_pio.s1,(SLAVE)cpu.debug_mem_slave,(SLAVE)jtag_uart.avalon_jtag_slave,(SLAVE)sysid.control_slave) 1 1 6 450 1150 NJ 810 1020 630 1480 540 1960 160 2230
+preplace netloc FAN_OUT<net_container>system</net_container>(SLAVE)uart.irq,(SLAVE)sgdma_1.csr_irq,(MASTER)cpu.irq,(SLAVE)sys_clk_timer.irq,(SLAVE)sgdma_0.csr_irq,(SLAVE)jtag_uart.irq) 1 3 3 1040 510 NJ 580 1920
+preplace netloc EXPORT<net_container>system</net_container>(SLAVE)uart.external_connection,(SLAVE)system.uart_external_connection) 1 0 6 NJ 1190 NJ 1190 NJ 1150 NJ 1150 NJ 1150 NJ
+preplace netloc FAN_OUT<net_container>system</net_container>(SLAVE)onchip_mem.clk1,(SLAVE)led_pio.clk,(SLAVE)sysid.clk,(SLAVE)uart.clk,(SLAVE)cpu.clk,(MASTER)clk_0.clk,(SLAVE)jtag_uart.clk,(SLAVE)sys_clk_timer.clk) 1 1 5 NJ 1170 NJ 830 NJ 830 1540 560 1980
+preplace netloc POINT_TO_POINT<net_container>system</net_container>(SLAVE)sgdma_1.in,(MASTER)radio_0.avalon_streaming_source) 1 5 1 1980
 preplace netloc EXPORT<net_container>system</net_container>(SLAVE)system.reset,(SLAVE)clk_0.clk_in_reset) 1 0 1 NJ
-preplace netloc FAN_OUT<net_container>system</net_container>(SLAVE)uart.reset,(SLAVE)sysid.reset,(SLAVE)mem_if_lpddr2_emif_0.global_reset,(SLAVE)mem_if_lpddr2_emif_0.mp_wfifo_reset_n_0,(SLAVE)onchip_mem.reset1,(SLAVE)clk_hsmc.clk_in_reset,(SLAVE)jtag_uart.reset,(SLAVE)mem_if_lpddr2_emif_0.mp_cmd_reset_n_0,(SLAVE)sgdma_0.reset,(SLAVE)sys_clk_timer.reset,(MASTER)clk_0.clk_reset,(SLAVE)mem_if_lpddr2_emif_0.mp_rfifo_reset_n_0,(SLAVE)led_pio.reset,(SLAVE)mem_if_lpddr2_emif_0.soft_reset,(SLAVE)cpu.reset) 1 1 5 410 360 NJ 360 1060 140 1480 30 1920
-levelinfo -pg 1 0 200 2160
-levelinfo -hier system 210 240 600 960 1300 1660 2000 2150
+preplace netloc EXPORT<net_container>system</net_container>(SLAVE)system.radio_0_led,(SLAVE)radio_0.led) 1 0 5 NJ 80 NJ 80 NJ 80 NJ 80 NJ
+preplace netloc EXPORT<net_container>system</net_container>(SLAVE)system.mem_if_lpddr2_emif_0_pll_sharing,(SLAVE)mem_if_lpddr2_emif_0.pll_sharing) 1 0 2 NJ 1040 NJ
+levelinfo -pg 1 0 200 2270
+levelinfo -hier system 210 240 600 960 1300 1680 2040 2250

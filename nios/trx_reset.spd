@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file
+   path="trx_reset_sim/altera_xcvr_reset_control/altera_xcvr_functions.sv"
+   type="SYSTEM_VERILOG"
+   library="trx_reset" />
+ <file
+   path="trx_reset_sim/altera_xcvr_reset_control/mentor/altera_xcvr_functions.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="trx_reset"
+   simulator="modelsim" />
+ <file
+   path="trx_reset_sim/altera_xcvr_reset_control/alt_xcvr_resync.sv"
+   type="SYSTEM_VERILOG"
+   library="trx_reset" />
+ <file
+   path="trx_reset_sim/altera_xcvr_reset_control/mentor/alt_xcvr_resync.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="trx_reset"
+   simulator="modelsim" />
+ <file
+   path="trx_reset_sim/altera_xcvr_reset_control/altera_xcvr_reset_control.sv"
+   type="SYSTEM_VERILOG"
+   library="trx_reset" />
+ <file
+   path="trx_reset_sim/altera_xcvr_reset_control/alt_xcvr_reset_counter.sv"
+   type="SYSTEM_VERILOG"
+   library="trx_reset" />
+ <file
+   path="trx_reset_sim/altera_xcvr_reset_control/mentor/altera_xcvr_reset_control.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="trx_reset"
+   simulator="modelsim" />
+ <file
+   path="trx_reset_sim/altera_xcvr_reset_control/mentor/alt_xcvr_reset_counter.sv"
+   type="SYSTEM_VERILOG_ENCRYPT"
+   library="trx_reset"
+   simulator="modelsim" />
+ <file
+   path="trx_reset_sim/altera_xcvr_reset_control/plain_files.txt"
+   type="OTHER"
+   library="trx_reset" />
+ <file
+   path="trx_reset_sim/altera_xcvr_reset_control/mentor_files.txt"
+   type="OTHER"
+   library="trx_reset" />
+ <file
+   path="trx_reset_sim/altera_xcvr_reset_control/cadence_files.txt"
+   type="OTHER"
+   library="trx_reset" />
+ <file
+   path="trx_reset_sim/altera_xcvr_reset_control/synopsys_files.txt"
+   type="OTHER"
+   library="trx_reset" />
+ <file
+   path="trx_reset_sim/altera_xcvr_reset_control/aldec_files.txt"
+   type="OTHER"
+   library="trx_reset" />
+ <file path="trx_reset_sim/trx_reset.vhd" type="VHDL" />
+ <topLevel name="trx_reset" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

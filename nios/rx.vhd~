@@ -1,0 +1,10 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use work.tx_lib.all;
+
+entity rx is
+  port(
+    clk : in std_logic;
+    reset : in std_logic;
+
+    -- avalon-st source interface

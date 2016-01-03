@@ -27,9 +27,10 @@
 			memory_mem_dqs                                             : inout std_logic_vector(3 downto 0)  := (others => 'X'); -- mem_dqs
 			memory_mem_dqs_n                                           : inout std_logic_vector(3 downto 0)  := (others => 'X'); -- mem_dqs_n
 			oct_rzqin                                                  : in    std_logic                     := 'X';             -- rzqin
+			radio_0_led_led                                            : out   std_logic_vector(7 downto 0);                     -- led
+			radio_0_rx_serial_data_serial_data                         : in    std_logic                     := 'X';             -- serial_data
+			radio_0_tx_serial_data_serial_data                         : out   std_logic;                                        -- serial_data
 			reset_reset_n                                              : in    std_logic                     := 'X';             -- reset_n
-			tx_0_led_readdata                                          : out   std_logic_vector(7 downto 0);                     -- readdata
-			tx_0_tx_serial_data_serial_data                            : out   std_logic;                                        -- serial_data
 			uart_external_connection_rxd                               : in    std_logic                     := 'X';             -- rxd
 			uart_external_connection_txd                               : out   std_logic                                         -- txd
 		);

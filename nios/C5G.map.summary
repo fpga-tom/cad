@@ -1,17 +1,17 @@
-Analysis & Synthesis Status : Successful - Fri Jan  1 21:06:57 2016
+Analysis & Synthesis Status : Successful - Sun Jan  3 22:28:08 2016
 Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 Revision Name : C5G
 Top-level Entity Name : C5G
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 7433
-Total pins : 93
+Total registers : 19464
+Total pins : 45
 Total virtual pins : 0
-Total block memory bits : 400,883
-Total DSP Blocks : 3
-Total HSSI RX PCSs : 0
-Total HSSI PMA RX Deserializers : 0
+Total block memory bits : 6,144
+Total DSP Blocks : 26
+Total HSSI RX PCSs : 1
+Total HSSI PMA RX Deserializers : 1
 Total HSSI TX PCSs : 1
 Total HSSI PMA TX Serializers : 1
-Total PLLs : 2
-Total DLLs : 1
+Total PLLs : 3
+Total DLLs : 0

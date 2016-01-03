@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'system'
  * SOPC Builder design path: ../../system.sopcinfo
  *
- * Generated: Fri Jan 01 21:14:39 CET 2016
+ * Generated: Sat Jan 02 22:05:33 CET 2016
  */
 
 /*
@@ -164,19 +164,19 @@
 #define ALT_NUM_INTERNAL_INTERRUPT_CONTROLLERS 1
 #define ALT_NUM_INTERRUPT_CONTROLLERS 1
 #define ALT_STDERR "/dev/jtag_uart"
-#define ALT_STDERR_BASE 0x20011098
+#define ALT_STDERR_BASE 0x200110d8
 #define ALT_STDERR_DEV jtag_uart
 #define ALT_STDERR_IS_JTAG_UART
 #define ALT_STDERR_PRESENT
 #define ALT_STDERR_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDIN "/dev/jtag_uart"
-#define ALT_STDIN_BASE 0x20011098
+#define ALT_STDIN_BASE 0x200110d8
 #define ALT_STDIN_DEV jtag_uart
 #define ALT_STDIN_IS_JTAG_UART
 #define ALT_STDIN_PRESENT
 #define ALT_STDIN_TYPE "altera_avalon_jtag_uart"
 #define ALT_STDOUT "/dev/jtag_uart"
-#define ALT_STDOUT_BASE 0x20011098
+#define ALT_STDOUT_BASE 0x200110d8
 #define ALT_STDOUT_DEV jtag_uart
 #define ALT_STDOUT_IS_JTAG_UART
 #define ALT_STDOUT_PRESENT
@@ -201,7 +201,7 @@
  */
 
 #define ALT_MODULE_CLASS_jtag_uart altera_avalon_jtag_uart
-#define JTAG_UART_BASE 0x20011098
+#define JTAG_UART_BASE 0x200110d8
 #define JTAG_UART_IRQ 16
 #define JTAG_UART_IRQ_INTERRUPT_CONTROLLER_ID 0
 #define JTAG_UART_NAME "/dev/jtag_uart"
@@ -219,7 +219,7 @@
  */
 
 #define ALT_MODULE_CLASS_led_pio altera_avalon_pio
-#define LED_PIO_BASE 0x20011080
+#define LED_PIO_BASE 0x200110c0
 #define LED_PIO_BIT_CLEARING_EDGE_REGISTER 0
 #define LED_PIO_BIT_MODIFYING_OUTPUT_REGISTER 0
 #define LED_PIO_CAPTURE 0
@@ -268,6 +268,19 @@
 
 
 /*
+ * mem_if_lpddr2_emif_0 configuration as viewed by sgdma_1_m_write
+ *
+ */
+
+#define SGDMA_1_M_WRITE_MEM_IF_LPDDR2_EMIF_0_BASE 0x0
+#define SGDMA_1_M_WRITE_MEM_IF_LPDDR2_EMIF_0_IRQ -1
+#define SGDMA_1_M_WRITE_MEM_IF_LPDDR2_EMIF_0_IRQ_INTERRUPT_CONTROLLER_ID -1
+#define SGDMA_1_M_WRITE_MEM_IF_LPDDR2_EMIF_0_NAME "/dev/mem_if_lpddr2_emif_0"
+#define SGDMA_1_M_WRITE_MEM_IF_LPDDR2_EMIF_0_SPAN 536870912
+#define SGDMA_1_M_WRITE_MEM_IF_LPDDR2_EMIF_0_TYPE "altera_mem_if_lpddr2_emif"
+
+
+/*
  * onchip_mem configuration
  *
  */
@@ -290,8 +303,8 @@
 #define ONCHIP_MEM_READ_DURING_WRITE_MODE "DONT_CARE"
 #define ONCHIP_MEM_SINGLE_CLOCK_OP 0
 #define ONCHIP_MEM_SIZE_MULTIPLE 1
-#define ONCHIP_MEM_SIZE_VALUE 20480
-#define ONCHIP_MEM_SPAN 20480
+#define ONCHIP_MEM_SIZE_VALUE 32768
+#define ONCHIP_MEM_SPAN 32768
 #define ONCHIP_MEM_TYPE "altera_avalon_onchip_memory2"
 #define ONCHIP_MEM_WRITABLE 1
 
@@ -306,7 +319,7 @@
 #define SGDMA_0_ALWAYS_DO_MAX_BURST 1
 #define SGDMA_0_ATLANTIC_CHANNEL_DATA_WIDTH 4
 #define SGDMA_0_AVALON_MM_BYTE_REORDER_MODE 0
-#define SGDMA_0_BASE 0x20011000
+#define SGDMA_0_BASE 0x20011040
 #define SGDMA_0_BURST_DATA_WIDTH 8
 #define SGDMA_0_BURST_TRANSFER 0
 #define SGDMA_0_BYTES_TO_TRANSFER_DATA_WIDTH 16
@@ -337,13 +350,53 @@
 
 
 /*
+ * sgdma_1 configuration
+ *
+ */
+
+#define ALT_MODULE_CLASS_sgdma_1 altera_avalon_sgdma
+#define SGDMA_1_ADDRESS_WIDTH 32
+#define SGDMA_1_ALWAYS_DO_MAX_BURST 1
+#define SGDMA_1_ATLANTIC_CHANNEL_DATA_WIDTH 4
+#define SGDMA_1_AVALON_MM_BYTE_REORDER_MODE 0
+#define SGDMA_1_BASE 0x20011000
+#define SGDMA_1_BURST_DATA_WIDTH 8
+#define SGDMA_1_BURST_TRANSFER 0
+#define SGDMA_1_BYTES_TO_TRANSFER_DATA_WIDTH 16
+#define SGDMA_1_CHAIN_WRITEBACK_DATA_WIDTH 32
+#define SGDMA_1_COMMAND_FIFO_DATA_WIDTH 104
+#define SGDMA_1_CONTROL_DATA_WIDTH 8
+#define SGDMA_1_CONTROL_SLAVE_ADDRESS_WIDTH 0x4
+#define SGDMA_1_CONTROL_SLAVE_DATA_WIDTH 32
+#define SGDMA_1_DESCRIPTOR_READ_BURST 0
+#define SGDMA_1_DESC_DATA_WIDTH 32
+#define SGDMA_1_HAS_READ_BLOCK 0
+#define SGDMA_1_HAS_WRITE_BLOCK 1
+#define SGDMA_1_IN_ERROR_WIDTH 0
+#define SGDMA_1_IRQ 3
+#define SGDMA_1_IRQ_INTERRUPT_CONTROLLER_ID 0
+#define SGDMA_1_NAME "/dev/sgdma_1"
+#define SGDMA_1_OUT_ERROR_WIDTH 0
+#define SGDMA_1_READ_BLOCK_DATA_WIDTH 8
+#define SGDMA_1_READ_BURSTCOUNT_WIDTH 4
+#define SGDMA_1_SPAN 64
+#define SGDMA_1_STATUS_TOKEN_DATA_WIDTH 24
+#define SGDMA_1_STREAM_DATA_WIDTH 8
+#define SGDMA_1_SYMBOLS_PER_BEAT 1
+#define SGDMA_1_TYPE "altera_avalon_sgdma"
+#define SGDMA_1_UNALIGNED_TRANSFER 0
+#define SGDMA_1_WRITE_BLOCK_DATA_WIDTH 8
+#define SGDMA_1_WRITE_BURSTCOUNT_WIDTH 4
+
+
+/*
  * sys_clk_timer configuration
  *
  */
 
 #define ALT_MODULE_CLASS_sys_clk_timer altera_avalon_timer
 #define SYS_CLK_TIMER_ALWAYS_RUN 0
-#define SYS_CLK_TIMER_BASE 0x20011060
+#define SYS_CLK_TIMER_BASE 0x200110a0
 #define SYS_CLK_TIMER_COUNTER_SIZE 32
 #define SYS_CLK_TIMER_FIXED_PERIOD 0
 #define SYS_CLK_TIMER_FREQ 50000000
@@ -368,13 +421,13 @@
  */
 
 #define ALT_MODULE_CLASS_sysid altera_avalon_sysid_qsys
-#define SYSID_BASE 0x20011090
+#define SYSID_BASE 0x200110d0
 #define SYSID_ID 0
 #define SYSID_IRQ -1
 #define SYSID_IRQ_INTERRUPT_CONTROLLER_ID -1
 #define SYSID_NAME "/dev/sysid"
 #define SYSID_SPAN 8
-#define SYSID_TIMESTAMP 1451678664
+#define SYSID_TIMESTAMP 1451766015
 #define SYSID_TYPE "altera_avalon_sysid_qsys"
 
 
@@ -384,7 +437,7 @@
  */
 
 #define ALT_MODULE_CLASS_uart altera_avalon_uart
-#define UART_BASE 0x20011040
+#define UART_BASE 0x20011080
 #define UART_BAUD 115200
 #define UART_DATA_BITS 8
 #define UART_FIXED_BAUD 1

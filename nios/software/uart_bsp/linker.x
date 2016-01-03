@@ -4,7 +4,7 @@
  * Machine generated for CPU 'cpu' in SOPC Builder design 'system'
  * SOPC Builder design path: ../../system.sopcinfo
  *
- * Generated: Fri Jan 01 15:46:01 CET 2016
+ * Generated: Sat Jan 02 22:11:17 CET 2016
  */
 
 /*
@@ -52,7 +52,7 @@ MEMORY
 {
     mem_if_lpddr2_emif_0 : ORIGIN = 0x0, LENGTH = 536870912
     reset : ORIGIN = 0x20008000, LENGTH = 32
-    onchip_mem : ORIGIN = 0x20008020, LENGTH = 20448
+    onchip_mem : ORIGIN = 0x20008020, LENGTH = 32736
 }
 
 /* Define symbols for each memory base-address */
@@ -219,7 +219,7 @@ SECTIONS
         *(.rodata1)
         . = ALIGN(4);
         PROVIDE (__ram_rodata_end = ABSOLUTE(.));
-    } > onchip_mem
+    } > mem_if_lpddr2_emif_0
 
     PROVIDE (__flash_rodata_start = LOADADDR(.rodata));
 
@@ -228,13 +228,9 @@ SECTIONS
      * This section's LMA is set to the .text region.
      * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
      *
-     * .rwdata region equals the .text region, and is set to be loaded into .text region.
-     * This requires two copies of .rwdata in the .text region. One read writable at VMA.
-     * and one read-only at LMA. crt0 will copy from LMA to VMA on reset
-     *
      */
 
-    .rwdata LOADADDR (.rodata) + SIZEOF (.rodata) : AT ( LOADADDR (.rodata) + SIZEOF (.rodata)+ SIZEOF (.rwdata) )
+    .rwdata : AT ( LOADADDR (.text) + SIZEOF (.text) )
     {
         PROVIDE (__ram_rwdata_start = ABSOLUTE(.));
         . = ALIGN(4);
@@ -253,18 +249,11 @@ SECTIONS
         _edata = ABSOLUTE(.);
         PROVIDE (edata = ABSOLUTE(.));
         PROVIDE (__ram_rwdata_end = ABSOLUTE(.));
-    } > onchip_mem
+    } > mem_if_lpddr2_emif_0
 
     PROVIDE (__flash_rwdata_start = LOADADDR(.rwdata));
 
-    /*
-     *
-     * This section's LMA is set to the .text region.
-     * crt0 will copy to this section's specified mapped region virtual memory address (VMA)
-     *
-     */
-
-    .bss LOADADDR (.rwdata) + SIZEOF (.rwdata) : AT ( LOADADDR (.rwdata) + SIZEOF (.rwdata) )
+    .bss :
     {
         __bss_start = ABSOLUTE(.);
         PROVIDE (__sbss_start = ABSOLUTE(.));
@@ -284,7 +273,7 @@ SECTIONS
 
         . = ALIGN(4);
         __bss_end = ABSOLUTE(.);
-    } > onchip_mem
+    } > mem_if_lpddr2_emif_0
 
     /*
      *
@@ -309,7 +298,7 @@ SECTIONS
      *
      */
 
-    .mem_if_lpddr2_emif_0 : AT ( LOADADDR (.bss) + SIZEOF (.bss) )
+    .mem_if_lpddr2_emif_0 : AT ( LOADADDR (.rwdata) + SIZEOF (.rwdata) )
     {
         PROVIDE (_alt_partition_mem_if_lpddr2_emif_0_start = ABSOLUTE(.));
         *(.mem_if_lpddr2_emif_0 .mem_if_lpddr2_emif_0. mem_if_lpddr2_emif_0.*)
@@ -317,6 +306,7 @@ SECTIONS
         PROVIDE (_alt_partition_mem_if_lpddr2_emif_0_end = ABSOLUTE(.));
         _end = ABSOLUTE(.);
         end = ABSOLUTE(.);
+        __alt_stack_base = ABSOLUTE(.);
     } > mem_if_lpddr2_emif_0
 
     PROVIDE (_alt_partition_mem_if_lpddr2_emif_0_load_addr = LOADADDR(.mem_if_lpddr2_emif_0));
@@ -334,7 +324,6 @@ SECTIONS
         *(.onchip_mem .onchip_mem. onchip_mem.*)
         . = ALIGN(4);
         PROVIDE (_alt_partition_onchip_mem_end = ABSOLUTE(.));
-        __alt_stack_base = ABSOLUTE(.);
     } > onchip_mem
 
     PROVIDE (_alt_partition_onchip_mem_load_addr = LOADADDR(.onchip_mem));
@@ -386,7 +375,7 @@ SECTIONS
 /*
  * Don't override this, override the __alt_stack_* symbols instead.
  */
-__alt_data_end = 0x2000d000;
+__alt_data_end = 0x20000000;
 
 /*
  * The next two symbols define the location of the default stack.  You can

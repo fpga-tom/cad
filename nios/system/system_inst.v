@@ -26,9 +26,10 @@
 		.memory_mem_dqs                                             (<connected-to-memory_mem_dqs>),                                             //                                 .mem_dqs
 		.memory_mem_dqs_n                                           (<connected-to-memory_mem_dqs_n>),                                           //                                 .mem_dqs_n
 		.oct_rzqin                                                  (<connected-to-oct_rzqin>),                                                  //                              oct.rzqin
+		.radio_0_led_led                                            (<connected-to-radio_0_led_led>),                                            //                      radio_0_led.led
+		.radio_0_rx_serial_data_serial_data                         (<connected-to-radio_0_rx_serial_data_serial_data>),                         //           radio_0_rx_serial_data.serial_data
+		.radio_0_tx_serial_data_serial_data                         (<connected-to-radio_0_tx_serial_data_serial_data>),                         //           radio_0_tx_serial_data.serial_data
 		.reset_reset_n                                              (<connected-to-reset_reset_n>),                                              //                            reset.reset_n
-		.tx_0_led_readdata                                          (<connected-to-tx_0_led_readdata>),                                          //                         tx_0_led.readdata
-		.tx_0_tx_serial_data_serial_data                            (<connected-to-tx_0_tx_serial_data_serial_data>),                            //              tx_0_tx_serial_data.serial_data
 		.uart_external_connection_rxd                               (<connected-to-uart_external_connection_rxd>),                               //         uart_external_connection.rxd
 		.uart_external_connection_txd                               (<connected-to-uart_external_connection_txd>)                                //                                 .txd
 	);

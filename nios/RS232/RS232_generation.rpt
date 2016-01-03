@@ -1,0 +1,29 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate /home/tomas/trx/nios/RS232.qsys --block-symbol-file --output-directory=/home/tomas/trx/nios/RS232 --family="Cyclone V" --part=5CGXFC5C6F27C7
+Progress: Loading nios/RS232.qsys
+Progress: Reading input file
+Progress: Adding rs232_0 [altera_up_avalon_rs232 15.1]
+Progress: Parameterizing module rs232_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate /home/tomas/trx/nios/RS232.qsys --synthesis=VHDL --output-directory=/home/tomas/trx/nios/RS232/synthesis --family="Cyclone V" --part=5CGXFC5C6F27C7
+Progress: Loading nios/RS232.qsys
+Progress: Reading input file
+Progress: Adding rs232_0 [altera_up_avalon_rs232 15.1]
+Progress: Parameterizing module rs232_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: RS232: Generating RS232 "RS232" for QUARTUS_SYNTH
+Info: rs232_0: Starting Generation of RS232 UART
+Info: rs232_0: "RS232" instantiated altera_up_avalon_rs232 "rs232_0"
+Info: RS232: Done "RS232" with 2 modules, 6 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

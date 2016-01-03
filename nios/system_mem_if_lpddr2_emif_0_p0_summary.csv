@@ -2,29 +2,29 @@ Core: system_mem_if_lpddr2_emif_0_p0 - Instance: u0|mem_if_lpddr2_emif_0
 Path, Setup Margin, Hold Margin
 "Address Command (Slow 1100mV 85C Model)",0.363,0.421
 "Bus Turnaround Time (Slow 1100mV 85C Model)",4.421,--
-"Core (Slow 1100mV 85C Model)",-0.299,0.16
-"Core Recovery/Removal (Slow 1100mV 85C Model)",9.666,0.004
+"Core (Slow 1100mV 85C Model)",-0.757,0.16
+"Core Recovery/Removal (Slow 1100mV 85C Model)",9.183,0.004
 "DQS vs CK (Slow 1100mV 85C Model)",2.571,2.534
 "Read Capture (Slow 1100mV 85C Model)",0.27,0.223
 "Write (Slow 1100mV 85C Model)",0.271,0.337
 "Address Command (Slow 1100mV 0C Model)",0.344,0.415
 "Bus Turnaround Time (Slow 1100mV 0C Model)",4.461,--
-"Core (Slow 1100mV 0C Model)",-0.029,0.21
-"Core Recovery/Removal (Slow 1100mV 0C Model)",9.904,0.06
+"Core (Slow 1100mV 0C Model)",-0.546,0.21
+"Core Recovery/Removal (Slow 1100mV 0C Model)",9.447,0.06
 "DQS vs CK (Slow 1100mV 0C Model)",2.607,2.57
 "Read Capture (Slow 1100mV 0C Model)",0.281,0.234
 "Write (Slow 1100mV 0C Model)",0.291,0.347
 "Address Command (Fast 1100mV 85C Model)",0.291,0.252
 "Bus Turnaround Time (Fast 1100mV 85C Model)",4.837,--
-"Core (Fast 1100mV 85C Model)",1.375,0.134
-"Core Recovery/Removal (Fast 1100mV 85C Model)",11.755,0.211
+"Core (Fast 1100mV 85C Model)",1.375,0.052
+"Core Recovery/Removal (Fast 1100mV 85C Model)",11.363,0.198
 "DQS vs CK (Fast 1100mV 85C Model)",2.969,2.947
 "Read Capture (Fast 1100mV 85C Model)",0.444,0.396
 "Write (Fast 1100mV 85C Model)",0.394,0.394
 "Address Command (Fast 1100mV 0C Model)",0.261,0.272
 "Bus Turnaround Time (Fast 1100mV 0C Model)",4.832,--
-"Core (Fast 1100mV 0C Model)",1.461,0.105
-"Core Recovery/Removal (Fast 1100mV 0C Model)",12.186,0.14
+"Core (Fast 1100mV 0C Model)",1.461,0.031
+"Core Recovery/Removal (Fast 1100mV 0C Model)",11.841,0.13
 "DQS vs CK (Fast 1100mV 0C Model)",2.964,2.953
 "Read Capture (Fast 1100mV 0C Model)",0.448,0.401
 "Write (Fast 1100mV 0C Model)",0.396,0.396

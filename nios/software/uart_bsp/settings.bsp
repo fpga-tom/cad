@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Jan 1, 2016 9:14:39 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1451679279366</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Jan 2, 2016 10:22:07 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1451769727098</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>/home/tomas/trx/nios/software/uart_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>../../system.sopcinfo</SopcDesignFile>
@@ -314,7 +314,7 @@
                 <SettingName>hal.make.bsp_cflags_debug</SettingName>
                 <Identifier>BSP_CFLAGS_DEBUG</Identifier>
                 <Type>UnquotedString</Type>
-                <Value>-g</Value>
+                <Value>-g1</Value>
                 <DefaultValue>-g</DefaultValue>
                 <DestinationFile>makefile_variable</DestinationFile>
                 <Description>C/C++ compiler debug level. '-g' provides the default set of debug symbols typically required to debug a typical application. Omitting '-g' removes debug symbols from the ELF. This setting defines the value of BSP_CFLAGS_DEBUG in Makefile.</Description>
@@ -918,43 +918,49 @@
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>onchip_mem</slaveDescriptor>
-                <addressRange>0x20008000 - 0x2000CFFF</addressRange>
-                <addressSpan>20480</addressSpan>
+                <addressRange>0x20008000 - 0x2000FFFF</addressRange>
+                <addressSpan>32768</addressSpan>
                 <attributes>memory</attributes>
         </MemoryMap>
         <MemoryMap>
-                <slaveDescriptor>sgdma_0</slaveDescriptor>
+                <slaveDescriptor>sgdma_1</slaveDescriptor>
                 <addressRange>0x20011000 - 0x2001103F</addressRange>
                 <addressSpan>64</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
+                <slaveDescriptor>sgdma_0</slaveDescriptor>
+                <addressRange>0x20011040 - 0x2001107F</addressRange>
+                <addressSpan>64</addressSpan>
+                <attributes/>
+        </MemoryMap>
+        <MemoryMap>
                 <slaveDescriptor>uart</slaveDescriptor>
-                <addressRange>0x20011040 - 0x2001105F</addressRange>
+                <addressRange>0x20011080 - 0x2001109F</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sys_clk_timer</slaveDescriptor>
-                <addressRange>0x20011060 - 0x2001107F</addressRange>
+                <addressRange>0x200110A0 - 0x200110BF</addressRange>
                 <addressSpan>32</addressSpan>
                 <attributes>timer</attributes>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>led_pio</slaveDescriptor>
-                <addressRange>0x20011080 - 0x2001108F</addressRange>
+                <addressRange>0x200110C0 - 0x200110CF</addressRange>
                 <addressSpan>16</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>sysid</slaveDescriptor>
-                <addressRange>0x20011090 - 0x20011097</addressRange>
+                <addressRange>0x200110D0 - 0x200110D7</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes/>
         </MemoryMap>
         <MemoryMap>
                 <slaveDescriptor>jtag_uart</slaveDescriptor>
-                <addressRange>0x20011098 - 0x2001109F</addressRange>
+                <addressRange>0x200110D8 - 0x200110DF</addressRange>
                 <addressSpan>8</addressSpan>
                 <attributes>printable</attributes>
         </MemoryMap>
@@ -964,15 +970,15 @@
         </LinkerSection>
         <LinkerSection>
                 <sectionName>.rodata</sectionName>
-                <regionName>onchip_mem</regionName>
+                <regionName>mem_if_lpddr2_emif_0</regionName>
         </LinkerSection>
         <LinkerSection>
                 <sectionName>.rwdata</sectionName>
-                <regionName>onchip_mem</regionName>
+                <regionName>mem_if_lpddr2_emif_0</regionName>
         </LinkerSection>
         <LinkerSection>
                 <sectionName>.bss</sectionName>
-                <regionName>onchip_mem</regionName>
+                <regionName>mem_if_lpddr2_emif_0</regionName>
         </LinkerSection>
         <LinkerSection>
                 <sectionName>.heap</sectionName>
@@ -980,6 +986,6 @@
         </LinkerSection>
         <LinkerSection>
                 <sectionName>.stack</sectionName>
-                <regionName>onchip_mem</regionName>
+                <regionName>mem_if_lpddr2_emif_0</regionName>
         </LinkerSection>
 </sch:Settings>

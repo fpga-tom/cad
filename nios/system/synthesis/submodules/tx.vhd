@@ -1,5 +1,6 @@
 library ieee;
 use ieee.std_logic_1164.all;
+use ieee.STD_LOGIC_UNSIGNED.all;
 use ieee.NUMERIC_STD.all;
 use work.tx_lib.all;
 
@@ -122,40 +123,6 @@ begin
       tx_parallel_data <= fshift(dsm_out);
     end if;
   end process shift_proc;
-
-  -- purpose: ready driver
-  -- type   : sequential
-  -- inputs : clock, reset, valid
-  -- outputs: ready
-  ready_proc : process (clock, reset) is
-    variable cnt   : std_logic_vector(10 downto 0);
-    variable start : std_logic;
-  begin  -- process ready_proce
-    if reset = '1' then                     -- asynchronous reset (active high)
-      ready <= '0';
-      start <= '0';
-      cnt   := (others => '0');
-    elsif clock'event and clock = '1' then  -- rising clock edge
-      if tx_ready = '1' then
-        if valid = '1' then
-          ready <= '0';
-          start := '1';
-        else
-          ready <= '1';
-        end if;
-      else
-        ready <= '0';
-      end if;
-      if start = '1' then
-        cnt := cnt + '1';
-        if cnt = std_logic_vector(to_unsigned(1085, 11)) then
-          cnt   := (others => '0');
-          start := '0';
-          ready <= '1';
-        end if;
-      end if;
-    end if;
-  end process ready_proc;
 
   pll_locked    <= pll_locked_t(0);
   tx_std_clkout <= tx_std_clkout_i;

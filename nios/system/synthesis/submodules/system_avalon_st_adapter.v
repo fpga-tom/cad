@@ -11,14 +11,14 @@ module system_avalon_st_adapter #(
 		parameter inUsePackets    = 1,
 		parameter inDataWidth     = 8,
 		parameter inChannelWidth  = 0,
-		parameter inErrorWidth    = 0,
+		parameter inErrorWidth    = 1,
 		parameter inUseEmptyPort  = 0,
 		parameter inUseValid      = 1,
 		parameter inUseReady      = 1,
 		parameter inReadyLatency  = 0,
 		parameter outDataWidth    = 8,
 		parameter outChannelWidth = 0,
-		parameter outErrorWidth   = 1,
+		parameter outErrorWidth   = 0,
 		parameter outUseEmptyPort = 0,
 		parameter outUseValid     = 1,
 		parameter outUseReady     = 1,
@@ -31,12 +31,12 @@ module system_avalon_st_adapter #(
 		output wire       in_0_ready,          //         .ready
 		input  wire       in_0_startofpacket,  //         .startofpacket
 		input  wire       in_0_endofpacket,    //         .endofpacket
+		input  wire [0:0] in_0_error,          //         .error
 		output wire [7:0] out_0_data,          //    out_0.data
 		output wire       out_0_valid,         //         .valid
 		input  wire       out_0_ready,         //         .ready
 		output wire       out_0_startofpacket, //         .startofpacket
-		output wire       out_0_endofpacket,   //         .endofpacket
-		output wire [0:0] out_0_error          //         .error
+		output wire       out_0_endofpacket    //         .endofpacket
 	);
 
 	generate
@@ -81,7 +81,7 @@ module system_avalon_st_adapter #(
 			instantiated_with_wrong_parameters_error_see_comment_above
 					inchannelwidth_check ( .error(1'b1) );
 		end
-		if (inErrorWidth != 0)
+		if (inErrorWidth != 1)
 		begin
 			initial begin
 				$display("Generated module instantiated with wrong parameters");
@@ -144,7 +144,7 @@ module system_avalon_st_adapter #(
 			instantiated_with_wrong_parameters_error_see_comment_above
 					outchannelwidth_check ( .error(1'b1) );
 		end
-		if (outErrorWidth != 1)
+		if (outErrorWidth != 0)
 		begin
 			initial begin
 				$display("Generated module instantiated with wrong parameters");
@@ -199,12 +199,12 @@ module system_avalon_st_adapter #(
 		.in_ready          (in_0_ready),          //      .ready
 		.in_startofpacket  (in_0_startofpacket),  //      .startofpacket
 		.in_endofpacket    (in_0_endofpacket),    //      .endofpacket
+		.in_error          (in_0_error),          //      .error
 		.out_data          (out_0_data),          //   out.data
 		.out_valid         (out_0_valid),         //      .valid
 		.out_ready         (out_0_ready),         //      .ready
 		.out_startofpacket (out_0_startofpacket), //      .startofpacket
-		.out_endofpacket   (out_0_endofpacket),   //      .endofpacket
-		.out_error         (out_0_error)          //      .error
+		.out_endofpacket   (out_0_endofpacket)    //      .endofpacket
 	);
 
 endmodule

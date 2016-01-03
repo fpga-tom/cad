@@ -27,9 +27,10 @@
 			memory_mem_dqs                                             : inout std_logic_vector(3 downto 0)  := (others => 'X'); -- mem_dqs
 			memory_mem_dqs_n                                           : inout std_logic_vector(3 downto 0)  := (others => 'X'); -- mem_dqs_n
 			oct_rzqin                                                  : in    std_logic                     := 'X';             -- rzqin
+			radio_0_led_led                                            : out   std_logic_vector(7 downto 0);                     -- led
+			radio_0_rx_serial_data_serial_data                         : in    std_logic                     := 'X';             -- serial_data
+			radio_0_tx_serial_data_serial_data                         : out   std_logic;                                        -- serial_data
 			reset_reset_n                                              : in    std_logic                     := 'X';             -- reset_n
-			tx_0_led_readdata                                          : out   std_logic_vector(7 downto 0);                     -- readdata
-			tx_0_tx_serial_data_serial_data                            : out   std_logic;                                        -- serial_data
 			uart_external_connection_rxd                               : in    std_logic                     := 'X';             -- rxd
 			uart_external_connection_txd                               : out   std_logic                                         -- txd
 		);
@@ -64,9 +65,10 @@
 			memory_mem_dqs                                             => CONNECTED_TO_memory_mem_dqs,                                             --                                 .mem_dqs
 			memory_mem_dqs_n                                           => CONNECTED_TO_memory_mem_dqs_n,                                           --                                 .mem_dqs_n
 			oct_rzqin                                                  => CONNECTED_TO_oct_rzqin,                                                  --                              oct.rzqin
+			radio_0_led_led                                            => CONNECTED_TO_radio_0_led_led,                                            --                      radio_0_led.led
+			radio_0_rx_serial_data_serial_data                         => CONNECTED_TO_radio_0_rx_serial_data_serial_data,                         --           radio_0_rx_serial_data.serial_data
+			radio_0_tx_serial_data_serial_data                         => CONNECTED_TO_radio_0_tx_serial_data_serial_data,                         --           radio_0_tx_serial_data.serial_data
 			reset_reset_n                                              => CONNECTED_TO_reset_reset_n,                                              --                            reset.reset_n
-			tx_0_led_readdata                                          => CONNECTED_TO_tx_0_led_readdata,                                          --                         tx_0_led.readdata
-			tx_0_tx_serial_data_serial_data                            => CONNECTED_TO_tx_0_tx_serial_data_serial_data,                            --              tx_0_tx_serial_data.serial_data
 			uart_external_connection_rxd                               => CONNECTED_TO_uart_external_connection_rxd,                               --         uart_external_connection.rxd
 			uart_external_connection_txd                               => CONNECTED_TO_uart_external_connection_txd                                --                                 .txd
 		);

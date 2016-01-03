@@ -27,9 +27,10 @@ module system (
 	memory_mem_dqs,
 	memory_mem_dqs_n,
 	oct_rzqin,
+	radio_0_led_led,
+	radio_0_rx_serial_data_serial_data,
+	radio_0_tx_serial_data_serial_data,
 	reset_reset_n,
-	tx_0_led_readdata,
-	tx_0_tx_serial_data_serial_data,
 	uart_external_connection_rxd,
 	uart_external_connection_txd);	
 
@@ -60,9 +61,10 @@ module system (
 	inout	[3:0]	memory_mem_dqs;
 	inout	[3:0]	memory_mem_dqs_n;
 	input		oct_rzqin;
+	output	[7:0]	radio_0_led_led;
+	input		radio_0_rx_serial_data_serial_data;
+	output		radio_0_tx_serial_data_serial_data;
 	input		reset_reset_n;
-	output	[7:0]	tx_0_led_readdata;
-	output		tx_0_tx_serial_data_serial_data;
 	input		uart_external_connection_rxd;
 	output		uart_external_connection_txd;
 endmodule
