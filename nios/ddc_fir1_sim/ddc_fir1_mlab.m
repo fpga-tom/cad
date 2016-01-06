@@ -13,7 +13,7 @@
 %Input Data Width: 24
 %Interpolation Factor: 1
 %Decimation Factor: 20
-%FIR Width (Full Calculation Width Before Output Width Adjust) :8
+%FIR Width (Full Calculation Width Before Output Width Adjust) :24
 %-----------------------------------------------------------------------------------------------------------
 %MegaWizard Scaled Coefficient Values
 
@@ -21,12 +21,12 @@ function  output = ddc_fir1_mlab(stimulation, bank)
  coef_matrix_in= [0,0,0,0,0,0,1,1,1,2,2,3,4,4,5,6,7,9,10,12,14,15,17,20,22,25,27,30,33,36,39,43,46,50,54,58,62,66,70,74,78,82,86,89,93,97,100,104,107,110,113,116,118,120,122,123,125,126,126,126,126,126,126,125,123,122,120,118,116,113,110,107,104,100,97,93,89,86,82,78,74,70,66,62,58,54,50,46,43,39,36,33,30,27,25,22,20,17,15,14,12,10,9,7,6,5,4,4,3,2,2,1,1,1,0,0,0,0,0,0];
  INTER_FACTOR  = 1;
  DECI_FACTOR  =  20;
- MSB_RM  = 0;
- MSB_TYPE  = 0;
- LSB_RM  = 31;
- LSB_TYPE  = 1;
- FIR_WIDTH  = 8 + MSB_RM + LSB_RM;
- OUT_WIDTH  = 8 ;  %8
+ MSB_RM  = 4;
+ MSB_TYPE  = 1;
+ LSB_RM  = 11;
+ LSB_TYPE  = 0;
+ FIR_WIDTH  = 24 + MSB_RM + LSB_RM;
+ OUT_WIDTH  = 24 ;  %24
  DATA_WIDTH = 24;
 
   

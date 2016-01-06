@@ -4,7 +4,7 @@ ChansPerPhyIn : 1
 ChansPerPhyOut : 1 
 InWidth : 24 
 InFracWidth : 0 
-OutWidth : 8 
+OutWidth : 24 
 OutFullWidth : 39 
 OutFracWidth : 0 
 OutFullFracWidth : 0 

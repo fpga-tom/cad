@@ -45,9 +45,9 @@ begin
       end if;
 
       if start = '1' then
-        if cnt = std_logic_vector(to_unsigned(1, 14)) then
-          source_valid <= '0';
-        end if;
+--        if cnt = std_logic_vector(to_unsigned(1, 14)) then
+--          source_valid <= '0';
+--        end if;
         cnt := cnt + '1';
         if cnt = std_logic_vector(to_unsigned(11364, 14)) then
           cnt   := (others => '0');

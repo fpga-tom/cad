@@ -16,7 +16,7 @@
 -- ---------------------------------------------------------------------------
 
 -- VHDL created from ddc_fir1_0002_rtl
--- VHDL created on Sun Jan  3 21:46:20 2016
+-- VHDL created on Wed Jan  6 16:08:18 2016
 
 
 library IEEE;

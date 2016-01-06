@@ -5,6 +5,9 @@ use ieee.NUMERIC_STD.all;
 use work.tx_lib.all;
 
 entity tx is
+  generic (
+    nbits : integer := 8);
+
   port(
     clk            : in  std_logic;
     reset          : in  std_logic;
@@ -88,33 +91,56 @@ architecture structure of tx is
   signal reconfig_mgmt_writedata   : std_logic_vector(31 downto 0);
   signal pll_locked, clock         : std_logic;
   signal dsm_out                   : std_logic;
-
+  signal del1, del2, d_q           : signed(nbits+2 downto 0) := (others => '0');
+  signal DSM_in                    : signed(nbits-1 downto 0);
 begin
 
   -- purpose: transmit signal
   -- type   : sequential
   -- inputs : clock, reset
   -- outputs: dsm_out
+  --tx_proc : process (clock, reset) is
+  --  variable acc : signed(bits downto 0);
+  --  variable x   : signed(bits-1 downto 0);
+  --  variable y   : std_logic;
+  --begin  -- process tx_proc
+  --  if reset = '1' then                 -- asynchronous reset (active high)
+  --    acc := (others => '0');
+  --    led <= (others => '0');
+  --  elsif clock'event and clock = '1' and valid = '1' then  -- rising clock edge
+  --    led     <= data;
+  --    x       := signed(data);
+  --    dsm(x, y, acc);
+  --    dsm_out <= y;
+  --  end if;
+  --end process tx_proc;
+
   tx_proc : process (clock, reset) is
-    variable acc : signed(bits downto 0);
-    variable x   : signed(bits-1 downto 0);
-    variable y   : std_logic;
-  begin  -- process tx_proc
-    if reset = '1' then                 -- asynchronous reset (active high)
-      acc := (others => '0');
-      led <= (others => '0');
-    elsif clock'event and clock = '1' and valid = '1' then  -- rising clock edge
-      led     <= data;
-      x       := signed(data);
-      dsm(x, y, acc);
-      dsm_out <= y;
+    constant c1     : signed(nbits+2 downto 0) := to_signed(1, nbits+3);
+    constant c_1    : signed(nbits+2 downto 0) := to_signed(-1, nbits+3);
+  begin  -- process
+    if reset = '1' then                     -- asynchronous reset (active low)
+      del1    <= (others => '0');
+      del2    <= (others => '0');
+      dsm_out <= '0';
+    elsif clock'event and clock = '1' then  -- rising clock edge
+      DSM_in <= signed(data);
+      del1   <= DSM_in - d_q + del1;
+      del2   <= DSM_in - d_q + del1 - d_q + del2;
+      if DSM_in - d_q + del1 - d_q + del2 > 0 then
+        d_q     <= shift_left(c1, nbits);
+        dsm_out <= '1';
+      else
+        d_q     <= shift_left(c_1, nbits);
+        dsm_out <= '0';
+      end if;
     end if;
   end process tx_proc;
 
-  -- purpose: shift process
-  -- type   : sequential
-  -- inputs : clock, reset
-  -- outputs: tx_parallel_data
+                                            -- purpose: shift process
+                                            -- type   : sequential
+                                            -- inputs : clock, reset
+                                            -- outputs: tx_parallel_data
   shift_proc : process (clock, reset) is
   begin  -- process shift_proc
     if reset = '1' then                     -- asynchronous reset (active high)

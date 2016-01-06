@@ -22,7 +22,7 @@ entity C5G is
     UART_RX : in  std_logic;
     UART_TX : out std_logic;
 
-    REFCLK_p0 : in std_logic;
+    REFCLK_p0    : in  std_logic;
 --    SMA_GXB_TX_p : out std_logic;
 
     --DDR2LP_CA      : out   std_logic_vector(9 downto 0);
@@ -206,22 +206,21 @@ begin
 
   radio_1 : component radio
     port map (
-      clock                => REFCLK_p0,
-      reset                => uart_reset,
-      sink_data            => from_uart_data,
-      sink_valid           => from_uart_valid,
-      sink_ready           => from_uart_ready,
-      sink_error           => from_uart_error,
-      sink_startofpacket   => sink_startofpacket,
-      sink_endofpacket     => sink_endofpacket,
-      source_data          => to_uart_data,
-      source_valid         => to_uart_valid,
-      source_ready         => to_uart_ready,
-      source_error         => to_uart_error,
-      source_startofpacket => source_startofpacket,
-      source_endofpacket   => source_endofpacket,
-      tx_serial_data       => TX_P(3),
-      rx_serial_data       => RX_P(3),
-      led                  => LEDR(9 downto 2));
+      clock                        => REFCLK_p0,
+      reset                        => uart_reset,
+      sink_data                    => from_uart_data & "0000",
+      sink_valid                   => from_uart_valid,
+      sink_ready                   => from_uart_ready,
+      sink_error                   => from_uart_error,
+      sink_startofpacket           => sink_startofpacket,
+      sink_endofpacket             => sink_endofpacket,
+      source_data(bits-1 downto 4) => to_uart_data,
+      source_valid                 => to_uart_valid,
+      source_ready                 => to_uart_ready,
+      source_error                 => to_uart_error,
+      source_startofpacket         => source_startofpacket,
+      source_endofpacket           => source_endofpacket,
+      tx_serial_data               => TX_P(3),
+      rx_serial_data               => RX_P(3));
 
 end structure;

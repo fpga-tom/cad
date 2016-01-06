@@ -124,43 +124,9 @@ begin
     end if;
   end process shift_proc;
 
-  -- purpose: ready driver
-  -- type   : sequential
-  -- inputs : clock, reset, valid
-  -- outputs: ready
-  ready_proc : process (clock, reset) is
-    variable cnt   : std_logic_vector(13 downto 0);
-    variable start : std_logic;
-  begin  -- process ready_proce
-    if reset = '1' then                     -- asynchronous reset (active high)
-      ready <= '0';
-      start := '0';
-      cnt   := (others => '0');
-    elsif clock'event and clock = '1' then  -- rising clock edge
-      if tx_ready = '1' then
-        if valid = '1' then
-          ready <= '0';
-          start := '1';
-        end if;
-      else
-        ready <= '0';
-      end if;
-      if start = '1' then
-        cnt := cnt + '1';
-        if cnt = std_logic_vector(to_unsigned(11364, 14)) then
-          cnt   := (others => '0');
-          start := '0';
-          ready <= '1';
-        else
-          ready <= '0';
-        end if;
-      end if;
-    end if;
-  end process ready_proc;
-
   pll_locked    <= pll_locked_t(0);
   tx_std_clkout <= tx_std_clkout_i;
---  ready         <= tx_ready;
+  ready         <= tx_ready;
   clock         <= clk;
 
   tx_native_inst0 : tx_native

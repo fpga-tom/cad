@@ -1,6 +1,6 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="6e32978d0f70ae6cd1b1"/>
+    <hash md5_digest_80b="3b089d4e1e409588bf3f"/>
   </project>
   <file_info>
     <file device="5CGXFC5C6F27C7" path="C5G_time_limited.sof" usercode="0xFFFFFFFF"/>
@@ -133,6 +133,12 @@
     <sld_info hpath="radio:radio_1|trx:trx_1|ddc_nco:\chann_nco:19:ddc_nco_1" name="\chann_nco:19:ddc_nco_1">
       <assignment_values>
         <assignment_value text="QSYS_NAME ddc_nco HAS_SOPCINFO 1 GENERATION_ID 1451746441"/>
+      </assignment_values>
+      <parameters/>
+    </sld_info>
+    <sld_info hpath="radio:radio_1|trx:trx_1|tx_xlate:tx_xlate_1" name="tx_xlate_1">
+      <assignment_values>
+        <assignment_value text="QSYS_NAME tx_xlate HAS_SOPCINFO 1 GENERATION_ID 1452020494"/>
       </assignment_values>
       <parameters/>
     </sld_info>

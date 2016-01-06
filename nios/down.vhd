@@ -49,7 +49,7 @@ begin
 --          source_valid <= '0';
 --        end if;
         cnt := cnt + '1';
-        if cnt = std_logic_vector(to_unsigned(11364, 14)) then
+        if cnt = std_logic_vector(to_unsigned(56, 14)) then
           cnt   := (others => '0');
           start := '0';
         end if;

@@ -3,7 +3,7 @@ use ieee.STD_LOGIC_1164.all;
 use ieee.NUMERIC_STD.all;
 
 package tx_lib is
-  constant bits  : natural := 8;        -- sirka slova delta sigma modulatora
+  constant bits  : natural := 12;        -- sirka slova delta sigma modulatora
   constant pbits : natural := 20;       -- sirka slova frekvencneho translatora
 
   procedure dsm(x   : in signed(bits-1 downto 0); y : out std_logic; acc : inout signed(bits downto 0));
@@ -24,7 +24,7 @@ package body tx_lib is
       dac := "110000000"; --& signed(to_unsigned(2**(bits-1), bits));
     end if;
     d   := x - dac;
-    acc := d + acc;
+    acc := acc + d;
     y   := not acc(bits);
   end dsm;
 

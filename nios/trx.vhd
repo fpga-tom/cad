@@ -119,7 +119,8 @@ architecture structure of trx is
     std_logic_vector(to_unsigned(3277, 16))
     );
 
-  constant phi_inc_i : std_logic_vector(31 downto 0) := std_logic_vector(to_unsigned(0, 32));
+  constant phi_inc_i       : std_logic_vector(31 downto 0) := std_logic_vector(to_unsigned(0, 32));
+  constant phi_inc_i_xlate : std_logic_vector(31 downto 0) := std_logic_vector(to_unsigned(34360, 32));
 
   signal dsm_out : std_logic;
   component rx_reset is
@@ -162,6 +163,16 @@ architecture structure of trx is
       ch1_2_to_xcvr             : out std_logic_vector(139 downto 0);
       ch1_2_from_xcvr           : in  std_logic_vector(91 downto 0) := (others => '0'));
   end component trx_reconfig;
+
+  component tx_xlate is
+    port (
+      clk       : in  std_logic                     := 'X';
+      reset_n   : in  std_logic                     := 'X';
+      clken     : in  std_logic                     := 'X';
+      phi_inc_i : in  std_logic_vector(31 downto 0) := (others => 'X');
+      fsin_o    : out std_logic_vector(11 downto 0);
+      out_valid : out std_logic);
+  end component tx_xlate;
 
   component rx_native is
     port (
@@ -230,10 +241,30 @@ architecture structure of trx is
       ast_sink_data    : in  std_logic_vector(23 downto 0) := (others => '0');
       ast_sink_valid   : in  std_logic                     := '0';
       ast_sink_error   : in  std_logic_vector(1 downto 0)  := (others => '0');
-      ast_source_data  : out std_logic_vector(7 downto 0);
+      ast_source_data  : out std_logic_vector(23 downto 0);
       ast_source_valid : out std_logic;
       ast_source_error : out std_logic_vector(1 downto 0));
   end component ddc_fir1;
+
+  component ddc_fir2 is
+    port (
+      clk              : in  std_logic                     := '0';
+      reset_n          : in  std_logic                     := '0';
+      ast_sink_data    : in  std_logic_vector(23 downto 0) := (others => '0');
+      ast_sink_valid   : in  std_logic                     := '0';
+      ast_sink_error   : in  std_logic_vector(1 downto 0)  := (others => '0');
+      ast_source_data  : out std_logic_vector(11 downto 0);
+      ast_source_valid : out std_logic;
+      ast_source_error : out std_logic_vector(1 downto 0));
+  end component ddc_fir2;
+
+  signal del1, del2, d_q : signed(bits+2 downto 0) := (others => '0');
+  signal DSM_in          : signed(bits-1 downto 0);
+  signal out_valid_xlate : std_logic;
+  signal fsin_o_xlate    : std_logic_vector(bits-1 downto 0);
+  signal fir1_sink_data  : std_logic_vector(23 downto 0);
+  signal fir1_sink_valid : std_logic;
+  signal fir1_sink_error : std_logic_vector(1 downto 0);
 
 begin
 
@@ -247,19 +278,54 @@ begin
   -- type   : sequential
   -- inputs : clk, reset
   -- outputs: dsm_out
-  tx_proc : process (clk, reset) is
-    variable acc : signed(bits downto 0);
-    variable x   : signed(bits-1 downto 0);
-    variable y   : std_logic;
-  begin  -- process tx_proc
-    if reset = '1' then                 -- asynchronous reset (active high)
-      acc := (others => '0');
-      led <= (others => '0');
+  --tx_proc : process (clk, reset) is
+  --  variable acc : signed(bits downto 0);
+  --  variable x   : signed(bits-1 downto 0);
+  --  variable y   : std_logic;
+  --begin  -- process tx_proc
+  --  if reset = '1' then                 -- asynchronous reset (active high)
+  --    acc := (others => '0');
+  --    led <= (others => '0');
+  --  elsif clk'event and clk = '1' and sink_valid = '1' then  -- rising clock edge
+  --    led     <= sink_data;
+  --    x       := signed(sink_data);
+  --    dsm(x, y, acc);
+  --    dsm_out <= y;
+  --  end if;
+  --end process tx_proc;
+
+  -- purpose: dsm in register
+  -- type   : sequential
+  -- inputs : clk, reset
+  -- outputs: DSM_in
+  in_proc : process (clk, reset) is
+  begin  -- process in_proc
+    if reset = '1' then                 -- asynchronous reset (active low)
+      DSM_in <= (others => '0');
     elsif clk'event and clk = '1' and sink_valid = '1' then  -- rising clock edge
-      led     <= sink_data;
-      x       := signed(sink_data);
-      dsm(x, y, acc);
-      dsm_out <= y;
+      DSM_in <= signed(sink_data);
+    end if;
+  end process in_proc;
+
+  tx_proc : process (clk, reset) is
+    constant c1  : signed(bits+2 downto 0) := to_signed(1, bits+3);
+    constant c_1 : signed(bits+2 downto 0) := to_signed(-1, bits+3);
+    variable tmp : std_logic_vector(23 downto 0);
+  begin  -- process
+    if reset = '1' then                 -- asynchronous reset (active low)
+      del1    <= (others => '0');
+      del2    <= (others => '0');
+      dsm_out <= '0';
+    elsif clk'event and clk = '1' then  -- rising clock edge
+      del1 <= DSM_in - d_q + del1;
+      del2 <= DSM_in - d_q + del1 - d_q + del2;
+      if DSM_in - d_q + del1 - d_q + del2 > 0 then
+        d_q     <= shift_left(c1, bits);
+        dsm_out <= '1';
+      else
+        d_q     <= shift_left(c_1, bits);
+        dsm_out <= '0';
+      end if;
     end if;
   end process tx_proc;
 
@@ -275,6 +341,15 @@ begin
       tx_parallel_data(9 downto 0) <= fshift(dsm_out);
     end if;
   end process shift_proc;
+
+  tx_xlate_1 : component tx_xlate
+    port map (
+      clk       => clk,
+      reset_n   => reset_n,
+      clken     => pll_locked(0),
+      phi_inc_i => phi_inc_i_xlate,
+      fsin_o    => fsin_o_xlate,
+      out_valid => out_valid_xlate);
 
 
   -- ddc
@@ -398,6 +473,17 @@ begin
       ast_sink_data    => fir_source_data,
       ast_sink_valid   => fir_source_valid,
       ast_sink_error   => fir_source_error,
+      ast_source_data  => fir1_sink_data,
+      ast_source_valid => fir1_sink_valid,
+      ast_source_error => fir1_sink_error);
+
+  ddc_fir2_1 : component ddc_fir2
+    port map (
+      clk              => clk,
+      reset_n          => reset_n,
+      ast_sink_data    => fir1_sink_data,
+      ast_sink_valid   => fir1_sink_valid,
+      ast_sink_error   => fir1_sink_error,
       ast_source_data  => source_data,
       ast_source_valid => source_valid,
       ast_source_error => source_error);

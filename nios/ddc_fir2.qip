@@ -1,0 +1,87 @@
+set_global_assignment -entity "ddc_fir2" -library "ddc_fir2" -name IP_TOOL_NAME "altera_fir_compiler_ii"
+set_global_assignment -entity "ddc_fir2" -library "ddc_fir2" -name IP_TOOL_VERSION "15.1"
+set_global_assignment -entity "ddc_fir2" -library "ddc_fir2" -name IP_TOOL_ENV "mwpim"
+set_global_assignment -library "ddc_fir2" -name MISC_FILE [file join $::quartus(qip_path) "ddc_fir2.cmp"]
+set_global_assignment -entity "ddc_fir2" -library "ddc_fir2" -name IP_TARGETED_DEVICE_FAMILY "Cyclone V"
+set_global_assignment -entity "ddc_fir2" -library "ddc_fir2" -name IP_GENERATED_DEVICE_FAMILY "{Cyclone V}"
+set_global_assignment -entity "ddc_fir2" -library "ddc_fir2" -name IP_QSYS_MODE "UNKNOWN"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -entity "ddc_fir2" -library "ddc_fir2" -name IP_COMPONENT_NAME "ZGRjX2ZpcjI="
+set_global_assignment -entity "ddc_fir2" -library "ddc_fir2" -name IP_COMPONENT_DISPLAY_NAME "RklSIElJ"
+set_global_assignment -entity "ddc_fir2" -library "ddc_fir2" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "ddc_fir2" -library "ddc_fir2" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "ddc_fir2" -library "ddc_fir2" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "ddc_fir2" -library "ddc_fir2" -name IP_COMPONENT_VERSION "MTUuMQ=="
+set_global_assignment -entity "ddc_fir2" -library "ddc_fir2" -name IP_COMPONENT_DESCRIPTION "QWx0ZXJhIEZJUiBJSQ=="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_NAME "ZGRjX2ZpcjJfMDAwMg=="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_DISPLAY_NAME "RklSIElJ"
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_VERSION "MTUuMQ=="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_DESCRIPTION "QWx0ZXJhIEZJUiBJSQ=="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "ZmlsdGVyVHlwZQ==::ZGVjaW0=::RmlsdGVyIFR5cGU="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "aW50ZXJwRmFjdG9y::MQ==::SW50ZXJwb2xhdGlvbiBGYWN0b3I="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "ZGVjaW1GYWN0b3I=::MTA=::RGVjaW1hdGlvbiBGYWN0b3I="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "c3ltbWV0cnlNb2Rl::bnN5bQ==::U3ltbWV0cnk="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "TF9iYW5kc0ZpbHRlcg==::MQ==::TC10aCBCYW5kIEZpbHRlcg=="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "aW5wdXRDaGFubmVsTnVt::MQ==::TWF4IE51bWJlciBvZiBDaGFubmVscw=="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "Y2xvY2tSYXRl::MTI1::Q2xvY2sgUmF0ZQ=="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "Y2xvY2tTbGFjaw==::MA==::Q2xvY2sgU2xhY2s="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "aW5wdXRSYXRl::Ni4yNQ==::SW5wdXQgU2FtcGxlIFJhdGUgKE1TUFMp"
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "Y29lZmZSZWxvYWQ=::ZmFsc2U=::Q29lZmZpY2llbnRzIFJlbG9hZA=="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "YmFja1ByZXNzdXJl::ZmFsc2U=::QmFjayBQcmVzc3VyZSBTdXBwb3J0"
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "ZGV2aWNlRmFtaWx5::Q3ljbG9uZSBW::RGV2aWNlIEZhbWlseQ=="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "c3BlZWRHcmFkZQ==::bWVkaXVt::U3BlZWQgR3JhZGU="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "ZGVsYXlSQU1CbG9ja1RocmVzaG9sZA==::MjA=::TWVtb3J5IEJsb2NrIFRocmVzaG9sZA=="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "ZHVhbE1lbURpc3RSQU1UaHJlc2hvbGQ=::MTI4MA==::RHVhbCBQb3J0IFJBTSBUaHJlc2hvbGQ="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "bVJBTVRocmVzaG9sZA==::MTAwMDAwMA==::TGFyZ2UgUkFNIFRocmVzaG9sZA=="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "aGFyZE11bHRpcGxpZXJUaHJlc2hvbGQ=::LTE=::SGFyZCBNdWx0aXBsaWVyIFRocmVzaG9sZA=="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "cmVjb25maWd1cmFibGU=::ZmFsc2U=::UmVjb25maWd1cmFibGUgQ2FycmllciBNb2Rl"
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "bnVtX21vZGVz::Mg==::TnVtYmVyIG9mIE1vZGVz"
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "cmVjb25maWd1cmFibGVfbGlzdA==::MA==::Q2hvb3NlIE1vZGUgdG8gRWRpdA=="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "TU9ERV9TVFJJTkc=::Tm9uZSBTZXQ=::TU9ERV9TVFJJTkdfRElTUExBWQ=="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "Y2hhbm5lbE1vZGVz::MCwxLDIsMw==::Q2hhbm5lbCBNb2RlIE9yZGVy"
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "aW5wdXRUeXBl::aW50::SW5wdXQgVHlwZQ=="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "aW5wdXRCaXRXaWR0aA==::MjQ=::SW5wdXQgV2lkdGg="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "Y29lZmZTZXRSZWFsVmFsdWU=::MC4wMDMxOTE1MSwwLjAwMzUwMTc3LDAuMDA0MzA3NDcsMC4wMDU2MTU2OSwwLjAwNzQxNjg2LDAuMDA5Njg0NjMsMC4wMTIzNzYyOSwwLjAxNTQzMzgzLDAuMDE4Nzg1NTIsMC4wMjIzNDgwNSwwLjAyNjAyOTAxLDAuMDI5NzI5ODcsMC4wMzMzNDkwOSwwLjAzNjc4NTQ0LDAuMDM5OTQxMzEsMC4wNDI3MjU5NiwwLjA0NTA1ODU3LDAuMDQ2ODcwOTMsMC4wNDgxMDk3NCwwLjA0ODczODQ0LDAuMDQ4NzM4NDQsMC4wNDgxMDk3NCwwLjA0Njg3MDkzLDAuMDQ1MDU4NTcsMC4wNDI3MjU5NiwwLjAzOTk0MTMxLDAuMDM2Nzg1NDQsMC4wMzMzNDkwOSwwLjAyOTcyOTg3LDAuMDI2MDI5MDEsMC4wMjIzNDgwNSwwLjAxODc4NTUyLDAuMDE1NDMzODMsMC4wMTIzNzYyOSwwLjAwOTY4NDYzLDAuMDA3NDE2ODYsMC4wMDU2MTU2OSwwLjAwNDMwNzQ3LDAuMDAzNTAxNzcsMC4wMDMxOTE1MQ==::UmVhbCBDb2VmZmljaWVudCBWYWx1ZXM="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "Y29lZmZOdW0=::NDA=::TnVtYmVyIG9mIENvZWZmaWNpZW50cw=="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "Y29lZmZTZXRTY2FsZVZhbHVl::MC4wMDMwNzAxMzc5NTI3NTU5MDU1LDAuMDAzNDUzOTA1MTk2ODUwMzkzNCwwLjAwNDIyMTQzOTY4NTAzOTM3LDAuMDA1MzcyNzQxNDE3MzIyODM1LDAuMDA3MjkxNTc3NjM3Nzk1Mjc1LDAuMDA5NTk0MTgxMTAyMzYyMjA0LDAuMDEyMjgwNTUxODExMDIzNjIyLDAuMDE1MzUwNjg5NzYzNzc5NTI2LDAuMDE4NDIwODI3NzE2NTM1NDMyLDAuMDIyMjU4NTAwMTU3NDgwMzE0LDAuMDI1NzEyNDA1MzU0MzMwNzA4LDAuMDI5NTUwMDc3Nzk1Mjc1NTksMC4wMzMwMDM5ODI5OTIxMjU5OCwwLjAzNjQ1Nzg4ODE4ODk3NjM4LDAuMDM5OTExNzkzMzg1ODI2NzcsMC4wNDI1OTgxNjQwOTQ0ODgxOSwwLjA0NDkwMDc2NzU1OTA1NTExNiwwLjA0NjgxOTYwMzc3OTUyNzU1NSwwLjA0Nzk3MDkwNTUxMTgxMTAyLDAuMDQ4NzM4NDQsMC4wNDg3Mzg0NCwwLjA0Nzk3MDkwNTUxMTgxMTAyLDAuMDQ2ODE5NjAzNzc5NTI3NTU1LDAuMDQ0OTAwNzY3NTU5MDU1MTE2LDAuMDQyNTk4MTY0MDk0NDg4MTksMC4wMzk5MTE3OTMzODU4MjY3NywwLjAzNjQ1Nzg4ODE4ODk3NjM4LDAuMDMzMDAzOTgyOTkyMTI1OTgsMC4wMjk1NTAwNzc3OTUyNzU1OSwwLjAyNTcxMjQwNTM1NDMzMDcwOCwwLjAyMjI1ODUwMDE1NzQ4MDMxNCwwLjAxODQyMDgyNzcxNjUzNTQzMiwwLjAxNTM1MDY4OTc2Mzc3OTUyNiwwLjAxMjI4MDU1MTgxMTAyMzYyMiwwLjAwOTU5NDE4MTEwMjM2MjIwNCwwLjAwNzI5MTU3NzYzNzc5NTI3NSwwLjAwNTM3Mjc0MTQxNzMyMjgzNSwwLjAwNDIyMTQzOTY4NTAzOTM3LDAuMDAzNDUzOTA1MTk2ODUwMzkzNCwwLjAwMzA3MDEzNzk1Mjc1NTkwNTU=::U2NhbGVkIENvZWZmaWNpZW50IFZhbHVlcw=="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "Y29lZmZTZXRGaXhlZFZhbHVl::OCw5LDExLDE0LDE5LDI1LDMyLDQwLDQ4LDU4LDY3LDc3LDg2LDk1LDEwNCwxMTEsMTE3LDEyMiwxMjUsMTI3LDEyNywxMjUsMTIyLDExNywxMTEsMTA0LDk1LDg2LDc3LDY3LDU4LDQ4LDQwLDMyLDI1LDE5LDE0LDExLDksOA==::Rml4ZWQtcG9pbnQgQ29lZmZpY2llbnQgVmFsdWVz"
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "Y29lZmZTY2FsaW5n::YXV0bw==::Q29lZmZpY2llbnQgU2NhbGluZw=="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "Y29lZmZUeXBl::aW50::Q29lZmZpY2llbnQgRGF0YSBUeXBl"
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "Y29lZmZCaXRXaWR0aA==::OA==::Q29lZmZpY2llbnQgV2lkdGg="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "b3V0VHlwZQ==::aW50::T3V0cHV0IFR5cGU="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "b3V0TVNCUm91bmQ=::c2F0::TVNCIFJvdW5kaW5n"
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "b3V0TXNiQml0UmVt::NA==::TVNCIEJpdHMgdG8gUmVtb3Zl"
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "b3V0TFNCUm91bmQ=::dHJ1bmM=::TFNCIFJvdW5kaW5n"
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "b3V0THNiQml0UmVt::MjI=::TFNCIEJpdHMgdG8gUmVtb3Zl"
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "aW5wdXRJbnRlcmZhY2VOdW0=::MQ==::TnVtYmVyIG9mIFBhcmFsbGVsIElucHV0IFN5bWJvbHM="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "b3V0cHV0SW50ZXJmYWNlTnVt::MQ==::TnVtYmVyIG9mIFBhcmFsbGVsIE91dHB1dCBTeW1ib2xz"
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "Y2hhblBlcklucHV0SW50ZXJmYWNl::MQ==::TnVtYmVyIG9mIENoYW5uZWxzIHBlciBJbnB1dCBJbnRlcmZhY2U="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "Y2hhblBlck91dHB1dEludGVyZmFjZQ==::MQ==::TnVtYmVyIG9mIENoYW5uZWxzIHBlciBPdXRwdXQgSW50ZXJmYWNl"
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "YmFua0NvdW50::MQ==::TnVtYmVyIG9mIENvZWZmaWNpZW50IEJhbmtz"
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "YmFua0Rpc3BsYXk=::MA==::YmFua0Rpc3BsYXk="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "bHV0Q291bnQ=::MTgx::TnVtYmVyIG9mIExVVHM="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "ZHNwQ291bnQ=::Mg==::TnVtYmVyIG9mIERTUHM="
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "bWVtQml0Q291bnQ=::MTUzNg==::TnVtYmVyIG9mIE1lbW9yeSBCaXRz"
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_COMPONENT_PARAMETER "ZXJyb3JMaXN0::MA==::ZXJyb3JMaXN0"
+
+set_global_assignment -library "ddc_fir2" -name VHDL_FILE [file join $::quartus(qip_path) "ddc_fir2.vhd"]
+set_global_assignment -library "ddc_fir2" -name VHDL_FILE [file join $::quartus(qip_path) "ddc_fir2/dspba_library_package.vhd"]
+set_global_assignment -library "ddc_fir2" -name VHDL_FILE [file join $::quartus(qip_path) "ddc_fir2/dspba_library.vhd"]
+set_global_assignment -library "ddc_fir2" -name VHDL_FILE [file join $::quartus(qip_path) "ddc_fir2/auk_dspip_math_pkg_hpfir.vhd"]
+set_global_assignment -library "ddc_fir2" -name VHDL_FILE [file join $::quartus(qip_path) "ddc_fir2/auk_dspip_lib_pkg_hpfir.vhd"]
+set_global_assignment -library "ddc_fir2" -name VHDL_FILE [file join $::quartus(qip_path) "ddc_fir2/auk_dspip_avalon_streaming_controller_hpfir.vhd"]
+set_global_assignment -library "ddc_fir2" -name VHDL_FILE [file join $::quartus(qip_path) "ddc_fir2/auk_dspip_avalon_streaming_sink_hpfir.vhd"]
+set_global_assignment -library "ddc_fir2" -name VHDL_FILE [file join $::quartus(qip_path) "ddc_fir2/auk_dspip_avalon_streaming_source_hpfir.vhd"]
+set_global_assignment -library "ddc_fir2" -name VHDL_FILE [file join $::quartus(qip_path) "ddc_fir2/auk_dspip_roundsat_hpfir.vhd"]
+set_global_assignment -library "ddc_fir2" -name VERILOG_FILE [file join $::quartus(qip_path) "ddc_fir2/altera_avalon_sc_fifo.v"]
+set_global_assignment -library "ddc_fir2" -name VHDL_FILE [file join $::quartus(qip_path) "ddc_fir2/ddc_fir2_0002_rtl.vhd"]
+set_global_assignment -library "ddc_fir2" -name VHDL_FILE [file join $::quartus(qip_path) "ddc_fir2/ddc_fir2_0002_ast.vhd"]
+set_global_assignment -library "ddc_fir2" -name VHDL_FILE [file join $::quartus(qip_path) "ddc_fir2/ddc_fir2_0002.vhd"]
+set_global_assignment -library "ddc_fir2" -name SDC_FILE [file join $::quartus(qip_path) "ddc_fir2/ddc_fir2_0002.sdc"]
+
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_TOOL_NAME "altera_fir_compiler_ii"
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_TOOL_VERSION "15.1"
+set_global_assignment -entity "ddc_fir2_0002" -library "ddc_fir2" -name IP_TOOL_ENV "mwpim"

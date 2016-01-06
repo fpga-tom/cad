@@ -11,10 +11,10 @@ entity ddc_fir1_ast is
   INWIDTH             : integer := 24;
   FULL_WIDTH          : integer := 39;
   BANKINWIDTH         : integer := 0;
-  REM_LSB_BIT_g       : integer := 31;
-  REM_LSB_TYPE_g      : string := "round";
-  REM_MSB_BIT_g       : integer := 0;
-  REM_MSB_TYPE_g      : string := "trunc";
+  REM_LSB_BIT_g       : integer := 11;
+  REM_LSB_TYPE_g      : string := "trunc";
+  REM_MSB_BIT_g       : integer := 4;
+  REM_MSB_TYPE_g      : string := "sat";
   PHYSCHANIN          : integer := 1;
   PHYSCHANOUT         : integer := 1;
   CHANSPERPHYIN       : natural := 1;
