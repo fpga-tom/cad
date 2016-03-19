@@ -7,11 +7,7 @@ EbNo = 15;
 Fs = Rsym * nSamps;
 UpsampleFactor=8;
 Fs1 = Fs * UpsampleFactor;
-
 T=1/Fs;
-
-
-
 
 
 samples=10000
@@ -30,7 +26,7 @@ txsig=step(txfilt,bb);
 % interpolate
 txsig=interp(txsig, UpsampleFactor);
 % frequency shift
-carrier=exp(1i*(2*pi*(Fc+2060)*[0:1/Fs1:length(txsig)/Fs1-1/Fs1]'+2.483));
+carrier=exp(1i*(2*pi*(Fc+20000)*[0:1/Fs1:length(txsig)/Fs1-1/Fs1]'+2.483));
 txsig=txsig.*carrier;
 % noise
 awgn=comm.AWGNChannel('EbNo',25);
@@ -42,13 +38,20 @@ txsig=step(delay, txsig);
 
 % frequency shift
 carrier=exp(1i*(2*pi*(-Fc)*[0:1/Fs1:length(txsig)/Fs1-1/Fs1]'));
-txsig=txsig.*carrier;
+txsig=real(txsig).*carrier;
 % decimate
 txsig=decimate(txsig, UpsampleFactor);
 
 % matched filter
 rxfilt=comm.RaisedCosineReceiveFilter('InputSamplesPerSymbol', nSamps,'DecimationFactor',2);
 rxsig=step(rxfilt,txsig);
+
+% frequency acquisition
+freqComp=comm.PSKCoarseFrequencyEstimator('SampleRate', Fs/2, 'FrequencyResolution', 128);
+freqOffset=step(freqComp, rxsig);
+
+freqPFO=comm.PhaseFrequencyOffset('SampleRate', Fs/2, 'FrequencyOffsetSource', 'Input port');
+rxsig=step(freqPFO, rxsig, -freqOffset);
 
 % frequency tracking, carrier synch 
 sync=comm.CarrierSynchronizer('SamplesPerSymbol', 2, 'Modulation', 'QPSK');
@@ -58,7 +61,7 @@ rxsig=step(sync, rxsig);
 symsync=comm.SymbolSynchronizer;
 dem=step(symsync, rxsig);
 
-demod=comm.BPSKDemodulator;
-% demdata=step(demod, dem');
+demod=comm.QPSKDemodulator;
+demdata=step(demod, dem);
 scatterplot(dem(9000:end));
 
