@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file path="ddc_fir3_sim/dspba_library_package.vhd" type="VHDL" />
+ <file path="ddc_fir3_sim/dspba_library.vhd" type="VHDL" />
+ <file path="ddc_fir3_sim/auk_dspip_math_pkg_hpfir.vhd" type="VHDL" />
+ <file path="ddc_fir3_sim/auk_dspip_lib_pkg_hpfir.vhd" type="VHDL" />
+ <file
+   path="ddc_fir3_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd"
+   type="VHDL" />
+ <file
+   path="ddc_fir3_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd"
+   type="VHDL" />
+ <file
+   path="ddc_fir3_sim/auk_dspip_avalon_streaming_source_hpfir.vhd"
+   type="VHDL" />
+ <file path="ddc_fir3_sim/auk_dspip_roundsat_hpfir.vhd" type="VHDL" />
+ <file path="ddc_fir3_sim/altera_avalon_sc_fifo.v" type="VERILOG" />
+ <file path="ddc_fir3_sim/ddc_fir3_rtl.vhd" type="VHDL" />
+ <file path="ddc_fir3_sim/ddc_fir3_ast.vhd" type="VHDL" />
+ <file path="ddc_fir3_sim/ddc_fir3.vhd" type="VHDL" />
+ <file path="ddc_fir3_sim/ddc_fir3.sdc" type="SDC" />
+ <file path="ddc_fir3_sim/ddc_fir3_nativelink.tcl" type="OTHER" />
+ <file path="ddc_fir3_sim/ddc_fir3_msim.tcl" type="OTHER" />
+ <file path="ddc_fir3_sim/ddc_fir3_tb.vhd" type="VHDL" />
+ <file path="ddc_fir3_sim/ddc_fir3_mlab.m" type="OTHER" />
+ <file path="ddc_fir3_sim/ddc_fir3_model.m" type="OTHER" />
+ <file path="ddc_fir3_sim/ddc_fir3_coef_int.txt" type="OTHER" />
+ <file path="ddc_fir3_sim/ddc_fir3_input.txt" type="OTHER" />
+ <file path="ddc_fir3_sim/ddc_fir3_param.txt" type="OTHER" />
+ <topLevel name="ddc_fir3" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

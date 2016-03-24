@@ -15,7 +15,7 @@ entity ddc_fir2 is
 		ast_sink_data    : in  std_logic_vector(23 downto 0) := (others => '0'); --   avalon_streaming_sink.data
 		ast_sink_valid   : in  std_logic                     := '0';             --                        .valid
 		ast_sink_error   : in  std_logic_vector(1 downto 0)  := (others => '0'); --                        .error
-		ast_source_data  : out std_logic_vector(11 downto 0);                    -- avalon_streaming_source.data
+		ast_source_data  : out std_logic_vector(15 downto 0);                    -- avalon_streaming_source.data
 		ast_source_valid : out std_logic;                                        --                        .valid
 		ast_source_error : out std_logic_vector(1 downto 0)                      --                        .error
 	);
@@ -29,7 +29,7 @@ architecture rtl of ddc_fir2 is
 			ast_sink_data    : in  std_logic_vector(23 downto 0) := (others => 'X'); -- data
 			ast_sink_valid   : in  std_logic                     := 'X';             -- valid
 			ast_sink_error   : in  std_logic_vector(1 downto 0)  := (others => 'X'); -- error
-			ast_source_data  : out std_logic_vector(11 downto 0);                    -- data
+			ast_source_data  : out std_logic_vector(15 downto 0);                    -- data
 			ast_source_valid : out std_logic;                                        -- valid
 			ast_source_error : out std_logic_vector(1 downto 0)                      -- error
 		);
@@ -79,7 +79,7 @@ end architecture rtl; -- of ddc_fir2
 -- Retrieval info: <instance entity-name="altera_fir_compiler_ii" version="15.1" >
 -- Retrieval info: 	<generic name="filterType" value="decim" />
 -- Retrieval info: 	<generic name="interpFactor" value="1" />
--- Retrieval info: 	<generic name="decimFactor" value="10" />
+-- Retrieval info: 	<generic name="decimFactor" value="25" />
 -- Retrieval info: 	<generic name="symmetryMode" value="nsym" />
 -- Retrieval info: 	<generic name="L_bandsFilter" value="1" />
 -- Retrieval info: 	<generic name="inputChannelNum" value="1" />
@@ -111,9 +111,9 @@ end architecture rtl; -- of ddc_fir2
 -- Retrieval info: 	<generic name="coeffFracBitWidth" value="0" />
 -- Retrieval info: 	<generic name="outType" value="int" />
 -- Retrieval info: 	<generic name="outMSBRound" value="sat" />
--- Retrieval info: 	<generic name="outMsbBitRem" value="4" />
--- Retrieval info: 	<generic name="outLSBRound" value="trunc" />
--- Retrieval info: 	<generic name="outLsbBitRem" value="22" />
+-- Retrieval info: 	<generic name="outMsbBitRem" value="5" />
+-- Retrieval info: 	<generic name="outLSBRound" value="round" />
+-- Retrieval info: 	<generic name="outLsbBitRem" value="17" />
 -- Retrieval info: 	<generic name="bankCount" value="1" />
 -- Retrieval info: 	<generic name="bankDisplay" value="0" />
 -- Retrieval info: </instance>

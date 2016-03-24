@@ -12,21 +12,21 @@
 %FILTER PARAMETER
 %Input Data Width: 24
 %Interpolation Factor: 1
-%Decimation Factor: 10
-%FIR Width (Full Calculation Width Before Output Width Adjust) :12
+%Decimation Factor: 25
+%FIR Width (Full Calculation Width Before Output Width Adjust) :16
 %-----------------------------------------------------------------------------------------------------------
 %MegaWizard Scaled Coefficient Values
 
 function  output = ddc_fir2_mlab(stimulation, bank)
  coef_matrix_in= [8,9,11,14,19,25,32,40,48,58,67,77,86,95,104,111,117,122,125,127,127,125,122,117,111,104,95,86,77,67,58,48,40,32,25,19,14,11,9,8];
  INTER_FACTOR  = 1;
- DECI_FACTOR  =  10;
- MSB_RM  = 4;
+ DECI_FACTOR  =  25;
+ MSB_RM  = 5;
  MSB_TYPE  = 1;
- LSB_RM  = 22;
- LSB_TYPE  = 0;
- FIR_WIDTH  = 12 + MSB_RM + LSB_RM;
- OUT_WIDTH  = 12 ;  %12
+ LSB_RM  = 17;
+ LSB_TYPE  = 1;
+ FIR_WIDTH  = 16 + MSB_RM + LSB_RM;
+ OUT_WIDTH  = 16 ;  %16
  DATA_WIDTH = 24;
 
   

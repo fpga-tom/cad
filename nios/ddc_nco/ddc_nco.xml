@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <deploy
- date="2016.01.02.15:54:01"
- outputDirectory="/home/tomas/trx/nios/ddc_nco/">
+ date="2016.03.23.21:10:31"
+ outputDirectory="/home/tomas/trx/cad/nios/ddc_nco/">
  <perimeter>
   <parameter
      name="AUTO_GENERATION_ID"
@@ -78,13 +78,13 @@
  </perimeter>
  <entity
    path=""
-   parameterizationKey="ddc_nco:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=5CGXFC5C6F27C7,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=7_H6,AUTO_GENERATION_ID=1451746441,AUTO_UNIQUE_ID=(altera_nco_ii:15.1:apr=32,aprf=32,apri=16,aprp=16,arch=cordic,cordic_arch=parallel,cycles_per_output=1,design_env=NATIVE,dpri=4,fmod_pipe=1,freq_out=25.0,fsamp=125.0,hyper_opt=false,hyper_opt_select=false,mpr=10,numba=1,numch=1,phi_inc=858993459,pmod_pipe=1,real_freq_out=25.0,selected_device_family=Cyclone V,trig_cycles_per_output=1,use_dedicated_multipliers=true,want_dither=false,want_freq_mod=false,want_phase_mod=true,want_sin_and_cos=single_output)"
+   parameterizationKey="ddc_nco:1.0:AUTO_CLK_CLOCK_DOMAIN=-1,AUTO_CLK_CLOCK_RATE=-1,AUTO_CLK_RESET_DOMAIN=-1,AUTO_DEVICE=5CGXFC5C6F27C7,AUTO_DEVICE_FAMILY=Cyclone V,AUTO_DEVICE_SPEEDGRADE=7_H6,AUTO_GENERATION_ID=1458763831,AUTO_UNIQUE_ID=(altera_nco_ii:15.1:apr=32,aprf=32,apri=16,aprp=16,arch=cordic,cordic_arch=parallel,cycles_per_output=1,design_env=NATIVE,dpri=4,fmod_pipe=1,freq_out=2.92E-8,fsamp=125.0,hyper_opt=false,hyper_opt_select=false,mpr=10,numba=1,numch=1,phi_inc=1,pmod_pipe=1,real_freq_out=2.91E-8,selected_device_family=Cyclone V,trig_cycles_per_output=1,use_dedicated_multipliers=true,want_dither=false,want_freq_mod=false,want_phase_mod=true,want_sin_and_cos=single_output)"
    instancePathKey="ddc_nco"
    kind="ddc_nco"
    version="1.0"
    name="ddc_nco">
   <parameter name="AUTO_CLK_CLOCK_RATE" value="-1" />
-  <parameter name="AUTO_GENERATION_ID" value="1451746441" />
+  <parameter name="AUTO_GENERATION_ID" value="1458763831" />
   <parameter name="AUTO_DEVICE" value="5CGXFC5C6F27C7" />
   <parameter name="AUTO_DEVICE_FAMILY" value="Cyclone V" />
   <parameter name="AUTO_CLK_RESET_DOMAIN" value="-1" />
@@ -92,76 +92,78 @@
   <parameter name="AUTO_UNIQUE_ID" value="" />
   <parameter name="AUTO_DEVICE_SPEEDGRADE" value="7_H6" />
   <generatedFiles>
-   <file path="/home/tomas/trx/nios/ddc_nco/synthesis/ddc_nco.vhd" type="VHDL" />
+   <file
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/ddc_nco.vhd"
+       type="VHDL" />
   </generatedFiles>
   <childGeneratedFiles>
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/ddc_nco_nco_ii_0.v"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/ddc_nco_nco_ii_0.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/asj_crs_par.v"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/asj_crs_par.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/asj_nco_isdr.v"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/asj_nco_isdr.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/cordic_axor_1p_lpm.v"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/cordic_axor_1p_lpm.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/asj_nco_pxx.v"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/asj_nco_pxx.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/cord_fs.v"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/cord_fs.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/cord_seg_sel.v"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/cord_seg_sel.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/cord_init_pm.v"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/cord_init_pm.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/cordic_zxor_1p_lpm.v"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/cordic_zxor_1p_lpm.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/cord_2c.v"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/cord_2c.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/sop_reg.v"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/sop_reg.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/asj_altqmcpipe.v"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/asj_altqmcpipe.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/cordic_sxor_1p_lpm.v"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/cordic_sxor_1p_lpm.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/asj_altq.ocp"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/asj_altq.ocp"
        type="OTHER"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/asj_altqmcash.ocp"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/asj_altqmcash.ocp"
        type="OTHER"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/asj_altqmcpipe.ocp"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/asj_altqmcpipe.ocp"
        type="OTHER"
        attributes="" />
   </childGeneratedFiles>
   <sourceFiles>
-   <file path="/home/tomas/trx/nios/ddc_nco.qsys" />
+   <file path="/home/tomas/trx/cad/nios/ddc_nco.qsys" />
   </sourceFiles>
   <childSourceFiles>
    <file
@@ -192,7 +194,7 @@
  </entity>
  <entity
    path="submodules/"
-   parameterizationKey="altera_nco_ii:15.1:apr=32,aprf=32,apri=16,aprp=16,arch=cordic,cordic_arch=parallel,cycles_per_output=1,design_env=NATIVE,dpri=4,fmod_pipe=1,freq_out=25.0,fsamp=125.0,hyper_opt=false,hyper_opt_select=false,mpr=10,numba=1,numch=1,phi_inc=858993459,pmod_pipe=1,real_freq_out=25.0,selected_device_family=Cyclone V,trig_cycles_per_output=1,use_dedicated_multipliers=true,want_dither=false,want_freq_mod=false,want_phase_mod=true,want_sin_and_cos=single_output"
+   parameterizationKey="altera_nco_ii:15.1:apr=32,aprf=32,apri=16,aprp=16,arch=cordic,cordic_arch=parallel,cycles_per_output=1,design_env=NATIVE,dpri=4,fmod_pipe=1,freq_out=2.92E-8,fsamp=125.0,hyper_opt=false,hyper_opt_select=false,mpr=10,numba=1,numch=1,phi_inc=1,pmod_pipe=1,real_freq_out=2.91E-8,selected_device_family=Cyclone V,trig_cycles_per_output=1,use_dedicated_multipliers=true,want_dither=false,want_freq_mod=false,want_phase_mod=true,want_sin_and_cos=single_output"
    instancePathKey="ddc_nco:.:nco_ii_0"
    kind="altera_nco_ii"
    version="15.1"
@@ -219,74 +221,74 @@
   <parameter name="want_freq_mod" value="false" />
   <parameter name="use_dedicated_multipliers" value="true" />
   <parameter name="want_sin_and_cos" value="single_output" />
-  <parameter name="phi_inc" value="858993459" />
+  <parameter name="phi_inc" value="1" />
   <parameter name="fmod_pipe" value="1" />
   <parameter name="arch" value="cordic" />
-  <parameter name="freq_out" value="25.0" />
-  <parameter name="real_freq_out" value="25.0" />
+  <parameter name="freq_out" value="2.92E-8" />
+  <parameter name="real_freq_out" value="2.91E-8" />
   <generatedFiles>
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/ddc_nco_nco_ii_0.v"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/ddc_nco_nco_ii_0.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/asj_crs_par.v"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/asj_crs_par.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/asj_nco_isdr.v"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/asj_nco_isdr.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/cordic_axor_1p_lpm.v"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/cordic_axor_1p_lpm.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/asj_nco_pxx.v"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/asj_nco_pxx.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/cord_fs.v"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/cord_fs.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/cord_seg_sel.v"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/cord_seg_sel.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/cord_init_pm.v"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/cord_init_pm.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/cordic_zxor_1p_lpm.v"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/cordic_zxor_1p_lpm.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/cord_2c.v"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/cord_2c.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/sop_reg.v"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/sop_reg.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/asj_altqmcpipe.v"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/asj_altqmcpipe.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/cordic_sxor_1p_lpm.v"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/cordic_sxor_1p_lpm.v"
        type="VERILOG"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/asj_altq.ocp"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/asj_altq.ocp"
        type="OTHER"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/asj_altqmcash.ocp"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/asj_altqmcash.ocp"
        type="OTHER"
        attributes="" />
    <file
-       path="/home/tomas/trx/nios/ddc_nco/synthesis/submodules/asj_altqmcpipe.ocp"
+       path="/home/tomas/trx/cad/nios/ddc_nco/synthesis/submodules/asj_altqmcpipe.ocp"
        type="OTHER"
        attributes="" />
   </generatedFiles>

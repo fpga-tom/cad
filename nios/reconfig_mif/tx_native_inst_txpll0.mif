@@ -1,5 +1,5 @@
 
--- File Name = /home/tomas/trx/nios/reconfig_mif/tx_native_inst_txpll0.mif.mif
+-- File Name = /home/tomas/trx/cad/nios/reconfig_mif/tx_native_inst_txpll0.mif.mif
 WIDTH=16;
 DEPTH=12;
 

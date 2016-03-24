@@ -19,9 +19,9 @@ package body tx_lib is
     variable dac : signed(bits downto 0);
   begin
     if acc > 0 then
-      dac := "010000000"; --& signed(to_unsigned(2**(bits-1), bits));
+      dac := "0100000000000"; --& signed(to_unsigned(2**(bits-1), bits));
     else
-      dac := "110000000"; --& signed(to_unsigned(2**(bits-1), bits));
+      dac := "1100000000000"; --& signed(to_unsigned(2**(bits-1), bits));
     end if;
     d   := x - dac;
     acc := acc + d;

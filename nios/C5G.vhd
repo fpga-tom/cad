@@ -22,7 +22,7 @@ entity C5G is
     UART_RX : in  std_logic;
     UART_TX : out std_logic;
 
-    REFCLK_p0    : in  std_logic;
+    REFCLK_p0 : in std_logic;
 --    SMA_GXB_TX_p : out std_logic;
 
     --DDR2LP_CA      : out   std_logic_vector(9 downto 0);
@@ -89,6 +89,7 @@ architecture structure of C5G is
   component radio is
     port (
       clock                : in  std_logic;
+      rdclk                : in  std_logic;
       reset                : in  std_logic;
       sink_data            : in  std_logic_vector(bits-1 downto 0);
       sink_valid           : in  std_logic;
@@ -207,6 +208,7 @@ begin
   radio_1 : component radio
     port map (
       clock                        => REFCLK_p0,
+      rdclk                        => outclk_0,
       reset                        => uart_reset,
       sink_data                    => from_uart_data & "0000",
       sink_valid                   => from_uart_valid,

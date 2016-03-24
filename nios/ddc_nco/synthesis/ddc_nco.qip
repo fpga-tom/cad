@@ -2,7 +2,7 @@ set_global_assignment -entity "ddc_nco" -library "ddc_nco" -name IP_TOOL_NAME "Q
 set_global_assignment -entity "ddc_nco" -library "ddc_nco" -name IP_TOOL_VERSION "15.1"
 set_global_assignment -entity "ddc_nco" -library "ddc_nco" -name IP_TOOL_ENV "Qsys"
 set_global_assignment -library "ddc_nco" -name SOPCINFO_FILE [file join $::quartus(qip_path) "../../ddc_nco.sopcinfo"]
-set_global_assignment -entity "ddc_nco" -library "ddc_nco" -name SLD_INFO "QSYS_NAME ddc_nco HAS_SOPCINFO 1 GENERATION_ID 1451746441"
+set_global_assignment -entity "ddc_nco" -library "ddc_nco" -name SLD_INFO "QSYS_NAME ddc_nco HAS_SOPCINFO 1 GENERATION_ID 1458763831"
 set_global_assignment -library "ddc_nco" -name MISC_FILE [file join $::quartus(qip_path) "../ddc_nco.cmp"]
 set_global_assignment -library "ddc_nco" -name SLD_FILE [file join $::quartus(qip_path) "ddc_nco.debuginfo"]
 set_global_assignment -entity "ddc_nco" -library "ddc_nco" -name IP_TARGETED_DEVICE_FAMILY "Cyclone V"
@@ -15,7 +15,7 @@ set_global_assignment -entity "ddc_nco" -library "ddc_nco" -name IP_COMPONENT_DI
 set_global_assignment -entity "ddc_nco" -library "ddc_nco" -name IP_COMPONENT_REPORT_HIERARCHY "On"
 set_global_assignment -entity "ddc_nco" -library "ddc_nco" -name IP_COMPONENT_INTERNAL "Off"
 set_global_assignment -entity "ddc_nco" -library "ddc_nco" -name IP_COMPONENT_VERSION "MS4w"
-set_global_assignment -entity "ddc_nco" -library "ddc_nco" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTQ1MTc0NjQ0MQ==::QXV0byBHRU5FUkFUSU9OX0lE"
+set_global_assignment -entity "ddc_nco" -library "ddc_nco" -name IP_COMPONENT_PARAMETER "QVVUT19HRU5FUkFUSU9OX0lE::MTQ1ODc2MzgzMQ==::QXV0byBHRU5FUkFUSU9OX0lE"
 set_global_assignment -entity "ddc_nco" -library "ddc_nco" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfRkFNSUxZ::Q3ljbG9uZSBW::QXV0byBERVZJQ0VfRkFNSUxZ"
 set_global_assignment -entity "ddc_nco" -library "ddc_nco" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0U=::NUNHWEZDNUM2RjI3Qzc=::QXV0byBERVZJQ0U="
 set_global_assignment -entity "ddc_nco" -library "ddc_nco" -name IP_COMPONENT_PARAMETER "QVVUT19ERVZJQ0VfU1BFRURHUkFERQ==::N19INg==::QXV0byBERVZJQ0VfU1BFRURHUkFERQ=="
@@ -43,9 +43,9 @@ set_global_assignment -entity "ddc_nco_nco_ii_0" -library "ddc_nco" -name IP_COM
 set_global_assignment -entity "ddc_nco_nco_ii_0" -library "ddc_nco" -name IP_COMPONENT_PARAMETER "Y3ljbGVzX3Blcl9vdXRwdXQ=::MQ==::Q2xvY2sgY3ljbGVzIHBlciBvdXRwdXQ="
 set_global_assignment -entity "ddc_nco_nco_ii_0" -library "ddc_nco" -name IP_COMPONENT_PARAMETER "d2FudF9kaXRoZXI=::ZmFsc2U=::SW1wbGVtZW50IFBoYXNlIERpdGhlcmluZw=="
 set_global_assignment -entity "ddc_nco_nco_ii_0" -library "ddc_nco" -name IP_COMPONENT_PARAMETER "ZnNhbXA=::MTI1LjA=::Q2xvY2sgUmF0ZQ=="
-set_global_assignment -entity "ddc_nco_nco_ii_0" -library "ddc_nco" -name IP_COMPONENT_PARAMETER "ZnJlcV9vdXQ=::MjUuMA==::RGVzaXJlZCBPdXRwdXQgRnJlcXVlbmN5"
-set_global_assignment -entity "ddc_nco_nco_ii_0" -library "ddc_nco" -name IP_COMPONENT_PARAMETER "cGhpX2luYw==::ODU4OTkzNDU5::UGhhc2UgSW5jcmVtZW50IFZhbHVl"
-set_global_assignment -entity "ddc_nco_nco_ii_0" -library "ddc_nco" -name IP_COMPONENT_PARAMETER "cmVhbF9mcmVxX291dA==::MjUuMA==::UmVhbCBPdXRwdXQgRnJlcXVlbmN5"
+set_global_assignment -entity "ddc_nco_nco_ii_0" -library "ddc_nco" -name IP_COMPONENT_PARAMETER "ZnJlcV9vdXQ=::Mi45MkUtOA==::RGVzaXJlZCBPdXRwdXQgRnJlcXVlbmN5"
+set_global_assignment -entity "ddc_nco_nco_ii_0" -library "ddc_nco" -name IP_COMPONENT_PARAMETER "cGhpX2luYw==::MQ==::UGhhc2UgSW5jcmVtZW50IFZhbHVl"
+set_global_assignment -entity "ddc_nco_nco_ii_0" -library "ddc_nco" -name IP_COMPONENT_PARAMETER "cmVhbF9mcmVxX291dA==::Mi45MUUtOA==::UmVhbCBPdXRwdXQgRnJlcXVlbmN5"
 set_global_assignment -entity "ddc_nco_nco_ii_0" -library "ddc_nco" -name IP_COMPONENT_PARAMETER "d2FudF9mcmVxX21vZA==::ZmFsc2U=::RnJlcXVlbmN5IE1vZHVsYXRpb24gSW5wdXQ="
 set_global_assignment -entity "ddc_nco_nco_ii_0" -library "ddc_nco" -name IP_COMPONENT_PARAMETER "d2FudF9waGFzZV9tb2Q=::dHJ1ZQ==::UGhhc2UgTW9kdWxhdGlvbiBJbnB1dA=="
 set_global_assignment -entity "ddc_nco_nco_ii_0" -library "ddc_nco" -name IP_COMPONENT_PARAMETER "YXBycA==::MTY=::TW9kdWxhdG9yIFJlc29sdXRpb24="

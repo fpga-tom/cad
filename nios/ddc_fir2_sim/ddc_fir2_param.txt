@@ -4,7 +4,7 @@ ChansPerPhyIn : 1
 ChansPerPhyOut : 1 
 InWidth : 24 
 InFracWidth : 0 
-OutWidth : 12 
+OutWidth : 16 
 OutFullWidth : 38 
 OutFracWidth : 0 
 OutFullFracWidth : 0 
@@ -13,7 +13,7 @@ nTaps : 40
 clockRate : 125 
 inRate : 6.25 
 interpN : 1 
-decimN : 10 
+decimN : 25 
 busDataWidth : 16 
 bankInWidth : 0 
 modeWidth : 0 

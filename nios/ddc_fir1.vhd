@@ -111,9 +111,9 @@ end architecture rtl; -- of ddc_fir1
 -- Retrieval info: 	<generic name="coeffFracBitWidth" value="0" />
 -- Retrieval info: 	<generic name="outType" value="int" />
 -- Retrieval info: 	<generic name="outMSBRound" value="sat" />
--- Retrieval info: 	<generic name="outMsbBitRem" value="4" />
--- Retrieval info: 	<generic name="outLSBRound" value="trunc" />
--- Retrieval info: 	<generic name="outLsbBitRem" value="11" />
+-- Retrieval info: 	<generic name="outMsbBitRem" value="5" />
+-- Retrieval info: 	<generic name="outLSBRound" value="round" />
+-- Retrieval info: 	<generic name="outLsbBitRem" value="10" />
 -- Retrieval info: 	<generic name="bankCount" value="1" />
 -- Retrieval info: 	<generic name="bankDisplay" value="0" />
 -- Retrieval info: </instance>

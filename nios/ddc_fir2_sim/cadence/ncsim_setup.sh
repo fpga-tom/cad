@@ -12,7 +12,7 @@
 # or its authorized distributors. Please refer to the applicable 
 # agreement for further details.
 
-# ACDS 15.1 185 linux 2016.01.06.16:09:15
+# ACDS 15.1 185 linux 2016.03.24.18:42:05
 
 # ----------------------------------------
 # ncsim - auto-generated simulation script
@@ -59,7 +59,7 @@
 # within the Quartus project, and generate a unified
 # script which supports all the Altera IP within the design.
 # ----------------------------------------
-# ACDS 15.1 185 linux 2016.01.06.16:09:15
+# ACDS 15.1 185 linux 2016.03.24.18:42:05
 # ----------------------------------------
 # initialize variables
 TOP_LEVEL_NAME="ddc_fir2"

@@ -303,4 +303,11 @@ set_global_assignment -name QIP_FILE ddc_fir1.qip
 set_global_assignment -name SIP_FILE ddc_fir1.sip
 set_global_assignment -name QIP_FILE ddc_fir2.qip
 set_global_assignment -name SIP_FILE ddc_fir2.sip
+set_global_assignment -name QIP_FILE ddc_fir3.qip
+set_global_assignment -name SIP_FILE ddc_fir3.sip
+set_global_assignment -name QIP_FILE down_fifo.qip
+set_global_assignment -name QIP_FILE up_fifo.qip
+set_global_assignment -name ENABLE_SIGNALTAP OFF
+set_global_assignment -name USE_SIGNALTAP_FILE stp1.stp
+set_global_assignment -name SIGNALTAP_FILE stp1.stp
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

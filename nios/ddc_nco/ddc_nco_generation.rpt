@@ -1,5 +1,5 @@
 Info: Starting: Create block symbol file (.bsf)
-Info: qsys-generate /home/tomas/trx/nios/ddc_nco.qsys --block-symbol-file --output-directory=/home/tomas/trx/nios/ddc_nco --family="Cyclone V" --part=5CGXFC5C6F27C7
+Info: qsys-generate /home/tomas/trx/cad/nios/ddc_nco.qsys --block-symbol-file --output-directory=/home/tomas/trx/cad/nios/ddc_nco --family="Cyclone V" --part=5CGXFC5C6F27C7
 Progress: Loading nios/ddc_nco.qsys
 Progress: Reading input file
 Progress: Adding nco_ii_0 [altera_nco_ii 15.1]
@@ -12,7 +12,7 @@ Info: qsys-generate succeeded.
 Info: Finished: Create block symbol file (.bsf)
 Info: 
 Info: Starting: Create HDL design files for synthesis
-Info: qsys-generate /home/tomas/trx/nios/ddc_nco.qsys --synthesis=VHDL --output-directory=/home/tomas/trx/nios/ddc_nco/synthesis --family="Cyclone V" --part=5CGXFC5C6F27C7
+Info: qsys-generate /home/tomas/trx/cad/nios/ddc_nco.qsys --synthesis=VHDL --output-directory=/home/tomas/trx/cad/nios/ddc_nco/synthesis --family="Cyclone V" --part=5CGXFC5C6F27C7
 Progress: Loading nios/ddc_nco.qsys
 Progress: Reading input file
 Progress: Adding nco_ii_0 [altera_nco_ii 15.1]

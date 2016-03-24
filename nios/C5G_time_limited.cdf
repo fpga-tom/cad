@@ -4,7 +4,7 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(5CGXFC5C6F27) Path("/home/tomas/trx/nios/") File("C5G_time_limited.sof") MfrSpec(OpMask(1));
+		Device PartName(5CGXFC5C6F27) Path("/home/tomas/trx/cad/nios/") File("C5G_time_limited.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

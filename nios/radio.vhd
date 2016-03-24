@@ -5,6 +5,7 @@ use work.tx_lib.all;
 entity radio is
   port(
     clock                : in  std_logic;
+    rdclk                : in  std_logic;
     reset                : in  std_logic;
     sink_data            : in  std_logic_vector(bits-1 downto 0);
     sink_valid           : in  std_logic;
@@ -27,7 +28,8 @@ end radio;
 architecture structure of radio is
   component up is
     port (
-      clock                : in  std_logic;
+      rdclk                : in  std_logic;
+      wrclk                : in  std_logic;
       reset                : in  std_logic;
       sink_data            : in  std_logic_vector(bits-1 downto 0);
       sink_ready           : out std_logic;
@@ -45,7 +47,8 @@ architecture structure of radio is
 
   component down is
     port (
-      clock                : in  std_logic;
+      rdclk                : in  std_logic;
+      wrclk                : in  std_logic;
       reset                : in  std_logic;
       sink_data            : in  std_logic_vector(bits-1 downto 0);
       sink_ready           : out std_logic;
@@ -90,7 +93,8 @@ architecture structure of radio is
 begin
   up_1 : component up
     port map (
-      clock        => clock,
+      rdclk        => clock,
+      wrclk        => rdclk,
       reset        => reset,
       sink_data    => sink_data,
       sink_ready   => sink_ready,
@@ -103,7 +107,8 @@ begin
 
   down_1 : component down
     port map (
-      clock        => clock,
+      rdclk        => rdclk,
+      wrclk        => clock,
       reset        => reset,
       sink_data    => down_data,
       sink_ready   => down_ready,

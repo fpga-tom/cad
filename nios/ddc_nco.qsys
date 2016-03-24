@@ -68,7 +68,7 @@
   <parameter name="design_env" value="NATIVE" />
   <parameter name="dpri" value="4" />
   <parameter name="fmod_pipe" value="1" />
-  <parameter name="freq_out" value="25.0" />
+  <parameter name="freq_out" value="2.92E-8" />
   <parameter name="fsamp" value="125.0" />
   <parameter name="hyper_opt_select" value="false" />
   <parameter name="mpr" value="10" />

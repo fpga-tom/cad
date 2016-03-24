@@ -1,5 +1,5 @@
 Assembler report for C5G
-Wed Jan  6 16:16:59 2016
+Thu Mar 24 20:51:57 2016
 Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
 
 
@@ -39,7 +39,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed Jan  6 16:16:59 2016 ;
+; Assembler Status      ; Successful - Thu Mar 24 20:51:57 2016 ;
 ; Revision Name         ; C5G                                   ;
 ; Top-level Entity Name ; C5G                                   ;
 ; Family                ; Cyclone V                             ;
@@ -80,8 +80,8 @@ agreement for further details.
 ; Option         ; Setting                       ;
 +----------------+-------------------------------+
 ; Device         ; 5CGXFC5C6F27C7                ;
-; JTAG usercode  ; 0x0183F505                    ;
-; Checksum       ; 0x0183F505                    ;
+; JTAG usercode  ; 0x02591116                    ;
+; Checksum       ; 0x02591116                    ;
 +----------------+-------------------------------+
 
 
@@ -91,15 +91,15 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 15.1.0 Build 185 10/21/2015 SJ Lite Edition
-    Info: Processing started: Wed Jan  6 16:16:46 2016
+    Info: Processing started: Thu Mar 24 20:51:43 2016
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off C5G -c C5G
 Info (115030): Assembler is generating device programming files
 Info (115017): Design contains a time-limited core -- only a single, time-limited programming file can be generated
 Warning (210042): Can't convert time-limited SOF into POF, HEX File, TTF, or RBF
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 1329 megabytes
-    Info: Processing ended: Wed Jan  6 16:16:59 2016
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:13
+    Info: Peak virtual memory: 1373 megabytes
+    Info: Processing ended: Thu Mar 24 20:51:57 2016
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:14
 
 

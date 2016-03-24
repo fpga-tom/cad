@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EnsembleReport name="ddc_nco" kind="system" version="15.1" fabric="QSYS">
  <!-- Format version 15.1 185 (Future versions may contain additional information.) -->
- <!-- 2016.01.02.15:54:01 -->
+ <!-- 2016.03.23.21:10:31 -->
  <!-- A collection of modules and connections -->
  <parameter name="clockCrossingAdapter">
   <type>com.altera.sopcmodel.ensemble.EClockAdapter</type>
@@ -53,7 +53,7 @@
  </parameter>
  <parameter name="generationId">
   <type>int</type>
-  <value>1451746441</value>
+  <value>1458763831</value>
   <derived>false</derived>
   <enabled>true</enabled>
   <visible>true</visible>
@@ -282,7 +282,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="freq_out">
    <type>double</type>
-   <value>25.0</value>
+   <value>2.92E-8</value>
    <derived>false</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -290,7 +290,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="phi_inc">
    <type>long</type>
-   <value>858993459</value>
+   <value>1</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -298,7 +298,7 @@ the requested settings for a module instance. -->
   </parameter>
   <parameter name="real_freq_out">
    <type>double</type>
-   <value>25.0</value>
+   <value>2.91E-8</value>
    <derived>true</derived>
    <enabled>true</enabled>
    <visible>true</visible>
@@ -620,5 +620,5 @@ parameters are a RESULT of the module parameters. -->
   <version>15.1</version>
  </plugin>
  <reportVersion>15.1 185</reportVersion>
- <uniqueIdentifier>6470021A6E7C0000015202D4B7F2</uniqueIdentifier>
+ <uniqueIdentifier>6470021A6E7C00000153A51997D7</uniqueIdentifier>
 </EnsembleReport>
