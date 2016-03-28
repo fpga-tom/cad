@@ -271,18 +271,61 @@ architecture structure of trx is
       );
   end component ddc_fir3;
 
+  component dup_fir3 is
+    port (
+      clk              : in  std_logic                     := 'X';  -- clk
+      reset_n          : in  std_logic                     := 'X';  -- reset_n
+      ast_sink_data    : in  std_logic_vector(11 downto 0) := (others => 'X');  -- data
+      ast_sink_valid   : in  std_logic                     := 'X';  -- valid
+      ast_sink_error   : in  std_logic_vector(1 downto 0)  := (others => 'X');  -- error
+      ast_source_data  : out std_logic_vector(20 downto 0);         -- data
+      ast_source_valid : out std_logic;                             -- valid
+      ast_source_error : out std_logic_vector(1 downto 0)           -- error
+      );
+  end component dup_fir3;
+
+  component dup_fir2 is
+    port (
+      clk              : in  std_logic                     := 'X';  -- clk
+      reset_n          : in  std_logic                     := 'X';  -- reset_n
+      ast_sink_data    : in  std_logic_vector(20 downto 0) := (others => 'X');  -- data
+      ast_sink_valid   : in  std_logic                     := 'X';  -- valid
+      ast_sink_error   : in  std_logic_vector(1 downto 0)  := (others => 'X');  -- error
+      ast_source_data  : out std_logic_vector(29 downto 0);         -- data
+      ast_source_valid : out std_logic;                             -- valid
+      ast_source_error : out std_logic_vector(1 downto 0)           -- error
+      );
+  end component dup_fir2;
+
+  component dup_fir1 is
+    port (
+      clk              : in  std_logic                     := 'X';  -- clk
+      reset_n          : in  std_logic                     := 'X';  -- reset_n
+      ast_sink_data    : in  std_logic_vector(29 downto 0) := (others => 'X');  -- data
+      ast_sink_valid   : in  std_logic                     := 'X';  -- valid
+      ast_sink_error   : in  std_logic_vector(1 downto 0)  := (others => 'X');  -- error
+      ast_source_data  : out std_logic_vector(11 downto 0);         -- data
+      ast_source_valid : out std_logic;                             -- valid
+      ast_source_error : out std_logic_vector(1 downto 0)           -- error
+      );
+  end component dup_fir1;
 
 
-  signal del1, del2, d_q : signed(bits+2 downto 0) := (others => '0');
-  signal DSM_in          : signed(bits-1 downto 0);
-  signal out_valid_xlate : std_logic;
-  signal fsin_o_xlate    : std_logic_vector(bits-1 downto 0);
-  signal fir1_sink_data  : std_logic_vector(23 downto 0);
-  signal fir1_sink_valid : std_logic;
-  signal fir1_sink_error : std_logic_vector(1 downto 0);
-  signal fir2_sink_data  : std_logic_vector(15 downto 0);
-  signal fir2_sink_valid : std_logic;
-  signal fir2_sink_error : std_logic_vector(1 downto 0);
+  signal del1, del2, d_q                                            : signed(bits+2 downto 0) := (others => '0');
+  signal DSM_in                                                     : signed(bits-1 downto 0);
+  signal out_valid_xlate                                            : std_logic;
+  signal fsin_o_xlate                                               : std_logic_vector(bits-1 downto 0);
+  signal fir1_sink_data                                             : std_logic_vector(23 downto 0);
+  signal fir1_sink_valid                                            : std_logic;
+  signal fir1_sink_error                                            : std_logic_vector(1 downto 0);
+  signal fir2_sink_data                                             : std_logic_vector(15 downto 0);
+  signal fir2_sink_valid                                            : std_logic;
+  signal fir2_sink_error                                            : std_logic_vector(1 downto 0);
+  signal dup3_data                                                  : std_logic_vector(20 downto 0);
+  signal dup2_data                                                  : std_logic_vector(29 downto 0);
+  signal dup1_data                                                  : std_logic_vector(bits-1 downto 0);
+  signal dup3_valid, dup2_valid, dup1_valid, dup2_ready, dup3_ready : std_logic;
+  signal dup3_error, dup2_error, dup1_error                         : std_logic_vector(1 downto 0);
 
 begin
 
@@ -312,6 +355,41 @@ begin
 --    end if;
 --  end process tx_proc;
 
+
+  -- dup
+  dup_fir3_1 : component dup_fir3
+    port map (
+      clk              => clk,
+      reset_n          => reset_n,
+      ast_sink_data    => sink_data,
+      ast_sink_valid   => sink_valid,
+      ast_sink_error   => sink_error & '0',
+      ast_source_data  => dup3_data,
+      ast_source_valid => dup3_valid,
+      ast_source_error => dup3_error);
+
+  dup_fir2_1 : component dup_fir2
+    port map (
+      clk              => clk,
+      reset_n          => reset_n,
+      ast_sink_data    => dup3_data,
+      ast_sink_valid   => dup3_valid,
+      ast_sink_error   => dup3_error,
+      ast_source_data  => dup2_data,
+      ast_source_valid => dup2_valid,
+      ast_source_error => dup2_error);
+
+  dup_fir1_1 : component dup_fir1
+    port map (
+      clk              => clk,
+      reset_n          => reset_n,
+      ast_sink_data    => dup2_data,
+      ast_sink_valid   => dup2_valid,
+      ast_sink_error   => dup2_error,
+      ast_source_data  => dup1_data,
+      ast_source_valid => dup1_valid,
+      ast_source_error => dup1_error);
+
   -- purpose: dsm in register
   -- type   : sequential
   -- inputs : clk, reset
@@ -320,8 +398,8 @@ begin
   begin  -- process in_proc
     if reset = '1' then                 -- asynchronous reset (active low)
       DSM_in <= (others => '0');
-    elsif clk'event and clk = '1' and sink_valid = '1' then  -- rising clock edge
-      DSM_in <= signed(sink_data);
+    elsif clk'event and clk = '1' and dup1_valid = '1' then  -- rising clock edge
+      DSM_in <= signed(dup1_data);
     end if;
   end process in_proc;
 

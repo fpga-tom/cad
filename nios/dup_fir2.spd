@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simPackage>
+ <file path="dup_fir2_sim/dspba_library_package.vhd" type="VHDL" />
+ <file path="dup_fir2_sim/dspba_library.vhd" type="VHDL" />
+ <file path="dup_fir2_sim/auk_dspip_math_pkg_hpfir.vhd" type="VHDL" />
+ <file path="dup_fir2_sim/auk_dspip_lib_pkg_hpfir.vhd" type="VHDL" />
+ <file
+   path="dup_fir2_sim/auk_dspip_avalon_streaming_controller_hpfir.vhd"
+   type="VHDL" />
+ <file
+   path="dup_fir2_sim/auk_dspip_avalon_streaming_sink_hpfir.vhd"
+   type="VHDL" />
+ <file
+   path="dup_fir2_sim/auk_dspip_avalon_streaming_source_hpfir.vhd"
+   type="VHDL" />
+ <file path="dup_fir2_sim/auk_dspip_roundsat_hpfir.vhd" type="VHDL" />
+ <file path="dup_fir2_sim/altera_avalon_sc_fifo.v" type="VERILOG" />
+ <file path="dup_fir2_sim/dup_fir2_rtl.vhd" type="VHDL" />
+ <file path="dup_fir2_sim/dup_fir2_ast.vhd" type="VHDL" />
+ <file path="dup_fir2_sim/dup_fir2.vhd" type="VHDL" />
+ <file path="dup_fir2_sim/dup_fir2.sdc" type="SDC" />
+ <file path="dup_fir2_sim/dup_fir2_nativelink.tcl" type="OTHER" />
+ <file path="dup_fir2_sim/dup_fir2_msim.tcl" type="OTHER" />
+ <file path="dup_fir2_sim/dup_fir2_tb.vhd" type="VHDL" />
+ <file path="dup_fir2_sim/dup_fir2_mlab.m" type="OTHER" />
+ <file path="dup_fir2_sim/dup_fir2_model.m" type="OTHER" />
+ <file path="dup_fir2_sim/dup_fir2_coef_int.txt" type="OTHER" />
+ <file path="dup_fir2_sim/dup_fir2_input.txt" type="OTHER" />
+ <file path="dup_fir2_sim/dup_fir2_param.txt" type="OTHER" />
+ <topLevel name="dup_fir2" />
+ <deviceFamily name="cyclonev" />
+</simPackage>

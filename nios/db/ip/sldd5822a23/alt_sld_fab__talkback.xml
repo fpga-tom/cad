@@ -11,27 +11,27 @@
    <SOPCModuleParameter>
     <C>2</C>
     <Name>DESIGN_HASH</Name>
-    <Value>d48f6f9d5b94bc320d16</Value>
+    <Value>b7718249019d8c1f0e4f</Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
     <C>3</C>
     <Name>NODE_COUNT</Name>
-    <Value>1</Value>
+    <Value>2</Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
     <C>4</C>
     <Name>MAX_WIDTH</Name>
-    <Value>25</Value>
+    <Value>33</Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
     <C>5</C>
     <Name>SETTINGS</Name>
-    <Value>{fabric sld dir agent mfr_code 110 type_code 1 version 0 instance 0 ir_width 2 psig f63706bb} </Value>
+    <Value>{fabric sld dir agent mfr_code 110 type_code 1 version 0 instance 0 ir_width 2 psig f63706bb} {fabric sld dir agent mfr_code 110 type_code 0 version 6 instance 0 ir_width 10 psig f63706bb} </Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
     <C>6</C>
     <Name>CLOCKS</Name>
-    <Value>{id {} } </Value>
+    <Value>{id {} } {id {} } </Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
     <C>7</C>
@@ -41,7 +41,7 @@
    <SOPCModuleParameter>
     <C>8</C>
     <Name>EP_INFOS</Name>
-    <Value>{hpath {pzdyqx:nabboc} } </Value>
+    <Value>{hpath {pzdyqx:nabboc} } {hpath {sld_signaltap:auto_signaltap_0} } </Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
     <C>9</C>
@@ -56,7 +56,7 @@
    <SOPCModuleParameter>
     <C>11</C>
     <Name>COMPOSED_SETTINGS</Name>
-    <Value>{fabric sld dir agent mfr_code 110 type_code 1 version 0 instance 0 ir_width 2 prefer_host {} } </Value>
+    <Value>{fabric sld dir agent mfr_code 110 type_code 1 version 0 instance 0 ir_width 2 prefer_host {} } {fabric sld dir agent mfr_code 110 type_code 0 version 6 instance 0 ir_width 10 prefer_host {} } </Value>
    </SOPCModuleParameter>
    <SOPCModuleParameter>
     <C>12</C>
@@ -74,7 +74,7 @@
     <Value>Unknown</Value>
    </SOPCModuleParameter>
   </SOPCModule>
-  <SystemID>707400539</SystemID>
+  <SystemID>929139773</SystemID>
  </SOPCSystem>
  <SchemaVersion>schema_2013-01-18</SchemaVersion>
 </ProgramExecution>

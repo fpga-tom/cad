@@ -1,0 +1,87 @@
+set_global_assignment -entity "dup_fir2" -library "dup_fir2" -name IP_TOOL_NAME "altera_fir_compiler_ii"
+set_global_assignment -entity "dup_fir2" -library "dup_fir2" -name IP_TOOL_VERSION "15.1"
+set_global_assignment -entity "dup_fir2" -library "dup_fir2" -name IP_TOOL_ENV "mwpim"
+set_global_assignment -library "dup_fir2" -name MISC_FILE [file join $::quartus(qip_path) "dup_fir2.cmp"]
+set_global_assignment -entity "dup_fir2" -library "dup_fir2" -name IP_TARGETED_DEVICE_FAMILY "Cyclone V"
+set_global_assignment -entity "dup_fir2" -library "dup_fir2" -name IP_GENERATED_DEVICE_FAMILY "{Cyclone V}"
+set_global_assignment -entity "dup_fir2" -library "dup_fir2" -name IP_QSYS_MODE "UNKNOWN"
+set_global_assignment -name SYNTHESIS_ONLY_QIP ON
+set_global_assignment -entity "dup_fir2" -library "dup_fir2" -name IP_COMPONENT_NAME "ZHVwX2ZpcjI="
+set_global_assignment -entity "dup_fir2" -library "dup_fir2" -name IP_COMPONENT_DISPLAY_NAME "RklSIElJ"
+set_global_assignment -entity "dup_fir2" -library "dup_fir2" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "dup_fir2" -library "dup_fir2" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "dup_fir2" -library "dup_fir2" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "dup_fir2" -library "dup_fir2" -name IP_COMPONENT_VERSION "MTUuMQ=="
+set_global_assignment -entity "dup_fir2" -library "dup_fir2" -name IP_COMPONENT_DESCRIPTION "QWx0ZXJhIEZJUiBJSQ=="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_NAME "ZHVwX2ZpcjJfMDAwMg=="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_DISPLAY_NAME "RklSIElJ"
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_REPORT_HIERARCHY "Off"
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_INTERNAL "Off"
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_AUTHOR "QWx0ZXJhIENvcnBvcmF0aW9u"
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_VERSION "MTUuMQ=="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_DESCRIPTION "QWx0ZXJhIEZJUiBJSQ=="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "ZmlsdGVyVHlwZQ==::aW50ZXJw::RmlsdGVyIFR5cGU="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "aW50ZXJwRmFjdG9y::MjU=::SW50ZXJwb2xhdGlvbiBGYWN0b3I="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "ZGVjaW1GYWN0b3I=::MQ==::RGVjaW1hdGlvbiBGYWN0b3I="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "c3ltbWV0cnlNb2Rl::bnN5bQ==::U3ltbWV0cnk="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "TF9iYW5kc0ZpbHRlcg==::MQ==::TC10aCBCYW5kIEZpbHRlcg=="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "aW5wdXRDaGFubmVsTnVt::MQ==::TWF4IE51bWJlciBvZiBDaGFubmVscw=="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "Y2xvY2tSYXRl::MTI1::Q2xvY2sgUmF0ZQ=="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "Y2xvY2tTbGFjaw==::MA==::Q2xvY2sgU2xhY2s="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "aW5wdXRSYXRl::LjI1::SW5wdXQgU2FtcGxlIFJhdGUgKE1TUFMp"
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "Y29lZmZSZWxvYWQ=::ZmFsc2U=::Q29lZmZpY2llbnRzIFJlbG9hZA=="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "YmFja1ByZXNzdXJl::ZmFsc2U=::QmFjayBQcmVzc3VyZSBTdXBwb3J0"
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "ZGV2aWNlRmFtaWx5::Q3ljbG9uZSBW::RGV2aWNlIEZhbWlseQ=="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "c3BlZWRHcmFkZQ==::bWVkaXVt::U3BlZWQgR3JhZGU="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "ZGVsYXlSQU1CbG9ja1RocmVzaG9sZA==::MjA=::TWVtb3J5IEJsb2NrIFRocmVzaG9sZA=="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "ZHVhbE1lbURpc3RSQU1UaHJlc2hvbGQ=::MTI4MA==::RHVhbCBQb3J0IFJBTSBUaHJlc2hvbGQ="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "bVJBTVRocmVzaG9sZA==::MTAwMDAwMA==::TGFyZ2UgUkFNIFRocmVzaG9sZA=="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "aGFyZE11bHRpcGxpZXJUaHJlc2hvbGQ=::LTE=::SGFyZCBNdWx0aXBsaWVyIFRocmVzaG9sZA=="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "cmVjb25maWd1cmFibGU=::ZmFsc2U=::UmVjb25maWd1cmFibGUgQ2FycmllciBNb2Rl"
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "bnVtX21vZGVz::Mg==::TnVtYmVyIG9mIE1vZGVz"
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "cmVjb25maWd1cmFibGVfbGlzdA==::MA==::Q2hvb3NlIE1vZGUgdG8gRWRpdA=="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "TU9ERV9TVFJJTkc=::Tm9uZSBTZXQ=::TU9ERV9TVFJJTkdfRElTUExBWQ=="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "Y2hhbm5lbE1vZGVz::MCwxLDIsMw==::Q2hhbm5lbCBNb2RlIE9yZGVy"
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "aW5wdXRUeXBl::aW50::SW5wdXQgVHlwZQ=="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "aW5wdXRCaXRXaWR0aA==::MjE=::SW5wdXQgV2lkdGg="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "Y29lZmZTZXRSZWFsVmFsdWU=::MC4wMTE0NTkxODE1MDUzNzg3MTksMC4wMDY2NjI1NTk0NTMxNzI5NDgsMC4wMDg0NDE4ODU1ODY2MTEzODQsMC4wMTA0MDUzOTI0OTQxNDEyODMsMC4wMTI1MzU3NDI2ODAyNzYwNTcsMC4wMTQ3OTk4ODkyNzE4MTUyNTgsMC4wMTcxNzAwNDk2NzI1MDk5NiwwLjAxOTYwNjQ2OTg1OTc2Nzc5NywwLjAyMjA3MzY0ODE0MjIyMDE2NCwwLjAyNDUxNDI0OTcxNzE0OTM3NiwwLjAyNjg4NjExMTEwNTgwNDk2NiwwLjAyOTE0ODY0ODc4NTA0Mzk2LDAuMDMxMjU4NDIzNTkwOTkyOTM2LDAuMDMzMTUwNzY2NDY4Njc4NjM2LDAuMDM0ODA4MzMxODIyNDEwNzIsMC4wMzYxNzUxODM3MjQ4ODU2NSwwLjAzNzIzMDI2MTIxMTczODQwNSwwLjAzNzk0NjU5NTIyODY3Mjk2LDAuMDM4MzA2MjMzOTM0NTU5LDAuMDM4MzA2MjMzOTM0NTU5LDAuMDM3OTQ2NTk1MjI4NjcyOTYsMC4wMzcyMzAyNjEyMTE3Mzg0MDUsMC4wMzYxNzUxODM3MjQ4ODU2NSwwLjAzNDgwODMzMTgyMjQxMDcyLDAuMDMzMTUwNzY2NDY4Njc4NjM2LDAuMDMxMjU4NDIzNTkwOTkyOTM2LDAuMDI5MTQ4NjQ4Nzg1MDQzOTYsMC4wMjY4ODYxMTExMDU4MDQ5NjYsMC4wMjQ1MTQyNDk3MTcxNDkzNzYsMC4wMjIwNzM2NDgxNDIyMjAxNjQsMC4wMTk2MDY0Njk4NTk3Njc3OTcsMC4wMTcxNzAwNDk2NzI1MDk5NiwwLjAxNDc5OTg4OTI3MTgxNTI1OCwwLjAxMjUzNTc0MjY4MDI3NjA1NywwLjAxMDQwNTM5MjQ5NDE0MTI4MywwLjAwODQ0MTg4NTU4NjYxMTM4NCwwLjAwNjY2MjU1OTQ1MzE3Mjk0OCwwLjAxMTQ1OTE4MTUwNTM3ODcxOQ==::UmVhbCBDb2VmZmljaWVudCBWYWx1ZXM="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "Y29lZmZOdW0=::Mzg=::TnVtYmVyIG9mIENvZWZmaWNpZW50cw=="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "Y29lZmZTZXRTY2FsZVZhbHVl::MC4wMTExNjAwODM5MDIxOTQzNTUsMC4wMDY2MzU3MjU1NjM0NjY5MTMsMC4wMDgxNDM4NDUwMDk3MDkzOTMsMC4wMTAyNTUyMTIyMzQ0NDg4NjYsMC4wMTIzNjY1Nzk0NTkxODgzNCwwLjAxNDc3OTU3MDU3MzE3NjMwNywwLjAxNjg5MDkzNzc5NzkxNTc4LDAuMDE5NjA1NTUyODAxMTUyMjQ0LDAuMDIyMDE4NTQzOTE1MTQwMjEsMC4wMjQ0MzE1MzUwMjkxMjgxOCwwLjAyNjg0NDUyNjE0MzExNjE1LDAuMDI4OTU1ODkzMzY3ODU1NjIsMC4wMzEwNjcyNjA1OTI1OTUwOTQsMC4wMzI4NzcwMDM5MjgwODYwNywwLjAzNDY4Njc0NzI2MzU3NzA0NiwwLjAzNTg5MzI0MjgyMDU3MTAzNCwwLjAzNzA5OTczODM3NzU2NTAxNCwwLjAzNzcwMjk4NjE1NjA2MjAxLDAuMDM4MzA2MjMzOTM0NTU5LDAuMDM4MzA2MjMzOTM0NTU5LDAuMDM3NzAyOTg2MTU2MDYyMDEsMC4wMzcwOTk3MzgzNzc1NjUwMTQsMC4wMzU4OTMyNDI4MjA1NzEwMzQsMC4wMzQ2ODY3NDcyNjM1NzcwNDYsMC4wMzI4NzcwMDM5MjgwODYwNywwLjAzMTA2NzI2MDU5MjU5NTA5NCwwLjAyODk1NTg5MzM2Nzg1NTYyLDAuMDI2ODQ0NTI2MTQzMTE2MTUsMC4wMjQ0MzE1MzUwMjkxMjgxOCwwLjAyMjAxODU0MzkxNTE0MDIxLDAuMDE5NjA1NTUyODAxMTUyMjQ0LDAuMDE2ODkwOTM3Nzk3OTE1NzgsMC4wMTQ3Nzk1NzA1NzMxNzYzMDcsMC4wMTIzNjY1Nzk0NTkxODgzNCwwLjAxMDI1NTIxMjIzNDQ0ODg2NiwwLjAwODE0Mzg0NTAwOTcwOTM5MywwLjAwNjYzNTcyNTU2MzQ2NjkxMywwLjAxMTE2MDA4MzkwMjE5NDM1NQ==::U2NhbGVkIENvZWZmaWNpZW50IFZhbHVlcw=="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "Y29lZmZTZXRGaXhlZFZhbHVl::MzcsMjIsMjcsMzQsNDEsNDksNTYsNjUsNzMsODEsODksOTYsMTAzLDEwOSwxMTUsMTE5LDEyMywxMjUsMTI3LDEyNywxMjUsMTIzLDExOSwxMTUsMTA5LDEwMyw5Niw4OSw4MSw3Myw2NSw1Niw0OSw0MSwzNCwyNywyMiwzNw==::Rml4ZWQtcG9pbnQgQ29lZmZpY2llbnQgVmFsdWVz"
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "Y29lZmZTY2FsaW5n::YXV0bw==::Q29lZmZpY2llbnQgU2NhbGluZw=="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "Y29lZmZUeXBl::aW50::Q29lZmZpY2llbnQgRGF0YSBUeXBl"
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "Y29lZmZCaXRXaWR0aA==::OA==::Q29lZmZpY2llbnQgV2lkdGg="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "b3V0VHlwZQ==::aW50::T3V0cHV0IFR5cGU="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "b3V0TVNCUm91bmQ=::dHJ1bmM=::TVNCIFJvdW5kaW5n"
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "b3V0TXNiQml0UmVt::MA==::TVNCIEJpdHMgdG8gUmVtb3Zl"
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "b3V0TFNCUm91bmQ=::dHJ1bmM=::TFNCIFJvdW5kaW5n"
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "b3V0THNiQml0UmVt::MA==::TFNCIEJpdHMgdG8gUmVtb3Zl"
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "aW5wdXRJbnRlcmZhY2VOdW0=::MQ==::TnVtYmVyIG9mIFBhcmFsbGVsIElucHV0IFN5bWJvbHM="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "b3V0cHV0SW50ZXJmYWNlTnVt::MQ==::TnVtYmVyIG9mIFBhcmFsbGVsIE91dHB1dCBTeW1ib2xz"
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "Y2hhblBlcklucHV0SW50ZXJmYWNl::MQ==::TnVtYmVyIG9mIENoYW5uZWxzIHBlciBJbnB1dCBJbnRlcmZhY2U="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "Y2hhblBlck91dHB1dEludGVyZmFjZQ==::MQ==::TnVtYmVyIG9mIENoYW5uZWxzIHBlciBPdXRwdXQgSW50ZXJmYWNl"
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "YmFua0NvdW50::MQ==::TnVtYmVyIG9mIENvZWZmaWNpZW50IEJhbmtz"
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "YmFua0Rpc3BsYXk=::MA==::YmFua0Rpc3BsYXk="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "bHV0Q291bnQ=::MTk1::TnVtYmVyIG9mIExVVHM="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "ZHNwQ291bnQ=::Mg==::TnVtYmVyIG9mIERTUHM="
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "bWVtQml0Q291bnQ=::MA==::TnVtYmVyIG9mIE1lbW9yeSBCaXRz"
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_COMPONENT_PARAMETER "ZXJyb3JMaXN0::MA==::ZXJyb3JMaXN0"
+
+set_global_assignment -library "dup_fir2" -name VHDL_FILE [file join $::quartus(qip_path) "dup_fir2.vhd"]
+set_global_assignment -library "dup_fir2" -name VHDL_FILE [file join $::quartus(qip_path) "dup_fir2/dspba_library_package.vhd"]
+set_global_assignment -library "dup_fir2" -name VHDL_FILE [file join $::quartus(qip_path) "dup_fir2/dspba_library.vhd"]
+set_global_assignment -library "dup_fir2" -name VHDL_FILE [file join $::quartus(qip_path) "dup_fir2/auk_dspip_math_pkg_hpfir.vhd"]
+set_global_assignment -library "dup_fir2" -name VHDL_FILE [file join $::quartus(qip_path) "dup_fir2/auk_dspip_lib_pkg_hpfir.vhd"]
+set_global_assignment -library "dup_fir2" -name VHDL_FILE [file join $::quartus(qip_path) "dup_fir2/auk_dspip_avalon_streaming_controller_hpfir.vhd"]
+set_global_assignment -library "dup_fir2" -name VHDL_FILE [file join $::quartus(qip_path) "dup_fir2/auk_dspip_avalon_streaming_sink_hpfir.vhd"]
+set_global_assignment -library "dup_fir2" -name VHDL_FILE [file join $::quartus(qip_path) "dup_fir2/auk_dspip_avalon_streaming_source_hpfir.vhd"]
+set_global_assignment -library "dup_fir2" -name VHDL_FILE [file join $::quartus(qip_path) "dup_fir2/auk_dspip_roundsat_hpfir.vhd"]
+set_global_assignment -library "dup_fir2" -name VERILOG_FILE [file join $::quartus(qip_path) "dup_fir2/altera_avalon_sc_fifo.v"]
+set_global_assignment -library "dup_fir2" -name VHDL_FILE [file join $::quartus(qip_path) "dup_fir2/dup_fir2_0002_rtl.vhd"]
+set_global_assignment -library "dup_fir2" -name VHDL_FILE [file join $::quartus(qip_path) "dup_fir2/dup_fir2_0002_ast.vhd"]
+set_global_assignment -library "dup_fir2" -name VHDL_FILE [file join $::quartus(qip_path) "dup_fir2/dup_fir2_0002.vhd"]
+set_global_assignment -library "dup_fir2" -name SDC_FILE [file join $::quartus(qip_path) "dup_fir2/dup_fir2_0002.sdc"]
+
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_TOOL_NAME "altera_fir_compiler_ii"
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_TOOL_VERSION "15.1"
+set_global_assignment -entity "dup_fir2_0002" -library "dup_fir2" -name IP_TOOL_ENV "mwpim"

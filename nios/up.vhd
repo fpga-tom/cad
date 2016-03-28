@@ -62,6 +62,20 @@ begin
 
   sink_ready <= not wrfull;
   wrreq      <= sink_valid and not wrfull;
+--  rdreq      <= source_ready and not rdempty;
+
+  -- purpose: valid trigger
+  -- type   : sequential
+  -- inputs : rdclk, reset, rdreq
+  -- outputs: source_valid
+  --valid_proc : process (rdclk, reset) is
+  --begin  -- process valid_proc
+  --  if reset = '1' then                     -- asynchronous reset (active high)
+  --    source_valid <= '0';
+  --  elsif rdclk'event and rdclk = '1' then  -- rising clock edge
+  --    source_valid <= rdreq;
+  --  end if;
+  --end process valid_proc;
 
   -- sink_ready   <= source_ready;
   -- source_valid <= sink_valid;
@@ -72,20 +86,26 @@ begin
   ready_proc : process (rdclk, reset) is
   begin  -- process ready_proc
     if reset = '1' then                     -- asynchronous reset (active high)
-      rdreq <= '0';
-      cnt   <= (others => '0');
-      reg   <= (others => '0');
+      rdreq        <= '0';
+      cnt          <= (others => '0');
+      reg          <= (others => '0');
+      source_valid <= '0';
     elsif rdclk'event and rdclk = '1' then  -- rising clock edge
       if rdempty = '0' and cnt = std_logic_vector(to_unsigned(0, 16)) then
-        rdreq <= '1';
+        rdreq        <= '1';
+        source_valid <= '0';
       end if;
       if rdreq = '1' then
-        reg   <= q;
-        rdreq <= '0';
+        reg          <= q;
+        rdreq        <= '0';
+        source_valid <= '1';
+      end if;
+      if cnt = std_logic_vector(to_unsigned(2, 16)) then
+        source_valid <= '0';
       end if;
 
-      source_data  <= reg;
-      source_valid <= '1';
+      source_data <= reg;
+--      source_valid <= '1';
 
       cnt <= cnt + '1';
       if cnt = std_logic_vector(to_unsigned(12499, 16)) then
