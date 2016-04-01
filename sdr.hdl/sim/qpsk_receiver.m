@@ -7,30 +7,18 @@ frameSize=128;
 Fs = Rsym * nSamps
 
 fileId=fopen('capture.bin', 'r');
-% txsigfull=(fread(fileId, 200000, 'int8')/2^7);
+txsigfull=(fread(fileId, 100000, 'int8')/2^7);
 
-samps=5*30800;
-txsigfull=((fread(fileId, 13000000, 'uint8=>double')-127)/2^7);
+samps=30800;
+txsigfull=((fread(fileId, 11000000, 'uint8=>double')-127)/2^7);
 fclose(fileId);
-txsigfull=txsigfull(10000001:end);
+% txsigfull=txsigfull(10000001:end);
 
 % in=txsigfull.*cos([0:length(txsigfull)-1]'.*pi/2);
 % qa=txsigfull.*sin([0:length(txsigfull)-1]'.*pi/2);
 % txsigfull=in+1i*qa;
 
 txsigfull=txsigfull(1:2:end)+1i*txsigfull(2:2:end);
-% FsReal=250000.000414;
-% TReal=1/FsReal;
-% FsTarget=250000;
-% TTarget=1/FsTarget;
-% time=[0:length(txsigfull)-1]/FsTarget;
-% L=10;
-% resampled=zeros(length(txsigfull),1);
-% for t=L:length(txsigfull)-L-1
-%     n=ceil(((t-1)*TTarget)/TReal);
-%     resampled(t,1)=sum(txsigfull(n-L+1:n+L+1).*sinc(((t-1)*TTarget-[n-L:n+L]'.*TReal)/TReal));
-% end
-% txsigfull=resampled;
 
 frames=floor(length(txsigfull)/samps);
 txsigfull=reshape(txsigfull(1:frames*samps), samps,frames);
@@ -62,11 +50,12 @@ for f=1:frames
     
 %     txsig=step(freqPFO1, txsig, 41200-2250); 
 %     step(hSA, txsig);
-    txsig=step(freqPFO1, txsig, 41400-2500); 
+    txsig=step(freqPFO1, txsig, 41400+2500); 
 %     txsig=step(antialias, txsig);
 
     txsig=step(dec25, txsig);
     txsig=step(agc, txsig);
+    
     % matched filter
     rxsig=step(rxfilt,txsig);
 
@@ -74,24 +63,15 @@ for f=1:frames
     freqOffset=step(freqComp, rxsig);
     rxsig=step(freqPFO, rxsig, -freqOffset);
     
-
     % frequency tracking, carrier synch 
-
     [rxsig,phest]=step(sync, rxsig);
     fo=[fo; phest];
-    %timing recovery
     
+    %timing recovery    
     dem=step(symsync, rxsig);
     demall=[demall; dem];
-%     fprintf('%d %d\n', length(dem), length(rxsig));
-%     if length(dem) == 50
-%         dem=step(equalizer, dem);
-%     end
-%     if length(demall) > 200
-%         step(hScope, demall(end-200:end));
-%     end
 end
-% scatterplot(demall(2000:end));
+
 % frame formation
 pBarkerCode = [+1; +1; +1; +1; +1; -1; -1; +1; +1; -1; +1; -1; +1]; % Bipolar Barker Code
 pBarkerCodeLength = length(pBarkerCode);
@@ -105,7 +85,7 @@ ScramblerInitialConditions = [0 0 0 0];
 pDescrambler = comm.Descrambler(ScramblerBase, ScramblerPolynomial, ScramblerInitialConditions, 'ResetInputPort', true);
 hDemod=comm.QPSKDemodulator('BitOutput', true);
 
-frameIdx=find(z > 30);
+frameIdx=find(z > 26);
 frameDecoded=[];
 bh=[];
 for i=[1:length(frameIdx)-1]
