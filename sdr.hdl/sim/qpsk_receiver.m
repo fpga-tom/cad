@@ -101,7 +101,7 @@ for i=[1:length(frameIdx)-1]
     frameBits=step(hDemod, phShiftedData);
     bh=[bh; frameBits(1:2*pBarkerCodeLength)'];
     deScr=step(pDescrambler, frameBits(2*pBarkerCodeLength+1:end),1);
-    frameDecoded=[frameDecoded frameBits(2*pBarkerCodeLength+1:end)];
+    frameDecoded=[frameDecoded deScr];
 end
 
 [rowNum, colNum] = size(frameDecoded);

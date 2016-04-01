@@ -33,7 +33,7 @@ hMod=comm.QPSKModulator('BitInput', true);
 data=[];
 for i=1:frames
     scrData=step(pScrambler, txdata(:,i),1);
-    data=[data; step(hMod, [pHeader; txdata(:,i)])];
+    data=[data; step(hMod, [pHeader; scrData])];
 end
 % pulse shaping
 rrc=comm.RaisedCosineTransmitFilter('OutputSamplesPerSymbol', nSamps);
