@@ -45,7 +45,7 @@ classdef QPSKRx < matlab.System
     methods (Access = protected)
         function setupImpl(obj,u)
             Num=fir1(256, .008, 'low');
-            obj.agc=comm.AGC('LoopMethod','Logarithmic', 'UpdatePeriod',77);
+            obj.agc=comm.AGC('UpdatePeriod',77);
             obj.dec25=dsp.FIRDecimator('DecimationFactor', 25, 'Numerator', Num);
             obj.rxfilt=comm.RaisedCosineReceiveFilter('InputSamplesPerSymbol', obj.nSamps,'DecimationFactor',obj.decim);
             obj.freqComp=comm.PSKCoarseFrequencyEstimator('SampleRate', obj.Fs/obj.decim, 'FrequencyResolution', 1);
@@ -84,44 +84,46 @@ classdef QPSKRx < matlab.System
             
             
             
-            obj.pDemall(obj.pDemallLen+1:obj.pDemallLen+length(dem))=dem;
+            
+            obj.pDemall((1:length(dem))+obj.pDemallLen)=dem;
             obj.pDemallLen=obj.pDemallLen+length(dem);
-            if obj.pDemallLen >= 77
-                demt = obj.pDemall(1:77);
-                obj.pDemall(1:77)=obj.pDemall(78:end);
-                obj.pDemallLen=obj.pDemallLen-77;
+            y=int8(zeros(17,1));
+            while obj.pDemallLen >= 77
                 % frame formation
-                z=abs(step(obj.pCorrelator, demt, obj.pModulatedHeader));
-                index=find(z > 30, 1);
-                idx=1;
-                if ~isempty(index)
-                    idx=index(1);
-                    if idx>obj.pBarkerCodeLength
-                        s=demt(1:idx-obj.pBarkerCodeLength);    
-                        obj.pBuffer(obj.pBufferLen+1:obj.pBufferLen+length(s))=s;
-                        obj.pBufferLen=obj.pBufferLen+length(s);
+                sof=0;
+                frame=obj.pDemall(1:77);
+                while sof ~= obj.pBarkerCodeLength && obj.pDemallLen >= 77
+                    frame=obj.pDemall(1:77);
+                    z=abs(step(obj.pCorrelator, frame, obj.pModulatedHeader));
+
+                    [m,sof]=max(z);
+                    soh=sof-obj.pBarkerCodeLength+1;
+                    if soh < 1
+                        soh = sof;
                     end
+                    if soh > 1
+                        obj.pDemall(1:end-soh+1)=obj.pDemall(soh:end);
+                        obj.pDemallLen=obj.pDemallLen-soh+1;
+                    end
+
                 end
-                if obj.pBufferLen-obj.syncDelay+1>=obj.frameSize
-                    frame=obj.pBuffer(obj.syncDelay:obj.syncDelay+77-1);
-                    s=demt(idx-obj.pBarkerCodeLength+1:end);
-                    obj.pBuffer(1:length(s))=s;
-                    obj.pBufferLen=length(s);
-                    obj.syncDelay=1;
+                
+                if sof == obj.pBarkerCodeLength && obj.pDemallLen >= 77
+                    obj.pDemall(1:end-78+1)=obj.pDemall(78:end);
+                    obj.pDemallLen=obj.pDemallLen-78+1;
+                    
                     phaseEst = round(angle(mean(conj(obj.pModulatedHeader) .* frame(1:obj.pBarkerCodeLength)))*2/pi)/2*pi;
 
                     % Compensating for the phase offset
                     phShiftedData = frame .* exp(-1i*phaseEst);
                     frameBits=step(obj.hDemod, phShiftedData);
-                    data=step(obj.pDescrambler, frameBits(2*obj.pBarkerCodeLength+1:end)',1);
+                    data=step(obj.pDescrambler, frameBits(2*obj.pBarkerCodeLength+1:end),1);
                     data=reshape(data, 8, length(data)/8);
                     dd=bi2de(data', 'left-msb');
                     y=int8([dd(1:16); 1]);
                 else
                     y=int8(zeros(17,1));
                 end
-            else
-                y=int8(zeros(17,1));
             end
         end
         
